@@ -1,0 +1,179 @@
+//
+// **********************************************************
+// * UNLV						    *
+// *							    *
+// * geant4 and root installation guide on fedora	    *
+// **********************************************************
+//
+//
+///
+///
+
+https://youtu.be/RrRpXs2pkzg	//7 Things You MUST Do After Installing Fedora 36
+https://youtu.be/QItrmchEQWE	//CERN ROOT Tutorial 2: Installing ROOT
+https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Geant4
+
+  // fedora update
+  // https://getfedora.org	//Fedora
+  // 36 - May 10, 2022
+  //
+	// dnf configuration
+	// https://dnf.readthedocs.io/en/latest/conf_ref.html
+	//
+		$ sudo nano /etc/dnf/dnf.conf
+		  add
+			fastestmirror=True
+			max_parallel_downloads=10
+			keepcache=True
+		  Ctrl
+		  o
+		  enter
+		  Ctrl
+		  x
+		$ sudo dnf clean all
+
+	// configuring xorg
+	// https://docs.fedoraproject.org/en-US/quick-docs/configuring-xorg-as-default-gnome-session/	//Configuring Xorg
+	//
+		$ sudo nano /etc/gdm/custom.conf
+		  uncomment or remove # of  "WaylandEnable=false"
+		  add "DefaultSession=gnome-xorg.desktop
+		  Ctrl
+		  o
+		  Ctrl
+		  x
+		$ reboot
+
+	// fedora
+	update "Software"
+		$ sudo dnf update
+		$ sudo dnf groupinstall "Development Tools"
+		$ sudo dnf install git vim-enhanced
+		$ sudo dnf autoremove -y
+
+	// rpm fusion
+	// https://rpmfusion.org/Configuration		//Configuration - RPM Fusion
+	//
+		$ sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+		$ sudo dnf groupupdate core
+
+	// flatpaks
+	// https://flatpak.org/setup/Fedora	//Fedora Quick Setup
+	//
+		$ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
+	// media codecs
+	// https://rpmfusion.org/Configuration		//Configuration - RPM Fusion
+	//
+		$ sudo dnf groupupdate multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
+		$ sudo dnf groupupdate sound-and-video
+
+  // root installation
+  // https://root.cern		//ROOT: analyzing petabytes of data, scientifically.
+  //
+  	// root dependencies
+	// https://root.cern/install/dependencies/	//Dependencies
+	//
+		$ sudo dnf install git make cmake gcc-c++ g++ binutils \
+		  libX11-devel libXpm-devel libXft-devel libXext-devel python-openssl-devel
+		$ sudo dnf install redhat-lsb-core gcc-gfortran pcre-devel \
+		  mesa-libGL-devel mesa-libGLU-devel glew-devel ftgl-devel mysql-devel \
+		  fftw-devel cfitsio-devel graphviz-devel libuuid-devel \
+		  avahi-compat-libdns_sd-devel openldap-devel python3-numpy \
+		  libxml2-devel gsl-devel readline-devel qt5-qtwebengine-devel \
+		  R-devel R-Rcpp-devel R-RInside-devel
+
+	// download and unpack source file
+	// https://root.cern/install/all_releases/	//Releases
+	// 6.26/06 - July 29, 2022
+	//
+		$ mv /home/username/Downloads/root{$root_version}.source.tar.gz ~
+		$ tar -xzvf root{$root_version}.source.tar.gz
+
+	// compile and install
+		$ cd root{$root_version}
+		$ cd build
+		$ cmake ..
+		$ lscpu
+			N = the number of central processing unit;
+		$ make -jN
+		$ sudo make install -jN
+
+	// setup scripts
+		$ cd ~
+		$ cd /usr/local/bin
+		$ source thisroot.sh
+
+	// run
+		$ root
+			// option
+			-l without logo
+			--web=off = revert to TBrowser
+		$ new TRootBrowser
+			// option
+			TBrowser = web-based browser
+		$ .q
+
+  // geant4 installation
+  // https://geant4.web.cern.ch		//GEANT4: A SIMULATION TOOLKIT
+  //
+	// geant4 prerequisites
+	// https://geant4-userdoc.web.cern.ch/UsersGuides/InstallationGuide/html/gettingstarted.html	//Geant4 System/Software Prerequisites
+	// https://doc.qt.io/qt-5/linux.html
+	//
+		$ sudo dnf groupinstall "C Development Tools and Libraries"
+		$ sudo dnf install mesa-libGL-devel
+		$ sudo dnf install cmake gcc g++ \
+		  expat-devel libXmu-devel motif-devel \
+		  qt5-qtbase qt5-qtbase-devel
+
+	// download and unpack source file
+	// https://geant4.web.cern.ch/support/download
+	// 10.7/patch-03 - November 19, 2021
+	//
+		$ mv /home/username/Downloads/geant{geant4_version}.tar.gz ~
+		$ tar -xvf geant{geant4_version}.tar.gz
+
+	// compile and install
+		$ cd geant{geant4_version}
+		$ mkdir build
+		$ cd build
+		$ cmake -DCMAKE_INSTALL_PREFIX=/usr/local -DGEANT4_INSTALL_DATA=ON -DGEANT4_USE_QT=ON ../
+		$ make -jN
+		$ sudo make install -jN
+
+	// setup scripts
+		$ cd ~
+		$ cd /usr/local/bin
+		$ . geant4.sh
+
+	// run Example B1
+		$ cd geant{geant4_version}
+		$ cd examples/basic/B1
+		$ mkdir build
+		$ cd build
+		$ cmake ..
+		$ make -jN
+		$ ./exampleB1
+		$ run/beamOn 100
+		$ exit
+
+		// batch mode
+			$ cd geant{geant4_version}
+			$ cd examples/basic/B1/build
+			$ vim batch.mac
+			  i
+			  add "/run/beamOn 1000"
+			  esc
+			  :x or :wq
+			$ ./exampleB1 batchmac
+			$ exit
+
+	// vim
+		$ vi .vimrc
+		  i
+		  add "set number"
+		  esc
+		  :x
+
+//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

@@ -1,0 +1,32 @@
+//
+// **********************************************************
+// * UNLV						    *
+// *							    *
+// * ubuntu installation guide on MacOS			    *
+// **********************************************************
+//
+//
+///
+///
+
+https://youtu.be/hnwK-nkXolc	//Ubuntu Install on M1 MacBook Air -Virtualization and Benchmarking!
+https://youtu.be/voMvctJ4GZ0	//FINALLY! Linux on the Macbook M1 (bare-metal)
+
+  // download ubuntu
+  // https://ubuntu.com		//Ubuntu
+  
+  // UTM settings
+  // https://apps.apple.com/us/app/utm-virtual-machines/id1538878817?mt=12	//UTM Virtual Machines
+  //
+  "Create a New Virtual Machine"
+  	set "Operating System" for Style		//Information
+	set ARM64 (aarch64) for Architecture		//System
+	set half at full memory for Memory		//System
+	"New Drive" with "NVMe" for Interface		//Drives
+	"New Drive" with "USB" selected by Removable	//Drives
+
+  // option to asahi installation
+  // https://asahilinux.org	//asahi
+  //
+
+//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

@@ -1,0 +1,25 @@
+//
+// **********************************************************
+// * UNLV						    *
+// *							    *
+// * virtualbox settings  guide				    *
+// **********************************************************
+//
+//
+///
+///
+
+  // virtualbox settings
+  // https://www.virtualbox.org
+  //
+  set "Bidirectional" for Shared Clipboard in Advanced		//General
+  set "Bidirectional" for Drag'n'Drop in Advanced		//General
+  set half of full memory for Base Memory in Motherboard	//System
+  set maximum in green for Processor (s) in Processor		//System
+  set maximum for Video Memory in Screen			//Display
+  select "Empty" in Storage Devices				//Storage
+	"Choose a disk file..." in Attributes
+
+  able to disable "Toolbar"					//User Interface
+
+//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
