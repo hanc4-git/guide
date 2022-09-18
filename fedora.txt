@@ -106,9 +106,7 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
 			// option
 			-l without logo
 			--web=off = revert to TBrowser
-		$ new TRootBrowser
-			// option
-			TBrowser = web-based browser
+		$ new TBrowser or TRootBrowser
 		$ .q
 
   // geant4 installation
