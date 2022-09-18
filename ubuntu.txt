@@ -56,7 +56,7 @@ https://youtu.be/gVcbeLQEHNw	//Geant4 Tutorial-Korean
 
 	// download and unpack source file
 	// https://root.cern/install/all_releases/	//Releases
-	// 6.26/06 - July 29, 2022
+	// 6.24/06 - September 3, 2021
 	//
 		$ mv /home/username/Downloads/root{$root_version}.source.tar.gz ~
 		$ tar -xzvf root{$root_version}.source.tar.gz
@@ -80,9 +80,7 @@ https://youtu.be/gVcbeLQEHNw	//Geant4 Tutorial-Korean
 			// option
 			-l without logo
 			--web=off = revert to TBrowser
-		$ new TRootBrowser
-			// option
-			TBrowser = web-based browser
+		$ new TBrowser or TRootBrowser
 		$ .q
 
   // geant4 installation
