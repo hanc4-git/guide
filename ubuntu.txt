@@ -56,7 +56,7 @@ https://youtu.be/gVcbeLQEHNw	//Geant4 Tutorial-Korean
 
 	// download and unpack source file
 	// https://root.cern/install/all_releases/	//Releases
-	// 6.24/06 - September 3, 2021
+	// 6.26/00 - March 3, 2022
 	//
 		$ mv /home/user{$username}/Downloads/root{$root_version}.source.tar.gz ~
 		$ tar -xzvf root{$root_version}.source.tar.gz
