@@ -43,10 +43,10 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
 
 	// fedora
 	update "Software"
-		$ sudo dnf update
+		$ sudo dnf update -y
 		$ sudo dnf groupinstall "Development Tools"
 		$ sudo dnf install git vim-enhanced
-		$ sudo dnf autoremove -y
+		$ sudo dnf autoremove
 
 	// rpm fusion
 	// https://rpmfusion.org/Configuration		//Configuration - RPM Fusion
