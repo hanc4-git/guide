@@ -40,8 +40,7 @@ https://youtu.be/4Z4b1w6YDO4	//Xeyes or Xclock : Error: Can't open display
   // run xeyes
   	$ nano ~/.bashrc
 	  add "export DISPLAY=localhost:0.0"
-	  Ctrl
-	  x
+	  Ctrl+x
 	$ xeyes
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
