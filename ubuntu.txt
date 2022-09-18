@@ -58,7 +58,7 @@ https://youtu.be/gVcbeLQEHNw	//Geant4 Tutorial-Korean
 	// https://root.cern/install/all_releases/	//Releases
 	// 6.24/06 - September 3, 2021
 	//
-		$ mv /home/username/Downloads/root{$root_version}.source.tar.gz ~
+		$ mv /home/user{$username}/Downloads/root{$root_version}.source.tar.gz ~
 		$ tar -xzvf root{$root_version}.source.tar.gz
 
 	// compile and install
@@ -98,7 +98,7 @@ https://youtu.be/gVcbeLQEHNw	//Geant4 Tutorial-Korean
 	// https://geant4.web.cern.ch/support/download
 	// 10.7/patch-03 - November 19, 2021
 	//
-		$ mv /home/username/Downloads/geant{geant4_version}.tar.gz ~
+		$ mv /home/user($username}/Downloads/geant{geant4_version}.tar.gz ~
 		$ tar -xvf geant{geant4_version}.tar.gz
 
 	// compile and install
