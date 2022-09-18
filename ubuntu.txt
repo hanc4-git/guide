@@ -22,9 +22,9 @@ https://youtu.be/gVcbeLQEHNw	//Geant4 Tutorial-Korean
 
 	// ubuntu
 	update "Ubuntu Software"
-		$ sudo apt update && sudo apt upgrade
+		$ sudo apt update -y && sudo apt upgrade -y
 		$ sudo apt install build-essential git vim
-		$ sudo apt autoremove -y
+		$ sudo apt autoremove
 
 	// flatpaks
 	// https://flatpak.org/setup/Ubuntu	//Ubuntu Quick Setup
