@@ -36,10 +36,9 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
 		$ sudo nano /etc/gdm/custom.conf
 		  uncomment or remove # of  "WaylandEnable=false"
 		  add "DefaultSession=gnome-xorg.desktop
-		  Ctrl
-		  o
-		  Ctrl
-		  x
+		  Ctrl+o
+		  enter
+		  Ctrl+x
 		$ reboot
 
 	// fedora
