@@ -18,7 +18,7 @@
   set maximum in green for Processor (s) in Processor		//System
   set maximum for Video Memory in Screen			//Display
   select "Empty" in Storage Devices				//Storage
-	"Choose a disk file..." in Attributes
+	 "Choose a disk file..." in Attributes
 
   able to disable "Toolbar"					//User Interface
 
