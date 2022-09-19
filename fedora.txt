@@ -125,7 +125,7 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
 
 	// download and unpack source file
 	// https://geant4.web.cern.ch/support/download
-	// 10.7/patch-04 - December 4, 2020
+	// 10.7/patch-04 - September 9, 2022
 	//
 		$ mv /home/user{$username}/Downloads/geant{geant4_version}.tar.gz ~
 		$ tar -xvf geant{geant4_version}.tar.gz
