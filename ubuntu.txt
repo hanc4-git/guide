@@ -96,7 +96,7 @@ https://youtu.be/gVcbeLQEHNw	//Geant4 Tutorial-Korean
 
 	// download and unpack source file
 	// https://geant4.web.cern.ch/support/download
-	// 10.7/patch-03 - November 19, 2021
+	// 10.7/patch-04 - September 9, 2022
 	//
 		$ mv /home/user($username}/Downloads/geant{geant4_version}.tar.gz ~
 		$ tar -xvf geant{geant4_version}.tar.gz
