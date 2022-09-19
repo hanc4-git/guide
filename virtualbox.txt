@@ -26,7 +26,7 @@
   	// virtualbox settings
   	click "Adds new shared folder."
   	set windows folder path
-  	set "Auto-mount" and "Make Permanent"
+  	set "Auto-mount"
 	
 	// Linux settings
 		$ sudo gpasswd -a user{$username} vboxsf
