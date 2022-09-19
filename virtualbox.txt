@@ -21,5 +21,15 @@
 	 "Choose a disk file..." in Attributes
 
   able to disable "Toolbar"					//User Interface
+  
+  // Shared Folders
+  	// virtualbox settings
+  	click "Adds new shared folder."
+  	set windows folder path
+  	set "Auto-mount" and "Make Permanent"
+	
+	// Linux settings
+		$ sudo gpasswd -a user{$username} vboxsf
+		$ reboot
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
