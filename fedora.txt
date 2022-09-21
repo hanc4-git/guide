@@ -165,11 +165,20 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
 			$ ./exampleB1 batchmac
 			$ exit
 
-	// vim
-		$ vi .vimrc
-		  i
-		  add "set number"
-		  esc
-		  :x
+  // vim
+  	$ vi .vimrc
+	  i
+	  add "set number"
+	  esc
+	  :x
+	
+  // option of previous releases of root
+  	// 6.24/06 - September 3, 2021
+	//
+	// root dependencies
+		$ sudo dnf install xrootd
+		
+  	// compile and install
+		$ cmake -DCMAKE_INSTALL_PREFIX=/usr/local -DGEANT4_INSTALL_DATA=ON -DGEANT4_USE_QT=ON ../
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
