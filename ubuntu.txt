@@ -22,7 +22,7 @@ https://youtu.be/gVcbeLQEHNw	//Geant4 Tutorial-Korean
 
 	// ubuntu
 	update "Ubuntu Software"
-		$ sudo apt update -y && sudo apt upgrade -y
+		$ sudo apt -y update && sudo apt -y upgrade
 		$ sudo apt install build-essential git vim
 		$ sudo apt autoremove
 
@@ -46,7 +46,7 @@ https://youtu.be/gVcbeLQEHNw	//Geant4 Tutorial-Korean
 	// https://root.cern/install/dependencies/	//Dependencies
 	//
 		$ sudo apt-get install dpkg-dev cmake g++ gcc binutils libx11-dev libxpm-dev \
-		  libxft-dev libxext-dev python libssl-dev
+		  libxft-dev libxext-dev python libssl-dev \
 		  xrootd-client
 		$ sudo apt-get install gfortran libpcre3-dev \
 		  xlibmesa-glu-dev libglew1.5-dev libftgl-dev \
@@ -65,7 +65,7 @@ https://youtu.be/gVcbeLQEHNw	//Geant4 Tutorial-Korean
 	// compile and install
 		$ cd root{$root_version}
 		$ cd build
-		$ cmake ..
+		$ cmake -Dxrootd=OFF -Dbuiltin_xrootd=OFF -Druntime_cxxmodules=OFF ../
 		$ lscpu
 			N = the number of central processing unit;
 		$ make -jN
