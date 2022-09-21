@@ -31,7 +31,7 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
 		$ sudo dnf -y clean all
 
 	// configuring xorg
-	// https://docs.fedoraproject.org/en-US/quick-docs/configuring-xorg-as-default-gnome-session/	//Configuring Xorg
+	// https://docs.fedoraproject.org/en-US/quick-docs/configuring-xorg-as-default-gnome-session/
 	//
 		$ sudo nano /etc/gdm/custom.conf
 		  uncomment or remove # of  "WaylandEnable=false"
