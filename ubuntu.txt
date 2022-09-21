@@ -137,19 +137,18 @@ https://youtu.be/gVcbeLQEHNw	//Geant4 Tutorial-Korean
 			$ ./exampleB1 batchmac
 			$ exit
 
-	// vim
-		$ vi .vimrc
-		  i
-		  add "set number"
-		  esc
-		  :x
+  // vim
+  	$ vi .vimrc
+	  i
+	  add "set number"
+	  esc
+	  :x
 
-	// option of OpenGL for geant4
-	//
-		// geant4 prerequisites
-			$ sudo apt-get install libx11-dev libxpm-dev libxft-dev libxext-dev libglu1-mesa-dev
+  // option of OpenGL for geant4
+  	// geant4 prerequisites
+		$ sudo apt-get install libx11-dev libxpm-dev libxft-dev libxext-dev libglu1-mesa-dev
 
-		// compile
-			$ cmake -DCMAKE_INSTALL_PREFIX=/usr/local -DGEANT4_INSTALL_DATA=ON -DGEANT4_USE_OPENGL_X11=ON ../
+	// compile
+		$ cmake -DCMAKE_INSTALL_PREFIX=/usr/local -DGEANT4_INSTALL_DATA=ON -DGEANT4_USE_OPENGL_X11=ON ../
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
