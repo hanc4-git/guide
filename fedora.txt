@@ -104,10 +104,8 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
 
 	// run
 		$ root
-			// option
-			-l without logo
-			--web=off = revert to TBrowser
-		$ new TBrowser or TRootBrowser
+			-l	//without logo
+		$ new TBrowser
 		$ .q
 
   // geant4 installation
@@ -172,13 +170,21 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
 	  esc
 	  :x
 	
-  // option of previous releases of root
-  	// 6.24/06 - September 3, 2021
+  // option of latest releases of root
+  	// 6.26/06 - July 29, 2022
 	//
 	// root dependencies
-		$ sudo dnf install xrootd
+		$ sudo dnf remove xrootd
 		
   	// compile and install
-		$ cmake -DCMAKE_INSTALL_PREFIX=/usr/local -DGEANT4_INSTALL_DATA=ON -DGEANT4_USE_QT=ON ../
+		$ cmake ..
+		
+	// run
+		$ root
+			-l		//without logo
+			--web=off	//revert to TBrowser
+		$ new TBrowser		//RBrowser 
+		$ TRootBrowser		//TBrowser
+		$ .q
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
