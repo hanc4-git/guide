@@ -112,7 +112,7 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
   // https://geant4.web.cern.ch		//GEANT4: A SIMULATION TOOLKIT
   //
 	// geant4 prerequisites
-	// https://geant4-userdoc.web.cern.ch/UsersGuides/InstallationGuide/html/gettingstarted.html	//Geant4 System/Software Prerequisites
+	// https://geant4-userdoc.web.cern.ch/UsersGuides/InstallationGuide/html/gettingstarted.html
 	// https://doc.qt.io/qt-5/linux.html
 	//
 		$ sudo dnf groupinstall "C Development Tools and Libraries"
