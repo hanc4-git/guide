@@ -78,10 +78,8 @@ https://youtu.be/gVcbeLQEHNw	//Geant4 Tutorial-Korean
 
 	// run
 		$ root
-			// option
-			-l without logo
-			--web=off = revert to TBrowser
-		$ new TBrowser or TRootBrowser
+			-l	//without logo
+		$ new TBrowser
 		$ .q
 
   // geant4 installation
@@ -143,6 +141,23 @@ https://youtu.be/gVcbeLQEHNw	//Geant4 Tutorial-Korean
 	  add "set number"
 	  esc
 	  :x
+
+  // option of latest releases of root
+  	// 6.26/06 - July 29, 2022
+	//
+	// root dependencies
+		$ sudo apt remove xrootd-client
+		
+  	// compile and install
+		$ cmake ..
+		
+	// run
+		$ root
+			-l			//without logo
+			--web=off		//revert to TBrowser
+		$ new TBrowser			//RBrowser 
+			new TRootBrowser	//TBrowser
+		$ .q
 
   // option of OpenGL for geant4
   	// geant4 prerequisites
