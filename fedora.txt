@@ -53,7 +53,7 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
 	//
 		$ sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
 		  https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
-		$ sudo dnf groupupdate core
+		$ sudo dnf -y groupupdate core
 
 	// flatpaks
 	// https://flatpak.org/setup/Fedora	//Fedora Quick Setup
