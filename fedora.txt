@@ -73,7 +73,8 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
 	// https://root.cern/install/dependencies/	//Dependencies
 	//
 		$ sudo dnf install git make cmake gcc-c++ gcc binutils \
-		  libX11-devel libXpm-devel libXft-devel libXext-devel python openssl-devel
+		  libX11-devel libXpm-devel libXft-devel libXext-devel python openssl-devel \
+		  xrootd
 		$ sudo dnf install redhat-lsb-core gcc-gfortran pcre-devel \
 		  mesa-libGL-devel mesa-libGLU-devel glew-devel ftgl-devel mysql-devel \
 		  fftw-devel cfitsio-devel graphviz-devel libuuid-devel \
