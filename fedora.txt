@@ -181,10 +181,10 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
 		
 	// run
 		$ root
-			-l		//without logo
-			--web=off	//revert to TBrowser
-		$ new TBrowser		//RBrowser 
-		$ TRootBrowser		//TBrowser
+			-l			//without logo
+			--web=off		//revert to TBrowser
+		$ new TBrowser			//RBrowser 
+			new TRootBrowser	//TBrowser
 		$ .q
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
