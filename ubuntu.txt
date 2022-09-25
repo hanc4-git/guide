@@ -14,6 +14,10 @@ https://youtu.be/J8iQVm0DLzY	//CERN ROOT Tutorial 1-Korean
 https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Geant4
 https://youtu.be/gVcbeLQEHNw	//Geant4 Tutorial-Korean
 
+  // virtualbox settings
+		$ sudo gpasswd -a user{$username} vboxsf
+		$ reboot
+		
   // ubuntu update
   // https://ubuntu.com		//Ubuntu
   // 20.04.5 LTS - February 22, 2022
