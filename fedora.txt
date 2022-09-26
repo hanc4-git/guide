@@ -124,7 +124,7 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
 		$ sudo dnf groupinstall "C Development Tools and Libraries"
 		$ sudo dnf install cmake gcc g++ \
 		  expat-devel libXmu-devel motif-devel \
-		  mesa-libGL-devel qt5-qtbase qt5-qtbase-devel
+		  mesa-libGL-devel qt5-devel qt5-qtbase-devel
 
 	// download and unpack source file
 	// https://geant4.web.cern.ch/support/download
