@@ -30,7 +30,7 @@
 	
   // windows 11 settings
   open "Command Prompt" as administrator
-  	$ bcdedit /set hypervisorlaunchtype off
+  	$ bcdedit /set hypervisorlaunchtype off		//disable windows hypervisor
   reboot
 
 		// option of linux commands
