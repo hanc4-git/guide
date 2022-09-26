@@ -52,11 +52,11 @@ https://youtu.be/gVcbeLQEHNw	//Geant4 Tutorial-Korean
 		$ sudo apt-get install dpkg-dev cmake g++ gcc binutils libx11-dev libxpm-dev \
 		  libxft-dev libxext-dev python-is-python3 libssl-dev
 		$ sudo apt-get install gfortran libpcre3-dev \
-		  xlibmesa-glu-dev libglew1.5-dev libftgl-dev \
+		  libglu1-mesa-dev libglew1.5-dev libftgl-dev \
 		  libmysqlclient-dev libfftw3-dev libcfitsio-dev \
-		  graphviz-dev libavahi-compat-libdnssd-dev \
+		  libgraphviz-dev libavahi-compat-libdnssd-dev \
 		  libldap2-dev python-dev libxml2-dev libkrb5-dev \
-		  libgsl0-dev qtwebengine5-dev
+		  libgsl-dev qtwebengine5-dev
 
 	// download and unpack source file
 	// https://root.cern/install/all_releases/	//Releases
