@@ -27,6 +27,11 @@
   	click "Adds new shared folder."
   	set windows folder path
   	set "Auto-mount"
+	
+  // windows 11 settings
+  open "Command Prompt" as administrator
+  	$ bcdedit /set hypervisorlaunchtype off
+  reboot
 
 		// option of linux commands
 			$ groups			//print group names
