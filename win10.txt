@@ -19,7 +19,7 @@ https://youtu.be/4Z4b1w6YDO4	//Xeyes or Xclock : Error: Can't open display
   find "Control Panel" in search box
   go to "Programs" and "Turn Windows features on or off"
   select "Windows Subsystem for Linux"
-  Restart
+  reboot
 
   // ubuntu 20.04 LTS installation
   find "Microsoft Store" in search box
@@ -30,7 +30,7 @@ https://youtu.be/4Z4b1w6YDO4	//Xeyes or Xclock : Error: Can't open display
   // xming for GUI
   // https://sourceforge.net/projects/xming	//Xming X Server for Windows
   //
-  install and launch Xming
+  install and launch "Xming"
   open terminal
 	$ sudo systemd-machine-id-setup
 	$ sudo dbus-uuidgen — ensure
