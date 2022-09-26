@@ -27,7 +27,6 @@ https://youtu.be/gVcbeLQEHNw	//Geant4 Tutorial-Korean
 	// ubuntu
 	update "Ubuntu Software"
 		$ sudo apt -y update && sudo apt -y upgrade
-		$ sudo apt install build-essential git vim
 		$ sudo apt autoremove
 
 	// flatpaks
@@ -49,6 +48,7 @@ https://youtu.be/gVcbeLQEHNw	//Geant4 Tutorial-Korean
   	// root dependencies
 	// https://root.cern/install/dependencies/	//Dependencies
 	//
+		$ sudo apt install build-essential git vim
 		$ sudo apt-get install dpkg-dev cmake g++ gcc binutils libx11-dev libxpm-dev \
 		  libxft-dev libxext-dev python-is-python3 libssl-dev
 		$ sudo apt-get install gfortran libpcre3-dev \
