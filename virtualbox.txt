@@ -16,7 +16,9 @@
   set "Bidirectional" for Drag'n'Drop in Advanced		//General
   set half of full memory for Base Memory in Motherboard	//System
   set maximum in green for Processor (s) in Processor		//System
+  set "KVM" for Paravirtualization Interface			//System
   set maximum for Video Memory in Screen			//Display
+  set "Enable 3D Acceleration"					//Display
   select "Empty" in Storage Devices				//Storage
 	 "Choose a disk file..." in Attributes
 
