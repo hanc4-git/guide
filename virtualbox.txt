@@ -17,6 +17,7 @@
   set half of full memory for Base Memory in Motherboard	//System
   set maximum in green for Processor (s) in Processor		//System
   set "KVM" for Paravirtualization Interface			//System
+      "Hyper-V" for windows
   set maximum for Video Memory in Screen			//Display
   set "Enable 3D Acceleration"					//Display
   select "Empty" in Storage Devices				//Storage
