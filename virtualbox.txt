@@ -20,8 +20,6 @@
   select "Empty" in Storage Devices				//Storage
 	 "Choose a disk file..." in Attributes
 
-  able to disable "Toolbar"					//User Interface
-  
   // Shared Folders
   	// virtualbox settings
   	click "Adds new shared folder."
