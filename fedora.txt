@@ -15,6 +15,7 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
 
   // virtualbox settings
 		$ sudo gpasswd -a user{$username} vboxsf
+		$ reboot
 		
   // fedora update
   // https://getfedora.org	//Fedora
