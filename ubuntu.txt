@@ -16,7 +16,6 @@ https://youtu.be/gVcbeLQEHNw	//Geant4 Tutorial-Korean
 
   // virtualbox settings
 		$ sudo gpasswd -a user{$username} vboxsf
-		$ reboot
 		
   // ubuntu update
   // https://ubuntu.com		//Ubuntu
