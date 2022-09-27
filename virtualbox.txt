@@ -31,6 +31,7 @@
  	open "Command Prompt" as administrator
   		$ bcdedit /set hypervisorlaunchtype off		//disable
 						    auto	//enable
+						    
   	// disable memory integrity
   	find "Settings" in search on task bar
   	go to "Privacy & security" and "Windows Security"
