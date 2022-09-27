@@ -29,9 +29,16 @@
   	set "Auto-mount"
 	
   // windows 11 settings
-  open "Command Prompt" as administrator
-  	$ bcdedit /set hypervisorlaunchtype off		//disable windows hypervisor
-  reboot
+  	// disable windows hypervisor
+ 	open "Command Prompt" as administrator
+  		$ bcdedit /set hypervisorlaunchtype off
+	
+	// disable memory integrity
+  	find "Settings" in search on task bar
+  	go to "Privacy & security" and "Windows Security"
+  	go to "Device security" and "Core isolation details"
+  	disable "Memory integrity"  
+  	reboot
 
 		// option of linux commands
 			$ groups			//print group names
