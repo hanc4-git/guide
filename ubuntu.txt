@@ -16,7 +16,6 @@ https://youtu.be/gVcbeLQEHNw	//Geant4 Tutorial-Korean
 
   // virtualbox settings
 		$ sudo gpasswd -a user{$username} vboxsf
-		$ reboot
 		
   // ubuntu update
   // https://ubuntu.com		//Ubuntu
@@ -34,6 +33,7 @@ https://youtu.be/gVcbeLQEHNw	//Geant4 Tutorial-Korean
 	//
 		$ sudo apt install flatpak
 		$ sudo apt install gnome-software-plugin-flatpak
+		$ reboot
 		$ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 		$ reboot
 
