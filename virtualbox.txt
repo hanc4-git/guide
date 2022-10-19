@@ -11,13 +11,13 @@
 
   // virtualbox settings
   // https://www.virtualbox.org
+  // v7.0 for windows 11
+  // v6.1 for windows 10
   //
   set "Bidirectional" for Shared Clipboard in Advanced		//General
   set "Bidirectional" for Drag'n'Drop in Advanced		//General
   set half of full memory for Base Memory in Motherboard	//System
   set maximum in green for Processor (s) in Processor		//System
-  set "KVM" for Paravirtualization Interface			//System
-      "Hyper-V" for windows
   set maximum for Video Memory in Screen			//Display
   set "Enable 3D Acceleration"					//Display
   select "Empty" in Storage Devices				//Storage
@@ -29,6 +29,10 @@
   	set windows folder path
   	set "Auto-mount"
 	
+  // option of virtualbox settings
+  set "KVM" for Paravirtualization Interface			//System
+      "Hyper-V" for windows	
+      
   // windows 11 settings
   	// disable windows hypervisor
  	open "Command Prompt" as administrator
