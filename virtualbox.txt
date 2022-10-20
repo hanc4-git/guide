@@ -18,7 +18,6 @@
   set half of full memory for Base Memory in Motherboard	//System
   set maximum in green for Processor (s) in Processor		//System
   set maximum for Video Memory in Screen			//Display
-  set "Enable 3D Acceleration"					//Display
   select "Empty" in Storage Devices				//Storage
 	 "Choose a disk file..." in Attributes
 
@@ -30,7 +29,8 @@
 	
   // option of virtualbox settings
   set "KVM" for Paravirtualization Interface			//System
-      "Hyper-V" for windows	
+      "Hyper-V" for windows
+  set "Enable 3D Acceleration"					//Display for 6.1
       
   // windows 11 settings
   	// disable windows hypervisor
