@@ -11,8 +11,7 @@
 
   // virtualbox settings
   // https://www.virtualbox.org
-  // v7.0 for windows 11
-  // v6.1 for windows 10
+  // https://learn.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist?view=msvc-170
   //
   set "Bidirectional" for Shared Clipboard in Advanced		//General
   set "Bidirectional" for Drag'n'Drop in Advanced		//General
