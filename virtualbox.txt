@@ -13,7 +13,7 @@
   // https://www.virtualbox.org
   // https://learn.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist?view=msvc-170
   //
-  set virtual hard disk as 80.00 gb
+  set virtual hard disk to 80.00 gb
   
   set "Bidirectional" for Shared Clipboard in Advanced		//General
   set "Bidirectional" for Drag'n'Drop in Advanced		//General
