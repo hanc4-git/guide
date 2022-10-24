@@ -26,18 +26,18 @@
   select "Empty" in Storage Devices				//Storage
 	 "Choose a disk file..." in Attributes
 
-  // Shared Folders
-  	// virtualbox settings
-  	click "Adds new shared folder."
-  	set windows folder path
-  	set "Auto-mount"
+  	// Shared Folders
+  		// virtualbox settings
+  		click "Adds new shared folder."
+  		set windows folder path
+  		set "Auto-mount"
 	
   // option of virtualbox 6.1 settings
   set "KVM" for Paravirtualization Interface			//System
       "Hyper-V" for windows
   set "Enable 3D Acceleration"					//Display
   
-  // windows 11 settings
+  // option of windows 11 settings
   	// disable windows hypervisor
  	open "Command Prompt" as administrator
   		$ bcdedit /set hypervisorlaunchtype off		//disable
@@ -50,10 +50,10 @@
   	disable "Memory integrity"  
   	reboot
 	
-		// option of linux commands
-			$ groups			//print group names
-			$ sudo su -l user{$username}	//substitute user id
-			$ groups			//confirm "vboxsf"
-			$ ls -lh			//list information
+  // option of linux commands
+  	$ groups			//print group names
+  	$ sudo su -l user{$username}	//substitute user id
+  	$ groups			//confirm "vboxsf"
+  	$ ls -lh			//list information
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
