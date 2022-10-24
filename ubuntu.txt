@@ -162,6 +162,7 @@ https://youtu.be/gVcbeLQEHNw	//Geant4 Tutorial-Korean
 		$ sudo apt-get install libx11-dev libxpm-dev libxft-dev libxext-dev libglu1-mesa-dev
 
 	// compile
-		$ cmake -DCMAKE_INSTALL_PREFIX=/usr/local -DGEANT4_INSTALL_DATA=ON -DGEANT4_USE_OPENGL_X11=ON ../
+		$ cmake -DCMAKE_INSTALL_PREFIX=/usr/local -DGEANT4_INSTALL_DATA=ON \
+		  -DGEANT4_USE_OPENGL_X11=ON ../
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
