@@ -23,7 +23,7 @@ https://youtu.be/gVcbeLQEHNw	//Geant4 Tutorial-Korean
   //
  	// ubuntu
 	update "Ubuntu Software"
-  	Ctrl+Alt+T to open terminal
+  	Ctrl+Alt+T		//open terminal
 		$ sudo apt -y update && sudo apt -y upgrade
 		$ sudo apt autoremove
 
