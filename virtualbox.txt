@@ -15,6 +15,9 @@
   //
   set virtual hard disk to 80.00 gb
   
+  	// ubuntu setting
+	select "Skip Unattended Installation"
+  
   set "Bidirectional" for Shared Clipboard in Advanced		//General
   set "Bidirectional" for Drag'n'Drop in Advanced		//General
   set half of full memory for Base Memory in Motherboard	//System
