@@ -21,10 +21,9 @@ https://youtu.be/gVcbeLQEHNw	//Geant4 Tutorial-Korean
   // https://ubuntu.com		//Ubuntu
   // 20.04.5 LTS - February 22, 2022
   //
-  Ctrl+Alt+T to open terminal
-
-	// ubuntu
+ 	// ubuntu
 	update "Ubuntu Software"
+  	Ctrl+Alt+T to open terminal
 		$ sudo apt -y update && sudo apt -y upgrade
 		$ sudo apt autoremove
 
