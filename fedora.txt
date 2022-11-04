@@ -14,7 +14,7 @@ https://youtu.be/QItrmchEQWE	//CERN ROOT Tutorial 2: Installing ROOT
 https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Geant4
 
   // virtualbox settings
-		$ sudo gpasswd -a user{$username} vboxsf
+  	$ sudo gpasswd -a user{$username} vboxsf
 		
   // fedora update
   // https://getfedora.org	//Fedora
