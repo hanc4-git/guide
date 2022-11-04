@@ -9,12 +9,11 @@
 ///
 ///
 
-https://youtu.be/j1I63wGcvU4	//i3wm: Jump Start
 https://youtu.be/StHVU-Zvacs	//7 Things After Installing EndeavourOS
 https://youtu.be/QItrmchEQWE	//CERN ROOT Tutorial 2: Installing ROOT
 https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Geant4
 
-  // installer settings
+  // installer settings with Plasma KDE desktop
   Select "Swap to file" for Erase disk		//lower RAM usage
 
   // virtualbox settings
@@ -144,6 +143,9 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
 	  esc
 	  :x
 
+  // option of i3 window manager
+  https://youtu.be/j1I63wGcvU4	//i3wm: Jump Start
+  
   // option of third party codecs
   // https://linuxconfig.org/how-to-install-third-party-codecs-extras-on-manjaro-linux
   //
