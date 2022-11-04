@@ -28,7 +28,7 @@ https://youtu.be/voMvctJ4GZ0	//FINALLY! Linux on the Macbook M1 (bare-metal)
   // option of asahi linux installation
   // https://asahilinux.org	//asahi linux
   // https://endeavouros.com	//endeavouros
-  //
-  https://github.com/hanc4-git/guide/blob/0a07202914e917294c7854814140bf22db447a34/endeavouros.txt
+  // 
+  	$ curl https://alx.sh | sh
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
