@@ -9,65 +9,36 @@
 ///
 ///
 
-https://youtu.be/RrRpXs2pkzg	//7 Things You MUST Do After Installing Fedora 36
+https://youtu.be/j1I63wGcvU4	//i3wm: Jump Start
+https://youtu.be/StHVU-Zvacs	//7 Things After Installing EndeavourOS
 https://youtu.be/QItrmchEQWE	//CERN ROOT Tutorial 2: Installing ROOT
 https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Geant4
 
+  // installer settings
+  Select "Swap to file" for Erase disk		//lower RAM usage
+
   // virtualbox settings
-		$ sudo gpasswd -a user{$username} vboxsf
+  	$ sudo gpasswd -a user{$username} vboxsf
 		
-  // fedora update
-  // https://getfedora.org	//Fedora
-  // 36 - May 10, 2022
+  // endeavouros update
+  // https://endeavouros.com	//endeavouros
+  // artemis - June 25, 2022
   //
-	// dnf configuration
-	// https://dnf.readthedocs.io/en/latest/conf_ref.html
+	// endeavouros
+	Select "Update Mirrors" in Welcome application		//After Install
+	Select "Update System"					//After Install
+	Select "Package cleanup configuration"			//After Install
+		
+	// pamac configuration
+	// https://wiki.manjaro.org/index.php/Pamac
 	//
-		$ sudo nano /etc/dnf/dnf.conf
-		  add
-			fastestmirror=True
-			max_parallel_downloads=10
-			keepcache=True
-		  Ctrl+o
-		  enter
-		  Ctrl+x
-		$ sudo dnf -y clean all
-
-	// configuring xorg
-	// https://docs.fedoraproject.org/en-US/quick-docs/configuring-xorg-as-default-gnome-session/
-	//
-		$ sudo nano /etc/gdm/custom.conf
-		  uncomment or remove # of  "WaylandEnable=false"
-		  add "DefaultSession=gnome-xorg.desktop"
-		  Ctrl+o
-		  enter
-		  Ctrl+x
-		$ reboot
-
-	// fedora
-	update "Software"
-		$ sudo dnf update
-		$ sudo dnf autoremove
-
-	// rpm fusion
-	// https://rpmfusion.org/Configuration		//Configuration - RPM Fusion
-	//
-		$ sudo dnf install \
-		  https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
-		  https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
-		$ sudo dnf -y groupupdate core
-
-	// flatpaks
-	// https://flatpak.org/setup/Fedora	//Fedora Quick Setup
-	//
-		$ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-
-	// media codecs
-	// https://rpmfusion.org/Configuration		//Configuration - RPM Fusion
-	//
-		$ sudo dnf groupupdate \
-		  multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
-		$ sudo dnf groupupdate sound-and-video
+		$ yay
+		$ yay pamac-all
+	1		//lst option
+	1		//default
+	N		//remove
+	N		//diffs to show
+	Y		//proceed
 
   // root installation
   // https://root.cern		//ROOT: analyzing petabytes of data, scientifically.
@@ -172,7 +143,13 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
 	  add "set number"
 	  esc
 	  :x
-	
+
+  // option of third party codecs
+  // https://linuxconfig.org/how-to-install-third-party-codecs-extras-on-manjaro-linux
+  //
+  $ sudo pacman -S a52dec faac faad2 flac jasper lame libdca libdv libmad libmpeg2 \
+  libtheora libvorbis libxv opus wavpack x264 xvidcore
+		
   // option of latest releases of root
   	// 6.26/06 - July 29, 2022
 	//
