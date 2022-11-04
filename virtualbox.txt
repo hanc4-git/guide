@@ -13,11 +13,17 @@
   // https://www.virtualbox.org
   // https://learn.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist?view=msvc-170
   //
+    	// ubuntu setting
+	select "Skip Unattended Installation"
+	
+	// endeavouros setting
+	set "Linux" for Type
+	set "Other Linux (64-bit)" for Version
+	
+  // create virtual machine
   set virtual hard disk to 80.00 gb
   
-  	// ubuntu setting
-	select "Skip Unattended Installation"
-  
+  // settings
   set "Bidirectional" for Shared Clipboard in Advanced		//General
   set "Bidirectional" for Drag'n'Drop in Advanced		//General
   set half of full memory for Base Memory in Motherboard	//System
