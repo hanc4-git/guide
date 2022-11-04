@@ -15,7 +15,7 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
 https://youtu.be/gVcbeLQEHNw	//Geant4 Tutorial-Korean
 
   // virtualbox settings
-		$ sudo gpasswd -a user{$username} vboxsf
+  	$ sudo gpasswd -a user{$username} vboxsf
 		
   // ubuntu update
   // https://ubuntu.com		//Ubuntu
