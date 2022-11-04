@@ -18,7 +18,7 @@
 	
 	// endeavouros setting
 	set "Linux" for Type
-	set "Other Linux (64-bit)" for Version
+	set "Oracle Linux (64-bit)" for Version
 	
   // create virtual machine
   set virtual hard disk to 80.00 gb
