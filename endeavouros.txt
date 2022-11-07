@@ -141,10 +141,10 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
 
   // vim
   	$ vi .vimrc
-	  i
-	  add "set number"
-	  esc
-	  :x
+		i
+	  	add "set number"
+	 	esc
+	  	:x
 
   // option of i3 window manager
   https://youtu.be/j1I63wGcvU4	//i3wm: Jump Start
