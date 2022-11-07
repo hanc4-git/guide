@@ -138,10 +138,10 @@ https://youtu.be/gVcbeLQEHNw	//Geant4 Tutorial-Korean
 
   // vim
   	$ vi .vimrc
-	  i
-	  add "set number"
-	  esc
-	  :x
+		i
+	  	add "set number"
+	 	esc
+	  	:x
 
   // option of latest releases of root
   	// 6.26/06 - July 29, 2022
