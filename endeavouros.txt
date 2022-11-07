@@ -55,7 +55,7 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
   	// root dependencies
 	// https://root.cern/install/dependencies/	//Dependencies
 	//
-		$ sudo dnf groupinstall "Development Tools" "C Development Tools and Libraries"
+		$ sudo pacman -S --needed base-devel git
 		$ sudo dnf install git vim
 		$ sudo dnf install git make cmake gcc-c++ gcc binutils \
 		  libX11-devel libXpm-devel libXft-devel libXext-devel python openssl-devel
@@ -156,6 +156,20 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
   // option of i3 window manager
   https://youtu.be/j1I63wGcvU4	//i3wm: Jump Start
   
+  // option of pamac in arch linux
+	// https://itsfoss.com/install-pamac-arch-linux
+	//
+		$ yay -S pamac-aur
+			N		//to cleanBuild
+			N		//diffs to show
+			Y		//proceed
+			
+		$ sudo pacman -Syu
+		$ sudo pacman -S --needed base-devel git
+		$ git clone https://aur.archlinux.org/archlinux-appstream-data-pamac.git
+		$ cd archlinux-appstream-data-pamac
+		$ makepkg -si
+  
   // option of pamac configuration		//outdated
   // https://wiki.manjaro.org/index.php/Pamac
   //
@@ -165,8 +179,8 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
 		1		//default
 		N		//remove
 		N		//diffs to show
-		Y		//proceed
-  
+  		Y		//proceed
+		
   // option of latest releases of root
   	// 6.26/06 - July 29, 2022
 	//
