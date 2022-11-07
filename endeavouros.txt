@@ -55,16 +55,11 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
   	// root dependencies
 	// https://root.cern/install/dependencies/	//Dependencies
 	//
-		$ sudo pacman -S --needed base-devel git
-		$ sudo dnf install git vim
-		$ sudo dnf install git make cmake gcc-c++ gcc binutils \
-		  libX11-devel libXpm-devel libXft-devel libXext-devel python openssl-devel
-		$ sudo dnf install redhat-lsb-core gcc-gfortran pcre-devel \
-		  mesa-libGL-devel mesa-libGLU-devel glew-devel ftgl-devel mysql-devel \
-		  fftw-devel cfitsio-devel graphviz-devel libuuid-devel \
-		  avahi-compat-libdns_sd-devel openldap-devel python3-numpy \
-		  libxml2-devel gsl-devel readline-devel qt5-qtwebengine-devel \
-		  R-devel R-Rcpp-devel R-RInside-devel
+		$ sudo pacman -S --needed base-devel
+		$ sudo pacman -S git vim
+		$ sudo pacman -S git make cmake gcc binutils libx11 libxpm libxft libxext python openssl
+		$ sudo pacman -S gcc-fortran pcre mesa glu glew ftgl mysql fftw cfitsio graphviz \
+		  util-linux-libs avahi openldap python3 libxml2 gsl readline qt5-webengine
 
 	// download and unpack source file
 	// https://root.cern/install/all_releases/	//Releases
