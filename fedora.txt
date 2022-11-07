@@ -24,24 +24,24 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
 	// https://dnf.readthedocs.io/en/latest/conf_ref.html
 	//
 		$ sudo nano /etc/dnf/dnf.conf
-		  add
-			fastestmirror=True
-			max_parallel_downloads=10
-			keepcache=True
-		  Ctrl+o
-		  enter
-		  Ctrl+x
+			add
+				fastestmirror=True
+				max_parallel_downloads=10
+				keepcache=True
+		  	Ctrl+o
+		  	enter
+		  	Ctrl+x
 		$ sudo dnf -y clean all
 
 	// configuring xorg
 	// https://docs.fedoraproject.org/en-US/quick-docs/configuring-xorg-as-default-gnome-session/
 	//
 		$ sudo nano /etc/gdm/custom.conf
-		  uncomment or remove # of  "WaylandEnable=false"
-		  add "DefaultSession=gnome-xorg.desktop"
-		  Ctrl+o
-		  enter
-		  Ctrl+x
+			uncomment or remove # of  "WaylandEnable=false"
+		  	add "DefaultSession=gnome-xorg.desktop"
+		  	Ctrl+o
+		  	enter
+		  	Ctrl+x
 		$ reboot
 
 	// fedora
@@ -159,19 +159,19 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
 			$ cd geant{geant4_version}
 			$ cd examples/basic/B1/build
 			$ vim batch.mac
-			  i
-			  add "/run/beamOn 1000"
-			  esc
-			  :x or :wq
+				i
+			  	add "/run/beamOn 1000"
+			  	esc
+			  	:x or :wq
 			$ ./exampleB1 batchmac
 			$ exit
 
   // vim
   	$ vi .vimrc
-	  i
-	  add "set number"
-	  esc
-	  :x
+		i
+	  	add "set number"
+	 	esc
+	  	:x
 	
   // option of latest releases of root
   	// 6.26/06 - July 29, 2022
