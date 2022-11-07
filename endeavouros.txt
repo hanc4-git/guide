@@ -23,10 +23,17 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
   // https://endeavouros.com	//endeavouros
   // artemis - June 25, 2022
   //
-	// endeavouros
-	Select "Update Mirrors" in Welcome application		//After Install
-	Select "Update System"					//After Install
-	Select "Package cleanup configuration"			//After Install
+	// welcome
+	Select "Update Mirrors"				//After Install
+	Select "Update System"				//After Install
+	Select "Package cleanup configuration"		//After Install
+	
+	// terminal emulator
+		$ pamac checkupdates -a
+		$ pamac upgrade -a
+		$ pamac clean
+				--keep 3	//cleaning the cache except for the latest 3
+		
 		
 	// pamac configuration
 	// https://wiki.manjaro.org/index.php/Pamac
