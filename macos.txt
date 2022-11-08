@@ -17,6 +17,7 @@ https://youtu.be/voMvctJ4GZ0	//FINALLY! Linux on the Macbook M1 (bare-metal)
   // 
   	$ curl https://alx.sh | sh
 
+//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
   // option of UTM
   // https://youtu.be/hnwK-nkXolc	//Ubuntu Install on M1 MacBook Air -Virtualization and Benchmarking!
