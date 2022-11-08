@@ -37,8 +37,10 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
 		// configuration
 			$ yay
 			
+			$ yay pamac-all
 			$ sudo pacman -S pamac-all
 			$ sudo pacman -Syu pamac-aur
+			$ yay -S pamac-aur
 			$ yay -Syu pamac-aur
 				N		//diffs to show
 				Y		//proceed
