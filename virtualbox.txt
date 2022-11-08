@@ -37,7 +37,9 @@
   		click "Adds new shared folder."
   		set windows folder path
   		set "Auto-mount"
-	
+
+//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+
   // option of virtualbox 6.1 settings
   set "KVM" for Paravirtualization Interface			//System
       "Hyper-V" for windows
