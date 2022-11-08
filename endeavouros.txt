@@ -95,9 +95,7 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
 	// https://geant4-userdoc.web.cern.ch/UsersGuides/InstallationGuide/html/gettingstarted.html
 	// https://doc.qt.io/qt-5/linux.html
 	//
-		$ sudo dnf install cmake gcc g++ \
-		  expat-devel libXmu-devel motif-devel \
-		  mesa-libGL-devel qt5-qtbase qt5-qtbase-devel
+		$ sudo pacman -S cmake gcc expat libxmu openmotif mesa qt5-base
 
 	// download and unpack source file
 	// https://geant4.web.cern.ch/support/download
