@@ -154,16 +154,16 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
   // option of pamac in arch linux
 	// https://itsfoss.com/install-pamac-arch-linux
 	//
-		$ yay -S pamac-aur
-			N		//to cleanBuild
-			N		//diffs to show
-			Y		//proceed
+		$ sudo pacman-key --recv-key FBA220DFC880C036 --keyserver keyserver.ubuntu.com
+		$ sudo pacman-key --lsign-key FBA220DFC880C036
+		$ sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst'\
+		  'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'
+		$ sudo nano /etc/pacman.conf
+			Ctrl+o
+		  	enter
+		  	Ctrl+x
 			
-		$ sudo pacman -Syu
-		$ sudo pacman -S --needed base-devel git
-		$ git clone https://aur.archlinux.org/archlinux-appstream-data-pamac.git
-		$ cd archlinux-appstream-data-pamac
-		$ makepkg -si
+		$ sudo pacman -Syu pamac-aur
   
   // option of pamac configuration		//outdated
   // https://wiki.manjaro.org/index.php/Pamac
