@@ -13,11 +13,14 @@ https://youtu.be/StHVU-Zvacs	//7 Things After Installing EndeavourOS
 https://youtu.be/QItrmchEQWE	//CERN ROOT Tutorial 2: Installing ROOT
 https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Geant4
 
-  // installer settings with 1) Xfce4 2) Plasma KDE
+  // installer settings with 1) Plasma KDE 2) Xfce4
   Select "Swap to file" for Erase disk		//lower RAM usage
 
   // virtualbox settings
   	$ sudo gpasswd -a user{$username} vboxsf
+	
+	// Plasma KDE
+	Devices /internal drive/media/sf_vboxsf/
 		
   // endeavouros update
   // https://endeavouros.com	//endeavouros
@@ -28,7 +31,7 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
 	Select "Update System"				//After Install
 	Select "Package cleanup configuration"		//After Install
 	
-	// terminal emulator
+	// konsole
 		$ sudo pacman -Syu
 						
 	// pamac configuration
@@ -36,17 +39,14 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
 	//
 		// configuration
 			$ yay
-			
-			$ yay pamac-all
-			$ sudo pacman -S pamac-all
-			$ sudo pacman -Syu pamac-aur
 			$ yay -S pamac-aur
-			$ yay -Syu pamac-aur
-				N		//diffs to show
-				Y		//proceed
+				n		//remove
+				n		//diffs to show
+				y		//proceed
 				
 		// update
-			$ pamac checkupdates -a && pamac upgrade -a
+			$ pamac checkupdates -a
+			$ pamac upgrade -a
 			$ pamac clean
 					--keep 3	//cleaning the cache except for the latest 3	
 	
@@ -165,9 +165,9 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
 	$ yay pamac-all
 		1		//lst option
 		1		//default
-		N		//remove
-		N		//diffs to show
-  		Y		//proceed
+		n		//remove
+		n		//diffs to show
+  		y		//proceed
 
   // option of pamac in arch linux
 	// https://itsfoss.com/install-pamac-arch-linux
