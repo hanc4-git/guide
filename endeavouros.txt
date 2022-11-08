@@ -30,12 +30,10 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
 	
 	// terminal emulator
 		$ sudo pacman -Syu
-		$ pamac checkupdates -a
-		$ pamac upgrade -a
+		$ pamac checkupdates -a && pamac upgrade -a
 		$ pamac clean
 				--keep 3	//cleaning the cache except for the latest 3
-		
-		
+				
 	// pamac configuration
 	// https://wiki.manjaro.org/index.php/Pamac
 	//
