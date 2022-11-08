@@ -153,6 +153,8 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
 	 	esc
 	  	:x
 
+//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+
   // option of i3 window manager
   https://youtu.be/j1I63wGcvU4	//i3wm: Jump Start
   
