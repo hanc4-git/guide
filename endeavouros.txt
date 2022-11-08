@@ -158,6 +158,17 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
   // option of i3 window manager
   https://youtu.be/j1I63wGcvU4	//i3wm: Jump Start
   
+  // option of pamac configuration		//outdated
+  // https://wiki.manjaro.org/index.php/Pamac
+  //
+  	$ yay
+	$ yay pamac-all
+		1		//lst option
+		1		//default
+		N		//remove
+		N		//diffs to show
+  		Y		//proceed
+
   // option of pamac in arch linux
 	// https://itsfoss.com/install-pamac-arch-linux
 	//
@@ -171,17 +182,6 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
 		  	Ctrl+x
 			
 		$ sudo pacman -Syu pamac-aur
-  
-  // option of pamac configuration		//outdated
-  // https://wiki.manjaro.org/index.php/Pamac
-  //
-  	$ yay
-	$ yay pamac-all
-		1		//lst option
-		1		//default
-		N		//remove
-		N		//diffs to show
-  		Y		//proceed
 		
   // option of latest releases of root
   	// 6.26/06 - July 29, 2022
