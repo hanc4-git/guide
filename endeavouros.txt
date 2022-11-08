@@ -29,6 +29,7 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
 	Select "Package cleanup configuration"		//After Install
 	
 	// terminal emulator
+		$ sudo pacman -Syu
 		$ pamac checkupdates -a
 		$ pamac upgrade -a
 		$ pamac clean
