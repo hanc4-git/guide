@@ -21,6 +21,9 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
 	
 	// folder location in Plasma KDE
 	Devices /internal drive/media/sf_vboxsf/
+	
+  // disable sleep
+  	$ sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
 		
   // endeavouros update
   // https://endeavouros.com	//endeavouros
