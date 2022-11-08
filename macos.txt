@@ -36,3 +36,4 @@ https://youtu.be/voMvctJ4GZ0	//FINALLY! Linux on the Macbook M1 (bare-metal)
 		"New Drive" with "USB" selected by Removable	//Drives
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+
