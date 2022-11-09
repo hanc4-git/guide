@@ -164,6 +164,7 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
   // option of xset				//not working
   	$ sudo pacman -S xorg-xset
   	$ xset
+		noblank			//disable blank
 		s off			//disable sleep
 		s 3600 3600		//change blank time to 1 hrs
 		-dpms			//turn off dpms
