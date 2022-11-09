@@ -171,6 +171,7 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
 		dpms force off		//turn off screen immediately
 		dpms force standby	//standby
 		dpms force suspend	//suspend
+		q			//query the current settings
   
   // option of pamac configuration
   // https://wiki.manjaro.org/index.php/Pamac
