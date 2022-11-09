@@ -1,11 +1,12 @@
 # guide
-
-fedora.txt      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  // geant4 and root installation guide on fedora
+archlinux.txt   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  // geant4 and root installation guide on endeavourOS
                 </br>
-macos.txt       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  // ubuntu installation guide on MacOS with M1 chip
+debian.txt      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  // geant4 and root installation guide on ubuntu
                 </br>
-ubuntu.txt      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  // geant4 and root installation guide on ubuntu
+fedora.txt      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  // geant4 and root installation guide on fedora
                 </br>
-virtualbox.txt  &nbsp;&nbsp;&nbsp;&nbsp;  // virtualbox settings guide
+macOS.txt       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  // ubuntu installation guide on macOS
                 </br>
-win10.txt       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  // ubuntu installation guide on Windows 10 Subsystem
+virtualbox.txt  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  // virtualbox settings guide
+                </br>
+windows.txt     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  // ubuntu installation guide on windows 10 Subsystem
