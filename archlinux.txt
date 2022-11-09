@@ -2,7 +2,7 @@
 // **********************************************************
 // * UNLV						    *
 // *							    *
-// * geant4 and root installation guide on endeavour	    *
+// * geant4 and root installation guide on endeavouros	    *
 // **********************************************************
 //
 //
