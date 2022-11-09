@@ -165,6 +165,16 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
 			  	:x or :wq
 			$ ./exampleB1 batchmac
 			$ exit
+			
+  // creating a permanent environment variables in bash
+  // https://devconnected.com/set-environment-variable-bash-how-to	//how to set env in bash
+  	$ sudo nano /home/user{$username}/.bashrc
+		add in the last line
+			source /usr/local/bin/thisroot.sh
+			source /usr/local/bin/geant4.sh
+		Ctrl+o
+		enter
+		Ctrl+x
 
   // vim
   	$ vi .vimrc
