@@ -140,8 +140,8 @@ https://youtu.be/gVcbeLQEHNw	//Geant4 Tutorial-Korean
   // https://devconnected.com/set-environment-variable-bash-how-to	//how to set env in bash
   	$ sudo nano /home/user{$username}/.bashrc
 		add in the last line
-		source /usr/local/bin/thisroot.sh
-		source /usr/local/bin/geant4.sh
+			source /usr/local/bin/thisroot.sh
+			source /usr/local/bin/geant4.sh
 		Ctrl+o
 		enter
 		Ctrl+x
