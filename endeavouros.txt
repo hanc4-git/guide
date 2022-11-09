@@ -22,8 +22,8 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
 	// folder location in Plasma KDE
 	Devices /internal drive/media/sf_vboxsf/
 	
-  // xset
-  	$ xset s off			//disable sleep
+  // disable sleep
+  	$ sudo systemctl mask sleep.target		//disable sleep
 	
   // endeavouros update
   // https://endeavouros.com	//endeavouros
@@ -161,6 +161,9 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
   // option of i3 window manager
   https://youtu.be/j1I63wGcvU4	//i3wm: Jump Start
   
+  // option of disable energy saving
+  	$ sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
+
   // option of xset
   	$ xset
 		s off			//disable sleep
@@ -170,9 +173,6 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
 		dpms force off		//turn off screen immediately
 		dpms force standby	//standby
 		dpms force suspend	//suspend
-  
-  // option of disable energy saving
-  	$ sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
   
   // option of pamac configuration
   // https://wiki.manjaro.org/index.php/Pamac
