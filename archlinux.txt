@@ -168,10 +168,7 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
   // option of i3 window manager
   https://youtu.be/j1I63wGcvU4	//i3wm: Jump Start
   
-  // option of disable energy saving		//not working
-  	$ sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
-
-  // option of xset				//not working
+  // option of xset				//gtk
   	$ sudo pacman -S xorg-xset
   	$ xset
 		noblank			//disable blank
@@ -183,6 +180,9 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
 		dpms force standby	//standby
 		dpms force suspend	//suspend
 		q			//query the current settings
+  
+  // option of disable energy saving		//gnome
+  	$ sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
   
   // option of pamac configuration
   // https://wiki.manjaro.org/index.php/Pamac
