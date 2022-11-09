@@ -162,6 +162,7 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
   	$ sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
 
   // option of xset
+  	$ sudo pacman -S xorg-xset
   	$ xset
 		s off			//disable sleep
 		s 3600 3600		//change blank time to 1 hrs
