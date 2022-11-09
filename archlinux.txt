@@ -158,10 +158,10 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
   // option of i3 window manager
   https://youtu.be/j1I63wGcvU4	//i3wm: Jump Start
   
-  // option of disable energy saving
+  // option of disable energy saving		//not working
   	$ sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
 
-  // option of xset
+  // option of xset				//not working
   	$ sudo pacman -S xorg-xset
   	$ xset
 		s off			//disable sleep
