@@ -130,7 +130,8 @@ https://youtu.be/gVcbeLQEHNw	//Geant4 Tutorial-Korean
 			$ cd examples/basic/B1/build
 			$ vim batch.mac
 			  i
-			  add "/run/beamOn 1000"
+			  add
+			  	/run/beamOn 1000
 			  esc
 			  :x or :wq
 			$ ./exampleB1 batchmac
@@ -149,7 +150,8 @@ https://youtu.be/gVcbeLQEHNw	//Geant4 Tutorial-Korean
   // vim
   	$ vi .vimrc
 		i
-	  	add "set number"
+	  	add
+			set number
 	 	esc
 	  	:x
 
@@ -166,7 +168,7 @@ https://youtu.be/gVcbeLQEHNw	//Geant4 Tutorial-Korean
 			-l			//without logo
 			--web=off		//revert to TBrowser
 		$ new TBrowser			//RBrowser 
-			new TRootBrowser	//TBrowser
+		      TRootBrowser		//TBrowser
 		$ .q
 
   // option of OpenGL for geant4
