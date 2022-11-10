@@ -71,6 +71,8 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
 		$ sudo pacman -S git make cmake gcc binutils libx11 libxpm libxft libxext python openssl
 		$ sudo pacman -S gcc-fortran pcre mesa glu glew ftgl mysql fftw cfitsio graphviz \
 		  util-linux-libs avahi openldap python3 libxml2 gsl readline qt5-webengine
+		  	1		//default
+			y		//proceed
 
 	// download and unpack source file
 	// https://root.cern/install/all_releases/	//Releases
