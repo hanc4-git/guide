@@ -19,7 +19,7 @@ https://youtu.be/voMvctJ4GZ0	//FINALLY! Linux on the Macbook M1 (bare-metal)
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
-  // option of UTM
+  // option of UTM		//virtual machine
   // https://youtu.be/hnwK-nkXolc	//Ubuntu Install on M1 MacBook Air -Virtualization and Benchmarking!
   //
   	// download ubuntu
