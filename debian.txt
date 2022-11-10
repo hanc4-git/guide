@@ -171,7 +171,7 @@ https://youtu.be/gVcbeLQEHNw	//Geant4 Tutorial-Korean
 		      TRootBrowser		//TBrowser
 		$ .q
 
-  // option of OpenGL for geant4
+  // option of OpenGL		//geant4
   	// geant4 prerequisites
 		$ sudo apt-get install libx11-dev libxpm-dev libxft-dev libxext-dev libglu1-mesa-dev
 
