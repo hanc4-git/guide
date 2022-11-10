@@ -15,10 +15,10 @@ https://youtu.be/4Z4b1w6YDO4	//Xeyes or Xclock : Error: Can't open display
   // windows 10 settings
   find "Settings" in search box on task bar
   	/Settings/Update & Security/For developers
-  turn on "Developer Mode"
+  	turn on "Developer Mode"
   find "Control Panel" in search box
   	/Control Panel/Programs/Turn Windows features on or off
-  select "Windows Subsystem for Linux"
+  	select "Windows Subsystem for Linux"
   reboot
 
   // ubuntu 20.04 LTS installation
