@@ -25,17 +25,17 @@
   
   // settings
   	/Settings/General/Advanced
-	set "Bidirectional"		//Shared Clipboard
-  	set "Bidirectional"		//Drag'n'Drop
+	set "Bidirectional"			//Shared Clipboard
+  	set "Bidirectional"			//Drag'n'Drop
 	/Settings/System/Motherboard
-  	set half of full memory		//Base Memory
+  	set half memory of full maximum		//Base Memory
 	/Settings/System/Processor
-  	set maximum in green		//Processor (s)
+  	set maximum in green			//Processor (s)
 	/Settings/Display/Screen
-  	set maximum			//Video Memory
+  	set maximum				//Video Memory
 	/Settings/Storage
-  	select "Empty"			//Storage Devices
-	"Choose a disk file..."		//Attributes
+  	select "Empty"				//Storage Devices
+	"Choose a disk file..."			//Attributes
 
   	// Shared Folders
   		// virtualbox settings
