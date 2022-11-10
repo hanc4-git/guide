@@ -147,11 +147,11 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
 			$ cd geant{geant4_version}
 			$ cd examples/basic/B1/build
 			$ vim batch.mac
-			  i
-			  add
-			  	/run/beamOn 1000
-			  esc
-			  :x or :wq
+				i
+			  	add
+			  		/run/beamOn 1000
+			  	esc
+			  	:x or :wq
 			$ ./exampleB1 batchmac
 			$ exit
 			
