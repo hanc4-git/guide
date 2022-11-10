@@ -23,7 +23,7 @@ https://youtu.be/4Z4b1w6YDO4	//Xeyes or Xclock : Error: Can't open display
 
   // ubuntu 20.04 LTS installation
   find "Microsoft Store" in search box
-  search ubuntu
+  search "ubuntu"
   get and launch "ubuntu 20.04 LTS"
   create "username" and "password"
 
