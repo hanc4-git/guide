@@ -24,7 +24,7 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
 	// https://dnf.readthedocs.io/en/latest/conf_ref.html
 	//
 		$ sudo nano /etc/dnf/dnf.conf
-			add
+			add in the last line
 				fastestmirror=True
 				max_parallel_downloads=10
 				keepcache=True
