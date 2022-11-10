@@ -26,6 +26,10 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
   // https://endeavouros.com	//endeavouros
   // artemis - June 25, 2022
   //
+    	// disable sleep
+	system settings/hardware/power management/energy saving
+	system settings/workspace/workspace behavior/screen locking
+	
 	// welcome
 	Select "Update Mirrors"				//After Install
 	Select "Update System"				//After Install
@@ -55,11 +59,7 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
  	//
   		$ sudo pacman -S a52dec faac faad2 flac jasper lame libdca libdv libmad libmpeg2 \
   		libtheora libvorbis libxv opus wavpack x264 xvidcore
-		
-	// disable sleep
-	system settings/hardware/power management/energy saving
-	system settings/workspace/workspace behavior/screen locking
-
+	
   // root installation
   // https://root.cern		//ROOT: analyzing petabytes of data, scientifically.
   //
