@@ -37,8 +37,9 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
 	// https://docs.fedoraproject.org/en-US/quick-docs/configuring-xorg-as-default-gnome-session/
 	//
 		$ sudo nano /etc/gdm/custom.conf
-			uncomment or remove # of  "WaylandEnable=false"
-		  	add "DefaultSession=gnome-xorg.desktop"
+			uncomment or remove "#" of "WaylandEnable=false"
+		  	add
+				DefaultSession=gnome-xorg.desktop
 		  	Ctrl+o
 		  	enter
 		  	Ctrl+x
@@ -160,7 +161,8 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
 			$ cd examples/basic/B1/build
 			$ vim batch.mac
 				i
-			  	add "/run/beamOn 1000"
+			  	add 
+					/run/beamOn 1000
 			  	esc
 			  	:x or :wq
 			$ ./exampleB1 batchmac
@@ -179,7 +181,8 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
   // vim
   	$ vi .vimrc
 		i
-	  	add "set number"
+	  	add
+			set number
 	 	esc
 	  	:x
 
@@ -196,7 +199,7 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
 			-l			//without logo
 			--web=off		//revert to TBrowser
 		$ new TBrowser			//RBrowser 
-			new TRootBrowser	//TBrowser
+		      TRootBrowser		//TBrowser
 		$ .q
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
