@@ -25,7 +25,7 @@ https://youtu.be/voMvctJ4GZ0	//FINALLY! Linux on the Macbook M1 (bare-metal)
 			f		//install
 			1		//asahi linux desktop
 			max		//new OS size
-	hold down power button		//restart
+	hold down power button		//reboot
 	select asahi linux
 		y		//custom boot object
 
