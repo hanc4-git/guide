@@ -12,8 +12,8 @@
 https://youtu.be/voMvctJ4GZ0	//FINALLY! Linux on the Macbook M1 (bare-metal)
 
   // asahi linux installation
-  // https://asahilinux.org	//asahi linux with a full Plasma desktop
-  // https://endeavouros.com	//endeavouros
+  // https://asahilinux.org	//asahi linux with a Plasma desktop
+  // https://endeavouros.com	//endeavourOS
   // 
   	$ curl https://alx.sh | sh
 
