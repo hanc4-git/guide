@@ -15,7 +15,19 @@ https://youtu.be/voMvctJ4GZ0	//FINALLY! Linux on the Macbook M1 (bare-metal)
   // https://asahilinux.org	//asahi linux with a Plasma KDE
   // https://endeavouros.com	//endeavourOS
   // 
-  	$ curl https://alx.sh | sh
+  	// installation
+	open terminal on macOS
+  		$ curl https://alx.sh | sh
+			n		//expert mode
+			r		//resize
+			80 gb		//new size
+			y		//continue
+			f		//install
+			1		//asahi linux desktop
+			max		//new OS size
+	hold down power button		//restart
+	select asahilinux
+		y		//custom boot object
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
