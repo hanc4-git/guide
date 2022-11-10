@@ -17,20 +17,25 @@
 	select "Skip Unattended Installation"
 	
 	// endeavouros setting
-	set "Linux" for Type
-	set "Oracle Linux (64-bit)" for Version
+	set "Linux"			//Type
+	set "Oracle Linux (64-bit)"	//Version
 	
   // create virtual machine
   set virtual hard disk to 80.00 gb
   
   // settings
-  set "Bidirectional" for Shared Clipboard in Advanced		//General
-  set "Bidirectional" for Drag'n'Drop in Advanced		//General
-  set half of full memory for Base Memory in Motherboard	//System
-  set maximum in green for Processor (s) in Processor		//System
-  set maximum for Video Memory in Screen			//Display
-  select "Empty" in Storage Devices				//Storage
-	 "Choose a disk file..." in Attributes
+  	/Settings/General/Advanced
+	set "Bidirectional"		//Shared Clipboard
+  	set "Bidirectional"		//Drag'n'Drop
+	/Settings/System/Motherboard
+  	set half of full memory		//Base Memory
+	/Settings/System/Processor
+  	set maximum in green		//Processor (s)
+	/Settings/Display/Screen
+  	set maximum			//Video Memory
+	/Settings/Storage
+  	select "Empty"			//Storage Devices
+	"Choose a disk file..."		//Attributes
 
   	// Shared Folders
   		// virtualbox settings
@@ -41,9 +46,11 @@
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
   // option of virtualbox 6.1 settings
-  set "KVM" for Paravirtualization Interface			//System
-      "Hyper-V" for windows
-  set "Enable 3D Acceleration"					//Display
+  	/Settings/System
+  	set "KVM"			//Paravirtualization Interface
+	/Settings/Display
+      	set "Hyper-V"			//windows
+  	set "Enable 3D Acceleration"	
   
   // option of windows 11 settings
   	// disable windows hypervisor
@@ -53,9 +60,8 @@
 						    
   	// disable memory integrity
   	find "Settings" in search on task bar
-  	go to "Privacy & security" and "Windows Security"
-  	go to "Device security" and "Core isolation details"
-  	disable "Memory integrity"  
+		/Settings/Privacy & security/Windows Security/Device security/Core isolation details
+  	  	disable "Memory integrity"  
   	reboot
 	
   // option of linux commands
