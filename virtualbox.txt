@@ -52,7 +52,7 @@
       	set "Hyper-V"			//windows
   	set "Enable 3D Acceleration"	
   
-  // option of windows 11 settings
+  // option of windows 11 settings		//not recommended
   	// disable windows hypervisor
  	open "Command Prompt" as administrator
   		$ bcdedit /set hypervisorlaunchtype off		//disable
