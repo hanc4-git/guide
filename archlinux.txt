@@ -2,6 +2,7 @@
 // **********************************************************
 // * UNLV						    *
 // *							    *
+// * geant4 and root installation guide on asahilinux	    *
 // * geant4 and root installation guide on endeavourOS	    *
 // **********************************************************
 //
@@ -14,28 +15,29 @@ https://youtu.be/QItrmchEQWE	//CERN ROOT Tutorial 2: Installing ROOT
 https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Geant4
 
   // installer settings with 1) Plasma KDE 2) Xfce4
-  Select "Swap to file" for Erase disk		//lower RAM usage
+  	/Erase disk
+  	Select "Swap to file"		//for lower RAM usage
 
   // virtualbox settings
   	$ sudo gpasswd -a user{$username} vboxsf
 	
-	// folder location in Plasma KDE
-	Devices /internal drive/media/sf_vboxsf/
+	// shared folder directory in Plasma KDE
+		/Devices/Internal Drive/media/sf_vboxsf
 		
   // endeavouros update
-  // https://endeavouros.com	//endeavouros
+  // https://endeavouros.com		//endeavouros
   // artemis - June 25, 2022
   //
     	// disable sleep
-	system settings/hardware/power management/energy saving
-	system settings/workspace/workspace behavior/screen locking
-	
+		/System Settings/Workspace/Workspace Behavior/Screen Locking
+		/System Settings/Hardware/Power Management/Energy Saving
+		
 	// welcome
 	Select "Update Mirrors"				//After Install
 	Select "Update System"				//After Install
 	Select "Package cleanup configuration"		//After Install
 	
-	// konsole
+	// konsole		//terminal
 		$ sudo pacman -Syu
 						
 	// pamac configuration
@@ -146,7 +148,8 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
 			$ cd examples/basic/B1/build
 			$ vim batch.mac
 			  i
-			  add "/run/beamOn 1000"
+			  add
+			  	/run/beamOn 1000
 			  esc
 			  :x or :wq
 			$ ./exampleB1 batchmac
@@ -165,14 +168,15 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
   // vim
   	$ vi .vimrc
 		i
-	  	add "set number"
+	  	add
+			set number
 	 	esc
 	  	:x
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
   // option of i3 window manager
-  https://youtu.be/j1I63wGcvU4	//i3wm: Jump Start
+  https://youtu.be/j1I63wGcvU4		//i3wm: Jump Start
   
   // option of xset				//xorg
   	$ sudo pacman -S xorg-xset
@@ -226,7 +230,7 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
 			-l			//without logo
 			--web=off		//revert to TBrowser
 		$ new TBrowser			//RBrowser 
-			new TRootBrowser	//TBrowser
+		      TRootBrowser		//TBrowser
 		$ .q
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
