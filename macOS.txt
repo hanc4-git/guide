@@ -35,7 +35,7 @@ https://youtu.be/voMvctJ4GZ0	//FINALLY! Linux on the Macbook M1 (bare-metal)
 		set "ARM64 (aarch64)"			//Architecture
 		set half memory at full maximum		//Memory
 		/Drivers/Interface/New Drive
-		"NVMe"
-		"USB"					//Removable
+		select "NVMe"
+		select "USB"				//Removable
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
