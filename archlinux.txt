@@ -194,7 +194,7 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
   // option of disable energy saving		//gnome
   	$ sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
   
-  // option of pamac configuration
+  // option of pamac configuration		//outdated
   // https://wiki.manjaro.org/index.php/Pamac
   //
   	$ yay
