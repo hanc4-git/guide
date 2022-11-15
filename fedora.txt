@@ -18,7 +18,7 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
 		
   // fedora update
   // https://getfedora.org	//Fedora
-  // 36 - May 10, 2022
+  // 37 - November 15, 2022
   //
 	// dnf configuration
 	// https://dnf.readthedocs.io/en/latest/conf_ref.html
