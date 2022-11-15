@@ -201,5 +201,11 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
 		$ new TBrowser			//RBrowser 
 		      TRootBrowser		//TBrowser
 		$ .q
+		
+  // option of latest releases of geant4
+  	// 11.0.p03 - December 10, 202
+	//
+	// compile and install
+		$ cmake ..
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
