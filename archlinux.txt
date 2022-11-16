@@ -21,14 +21,14 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
   // virtualbox settings
   	$ sudo gpasswd -a user{$username} vboxsf
 	
-	// shared folder directory in Plasma KDE
+	// shared folder directory in Plasma
 		/Devices/Internal Drive/media/sf_vboxsf
 		
   // endeavouros update
   // https://endeavouros.com		//endeavouros
   // artemis - June 25, 2022
   //
-    	// disable sleep
+    	// disable sleep in Plasma
 		/System Settings/Workspace/Workspace Behavior/Screen Locking
 		/System Settings/Hardware/Power Management/Energy Saving
 		
