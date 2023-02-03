@@ -14,9 +14,13 @@ https://youtu.be/StHVU-Zvacs	//7 Things After Installing EndeavourOS
 https://youtu.be/QItrmchEQWE	//CERN ROOT Tutorial 2: Installing ROOT
 https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Geant4
 
-  // installer settings with 1) Plasma KDE 2) Xfce4
-  	/Erase disk
-  	Select "Swap to file"		//for lower RAM usage
+  // welcome
+  Select "Start the Installer"
+  Select "Online"
+  
+  	// installer settings with 1) Plasma KDE 2) Xfce4
+  		/Erase disk
+  		Select "Swap to file"		//for lower RAM usage
 
   // virtualbox settings
   	$ sudo gpasswd -a user{$username} vboxsf
