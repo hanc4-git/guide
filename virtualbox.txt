@@ -42,6 +42,13 @@
   		click "Adds new shared folder."
   		set windows folder path
   		set "Auto-mount"
+		
+  // Start
+  select virual machine name
+  	/Storage
+	clike "IDE Secondary Device 0:"
+	select "Remove disk from virtual drive"
+  click "Start"
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
