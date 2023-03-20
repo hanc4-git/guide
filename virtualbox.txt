@@ -11,8 +11,11 @@
 
   // virtualbox settings
   // https://www.virtualbox.org
-  // https://learn.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist?view=msvc-170
   //
+  https://learn.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist?view=msvc-170
+  										//MSVC package for Windows 10
+  https://www.virtualbox.org/wiki/Downloads					//extension pack
+  
     	// ubuntu setting
 	select "Skip Unattended Installation"
 	
