@@ -186,6 +186,11 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
 	  	:x
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+  // media codecs					//broken
+	// https://rpmfusion.org/Configuration		//Configuration - RPM Fusion
+	//
+		$ sudo dnf groupupdate \
+		  multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
 
   // option of latest releases of root
   	// root dependencies
@@ -225,11 +230,5 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
 	//
 	// compile and install
 		$ cmake ..
-
-  // media codecs				//broken
-	// https://rpmfusion.org/Configuration		//Configuration - RPM Fusion
-	//
-		$ sudo dnf groupupdate \
-		  multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
