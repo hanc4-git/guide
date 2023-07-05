@@ -83,7 +83,7 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
 		  fftw-devel cfitsio-devel graphviz-devel libuuid-devel \
 		  avahi-compat-libdns_sd-devel openldap-devel python3-numpy python3-devel \
 		  libxml2-devel gsl-devel readline-devel qt5-qtwebengine-devel \
-		  R-devel R-Rcpp-devel R-RInside-devel
+		  R-devel R-Rcpp-devel R-RInside-devel davix-devel
 
 	// download and unpack source file
 	// https://root.cern/install/all_releases/	//Releases
