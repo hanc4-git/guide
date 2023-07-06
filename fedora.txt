@@ -81,14 +81,14 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
 		$ sudo dnf install redhat-lsb-core gcc-gfortran pcre-devel \
 		  mesa-libGL-devel mesa-libGLU-devel glew-devel ftgl-devel mysql-devel \
 		  fftw-devel cfitsio-devel graphviz-devel libuuid-devel \
-		  avahi-compat-libdns_sd-devel openldap-devel python3-numpy python3-devel \
+		  avahi-compat-libdns_sd-devel openldap-devel python3-numpy \
 		  libxml2-devel gsl-devel readline-devel qt5-qtwebengine-devel \
-		  R-devel R-Rcpp-devel R-RInside-devel davix-devel
+		  R-devel R-Rcpp-devel R-RInside-devel
 
 	// download and unpack source file
 	// https://root.cern/install/all_releases/	//Releases
 	// https://root-forum.cern.ch/t/root-cant-find-python3-libraries-on-centos-8/39766
-	// 6.18/04 - September 11, 2019
+	// 6.26/02 - April 13, 2022
 	//
 		$ mv /home/user{$username}/Downloads/root{$root_version}.source.tar.gz ~
 		$ tar -xzvf root{$root_version}.source.tar.gz
@@ -96,7 +96,7 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
 	// compile and install
 		$ cd root{$root_version}
 		$ cd build
-		$ cmake -Dbuiltin_tbb=ON ../
+		$ cmake ..
 		$ lscpu
 			N = the number of central processing unit;
 		$ make -jN
@@ -204,10 +204,11 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
 		$ sudo dnf install redhat-lsb-core gcc-gfortran pcre-devel \
 		  mesa-libGL-devel mesa-libGLU-devel glew-devel ftgl-devel mysql-devel \
 		  fftw-devel cfitsio-devel graphviz-devel libuuid-devel \
-		  avahi-compat-libdns_sd-devel openldap-devel python3-numpy \
+		  avahi-compat-libdns_sd-devel openldap-devel python3-numpy python3-devel \
 		  libxml2-devel gsl-devel readline-devel qt5-qtwebengine-devel \
-		  R-devel R-Rcpp-devel R-RInside-devel
+		  R-devel R-Rcpp-devel R-RInside-devel davix-devel
 
+	// 6.18/04 - September 11, 2019
 	// 6.24/06 - September 3, 2021
 	//
 	// compile and install
