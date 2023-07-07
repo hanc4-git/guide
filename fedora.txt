@@ -96,7 +96,7 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
 	// compile and install
 		$ cd root{$root_version}
 		$ cd build
-		$ cmake -Dxrootd=OFF -Dbuiltin_xrootd=OFF -Druntime_cxxmodules=OFF ../
+		$ cmake ..
 		$ lscpu
 			N = the number of central processing unit;
 		$ make -jN
