@@ -36,9 +36,6 @@
   	set maximum in green			//Processor (s)
 	/Settings/Display/Screen
   	set maximum				//Video Memory
-	/Settings/Storage
-  	select "Empty"				//Storage Devices
-	"Choose a disk file..."			//Attributes
 
   	// Shared Folders
   		// virtualbox settings
@@ -61,6 +58,9 @@
 	/Settings/Display
       	set "Hyper-V"			//windows
   	set "Enable 3D Acceleration"	
+	/Settings/Storage
+  	select "Empty"				//Storage Devices
+	"Choose a disk file..."			//Attributes
   
   // option of windows 11 settings		//not recommended
   	// disable windows hypervisor
