@@ -52,7 +52,7 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
 			$ yay -S pamac-aur
 				n		//remove
 				n		//diffs to show
-				n		//remove dependencies
+				y		//remove dependencies
 				y		//proceed
 				
 		// update
