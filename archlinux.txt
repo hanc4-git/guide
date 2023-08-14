@@ -23,6 +23,7 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
   		Select "Swap to file"		//for lower RAM usage
 
   // virtualbox settings
+	$ VBoxClient --version		//check guest additions version
   	$ sudo gpasswd -a user{$username} vboxsf
 	$ reboot
 	
