@@ -26,7 +26,7 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
   	$ sudo gpasswd -a user{$username} vboxsf
 	
 	// shared folder directory in Plasma
-		/Devices/Internal Drive/media/sf_vboxsf
+		/Devices/endeavouros/media/sf_vboxsf
 		
   // endeavouros update
   // https://endeavouros.com		//endeavouros
