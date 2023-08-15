@@ -15,6 +15,8 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
 https://youtu.be/gVcbeLQEHNw	//Geant4 Tutorial-Korean
 
   // virtualbox settings
+	/Devices/Insert Guest Additions
+	/VBox_GAs_{VBoxClient_version}/autorun.sh/Run as a Program
   	$ sudo gpasswd -a user{$username} vboxsf
 		
   // ubuntu update
