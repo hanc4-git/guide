@@ -18,6 +18,7 @@ https://youtu.be/gVcbeLQEHNw	//Geant4 Tutorial-Korean
 	/Devices/Insert Guest Additions
 	/VBox_GAs_{VBoxClient_version}/autorun.sh/Run as a Program
   	$ sudo gpasswd -a user{$username} vboxsf
+	$ reboot
 		
   // ubuntu update
   // https://ubuntu.com		//Ubuntu
