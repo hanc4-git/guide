@@ -26,7 +26,8 @@ https://youtu.be/gVcbeLQEHNw	//Geant4 Tutorial-Korean
   // 20.04.5 LTS - February 22, 2022
   //
      	// disable sleep
-		/Settings/Power/Power Saving Options/Screen Blank
+		/Settings/Privacy/Screen/Blank Screen Delay
+		/Settings/Privacy/Screen/Automatic Screen Lock
 
 	// ubuntu
 	update "Ubuntu Software"
