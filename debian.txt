@@ -89,8 +89,10 @@ https://youtu.be/gVcbeLQEHNw	//Geant4 Tutorial-Korean
 
 	// run
 		$ root
-			-l	//without logo
-		$ new TBrowser
+			-l			//without logo
+			--web=off		//revert to TBrowser
+		$ new TBrowser			//RBrowser 
+		      TRootBrowser		//TBrowser
 		$ .q
 
   // geant4 installation
@@ -167,18 +169,16 @@ https://youtu.be/gVcbeLQEHNw	//Geant4 Tutorial-Korean
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
-  // option of latest releases of root
-  	// 6.26/06 - July 29, 2022
+  // option of old releases of root
+  	// 6.24/06 - September 3, 2021
 	//
   	// compile and install
-		$ cmake ..
+		$ cmake -Dxrootd=OFF -Dbuiltin_xrootd=OFF -Druntime_cxxmodules=OFF ../
 		
 	// run
 		$ root
-			-l			//without logo
-			--web=off		//revert to TBrowser
-		$ new TBrowser			//RBrowser 
-		      TRootBrowser		//TBrowser
+			-l	//without logo
+		$ new TBrowser
 		$ .q
 		
   // option of latest releases of geant4
