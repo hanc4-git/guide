@@ -57,7 +57,8 @@ https://youtu.be/gVcbeLQEHNw	//Geant4 Tutorial-Korean
 	//
 		$ sudo apt install build-essential git vim
 		$ sudo apt-get install dpkg-dev cmake g++ gcc binutils libx11-dev libxpm-dev \
-		  libxft-dev libxext-dev python-is-python3 libssl-dev
+		  libxft-dev libxext-dev 2to3 python2-minimal:i386 python2:i386 python2-minimal \
+		  python2 dh-python python-is-python3 libssl-dev
 		$ sudo apt-get install gfortran libpcre3-dev \
 		  libglu1-mesa-dev libglew-dev libftgl-dev \
 		  libmysqlclient-dev libfftw3-dev libcfitsio-dev \
