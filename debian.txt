@@ -45,8 +45,9 @@ https://youtu.be/gVcbeLQEHNw	//Geant4 Tutorial-Korean
 
 	// media codecs
 		$ sudo apt install ubuntu-restricted-extras
-	tab
-	enter
+			tab		//move
+			enter		//ok
+			yes		//accept
 
   // root installation
   // https://root.cern		//ROOT: analyzing petabytes of data, scientifically.
