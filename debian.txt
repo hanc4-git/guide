@@ -23,7 +23,7 @@ https://youtu.be/gVcbeLQEHNw	//Geant4 Tutorial-Korean
 		
   // ubuntu update
   // https://ubuntu.com		//Ubuntu
-  // 20.04.5 LTS - February 22, 2022
+  // 22.04.3 LTS - August 10, 2023
   //
      	// disable sleep
 		/Settings/Privacy/Screen/Blank Screen Delay
