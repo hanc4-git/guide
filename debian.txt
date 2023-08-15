@@ -17,7 +17,7 @@ https://youtu.be/gVcbeLQEHNw	//Geant4 Tutorial-Korean
   // virtualbox settings
 	/Devices/Insert Guest Additions
 	/VBox_GAs_{VBoxClient_version}/autorun.sh/Run as a Program
-	$ VBoxClient --version						//check guest additions version
+	$ VBoxService --version						//check guest additions version
   	$ sudo gpasswd -a user{$username} vboxsf
 	$ reboot
 		
