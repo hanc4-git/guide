@@ -25,7 +25,10 @@ https://youtu.be/gVcbeLQEHNw	//Geant4 Tutorial-Korean
   // https://ubuntu.com		//Ubuntu
   // 20.04.5 LTS - February 22, 2022
   //
- 	// ubuntu
+     	// disable sleep
+		/Settings/Power/Power Saving Options/Screen Blank
+
+	// ubuntu
 	update "Ubuntu Software"
   	Ctrl+Alt+T		//open terminal
 		$ sudo apt -y update && sudo apt -y upgrade
