@@ -170,7 +170,7 @@ https://youtu.be/gVcbeLQEHNw	//Geant4 Tutorial-Korean
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
   // option of old releases of root
-  	// 6.24/06 - September 3, 2021
+  	// 6.18/04 - September 11, 2019
 	//
   	// compile and install
 		$ cmake -Dxrootd=OFF -Dbuiltin_xrootd=OFF -Druntime_cxxmodules=OFF ../
