@@ -76,7 +76,7 @@ https://youtu.be/gVcbeLQEHNw	//Geant4 Tutorial-Korean
 	// compile and install
 		$ cd root{$root_version}
 		$ cd build
-		$ cmake -Dxrootd=OFF -Dbuiltin_xrootd=OFF -Druntime_cxxmodules=OFF ../
+		$ cmake ..
 		$ lscpu
 			N = the number of central processing unit;
 		$ make -jN
