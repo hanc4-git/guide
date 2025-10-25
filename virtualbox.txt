@@ -89,6 +89,7 @@ disable memory integrity
 reboot
 
 // option to linux commands
+//
 	$ groups												//print group names
 	$ sudo su -l user{$username}							//substitute user id
 	$ groups												//confirm "vboxsf"
