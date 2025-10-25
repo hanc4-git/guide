@@ -32,8 +32,8 @@ install windows first
 //
 // rufus
 //
-Drive Properties_Boot selection->*.iso
-Drive Properties_Partition scheme->GPT
+drive properties_boot selection->*.iso
+drive properties_partition scheme->GPT
 start
 
 //
