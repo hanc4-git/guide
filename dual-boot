@@ -45,5 +45,7 @@ reboot
 install linux
 	select alongside windows boot manager
 	select something else to manually set up				//option
+		select unallocated space
+		ext4												//root filesystem
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
