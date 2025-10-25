@@ -1,0 +1,31 @@
+//
+// ******************************************************************
+// * UNLV															                              *
+// *																                                *
+// * dual-boot linux and windows guide                    		      *
+// * the new version is available on GitHub.						            *
+// ******************************************************************
+//
+//
+///
+///
+
+//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+
+// prerequisites
+//
+disable "Fast Startup"
+  find "Control Panel" in search box on task bar
+	win\Control Panel\Hardware and Sound\Power Options
+    select "Choose what the power buttons do"
+      click "Change settings that are currently unavailable"
+      deselect "Turn on fast startup"
+    Save changes
+install windows first
+
+//
+// disk partitioning
+//
+find "Disk Management" in search box on task bar
+  right-click on disk
+  choose "Shrink Volume"
