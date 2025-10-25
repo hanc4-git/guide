@@ -42,6 +42,7 @@ finish
 	display
 	\Settings\Display\Screen
   		set maximum											//Video Memory
+		select "Enable 3D Accerlation						//GPU
 
 	shared folders
 	\Settings\Shared Folders
