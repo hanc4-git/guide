@@ -57,6 +57,11 @@ finish
 		select "Remove disk from virtual drive"
 	click "Start"
 
+	//
+	// shared folders access
+	//
+	$ sudo adduser your_vm_username vboxsf
+
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 // option to set up virtualbox 6.1
