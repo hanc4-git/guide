@@ -1,53 +1,62 @@
 //
-// **********************************************************
-// * UNLV						    *
-// *							    *
-// * ubuntu installation guide on macOS			    *
-// **********************************************************
+// ******************************************************************
+// * UNLV															*
+// *																*
+// * ubuntu installation guide on macOS								*
+// * the new version is available on GitHub.						*
+// ******************************************************************
 //
 //
 ///
 ///
-
-https://youtu.be/voMvctJ4GZ0	//FINALLY! Linux on the Macbook M1 (bare-metal)
-
-  // asahi linux installation
-  // https://asahilinux.org	//asahi linux with a Plasma KDE
-  // https://endeavouros.com	//endeavourOS
-  // 
-  	// installation
-	open terminal on macOS
-  		$ curl https://alx.sh | sh
-			n		//expert mode
-			r		//resize
-			80 gb		//new size
-			y		//continue
-			f		//install
-			1		//asahi linux desktop
-			max		//new OS size
-	hold down power button		//reboot
-	select asahi linux
-		y		//custom boot object
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
-  // option of UTM		//virtual machine
-  // https://youtu.be/hnwK-nkXolc	//Ubuntu Install on M1 MacBook Air -Virtualization and Benchmarking!
-  //
-  	// download ubuntu
-  	// https://ubuntu.com		//Ubuntu
+// installation video
+//
+https://youtu.be/voMvctJ4GZ0								//FINALLY! Linux on the Macbook M1 (bare-metal)
+
+	//
+	// asahi linux installation
+	// 
+	https://asahilinux.org									//asahi linux with a Plasma KDE
+	https://endeavouros.com									//option to endeavourOS
+
+	//
+	// installation
+	//
+	open terminal on macOS
+		$ curl https://alx.sh | sh
+			n												//expert mode
+			r												//resize
+			80 gb											//new size
+			y												//continue
+			f												//install
+			1												//asahi linux desktop
+			max												//new OS size
+	hold down power button									//reboot
+	select asahi linux
+			y												//custom boot object
+
+//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+
+// option of UTM											//virtual machine
+//
+https://youtu.be/hnwK-nkXolc								//Ubuntu Install on M1 MacBook Air -Virtualization and Benchmarking!
   
-  	// UTM settings
-	// https://apps.apple.com/us/app/utm-virtual-machines/id1538878817?mt=12	//UTM Virtual Machines
-  	//
-  	"Create a New Virtual Machine"
-		/Information/Style
-  		set "Operating System"
-		/System
-		set "ARM64 (aarch64)"			//Architecture
-		set half memory at full maximum		//Memory
-		/Drivers/Interface/New Drive
-		select "NVMe"
-		select "USB"				//Removable
+	//
+	// UTM settings
+	// 
+	https://apps.apple.com/us/app/utm-virtual-machines/id1538878817?mt=12	//UTM Virtual Machines
+
+  	select "Create a New Virtual Machine"
+		\Information\Style
+			set "Operating System"
+		\System
+			set "ARM64 (aarch64)"							//Architecture
+			set half memory at full maximum					//option
+		\Drivers\Interface\New Drive
+			select "NVMe"
+			select "USB"									//Removable
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
