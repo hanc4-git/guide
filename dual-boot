@@ -46,11 +46,24 @@ find "Disk Management" in search box on task bar			//win+x disk management
 //
 // UEFI
 //
-press esc, f2, or del as the system starts
-	choose usb
-reboot
+find "Settings" in search box on task bar
+win\Settings\System\Recovery\Recovery options\Advanced startup
+	restart now
+Choose an option
+	Use a device
+		UEFI:Removable device
+
+	//	option to BIOS
+	//
+	press esc, f2, or del as the system starts
+		choose usb
+	reboot
+
 install linux
 	select alongside windows boot manager
+
+	// option to manually
+	//
 	select something else to manually set up				//option
 		select unallocated space
 		ext4												//root filesystem
