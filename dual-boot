@@ -53,7 +53,7 @@ Choose an option
 	Use a device
 		UEFI:Removable device
 
-	//	option to BIOS
+	//	option to use BIOS
 	//
 	press esc, f2, or del as the system starts
 		choose usb
