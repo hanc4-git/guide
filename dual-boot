@@ -36,4 +36,13 @@ find "Disk Management" in search box on task bar			//win+x disk management
 	right-click on disk
 	choose "Shrink Volume"
 
+//
+// UEFI
+//
+press esc, f2, or del as the system starts
+	choose usb
+install linux
+	select alongside windows boot manager
+	select something else to manually set up				//option
+
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
