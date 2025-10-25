@@ -3,6 +3,8 @@ archlinux.txt   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  // geant4 and 
                 </br>
 debian.txt      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  // geant4 and root installation guide on ubuntu
                 </br>
+dual-boot.txt  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  // dual-boot linux and windows
+                </br>
 fedora.txt      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  // geant4 and root installation guide on fedora
                 </br>
 macOS.txt       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  // asahilinux installation guide on macOS
