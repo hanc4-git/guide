@@ -36,16 +36,16 @@ finish
 	// settings
 	//
 	general
-	\Settings\General\Advanced
+	manager\Settings\General\Advanced
 		set "Bidirectional"									//Shared Clipboard
   		set "Bidirectional"									//Drag'n'Drop
 	display
-	\Settings\Display\Screen
+	manager\Settings\Display\Screen
   		set maximum											//Video Memory
 		select "Enable 3D Accerlation						//GPU
 
 	shared folders
-	\Settings\Shared Folders
+	manager\Settings\Shared Folders
 		click "Adds Share" icon
   		set windows folder path
   		set "Auto-mount"
@@ -53,7 +53,7 @@ finish
 	//
 	// run
 	//
-	virtualbox manager\Storage/Controller: IDE
+	virtualbox manager\Storage\Controller: IDE
 		clike "IDE Secondary Device 0:"
 		select "Remove disk from virtual drive"
 	click "Start"
@@ -67,12 +67,12 @@ finish
 
 // option to set up virtualbox 6.1
 //
-	\Settings\System
+	manager\Settings\System
 		set "KVM"											//Paravirtualization Interface
-	\Settings\Display
+	manager\Settings\Display
 		set "Hyper-V"										//windows
 		set "Enable 3D Acceleration"	
-	\Settings\Storage
+	manager\Settings\Storage
 		select "Empty"										//Storage Devices
 		"Choose a disk file..."								//Attributes
   
