@@ -32,7 +32,7 @@ install windows first
 //
 // disk partitioning
 //
-find "Disk Management" in search box on task bar
+find "Disk Management" in search box on task bar			//win+x disk management
 	right-click on disk
 	choose "Shrink Volume"
 
