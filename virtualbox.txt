@@ -1,83 +1,92 @@
 //
-// **********************************************************
-// * UNLV						    *
-// *							    *
-// * virtualbox settings  guide				    *
-// **********************************************************
+// ******************************************************************
+// * UNLV															*
+// *																*
+// * virtualbox settings  guide										*
+// * the new version is available on GitHub.						*
+// ******************************************************************
 //
 //
 ///
 ///
-
-  // virtualbox settings
-  // https://www.virtualbox.org
-  //
-  https://learn.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist?view=msvc-170
-  										//MSVC package for Windows 10
-  https://www.virtualbox.org/wiki/Downloads					//extension pack
-  
-    	// ubuntu setting
-	select "Skip Unattended Installation"
-	
-	// endeavouros setting
-	set "Linux"			//Type
-	set "Oracle Linux (64-bit)"	//Version
-	
-  // create virtual machine
-  set virtual hard disk to 80.00 gb
-  
-  // settings
-  	/Settings/General/Advanced
-	set "Bidirectional"			//Shared Clipboard
-  	set "Bidirectional"			//Drag'n'Drop
-	/Settings/System/Motherboard
-  	set half memory of full maximum		//Base Memory
-	/Settings/System/Processor
-  	set maximum in green			//Processor (s)
-	/Settings/Display/Screen
-  	set maximum				//Video Memory
-
-  	// Shared Folders
-  		// virtualbox settings
-  		click "Adds new shared folder."
-  		set windows folder path
-  		set "Auto-mount"
-		
-  // Start
-  select virual machine name
-  	/Storage
-	clike "IDE Secondary Device 0:"
-	select "Remove disk from virtual drive"
-  click "Start"
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
-  // option of virtualbox 6.1 settings
-  	/Settings/System
-  	set "KVM"			//Paravirtualization Interface
-	/Settings/Display
-      	set "Hyper-V"			//windows
-  	set "Enable 3D Acceleration"	
-	/Settings/Storage
-  	select "Empty"				//Storage Devices
-	"Choose a disk file..."			//Attributes
+// virtualbox settings
+//
+https://www.virtualbox.org									//download virtualbox
+https://learn.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist?view=msvc-170	//MSVC package for Windows 10
+https://www.virtualbox.org/wiki/Downloads					//option to download extension pack
+
+//
+// create vitual machine
+//
+setting_name and operating system->select ISO image
+	setting_name and operating system_type->Linux			//option to endeavouros
+	setting_name and operating systme_version->Oracle Linux (64-bit)	//option to endeavouros
+setting_unattended install->select "Skip Unattended Installation"
+setting_hardware
+	setting_hardware_base memory->set half memory of full maximum		//option
+	setting_hardware_processors->set miximum in green
+setting_hard disk
+	set hard disk size 80.00 gb
+finish
+
+	//
+	// settings
+	//
+	general
+	\Settings\General\Advanced
+		set "Bidirectional"									//Shared Clipboard
+  		set "Bidirectional"									//Drag'n'Drop
+	display
+	\Settings\Display\Screen
+  		set maximum											//Video Memory
+
+	shared folders
+	\Settings\Shared Folders
+		click "Adds Share" icon
+  		set windows folder path
+  		set "Auto-mount"
+
+	//
+	// run
+	//
+	virtualbox manager\Storage/Controller: IDE
+		clike "IDE Secondary Device 0:"
+		select "Remove disk from virtual drive"
+	click "Start"
+
+//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+
+// option to set up virtualbox 6.1
+//
+	\Settings\System
+		set "KVM"											//Paravirtualization Interface
+	\Settings\Display
+		set "Hyper-V"										//windows
+		set "Enable 3D Acceleration"	
+	\Settings\Storage
+		select "Empty"										//Storage Devices
+		"Choose a disk file..."								//Attributes
   
-  // option of windows 11 settings		//not recommended
-  	// disable windows hypervisor
- 	open "Command Prompt" as administrator
-  		$ bcdedit /set hypervisorlaunchtype off		//disable
-						    auto	//enable
+// option to set up windows 11								//not recommended
+//
+disable windows hypervisor
+	open "Command Prompt" as administrator
+		$ bcdedit /set hypervisorlaunchtype off				//disable
+											auto			//enable
 						    
-  	// disable memory integrity
-  	find "Settings" in search on task bar
-		/Settings/Privacy & security/Windows Security/Device security/Core isolation details
-  	  	disable "Memory integrity"  
-  	reboot
-	
-  // option of linux commands
-  	$ groups			//print group names
-  	$ sudo su -l user{$username}	//substitute user id
-  	$ groups			//confirm "vboxsf"
-  	$ ls -lh			//list information
+disable memory integrity
+	find "Settings" in search on task bar
+		win\Settings\Privacy & security\Windows Security\Device security\Core isolation details
+		disable "Memory integrity"  
+reboot
+
+// option to linux commands
+	$ groups												//print group names
+	$ sudo su -l user{$username}							//substitute user id
+	$ groups												//confirm "vboxsf"
+	$ ls -lh												//list information
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
