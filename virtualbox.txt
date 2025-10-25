@@ -90,9 +90,9 @@ reboot
 
 // option to linux commands
 //
-	$ groups												//print group names
-	$ sudo su -l user{$username}							//substitute user id
-	$ groups												//confirm "vboxsf"
-	$ ls -lh												//list information
+$ groups													//print group names
+$ sudo su -l user{$username}								//substitute user id
+$ groups													//confirm "vboxsf"
+$ ls -lh													//list information
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
