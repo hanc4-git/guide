@@ -1,60 +1,91 @@
 //
-// **********************************************************
-// * UNLV						    *
-// *							    *
-// * geant4 and root installation guide on ubuntu	    *
-// **********************************************************
+// ******************************************************************
+// * UNLV															*
+// *																*
+// * geant4 and root installation guide on ubuntu					*
+// * the new version is available on GitHub.						*
+// ******************************************************************
 //
 //
 ///
 ///
 
-https://youtu.be/QItrmchEQWE	//CERN ROOT Tutorial 2: Installing ROOT
-https://youtu.be/J8iQVm0DLzY	//CERN ROOT Tutorial 1-Korean
-https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Geant4
-https://youtu.be/gVcbeLQEHNw	//Geant4 Tutorial-Korean
+//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
-  // virtualbox settings
-	/Devices/Insert Guest Additions
-	/VBox_GAs_{VBoxClient_version}/autorun.sh/Run as a Program
-	$ VBoxService --version			//check guest additions version
-  	$ sudo gpasswd -a user{$username} vboxsf
-	$ reboot
-		
-  // ubuntu update
-  // https://ubuntu.com		//Ubuntu
-  // 22.04.3 LTS - August 10, 2023
-  //
-     	// disable sleep
-		/Settings/Privacy/Screen/Blank Screen Delay
-		/Settings/Privacy/Screen/Automatic Screen Lock
+// installation video
+//
+https://youtu.be/QItrmchEQWE								//CERN ROOT Tutorial 2: Installing ROOT
+https://youtu.be/J8iQVm0DLzY								//CERN ROOT Tutorial 1-kor
+https://youtu.be/Lxb4WZyKeCE								//Geant4 Tutorial 1: Installation and Testing of Geant4
+https://youtu.be/gVcbeLQEHNw								//Geant4 Tutorial-kor
 
-	// ubuntu
-	update "Ubuntu Software"
-  	Ctrl+Alt+T		//open terminal
-		$ sudo apt -y update && sudo apt -y upgrade
-		$ sudo apt autoremove
+//
+// virtualbox settings
+//
+menu bar\Devices\Insert Guest Additions
+	home\VBox_GAs_{VBoxClient_version}\autorun.sh
+	right-click "Run as a Program"
+		$ VBoxService --version								//check guest additions version
+		$ sudo gpasswd -a user{$username} vboxsf
+		$ reboot
 
-	// flatpaks
-	// https://flatpak.org/setup/Ubuntu	//Ubuntu Quick Setup
+	// option to slimbook
 	//
+	https://github.com/Slimbook-Team/slimbookbattery
+	https://itsfoss.com/slimbook-battry-optimizer-ubuntu/
+		$ sudo add-apt-repository ppa:slimbook/slimbook
+		$ sudo apt update
+		$ sudo apt install slimbookbattery
+
+		// option to remove
+		//
+		$ sudo apt remove slimbookbattery
+		$ sudo add-apt-repository -r ppa:slimbook/slimbook
+
+//
+// ubuntu
+//
+https://ubuntu.com											//Ubuntu 22.04.3 LTS - August 10, 2023
+disable sleep
+	\Settings\Privacy\Screen\Blank Screen Delay
+	\Settings\Privacy\Screen\Automatic Screen Lock
+
+	//
+	// ubuntu update
+	//
+	update "Ubuntu Software"
+
+		//option to terminal
+		//
+		open terminal										//Ctrl+Alt+T
+			$ sudo apt -y update && sudo apt -y upgrade
+			$ sudo apt autoremove
+
+	//
+	// flatpaks
+	//
+	https://flatpak.org/setup/Ubuntu						//Ubuntu Quick Setup
 		$ sudo apt install flatpak
 		$ sudo apt install gnome-software-plugin-flatpak
 		$ reboot
 		$ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
-	// media codecs
-		$ sudo apt install ubuntu-restricted-extras
-			tab		//move
-			enter		//ok
-			yes		//accept
-
-  // root installation
-  // https://root.cern		//ROOT: analyzing petabytes of data, scientifically.
-  //
-  	// root dependencies
-	// https://root.cern/install/dependencies/	//Dependencies
 	//
+	// media codecs
+	//
+	$ sudo apt install ubuntu-restricted-extras
+		tab													//move
+		enter												//ok
+		yes													//accept
+
+		//
+  		// root installation
+		//
+  		https://root.cern									//ROOT: analyzing petabytes of data, scientifically.
+
+			//
+			// root dependencies
+			// https://root.cern/install/dependencies/	//Dependencies
 		$ sudo apt install build-essential git vim
 		$ sudo apt-get install dpkg-dev cmake g++ gcc binutils libx11-dev libxpm-dev \
 		  libxft-dev libxext-dev 2to3 dh-python python-is-python3 libssl-dev
