@@ -61,7 +61,8 @@ finish
 	//
 	// shared folders access
 	//
-	$ sudo adduser your_vm_username vboxsf
+	open terminal											//Ctrl+Alt+T
+		$ sudo adduser your_vm_username vboxsf
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
