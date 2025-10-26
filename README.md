@@ -3,12 +3,12 @@ archlinux.txt   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  // geant4 and root i
                 </br>
 debian.txt      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  // geant4 and root installation guide on ubuntu
                 </br>
-dual-boot.txt  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  // dual-boot linux and windows
+dual-boot.txt  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  // dual-boot linux and windows
                 </br>
-fedora.txt      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  // geant4 and root installation guide on fedora
+fedora.txt      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  // geant4 and root installation guide on fedora
                 </br>
-macOS.txt       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  // asahilinux installation guide on macOS
+macOS.txt       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  // asahilinux installation guide on macOS
                 </br>
-virtualbox.txt  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  // virtualbox settings guide
+virtualbox.txt  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  // virtualbox settings guide
                 </br>
-windows.txt     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  // ubuntu installation guide on windows 10 Subsystem
+windows.txt     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  // ubuntu installation guide on windows 10 Subsystem
