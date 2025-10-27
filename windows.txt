@@ -59,4 +59,10 @@ reboot
 		Ctrl+x
 	$ xeyes
 
+	//
+	// vim
+	//
+	https://www.vim.org/download.php						//gVim 9.1.1825 - October 27, 2025
+	https://youtu.be/1LdQMhFhaxs							//How to Install VIM on Windows 11 (Non WSL Way)
+
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
