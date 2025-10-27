@@ -68,24 +68,26 @@ install linux
 		select unallocated space
 		ext4												//root filesystem
 
-//
-// vim
-//
-download "Vim" from "Software Manager"
-
-	//option to use terminal
 	//
-	open terminal											//Ctrl+Alt+T
-		$ sudo apt update
-		$ sudo apt install vim
-
-	//option to display line numbers
+	// vim
 	//
-	$ vi .vimrc
-		i													//insert mode
-			set number										//add command
-		esc													//exit insert mode
-		:wq or :x or ZZ										//write (save) and quit
+	download "Vim" from "Software Manager"
+
+		//option to use terminal
+		//
+		open terminal										//Ctrl+Alt+T
+			$ sudo apt update
+			$ sudo apt install vim
+
+		//option to display line numbers
+		//
+		$ vi .vimrc
+			i												//insert mode
+				set number									//add command
+			esc												//exit insert mode
+			:wq or :x or ZZ									//write (save) and quit
+
+//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 //option to save power
 //
