@@ -71,7 +71,8 @@ install linux
 	//
 	// vim
 	//
-	download "Vim" from "Software Manager"
+	update "Software Manager"
+	download vim
 
 		//option to use terminal
 		//
