@@ -72,7 +72,7 @@ install linux
 	// vim
 	//
 	update "Software Manager"
-	download vim
+	download "Vim"
 
 		//option to use terminal
 		//
