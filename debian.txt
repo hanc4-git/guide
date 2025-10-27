@@ -190,14 +190,6 @@ disable sleep
 		enter
 		Ctrl+x
 
-  // vim
-  	$ vi .vimrc
-		i
-	  	add
-			set number
-	 	esc
-	  	:x
-
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
   // option of old releases of root
