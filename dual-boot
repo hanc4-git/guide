@@ -71,9 +71,13 @@ install linux
 //
 // vim
 //
-open terminal												//Ctrl+Alt+T
-	$ sudo apt update
-	$ sudo apt install vim
+download "Vim" from "Software Manager"
+
+	//option to use terminal
+	//
+	open terminal											//Ctrl+Alt+T
+		$ sudo apt update
+		$ sudo apt install vim
 
 	//option to display line numbers
 	//
@@ -83,12 +87,12 @@ open terminal												//Ctrl+Alt+T
 		esc													//exit insert mode
 		:wq or :x or ZZ										//write (save) and quit
 
-	//option to save power
-	//
-	find "Applets" in search box
-	switch to download
-	search "Power Profiles"
-	install
-	Add
+//option to save power
+//
+find "Applets" in search box
+switch to download
+search "Power Profiles"
+install
+Add
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
