@@ -68,19 +68,27 @@ install linux
 		select unallocated space
 		ext4												//root filesystem
 
-	//
-	// vim
-	//
-	open terminal											//Ctrl+Alt+T
+//
+// vim
+//
+open terminal												//Ctrl+Alt+T
 	$ sudo apt update
 	$ sudo apt install vim
 
-		//option to display line numbers
-		//
-		$ vi .vimrc
-			i												//insert mode
-				set number									//add command
-			esc												//exit insert mode
-			:wq or :x or ZZ									//write (save) and quit
+	//option to display line numbers
+	//
+	$ vi .vimrc
+		i													//insert mode
+			set number										//add command
+		esc													//exit insert mode
+		:wq or :x or ZZ										//write (save) and quit
+
+	//option to save power
+	//
+	find "Applets" in search box
+	switch to download
+	search "Power Profiles"
+	install
+	Add
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
