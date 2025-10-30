@@ -37,7 +37,7 @@ menu bar\Devices\Insert Guest Additions
 		$ sudo apt update
 		$ sudo apt install slimbookbattery
 
-		// option to remove
+		// option to remove slimbook
 		//
 		$ sudo apt remove slimbookbattery
 		$ sudo add-apt-repository -r ppa:slimbook/slimbook
@@ -55,7 +55,7 @@ disable sleep
 	//
 	update "Ubuntu Software"
 
-		//option to terminal
+		//option to use terminal
 		//
 		open terminal										//Ctrl+Alt+T
 			$ sudo apt -y update && sudo apt -y upgrade
