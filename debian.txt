@@ -61,31 +61,31 @@ disable sleep
 			$ sudo apt -y update && sudo apt -y upgrade
 			$ sudo apt autoremove
 
-	//
-	// flatpaks
-	//
-	https://flatpak.org/setup/Ubuntu						//Ubuntu Quick Setup
-		$ sudo apt install flatpak
-		$ sudo apt install gnome-software-plugin-flatpak
-		$ reboot
-		$ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-
-	//
-	// media codecs
-	//
-	$ sudo apt install ubuntu-restricted-extras
-		tab													//move
-		enter												//ok
-		yes													//accept
+		//
+		// option to flatpaks
+		//
+		https://flatpak.org/setup/Ubuntu					//Ubuntu Quick Setup
+			$ sudo apt install flatpak
+			$ sudo apt install gnome-software-plugin-flatpak
+			$ reboot
+			$ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 		//
-  		// root installation
+		// option to media codecs
 		//
-  		https://root.cern									//ROOT: analyzing petabytes of data, scientifically.
+		$ sudo apt install ubuntu-restricted-extras
+			tab												//move
+			enter											//ok
+			yes												//accept
 
-			//
-			// root dependencies
-			// https://root.cern/install/dependencies/	//Dependencies
+	//
+  	// root installation
+	//
+  	https://root.cern										//ROOT: analyzing petabytes of data, scientifically.
+
+		//
+		// root dependencies
+		// https://root.cern/install/dependencies/			//Dependencies
 		$ sudo apt install build-essential git vim
 		$ sudo apt-get install dpkg-dev cmake g++ gcc binutils libx11-dev libxpm-dev \
 		  libxft-dev libxext-dev 2to3 dh-python python-is-python3 libssl-dev
