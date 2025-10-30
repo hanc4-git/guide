@@ -2,7 +2,7 @@
 // ******************************************************************
 // * UNLV															*
 // *																*
-// * geant4 and root installation guide on ubuntu					*
+// * debian setup guide on ubuntu									*
 // * the new version is available on GitHub.						*
 // ******************************************************************
 //
