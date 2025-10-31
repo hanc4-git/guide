@@ -10,6 +10,7 @@
 ///
 ///
 https://wiki.cachyos.org/configuration/post_install_setup/
+https://wiki.fascinated.cc/category/cachyos-gaming
 https://youtu.be/StHVU-Zvacs	//7 Things After Installing EndeavourOS
 https://youtu.be/QItrmchEQWE	//CERN ROOT Tutorial 2: Installing ROOT
 https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Geant4
