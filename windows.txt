@@ -30,7 +30,7 @@ find "Control Panel" in search box
 reboot
 
 	//
-	// ubuntu installation									//ubuntu 20.04 LTS - March 16, 2023
+	// ubuntu installation									//Ubuntu 20.04 LTS - March 16, 2023
 	//
 	find "Microsoft Store" in search box
 	search "ubuntu"
