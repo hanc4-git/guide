@@ -65,4 +65,16 @@ reboot
 	https://www.vim.org/download.php						//gVim 9.1.1825 - October 27, 2025
 	https://youtu.be/1LdQMhFhaxs							//How to Install VIM on Windows 11 (Non WSL Way)
 
+	// option to convert MBR to GPT
+	//
+	boot with "Windows Installation Media"
+	open command prompt										//Shift+F10
+		$ diskpart
+		$ list disk
+		$ select disk 0										//select the disk want to convert
+		$ clean												//format
+		$ convert gpt
+		$ exit												//exit to leave diskpart
+		$ exit												//close command prompt
+
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
