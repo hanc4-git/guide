@@ -27,12 +27,15 @@ https://www.virtualbox.org									//download virtualbox
 setting_name and operating system->select ISO image
 	setting_name and operating system_type->Linux			//option to endeavouros
 	setting_name and operating systme_version->Oracle Linux (64-bit)	//option to endeavouros
+
 setting_unattended install->select "Skip Unattended Installation"
 setting_hardware
 	setting_hardware_base memory->set half memory of full maximum		//option
 	setting_hardware_processors->set miximum in green
+
 setting_hard disk
 	set hard disk size 80.00 gb
+
 finish
 
 	//
@@ -42,6 +45,7 @@ finish
 	manager\Settings\General\Advanced
 		set "Bidirectional"									//Shared Clipboard
   		set "Bidirectional"									//Drag'n'Drop
+
 	display
 	manager\Settings\Display\Screen
   		set maximum											//Video Memory
@@ -59,6 +63,7 @@ finish
 	virtualbox manager\Storage\Controller: IDE
 		clike "IDE Secondary Device 0:"
 		select "Remove disk from virtual drive"
+
 	click "Start"
 
 	//
@@ -73,9 +78,11 @@ finish
 //
 	manager\Settings\System
 		set "KVM"											//Paravirtualization Interface
+
 	manager\Settings\Display
 		set "Hyper-V"										//windows
-		set "Enable 3D Acceleration"	
+		set "Enable 3D Acceleration"
+
 	manager\Settings\Storage
 		select "Empty"										//Storage Devices
 		"Choose a disk file..."								//Attributes
@@ -91,6 +98,7 @@ disable memory integrity
 	find "Settings" in search on task bar
 		win\Settings\Privacy & security\Windows Security\Device security\Core isolation details
 		disable "Memory integrity"  
+
 reboot
 
 // option to linux commands
