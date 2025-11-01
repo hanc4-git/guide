@@ -316,7 +316,20 @@ https://youtu.be/DbeL7ehxpZ0?si=sBVLycxjBaTJ-9fB			//How To Install Arch Linux i
 	// run
 	//
 	virtualbox manager\Storage\Controller: IDE
-		clike "IDE Primary Device 0:"
+		click "IDE Primary Device 0:"
 		select "Remove Disk From Virtual Drive"
 
 	click "Start"
+
+//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+
+// option to install "Virtualbox Guest Additions"
+copy and paste all files in ISO to Documents
+right-click
+	"Open in Console"
+
+$ ls -lh
+$ chmod 777 VBoxLinuxAdditions.run
+$ sudo ./VBoxLinuxAdditions.run
+
+//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
