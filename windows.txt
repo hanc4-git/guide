@@ -77,4 +77,8 @@ reboot
 		$ exit												//exit to leave diskpart
 		$ exit												//close command prompt
 
+	// option to partition 1tb								//personal
+	c:\ 411000
+	d:\ 463000
+
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
