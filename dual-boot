@@ -48,6 +48,7 @@ start
 find "Settings" in search box on task bar
 win\Settings\System\Recovery\Recovery options\Advanced startup
 	restart now
+
 Choose an option
 	Use a device
 		UEFI:Removable device
@@ -56,6 +57,7 @@ Choose an option
 	//
 	press esc, f2, or del as the system starts
 		choose usb
+
 	reboot
 
 install linux
@@ -84,6 +86,7 @@ install linux
 		$ vi .vimrc
 			i												//insert mode
 				set number									//add command
+
 			esc												//exit insert mode
 			:wq or :x or ZZ									//write (save) and quit
 
