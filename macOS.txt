@@ -34,6 +34,7 @@ https://youtu.be/voMvctJ4GZ0								//FINALLY! Linux on the Macbook M1 (bare-met
 			f												//install
 			1												//asahi linux desktop
 			max												//new OS size
+
 	hold down power button									//reboot
 	select asahi linux
 		y													//custom boot object
@@ -52,9 +53,11 @@ https://youtu.be/hnwK-nkXolc								//Ubuntu Install on M1 MacBook Air -Virtuali
   	select "Create a New Virtual Machine"
 		\Information\Style
 			set "Operating System"
+
 		\System
 			set "ARM64 (aarch64)"							//Architecture
 			set half memory at full maximum					//option
+
 		\Drivers\Interface\New Drive
 			select "NVMe"
 			select "USB"									//Removable
