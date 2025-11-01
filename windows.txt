@@ -82,11 +82,7 @@ reboot
 	d:\ 463000
 
 	// option to fix guest additions
-	View\Seamless Mode\
-	Ctrl+L													//back to windowed mode
-
-	// option to fix guest additions
-	View\Seamless Mode\
+	View\Seamless Mode
 	Ctrl+L													//back to windowed mode
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
