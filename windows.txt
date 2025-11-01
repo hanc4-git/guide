@@ -65,6 +65,8 @@ reboot
 	https://www.vim.org/download.php						//gVim 9.1.1825 - October 27, 2025
 	https://youtu.be/1LdQMhFhaxs							//How to Install VIM on Windows 11 (Non WSL Way)
 
+//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+
 	// option to convert MBR to GPT
 	//
 	boot with "Windows Installation Media"
@@ -77,11 +79,11 @@ reboot
 		$ exit												//exit to leave diskpart
 		$ exit												//close command prompt
 
-	// option to partition 1tb								//personal
+	// option to partition 1tb								//personal setup
 	c:\ 411000
 	d:\ 463000
 
-	// option to fix guest additions
+	// option to fix Virtualbox Guest Additions
 	View\Seamless Mode
 	Ctrl+L													//back to windowed mode
 
