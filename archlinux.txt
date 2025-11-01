@@ -1,14 +1,19 @@
 //
-// **********************************************************
-// * UNLV						    *
-// *							    *
-// * geant4 and root installation guide on asahilinux	    *
-// * geant4 and root installation guide on endeavourOS	    *
-// **********************************************************
+// ******************************************************************
+// * UNLV															*
+// *																*
+// * geant4 and root installation guide on asahilinux				*
+// * the new version is available on GitHub.						*
+// ******************************************************************
 //
 //
 ///
 ///
+
+//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+
+// installation
+//
 https://wiki.cachyos.org/configuration/post_install_setup/
 https://wiki.fascinated.cc/category/cachyos-gaming
 https://youtu.be/StHVU-Zvacs	//7 Things After Installing EndeavourOS
