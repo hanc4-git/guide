@@ -67,24 +67,26 @@ reboot
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
-	// option to convert MBR to GPT
-	//
-	boot with "Windows Installation Media"
-	open command prompt										//Shift+F10
-		$ diskpart
-		$ list disk
-		$ select disk 0										//select the disk want to convert
-		$ clean												//format
-		$ convert gpt
-		$ exit												//exit to leave diskpart
-		$ exit												//close command prompt
+// option to convert MBR to GPT
+//
+boot with "Windows Installation Media"
+open command prompt											//Shift+F10
+	$ diskpart
+	$ list disk
+	$ select disk 0											//select the disk want to convert
+	$ clean													//format
+	$ convert gpt
+	$ exit													//exit to leave diskpart
+	$ exit													//close command prompt
 
-	// option to partition 1tb								//personal setup
-	c:\ 411000
-	d:\ 463000
+// option to partition 1tb									//personal setup
+//
+c:\ 411000
+d:\ 463000
 
-	// option to fix Virtualbox Guest Additions
-	View\Seamless Mode
-	Ctrl+L													//back to windowed mode
+// option to fix Virtualbox Guest Additions
+//
+View\Seamless Mode
+Ctrl+L														//back to windowed mode
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
