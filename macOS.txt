@@ -36,7 +36,7 @@ https://youtu.be/voMvctJ4GZ0								//FINALLY! Linux on the Macbook M1 (bare-met
 			max												//new OS size
 	hold down power button									//reboot
 	select asahi linux
-			y												//custom boot object
+		y													//custom boot object
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
