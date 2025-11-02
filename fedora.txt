@@ -12,10 +12,34 @@
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
+// installation
+//
 https://github.com/devangshekhawat/Fedora-43-Post-Install-Guide
 https://youtu.be/RrRpXs2pkzg	//7 Things You MUST Do After Installing Fedora 36
 https://youtu.be/QItrmchEQWE	//CERN ROOT Tutorial 2: Installing ROOT
 https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Geant4
+
+//
+// fedora
+//
+	//
+	// tlp
+	//
+	https://linrunner.de/tlp/installation/index.html
+	$ sudo dnf install tlp tlp-rdw								//installation
+	$ sudo dnf remove tuned tuned-ppd							//uninstall power management tool
+	$ sudo systemctl enable tlp.service							//enable service
+	$ sudo systemctl mask systemd-rfkill.service systemd-rfkill.socket	//mask
+	$ sudo tlp start
+	$ tlp-stat -s
+
+		//option to get tlp repository
+		//
+		$ sudo dnf install https://repo.linrunner.de/fedora/tlp/repos/releases/tlp-release.fc$(rpm -E %fedora).noarch.rpm
+
+		//option to uninstall power management tool below version 40
+		//
+		$ sudo dnf remove power-profiles-daemon
 
   // virtualbox settings
   	$ sudo gpasswd -a user{$username} vboxsf
