@@ -2,7 +2,7 @@
 // ******************************************************************
 // * UNLV															*
 // *																*
-// * ubuntu installation guide on macOS								*
+// * macOS setup guide												*
 // * the new version is available on GitHub.						*
 // ******************************************************************
 //
