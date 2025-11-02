@@ -222,7 +222,10 @@ disable sleep
 //
 menu bar\Devices\Insert Guest Additions
 	home\VBox_GAs_{VBoxClient_version}
-	right-click VBoxLinuxAdditions.run
+	double-click VBoxLinuxAdditions.run
+
+		//option to terminal
+		right-click VBoxLinuxAdditions.run
 		"Run as a Program"
 			$ VBoxService --version							//check guest additions version
 			$ sudo gpasswd -a user{$username} vboxsf
