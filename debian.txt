@@ -52,6 +52,8 @@ menu bar\Devices\Insert Guest Additions
 	$ sudo add-apt-repository ppa:linrunner/tlp
 	$ sudo apt update
 	$ sudo apt install tlp tlp-rdw
+	$ sudo tlp start
+	$ tlp-stat-s
 
 		// option to version 1.5 only
 		$ sudo systemctl enable tlp.service
