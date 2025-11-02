@@ -20,29 +20,6 @@ https://youtu.be/Lxb4WZyKeCE								//Geant4 Tutorial 1: Installation and Testin
 https://youtu.be/gVcbeLQEHNw								//Geant4 Tutorial-kor
 
 //
-// virtualbox settings
-//
-menu bar\Devices\Insert Guest Additions
-	home\VBox_GAs_{VBoxClient_version}\autorun.sh
-	right-click "Run as a Program"
-		$ VBoxService --version								//check guest additions version
-		$ sudo gpasswd -a user{$username} vboxsf
-		$ reboot
-
-	// option to slimbook
-	//
-	https://github.com/Slimbook-Team/slimbookbattery
-	https://itsfoss.com/slimbook-battry-optimizer-ubuntu/
-		$ sudo add-apt-repository ppa:slimbook/slimbook
-		$ sudo apt update
-		$ sudo apt install slimbookbattery
-
-		// option to remove slimbook
-		//
-		$ sudo apt remove slimbookbattery
-		$ sudo add-apt-repository -r ppa:slimbook/slimbook
-
-//
 // linuxmint												//Linux Mint 22.2 - September 04, 2025
 //
 	//
@@ -240,3 +217,25 @@ disable sleep
 		  -DGEANT4_USE_OPENGL_X11=ON ../
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+
+// option to install "Virtualbox Guest Additions"
+//
+menu bar\Devices\Insert Guest Additions
+	home\VBox_GAs_{VBoxClient_version}\VBoxLinuxAdditions.run
+	right-click "Run as a Program"
+		$ VBoxService --version								//check guest additions version
+		$ sudo gpasswd -a user{$username} vboxsf
+		$ reboot
+
+	// option to slimbook
+	//
+	https://github.com/Slimbook-Team/slimbookbattery
+	https://itsfoss.com/slimbook-battry-optimizer-ubuntu/
+		$ sudo add-apt-repository ppa:slimbook/slimbook
+		$ sudo apt update
+		$ sudo apt install slimbookbattery
+
+		// option to remove slimbook
+		//
+		$ sudo apt remove slimbookbattery
+		$ sudo add-apt-repository -r ppa:slimbook/slimbook
