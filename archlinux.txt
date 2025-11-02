@@ -2,7 +2,7 @@
 // ******************************************************************
 // * UNLV															*
 // *																*
-// * asahilinux setup guide											*
+// * archlinux setup guide											*
 // * the new version is available on GitHub.						*
 // ******************************************************************
 //
