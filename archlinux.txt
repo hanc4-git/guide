@@ -94,7 +94,7 @@ $ archinstall
 	$ systemctl enable NetworkManager-dispatcher.service
 	$ systemctl mask systemd-rfkill.service systemd-rfkill.socket
 	$ sudo tlp start
-	$ tlp-stat-s
+	$ tlp-stat -s
 
 //
 // cachyos														//CachyOS - August 24, 2025
