@@ -59,6 +59,7 @@ reboot
 			export DISPLAY=localhost:0.0
 
 		Ctrl+x
+
 	$ xeyes
 
 	//
