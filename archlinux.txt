@@ -25,7 +25,7 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
 //
 // archlinux												//archlinux 6.17.6 - October, 1, 2025
 //
-$ pacman -Sy												//update
+$ pacman -Sy												//system update
 $ pacman -S archlinux-keyring
 	y
 
@@ -70,7 +70,7 @@ $ archinstall
 
 	chroot into installation for post-installation configurations
 		Yes
-		$ pacman -Sy
+		$ pacman -Sy										//system update
 		$ exit
 
 	$ shutdown now
@@ -321,6 +321,7 @@ $ archinstall
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 // option to install "Virtualbox Guest Additions"
+//
 copy and paste all files in *.iso to Documents
 right-click
 	"Open in Console"
@@ -328,5 +329,38 @@ right-click
 $ ls -lh
 $ chmod 777 VBoxLinuxAdditions.run
 $ sudo ./VBoxLinuxAdditions.run
+
+// option to asus
+//
+https://asus-linux.org/
+$ pacman -S linux-firmware amd-ucode						//intel-ucode for intel
+$ pacman-key --recv-keys 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35	//g14 repo
+$ pacman-key --finger 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35
+$ pacman-key --lsign-key 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35
+$ pacman-key --finger 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35
+$ pacman -Suy												//system update
+
+	//
+	// asusctl
+	//
+	$ pacman -S asusctl power-profiles-daemon
+	$ systemctl enable --now power-profiles-daemon.service
+
+	//
+	// supergfxctl
+	//
+	$ pacman -S supergfxctl
+	$ systemctl enable --now supergfxd
+
+	//
+	// rog control center
+	//
+	$ pacman -S rog-control-center
+
+	//
+	// custom kernel										//dirvers fixes
+	//
+	$ pacman -Sy linux-g14 linux-g14-headers
+	$ grub-mkconfig -o /boot/grub/grub.cfg
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
