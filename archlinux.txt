@@ -26,7 +26,8 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
 // archlinux												//archlinux 6.17.6 - October, 1, 2025
 //
 $ pacman -Sy												//system update
-$ pacman -S archlinux-keyring
+$ pacman-key --populate
+$ sudo pacman -S archlinux-keyring
 	y
 
 $ pacman -S archinstall
