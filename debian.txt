@@ -45,6 +45,16 @@ menu bar\Devices\Insert Guest Additions
 //
 // linuxmint												//Linux Mint 22.2 - September 04, 2025
 //
+	//
+	// tlp
+	//
+	https://linrunner.de/tlp/installation/index.html
+	$ sudo add-apt-repository ppa:linrunner/tlp
+	$ sudo apt update
+	$ sudo apt install tlp tlp-rdw
+
+		// option to version 1.5 only
+		$ sudo systemctl enable tlp.service
 
 //
 // ubuntu
