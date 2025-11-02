@@ -43,6 +43,10 @@ menu bar\Devices\Insert Guest Additions
 		$ sudo add-apt-repository -r ppa:slimbook/slimbook
 
 //
+// linuxmint												//Linux Mint 22.2 - September 04, 2025
+//
+
+//
 // ubuntu
 //
 https://ubuntu.com											//Ubuntu 22.04.3 LTS - August 10, 2023
