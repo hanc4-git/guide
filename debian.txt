@@ -2,7 +2,7 @@
 // ******************************************************************
 // * UNLV															*
 // *																*
-// * debian setup guide on ubuntu									*
+// * debian setup guide												*
 // * the new version is available on GitHub.						*
 // ******************************************************************
 //
