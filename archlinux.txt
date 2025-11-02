@@ -96,6 +96,12 @@ $ archinstall
 	$ tlp-stat-s
 
 //
+// cachyos														//CachyOS - August 24, 2025
+//
+CachyOS Installer\Partitions\Erase disk
+	select "ext4"
+
+//
 // welcome
 //
   Select "Start the Installer"
