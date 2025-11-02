@@ -341,7 +341,7 @@ CachyOS Installer\Partitions\Erase disk
 // option to install "Virtualbox Guest Additions"
 //
 menu bar\Devices\Insert Guest Additions
-copy and paste all files in *.iso to Documents
+copy and paste all files in VBox_GAs_{VBoxClient_version}.iso to Documents
 right-click
 	"Open in Console"
 
