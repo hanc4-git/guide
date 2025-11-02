@@ -41,9 +41,6 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
 		//
 		$ sudo dnf remove power-profiles-daemon
 
-  // virtualbox settings
-  	$ sudo gpasswd -a user{$username} vboxsf
-		
   // fedora update
   // https://getfedora.org	//Fedora
   // 38 - April 18, 2023
@@ -214,27 +211,37 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
 	  	:x
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
-  
-  // media codecs					//broken
-	// https://rpmfusion.org/Configuration		//Configuration - RPM Fusion
-	//
-		$ sudo dnf groupupdate \
-		  multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
 
-  // option of latest releases of root
-  	// root dependencies
-	// https://root.cern/install/dependencies/	//Dependencies
-	//
-		$ sudo dnf groupinstall "Development Tools" "C Development Tools and Libraries"
-		$ sudo dnf install git vim
-		$ sudo dnf install git make cmake gcc-c++ gcc binutils \
-		  libX11-devel libXpm-devel libXft-devel libXext-devel python openssl-devel
-		$ sudo dnf install redhat-lsb-core gcc-gfortran pcre-devel \
-		  mesa-libGL-devel mesa-libGLU-devel glew-devel ftgl-devel mysql-devel \
-		  fftw-devel cfitsio-devel graphviz-devel libuuid-devel \
-		  avahi-compat-libdns_sd-devel openldap-devel python3-numpy python3-devel \
-		  libxml2-devel gsl-devel readline-devel qt5-qtwebengine-devel \
-		  R-devel R-Rcpp-devel R-RInside-devel davix-devel
+// option to install "Virtualbox Guest Additions"
+//
+menu bar\Devices\Insert Guest Additions
+	home\VBox_GAs_{VBoxClient_version}
+	double-click VBoxLinuxAdditions.run
+
+		//option to terminal
+		right-click VBoxLinuxAdditions.run
+		"Run as a Program"
+			$ VBoxService --version							//check guest additions version
+			$ sudo gpasswd -a user{$username} vboxsf
+			$ reboot
+
+// option to asus
+//
+https://asus-linux.org/
+
+// media codecs					//broken
+// https://rpmfusion.org/Configuration		//Configuration - RPM Fusion
+//
+$ sudo dnf groupupdate multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
+
+// option of latest releases of root
+// root dependencies
+// https://root.cern/install/dependencies/	//Dependencies
+//
+$ sudo dnf groupinstall "Development Tools" "C Development Tools and Libraries"
+$ sudo dnf install git vim
+$ sudo dnf install git make cmake gcc-c++ gcc binutils libX11-devel libXpm-devel libXft-devel libXext-devel python openssl-devel
+$ sudo dnf install redhat-lsb-core gcc-gfortran pcre-devel mesa-libGL-devel mesa-libGLU-devel glew-devel ftgl-devel mysql-devel fftw-devel cfitsio-devel graphviz-devel libuuid-devel avahi-compat-libdns_sd-devel openldap-devel python3-numpy python3-devel libxml2-devel gsl-devel readline-devel qt5-qtwebengine-devel R-devel R-Rcpp-devel R-RInside-devel davix-devel
 
 	// 6.18/04 - September 11, 2019
 	// 6.24/06 - September 3, 2021
