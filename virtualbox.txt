@@ -2,7 +2,7 @@
 // ******************************************************************
 // * UNLV															*
 // *																*
-// * virtualbox settings guide										*
+// * virtualbox setup guide											*
 // * the new version is available on GitHub.						*
 // ******************************************************************
 //
