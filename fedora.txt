@@ -1,13 +1,16 @@
 //
-// **********************************************************
-// * UNLV						    *
-// *							    *
-// * geant4 and root installation guide on fedora	    *
-// **********************************************************
+// ******************************************************************
+// * UNLV															*
+// *																*
+// * fedora setup guide												*
+// * the new version is available on GitHub.						*
+// ******************************************************************
 //
 //
 ///
 ///
+
+//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 https://github.com/devangshekhawat/Fedora-43-Post-Install-Guide
 https://youtu.be/RrRpXs2pkzg	//7 Things You MUST Do After Installing Fedora 36
