@@ -2,7 +2,7 @@
 // ******************************************************************
 // * UNLV															*
 // *																*
-// * geant4 and root installation guide on asahilinux				*
+// * asahilinux setup guide											*
 // * the new version is available on GitHub.						*
 // ******************************************************************
 //
