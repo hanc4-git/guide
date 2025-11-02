@@ -49,7 +49,7 @@ menu bar\Devices\Insert Guest Additions
 	// tlp
 	//
 	https://linrunner.de/tlp/installation/index.html
-	$ sudo add-apt-repository ppa:linrunner/tlp
+	$ sudo add-apt-repository ppa:linrunner/tlp				//installation
 	$ sudo apt update
 	$ sudo apt install tlp tlp-rdw
 	$ sudo tlp start
@@ -57,6 +57,18 @@ menu bar\Devices\Insert Guest Additions
 
 		// option to version 1.5 only
 		$ sudo systemctl enable tlp.service
+
+
+	//
+	// tlp
+	//
+	https://linrunner.de/tlp/installation/index.html
+	$ sudo pacman -S tlp tlp-rdw								//installation
+	$ systemctl enable tlp.service								//enable service
+	$ systemctl enable NetworkManager-dispatcher.service		//radio device wizard (tlp-rdw)
+	$ systemctl mask systemd-rfkill.service systemd-rfkill.socket	//mask
+	$ sudo tlp start
+	$ tlp-stat -s
 
 //
 // ubuntu
