@@ -344,10 +344,9 @@ menu bar\Devices\Insert Guest Additions
 copy and paste all files in VBox_GAs_{VBoxClient_version}.iso to Documents
 right-click
 	"Open in Console"
-
-$ ls -lh
-$ chmod 777 VBoxLinuxAdditions.run
-$ sudo ./VBoxLinuxAdditions.run
+		$ ls -lh
+		$ chmod 777 VBoxLinuxAdditions.run
+		$ sudo ./VBoxLinuxAdditions.run
 
 // option to asus
 //
