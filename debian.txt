@@ -36,27 +36,6 @@ https://youtu.be/gVcbeLQEHNw								//Geant4 Tutorial-kor
 		select "Install multimedia codecs"
 
 	//
-	// tlp
-	//
-	https://linrunner.de/tlp/installation/index.html
-	$ sudo add-apt-repository ppa:linrunner/tlp				//add tlp ppa
-	$ sudo apt update
-	$ sudo apt install tlp tlp-rdw							//isntallation
-	open "Software Manager"
-	show installed applications
-		remove "gnome-power-manager"
-
-			// option to use terminal
-			open terminal									//Ctrl+Alt+T
-				$ apt remove power-profiles-daemon
-
-	$ sudo tlp start
-	$ tlp-stat -s
-
-		// option to version 1.5 only
-		$ sudo systemctl enable tlp.service					//enable the service manually
-
-	//
 	// fastfetch
 	//
 	https://github.com/fastfetch-cli/fastfetch
@@ -272,17 +251,23 @@ menu bar\Devices\Insert Guest Additions
 //
 https://asus-linux.org/
 
-// option to slimbook
+// option to tlp
 //
-https://github.com/Slimbook-Team/slimbookbattery
-https://itsfoss.com/slimbook-battry-optimizer-ubuntu/
-	$ sudo add-apt-repository ppa:slimbook/slimbook
-	$ sudo apt update
-	$ sudo apt install slimbookbattery
+https://linrunner.de/tlp/installation/index.html
+$ sudo add-apt-repository ppa:linrunner/tlp					//add tlp ppa
+$ sudo apt update
+$ sudo apt install tlp tlp-rdw								//isntallation
+open "Software Manager"
+	remove "gnome-power-manager"
 
-	// option to remove slimbook
-	//
-	$ sudo apt remove slimbookbattery
-	$ sudo add-apt-repository -r ppa:slimbook/slimbook
+	// option to use terminal
+	open terminal											//Ctrl+Alt+T
+		$ apt remove power-profiles-daemon
+
+$ sudo tlp start
+$ tlp-stat -s
+
+	// option to version 1.5 only
+	$ sudo systemctl enable tlp.service						//enable the service manually
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
