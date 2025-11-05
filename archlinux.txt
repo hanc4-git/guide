@@ -120,7 +120,13 @@ $ archinstall
 // cachyos														//CachyOS - August 24, 2025
 //
 CachyOS Installer\Partitions\Erase disk
-	select "ext4"
+	select "btrfs"
+
+CachyOS Installer\All done
+	deselect "Restart now"
+	click "Done"
+
+restart
 
 //
 // welcome
