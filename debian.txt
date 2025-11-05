@@ -245,10 +245,15 @@ disable sleep
 // option to install "Virtualbox Guest Additions"
 //
 menu bar\Devices\Insert Guest Additions
-	home\VBox_GAs_{VBoxClient_version}
-	double-click VBoxLinuxAdditions.run
+	click "Run"
+
+		//option to run
+		//
+		home\VBox_GAs_{VBoxClient_version}
+		double-click VBoxLinuxAdditions.run
 
 		//option to terminal
+		//
 		right-click VBoxLinuxAdditions.run
 		"Run as a Program"
 			$ VBoxService --version							//check guest additions version
