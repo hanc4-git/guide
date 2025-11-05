@@ -122,6 +122,9 @@ $ archinstall
 //
 // cachyos													//CachyOS - August 24, 2025
 //
+Desktop Session: Plasma->Wayland
+	login without password
+
 CachyOS Installer\Partitions\Erase disk
 	select "btrfs"
 
