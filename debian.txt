@@ -68,9 +68,59 @@ https://youtu.be/gVcbeLQEHNw								//Geant4 Tutorial-kor
 			$ sudo apt install fastfetch-linux-amd64.deb
 
 //
-// ubuntu
+// ubuntu													//Ubuntu 22.04.3 LTS - August 10, 2023
 //
-https://ubuntu.com											//Ubuntu 22.04.3 LTS - August 10, 2023
+	//
+	// flatpak
+	//
+	https://flatpak.org/setup/
+	open terminal											//Ctrl+Alt+T
+		$ sudo apt install flatpak
+		$ sudo apt install gnome-software-plugin-flatpak
+		$ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+		$ sudo reboot
+
+	//
+	// multimedia codecs
+	//
+	https://www.linuxfordevices.com/tutorials/linux/installing-multimedia-codecs-linux
+	open terminal											//Ctrl+Alt+T
+		$ sudo add-apt-repository multiverse
+		$ sudo apt update
+		$ sudo apt install ubuntu-restricted-extras
+
+	//
+	// ppd													//power-profiles-daemon
+	//
+	https://linuxconfig.org/how-to-manage-power-profiles-over-d-bus-with-power-profiles-daemon-on-linux
+	https://gitlab.freedesktop.org/upower/power-profiles-daemon#power-profiles-daemon
+	open "Software Manager"
+		install "power-profiles-daemon"
+		remove "gnome-power-manager"
+
+		//option to use terminal
+		//
+		open terminal										//Ctrl+Alt+T
+			$ sudo apt install power-profiles-daemon
+			$ sudo systemctl enable power-profiles-daemon.service
+			$ powerprofilesctl list
+
+		open "Software Manager"
+			remove "gnome-power-manager"
+
+		$ sudo reboot
+
+	//
+	// fastfetch
+	//
+	https://github.com/fastfetch-cli/fastfetch
+	Download fastfetch-linux-<proper architecture>.deb
+	double-click
+
+		//option to use terminal
+		open terminal										//Ctrl+Alt+T
+			$ sudo apt install fastfetch-linux-amd64.deb
+
 disable sleep
 	\Settings\Privacy\Screen\Blank Screen Delay
 	\Settings\Privacy\Screen\Automatic Screen Lock
