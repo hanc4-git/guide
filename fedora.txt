@@ -349,6 +349,16 @@ software\updates
 		$ sudo dnf install kernel-cachyos kernel-cachyos-devel-matched
 		$ sudo dnf update									//system update
 
+//option to tuned
+//
+https://github.com/redhat-performance/tuned
+open konsole												//Ctrl+Alt+T
+	$ dnf install tuned
+	$ systemctl start tuned
+	$ systemctl enable tuned
+	$ tuned-adm active
+	$ tuned-adm list
+
 // option to tlp
 //
 https://linrunner.de/tlp/installation/index.html
