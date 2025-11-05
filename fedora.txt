@@ -311,6 +311,11 @@ $ sudo dnf install redhat-lsb-core gcc-gfortran pcre-devel mesa-libGL-devel mesa
 https://linrunner.de/tlp/installation/index.html
 $ sudo dnf install tlp tlp-rdw								//installation
 $ sudo dnf remove tuned tuned-ppd							//uninstall power management tool
+
+	//option to uninstall power management tool below version 40
+	//
+	$ sudo dnf remove power-profiles-daemon
+
 $ sudo systemctl enable tlp.service							//enable service
 $ sudo systemctl mask systemd-rfkill.service systemd-rfkill.socket	//mask
 $ sudo tlp start
@@ -319,9 +324,5 @@ $ tlp-stat -s
 	//option to get tlp repository
 	//
 	$ sudo dnf install https://repo.linrunner.de/fedora/tlp/repos/releases/tlp-release.fc$(rpm -E %fedora).noarch.rpm
-
-	//option to uninstall power management tool below version 40
-	//
-	$ sudo dnf remove power-profiles-daemon
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
