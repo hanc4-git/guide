@@ -26,7 +26,7 @@ https://youtu.be/Lxb4WZyKeCE								//Geant4 Tutorial 1: Installation and Testin
 // archlinux												//archlinux - November 01, 2025
 //
 $ pacman -Sy												//system update
-$ pacman-key --populate
+$ pacman-key --populate										//update database
 $ sudo pacman -S archlinux-keyring
 	y
 
