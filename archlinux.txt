@@ -89,6 +89,14 @@ $ archinstall
 	click "Start"
 
 	//
+	// multimedia codecs
+	//
+	https://itsfoss.gitlab.io/post/how-to-install-ffmpeg-in-linux/
+	$ sudo pacman -Syu										//system update
+	$ sudo pacman -S ffmpeg
+	$ ffmpeg -version
+
+	//
 	// fastfetch
 	//
 	https://github.com/fastfetch-cli/fastfetch
@@ -105,14 +113,6 @@ $ archinstall
 	$ systemctl mask systemd-rfkill.service systemd-rfkill.socket	//mask
 	$ sudo tlp start
 	$ tlp-stat -s
-
-	//
-	// multimedia codecs
-	//
-	https://itsfoss.gitlab.io/post/how-to-install-ffmpeg-in-linux/
-	$ sudo pacman -Syu										//system update
-	$ sudo pacman -S ffmpeg
-	$ ffmpeg -version
 
 //
 // cachyos														//CachyOS - August 24, 2025
