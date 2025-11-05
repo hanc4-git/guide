@@ -93,7 +93,7 @@ $ archinstall
 	//
 	https://itsfoss.gitlab.io/post/how-to-install-ffmpeg-in-linux/
 	built-in
-
+		
 	//
 	// ppd													//power-profiles-daemon
 	//
@@ -407,8 +407,21 @@ open konsole												//Ctrl+Alt+T
 		$ pacman -Sy linux-g14 linux-g14-headers
 		$ grub-mkconfig -o /boot/grub/grub.cfg
 
+//
+// yay
+//
+https://itsfoss.com/install-yay-arch-linux/
+open konsole												//Ctrl+Alt+T
+	$ sudo pacman -Syu
+	$ sudo pacman -S --needed base-devel git				//prerequisites
+	$ git clone https://aur.archlinux.org/yay.git
+	$ cd yay
+	$ makepkg -si											//install
+	$ yay --version
+
 // option to tlp
 //
+https://wiki.archlinux.org/title/CPU_frequency_scaling
 https://linrunner.de/tlp/installation/index.html
 open konsole												//Ctrl+Alt+T
 	$ sudo pacman -S tlp tlp-rdw							//installation
