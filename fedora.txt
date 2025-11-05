@@ -57,7 +57,7 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
 
 		$ sudo systemctl enable power-profiles-daemon.service
 		$ powerprofilesctl list
-		$ sudo reboot
+		$ sudo shutdown -r now
 
 	//
 	// fastfetch
@@ -97,7 +97,7 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
 		  	Ctrl+o
 		  	enter
 		  	Ctrl+x
-		$ reboot
+		$ sudo shutdown -r now
 
 	// fedora
 	update "Software"
@@ -252,7 +252,7 @@ menu bar\Devices\Insert Guest Additions
 		"Run as a Program"
 			$ VBoxService --version							//check guest additions version
 			$ sudo gpasswd -a user{$username} vboxsf
-			$ reboot
+			$ sudo shutdown -r now
 
 // option to asus
 //
