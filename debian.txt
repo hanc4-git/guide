@@ -53,6 +53,13 @@ https://youtu.be/gVcbeLQEHNw								//Geant4 Tutorial-kor
 	$ sudo add-apt-repository ppa:linrunner/tlp				//add tlp ppa
 	$ sudo apt update
 	$ sudo apt install tlp tlp-rdw							//isntallation
+	open "Software Manager"
+		remove "Power Profiles Daemon"
+
+			// option to use terminal
+			open terminal									//Ctrl+Alt+T
+				$ apt remove power-profiles-daemon
+
 	$ sudo tlp start
 	$ tlp-stat -s
 
