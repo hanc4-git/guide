@@ -99,7 +99,7 @@ $ archinstall
 	//
 	https://linuxconfig.org/how-to-manage-power-profiles-over-d-bus-with-power-profiles-daemon-on-linux
 	https://gitlab.freedesktop.org/upower/power-profiles-daemon#power-profiles-daemon
-	open Konsole											//Ctrl+Alt+T
+	open konsole											//Ctrl+Alt+T
 		$ sudo pacman -S power-profiles-daemon
 		$ sudo systemctl enable --now power-profiles-daemon.service
 		$ powerprofilesctl list
@@ -109,7 +109,7 @@ $ archinstall
 	// fastfetch
 	//
 	https://github.com/fastfetch-cli/fastfetch
-	open Konsole											//Ctrl+Alt+T
+	open konsole											//Ctrl+Alt+T
 		$ sudo pacman -S fastfetch
 
 //
@@ -368,7 +368,7 @@ right-click
 // multimedia codecs
 //
 https://itsfoss.gitlab.io/post/how-to-install-ffmpeg-in-linux/
-open Konsole												//Ctrl+Alt+T
+open konsole												//Ctrl+Alt+T
 	$ sudo pacman -Syu										//system update
 	$ sudo pacman -S ffmpeg
 	$ ffmpeg -version
@@ -376,7 +376,7 @@ open Konsole												//Ctrl+Alt+T
 // option to asus
 //
 https://asus-linux.org/
-open Konsole												//Ctrl+Alt+T
+open konsole												//Ctrl+Alt+T
 	$ pacman -S linux-firmware amd-ucode					//intel-ucode for intel
 	$ pacman-key --recv-keys 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35	//g14 repo
 	$ pacman-key --finger 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35
@@ -410,7 +410,7 @@ open Konsole												//Ctrl+Alt+T
 // option to tlp
 //
 https://linrunner.de/tlp/installation/index.html
-open Konsole												//Ctrl+Alt+T
+open konsole												//Ctrl+Alt+T
 	$ sudo pacman -S tlp tlp-rdw							//installation
 	$ systemctl enable tlp.service							//enable service
 	$ systemctl enable NetworkManager-dispatcher.service	//radio device wizard (tlp-rdw)
