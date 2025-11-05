@@ -99,12 +99,20 @@ $ archinstall
 	// tlp
 	//
 	https://linrunner.de/tlp/installation/index.html
-	$ sudo pacman -S tlp tlp-rdw								//installation
-	$ systemctl enable tlp.service								//enable service
-	$ systemctl enable NetworkManager-dispatcher.service		//radio device wizard (tlp-rdw)
+	$ sudo pacman -S tlp tlp-rdw							//installation
+	$ systemctl enable tlp.service							//enable service
+	$ systemctl enable NetworkManager-dispatcher.service	//radio device wizard (tlp-rdw)
 	$ systemctl mask systemd-rfkill.service systemd-rfkill.socket	//mask
 	$ sudo tlp start
 	$ tlp-stat -s
+
+	//
+	// multimedia codecs
+	//
+	https://itsfoss.gitlab.io/post/how-to-install-ffmpeg-in-linux/
+	$ sudo pacman -Syu										//system update
+	$ sudo pacman -S ffmpeg
+	$ ffmpeg -version
 
 //
 // cachyos														//CachyOS - August 24, 2025
