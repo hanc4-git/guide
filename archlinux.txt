@@ -411,7 +411,7 @@ $ archinstall
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
-// option to install "Virtualbox Guest Additions"
+// option to install "Virtualbox Guest Additions"			//cachyos built-in
 //
 menu bar\Devices\Insert Guest Additions
 copy and paste all files in VBox_GAs_{VBoxClient_version}.iso to Documents
