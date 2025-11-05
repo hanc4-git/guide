@@ -253,6 +253,7 @@ menu bar\Devices\Insert Guest Additions
 			$ VBoxService --version							//check guest additions version
 			$ sudo gpasswd -a user{$username} vboxsf
 			$ reboot
+
 // option to asus
 //
 https://asus-linux.org/
