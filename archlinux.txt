@@ -473,6 +473,7 @@ open konsole												//Ctrl+Alt+T
 
 //option to tuned
 //
+https://www.youtube.com/watch?v=WTJw21XQjCc
 open konsole												//Ctrl+Alt+T
 	$ yay -S tuned-git
 		n													//cleanBuild
