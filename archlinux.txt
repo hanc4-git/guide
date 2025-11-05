@@ -38,7 +38,9 @@ $ archinstall
 	Disk configuration\Partitioning
 		Use a best-effort default partition layout
 		space bar											//space bar or tab
-		ext4												//Filesystem
+		btrfs												//Filesystem
+			No
+			Use compression
 
 	Swap
 		Yes													//zram
