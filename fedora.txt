@@ -27,6 +27,7 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
 	// ppd													//power-profiles-daemon
 	//
 	$ sudo dnf install power-profiles-daemon
+	$ sudo systemctl enable power-profiles-daemon.service
 	$ sudo reboot
 
   // fedora update
