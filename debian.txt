@@ -39,6 +39,7 @@ https://youtu.be/gVcbeLQEHNw								//Geant4 Tutorial-kor
 	// ppd													//power-profiles-daemon
 	//
 	$ sudo apt install power-profiles-daemon
+	$ sudo systemctl enable power-profiles-daemon.service
 	$ sudo reboot
 
 	//
