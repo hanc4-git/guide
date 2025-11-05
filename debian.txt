@@ -49,7 +49,7 @@ https://youtu.be/gVcbeLQEHNw								//Geant4 Tutorial-kor
 			$ sudo apt install power-profiles-daemon
 			$ sudo systemctl enable power-profiles-daemon.service
 			$ powerprofilesctl list
-			$ sudo reboot
+			$ sudo shutdown -r now
 
 	//
 	// fastfetch
@@ -73,7 +73,7 @@ https://youtu.be/gVcbeLQEHNw								//Geant4 Tutorial-kor
 		$ sudo apt install flatpak
 		$ sudo apt install gnome-software-plugin-flatpak
 		$ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-		$ sudo reboot
+		$ sudo shutdown -r now
 
 	//
 	// multimedia codecs
@@ -98,7 +98,7 @@ https://youtu.be/gVcbeLQEHNw								//Geant4 Tutorial-kor
 			$ sudo apt install power-profiles-daemon
 			$ sudo systemctl enable power-profiles-daemon.service
 			$ powerprofilesctl list
-			$ sudo reboot
+			$ sudo shutdown -r now
 
 	//
 	// fastfetch
@@ -306,7 +306,7 @@ menu bar\Devices\Insert Guest Additions
 		"Run as a Program"
 			$ VBoxService --version							//check guest additions version
 			$ sudo gpasswd -a user{$username} vboxsf
-			$ reboot
+			$ sudo shutdown -r now
 
 // option to asus
 //
