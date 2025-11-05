@@ -23,6 +23,14 @@ https://youtu.be/gVcbeLQEHNw								//Geant4 Tutorial-kor
 // linuxmint												//Linux Mint 22.2 - September 04, 2025
 //
 	//
+	// fastfetch
+	//
+	https://github.com/fastfetch-cli/fastfetch
+	Download fastfetch-linux-<proper architecture>.deb
+	open terminal											//Ctrl+Alt+T
+		$ sudo apt install fastfetch-linux-amd64.deb
+
+	//
 	// tlp
 	//
 	https://linrunner.de/tlp/installation/index.html
