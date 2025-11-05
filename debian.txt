@@ -25,6 +25,7 @@ https://youtu.be/gVcbeLQEHNw								//Geant4 Tutorial-kor
 	//
 	// flatpak
 	//
+	https://flatpak.org/setup/
 	built-in
 
 	//
