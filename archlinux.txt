@@ -105,8 +105,6 @@ $ archinstall
 		$ powerprofilesctl list
 		$ reboot
 
-	
-
 	//
 	// fastfetch
 	//
