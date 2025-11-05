@@ -23,7 +23,7 @@ https://youtu.be/QItrmchEQWE								//CERN ROOT Tutorial 2: Installing ROOT
 https://youtu.be/Lxb4WZyKeCE								//Geant4 Tutorial 1: Installation and Testing of Geant4
 
 //
-// archlinux												//archlinux 6.17.6 - October, 1, 2025
+// archlinux												//archlinux - November 01, 2025
 //
 $ pacman -Sy												//system update
 $ pacman-key --populate
