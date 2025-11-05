@@ -92,10 +92,7 @@ $ archinstall
 	// multimedia codecs
 	//
 	https://itsfoss.gitlab.io/post/how-to-install-ffmpeg-in-linux/
-	open Konsole											//Ctrl+Alt+T
-		$ sudo pacman -Syu									//system update
-		$ sudo pacman -S ffmpeg
-		$ ffmpeg -version
+	built-in
 
 	//
 	// ppd													//power-profiles-daemon
@@ -366,6 +363,15 @@ right-click
 		$ ls -lh
 		$ chmod 777 VBoxLinuxAdditions.run
 		$ sudo ./VBoxLinuxAdditions.run
+
+//
+// multimedia codecs
+//
+https://itsfoss.gitlab.io/post/how-to-install-ffmpeg-in-linux/
+open Konsole												//Ctrl+Alt+T
+	$ sudo pacman -Syu										//system update
+	$ sudo pacman -S ffmpeg
+	$ ffmpeg -version
 
 // option to asus
 //
