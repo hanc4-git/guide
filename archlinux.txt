@@ -103,7 +103,7 @@ $ archinstall
 		$ sudo pacman -S power-profiles-daemon
 		$ sudo systemctl enable --now power-profiles-daemon.service
 		$ powerprofilesctl list
-		$ sudo shutdown -r now
+		$ shutdown -r now
 
 	//
 	// fastfetch
@@ -131,7 +131,7 @@ CachyOS Installer\Partitions\Erase disk
   // virtualbox settings
 	$ VBoxService --version		//check guest additions version
   	$ sudo gpasswd -a user{$username} vboxsf
-	$ sudo shutdown -r now
+	$ shutdown -r now
 	
 	// shared folder directory in Plasma
 		/Devices/endeavouros/media/sf_vboxsf
