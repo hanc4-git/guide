@@ -315,12 +315,12 @@ https://asus-linux.org/
 // option to tlp
 //
 https://linrunner.de/tlp/installation/index.html
-$ sudo add-apt-repository ppa:linrunner/tlp					//add tlp ppa
-$ sudo apt update
-$ sudo apt install tlp tlp-rdw								//isntallation
+open terminal												//Ctrl+Alt+T
+	$ sudo add-apt-repository ppa:linrunner/tlp				//add tlp ppa
+	$ sudo apt update
+	$ sudo apt install tlp tlp-rdw							//isntallation
 
-	// option to use terminal
-	open terminal											//Ctrl+Alt+T
+		// option to remove
 		$ apt remove power-profiles-daemon
 
 $ sudo tlp start
