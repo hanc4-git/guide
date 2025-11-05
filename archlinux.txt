@@ -97,17 +97,6 @@ $ archinstall
 	$ ffmpeg -version
 
 	//
-	// tlp
-	//
-	https://linrunner.de/tlp/installation/index.html
-	$ sudo pacman -S tlp tlp-rdw							//installation
-	$ systemctl enable tlp.service							//enable service
-	$ systemctl enable NetworkManager-dispatcher.service	//radio device wizard (tlp-rdw)
-	$ systemctl mask systemd-rfkill.service systemd-rfkill.socket	//mask
-	$ sudo tlp start
-	$ tlp-stat -s
-
-	//
 	// fastfetch
 	//
 	https://github.com/fastfetch-cli/fastfetch
@@ -399,4 +388,15 @@ $ pacman -Suy												//system update
 	$ pacman -Sy linux-g14 linux-g14-headers
 	$ grub-mkconfig -o /boot/grub/grub.cfg
 
+// option to tlp
+//
+https://linrunner.de/tlp/installation/index.html
+$ sudo pacman -S tlp tlp-rdw								//installation
+$ systemctl enable tlp.service								//enable service
+$ systemctl enable NetworkManager-dispatcher.service		//radio device wizard (tlp-rdw)
+$ systemctl mask systemd-rfkill.service systemd-rfkill.socket	//mask
+$ sudo tlp start
+$ tlp-stat -s
+
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+
