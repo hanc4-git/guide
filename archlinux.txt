@@ -78,7 +78,7 @@ $ archinstall
 		$ pacman -Sy										//system update
 
 		https://flatpak.org/setup/
-		$ sudo pacman -S flatpak									//install flatpak
+		$ sudo pacman -S flatpak							//install flatpak
 		$ exit
 
 	$ shutdown -h now
@@ -117,7 +117,7 @@ $ archinstall
 		$ sudo pacman -S fastfetch
 
 //
-// cachyos														//CachyOS - August 24, 2025
+// cachyos													//CachyOS - August 24, 2025
 //
 CachyOS Installer\Partitions\Erase disk
 	select "btrfs"
@@ -129,7 +129,7 @@ CachyOS Installer\All done
 restart
 
 //
-// eos
+// eos														//EndeavourOS
 //
   Select "Start the Installer"
   Select "Online"
