@@ -69,13 +69,6 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
 		//option to use terminal
 		open terminal										//Ctrl+Alt+T
 			$ sudo apt install fastfetch-linux-amd64.deb
-	//
-	// ppd													//power-profiles-daemon
-	//
-	https://linuxconfig.org/how-to-manage-power-profiles-over-d-bus-with-power-profiles-daemon-on-linux
-	$ sudo dnf install power-profiles-daemon
-	$ sudo systemctl enable power-profiles-daemon.service
-	$ sudo reboot
 
   // fedora update
   // https://getfedora.org	//Fedora
