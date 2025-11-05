@@ -90,7 +90,7 @@ $ archinstall
 	//
 	https://github.com/fastfetch-cli/fastfetch
 	open konsole
-		$ pacman -S fastfetch
+		$ sudo pacman -S fastfetch
 
 	//
 	// tlp
