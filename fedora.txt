@@ -20,9 +20,54 @@ https://youtu.be/QItrmchEQWE	//CERN ROOT Tutorial 2: Installing ROOT
 https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Geant4
 
 //
-// fedora
+// fedora													//kde plasma-43.1 - October 28, 2025
 //
+	//
+	// flatpak
+	//
+	https://flatpak.org/setup/
+	built-in
 
+	//
+	// multimedia codecs
+	//
+	https://www.linuxfordevices.com/tutorials/linux/installing-multimedia-codecs-linux
+	open terminal											//Ctrl+Alt+T
+		$ sudo dnf install \
+  https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+		$ sudo dnf install \
+  https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+		$ sudo dnf update 
+		$ sudo dnf install gstreamer1-plugins-{bad-\*,good-\*,base} gstreamer1-plugin-openh264 gstreamer1-libav --exclude=gstreamer1-plugins-bad-free-devel
+ 		$ sudo dnf install lame\* --exclude=lame-devel
+ 		$ sudo dnf group upgrade --with-optional Multimedia
+
+	//
+	// ppd													//power-profiles-daemon
+	//
+	https://linuxconfig.org/how-to-manage-power-profiles-over-d-bus-with-power-profiles-daemon-on-linux
+	https://gitlab.freedesktop.org/upower/power-profiles-daemon#power-profiles-daemon
+	open terminal											//Ctrl+Alt+T
+		$ sudo dnf install power-profiles-daemon
+		$ sudo dnf remove tuned tuned-ppd
+
+			//option to version 40 below
+			$ sudo dnf remove power-profiles-daemon
+
+		$ sudo systemctl enable power-profiles-daemon.service
+		$ powerprofilesctl list
+		$ sudo reboot
+
+	//
+	// fastfetch
+	//
+	https://github.com/fastfetch-cli/fastfetch
+	Download fastfetch-linux-<proper architecture>.deb
+	double-click
+
+		//option to use terminal
+		open terminal										//Ctrl+Alt+T
+			$ sudo apt install fastfetch-linux-amd64.deb
 	//
 	// ppd													//power-profiles-daemon
 	//
