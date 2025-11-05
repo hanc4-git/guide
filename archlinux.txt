@@ -99,6 +99,7 @@ $ archinstall
 	//
 	// ppd													//power-profiles-daemon
 	//
+	https://linuxconfig.org/how-to-manage-power-profiles-over-d-bus-with-power-profiles-daemon-on-linux
 	$ sudo pacman -S power-profiles-daemon
 	$ sudo systemctl enable power-profiles-daemon.service
 	$ sudo reboot
