@@ -89,12 +89,7 @@ $ archinstall
 	// fastfetch
 	//
 	https://github.com/fastfetch-cli/fastfetch
-	update "Discover"
-	download "fastfetch"
-
-		//option to use konsole
-		//
-		open konsole
+	open konsole
 		$ pacman -S fastfetch
 
 	//
