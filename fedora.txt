@@ -52,6 +52,7 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
 		$ sudo dnf remove tuned tuned-ppd
 
 			//option to version 40 below
+			//
 			$ sudo dnf remove power-profiles-daemon
 
 		$ sudo systemctl enable power-profiles-daemon.service
