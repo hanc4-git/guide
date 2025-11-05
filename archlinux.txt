@@ -14,14 +14,70 @@
 
 // installation
 //
+https://wiki.cachyos.org/configuration/post_install_setup/	//cachyos
+https://wiki.fascinated.cc/category/cachyos-gaming
 https://wiki.archlinux.org/title/Installation_guide			//archlinux
 https://itsfoss.com/arch-linux-install-encrypted-btrfs/
 https://youtu.be/DbeL7ehxpZ0?si=sBVLycxjBaTJ-9fB			//How To Install Arch Linux in VirtualBox (2025) | Arch Linux Installation
-https://wiki.cachyos.org/configuration/post_install_setup/	//cachyos
-https://wiki.fascinated.cc/category/cachyos-gaming
 https://youtu.be/StHVU-Zvacs								//7 Things After Installing EndeavourOS
 https://youtu.be/QItrmchEQWE								//CERN ROOT Tutorial 2: Installing ROOT
 https://youtu.be/Lxb4WZyKeCE								//Geant4 Tutorial 1: Installation and Testing of Geant4
+
+//
+// cachyos													//CachyOS - August 24, 2025
+//
+Desktop Session: Plasma->Wayland
+	login without password
+
+CachyOS Installer\Partitions\Erase disk
+	select "btrfs"
+
+CachyOS Installer\All done
+	deselect "Restart now"
+	click "Done"
+
+restart
+
+	//
+	// run
+	//
+	virtualbox manager\Storage\Controller: IDE
+		click "IDE Primary Device 0:"
+		select "Remove Disk From Virtual Drive"
+
+	click "Start"
+
+	//
+	// flatpak
+	//
+	https://flatpak.org/setup/
+	$ sudo pacman -S flatpak
+
+	//
+	// multimedia codecs
+	//
+	https://itsfoss.gitlab.io/post/how-to-install-ffmpeg-in-linux/
+	$ sudo pacman -Syu
+	$ sudo pacman -S ffmpeg
+	$ ffmpeg -version
+		
+	//
+	// ppd													//power-profiles-daemon
+	//
+	https://linuxconfig.org/how-to-manage-power-profiles-over-d-bus-with-power-profiles-daemon-on-linux
+	https://gitlab.freedesktop.org/upower/power-profiles-daemon#power-profiles-daemon
+	open konsole											//Ctrl+Alt+T
+		$ sudo pacman -S power-profiles-daemon
+		$ sudo systemctl enable --now power-profiles-daemon.service
+		$ powerprofilesctl list
+		$ shutdown -r now
+
+	//
+	// fastfetch
+	//
+	https://github.com/fastfetch-cli/fastfetch
+	open konsole											//Ctrl+Alt+T
+		$ sudo pacman -S fastfetch
 
 //
 // archlinux												//archlinux - November 01, 2025
@@ -100,62 +156,6 @@ $ archinstall
 	//
 	https://itsfoss.gitlab.io/post/how-to-install-ffmpeg-in-linux/
 	built-in
-		
-	//
-	// ppd													//power-profiles-daemon
-	//
-	https://linuxconfig.org/how-to-manage-power-profiles-over-d-bus-with-power-profiles-daemon-on-linux
-	https://gitlab.freedesktop.org/upower/power-profiles-daemon#power-profiles-daemon
-	open konsole											//Ctrl+Alt+T
-		$ sudo pacman -S power-profiles-daemon
-		$ sudo systemctl enable --now power-profiles-daemon.service
-		$ powerprofilesctl list
-		$ shutdown -r now
-
-	//
-	// fastfetch
-	//
-	https://github.com/fastfetch-cli/fastfetch
-	open konsole											//Ctrl+Alt+T
-		$ sudo pacman -S fastfetch
-
-//
-// cachyos													//CachyOS - August 24, 2025
-//
-Desktop Session: Plasma->Wayland
-	login without password
-
-CachyOS Installer\Partitions\Erase disk
-	select "btrfs"
-
-CachyOS Installer\All done
-	deselect "Restart now"
-	click "Done"
-
-restart
-
-	//
-	// run
-	//
-	virtualbox manager\Storage\Controller: IDE
-		click "IDE Primary Device 0:"
-		select "Remove Disk From Virtual Drive"
-
-	click "Start"
-
-	//
-	// flatpak
-	//
-	https://flatpak.org/setup/
-	$ sudo pacman -S flatpak
-
-	//
-	// multimedia codecs
-	//
-	https://itsfoss.gitlab.io/post/how-to-install-ffmpeg-in-linux/
-	$ sudo pacman -Syu
-	$ sudo pacman -S ffmpeg
-	$ ffmpeg -version
 		
 	//
 	// ppd													//power-profiles-daemon
