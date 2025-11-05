@@ -42,6 +42,10 @@ $ archinstall
 	Swap
 		Yes													//zram
 
+		// option to Bootloader
+		//
+		systemd-boot										//asus
+
 	Authentication
 		Root password
 		User account
