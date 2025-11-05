@@ -97,13 +97,6 @@ $ archinstall
 	$ ffmpeg -version
 
 	//
-	// fastfetch
-	//
-	https://github.com/fastfetch-cli/fastfetch
-	open konsole
-		$ sudo pacman -S fastfetch
-
-	//
 	// tlp
 	//
 	https://linrunner.de/tlp/installation/index.html
@@ -113,6 +106,13 @@ $ archinstall
 	$ systemctl mask systemd-rfkill.service systemd-rfkill.socket	//mask
 	$ sudo tlp start
 	$ tlp-stat -s
+
+	//
+	// fastfetch
+	//
+	https://github.com/fastfetch-cli/fastfetch
+	open konsole
+		$ sudo pacman -S fastfetch
 
 //
 // cachyos														//CachyOS - August 24, 2025
