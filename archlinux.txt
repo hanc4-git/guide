@@ -77,7 +77,7 @@ $ archinstall
 		$ sudo pacman -S flatpak									//install flatpak
 		$ exit
 
-	$ shutdown now
+	$ shutdown -r now
 
 	//
 	// run
