@@ -405,12 +405,24 @@ open konsole												//Ctrl+Alt+T
 		$ pacman -S rog-control-center
 
 		//
-		// custom kernel										//dirvers fixes
+		// custom kernel									//dirvers fixes
 		//
 		$ pacman -Sy linux-g14 linux-g14-headers
 
 			//option to grub
 			$ grub-mkconfig -o /boot/grub/grub.cfg
+
+		//
+		// nvidia
+		//
+		$ cat /proc/driver/nvidia/gpus/bus_address/power	//query status
+
+			//option to enable
+			//
+			$ systemctl enable nvidia-suspend.service nvidia-hibernate.service nvidia-resume.service
+			$ systemctl enable --now nvidia-powerd
+
+		$ pacman -S nvidia-utils vulkan-icd-loader
 
 //option to tuned
 //
