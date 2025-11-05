@@ -101,7 +101,7 @@ $ archinstall
 	//
 	$ sudo pacman -S power-profiles-daemon
 	$ sudo systemctl enable power-profiles-daemon.service
-	$ sudo reboot
+	$ sudo systemctl start power-profiles-daemon.service
 
 	//
 	// fastfetch
