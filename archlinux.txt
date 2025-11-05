@@ -128,6 +128,47 @@ CachyOS Installer\All done
 
 restart
 
+	//
+	// run
+	//
+	virtualbox manager\Storage\Controller: IDE
+		click "IDE Primary Device 0:"
+		select "Remove Disk From Virtual Drive"
+
+	click "Start"
+
+	//
+	// flatpak
+	//
+	https://flatpak.org/setup/
+	$ sudo pacman -S flatpak
+
+	//
+	// multimedia codecs
+	//
+	https://itsfoss.gitlab.io/post/how-to-install-ffmpeg-in-linux/
+	$ sudo pacman -Syu
+	$ sudo pacman -S ffmpeg
+	$ ffmpeg -version
+		
+	//
+	// ppd													//power-profiles-daemon
+	//
+	https://linuxconfig.org/how-to-manage-power-profiles-over-d-bus-with-power-profiles-daemon-on-linux
+	https://gitlab.freedesktop.org/upower/power-profiles-daemon#power-profiles-daemon
+	open konsole											//Ctrl+Alt+T
+		$ sudo pacman -S power-profiles-daemon
+		$ sudo systemctl enable --now power-profiles-daemon.service
+		$ powerprofilesctl list
+		$ shutdown -r now
+
+	//
+	// fastfetch
+	//
+	https://github.com/fastfetch-cli/fastfetch
+	open konsole											//Ctrl+Alt+T
+		$ sudo pacman -S fastfetch
+
 //
 // eos														//EndeavourOS
 //
