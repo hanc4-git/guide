@@ -312,6 +312,29 @@ menu bar\Devices\Insert Guest Additions
 //
 https://asus-linux.org/
 
+//option to tuned
+//
+https://www.youtube.com/watch?v=WTJw21XQjCc
+open konsole												//Ctrl+Alt+T
+	$ yay -S tuned-git
+		n													//cleanBuild
+		n													//diffs
+		y
+
+	$ sudo systemctl enable --now tuned
+	$ tuned-adm active
+	$ sudo systemctl status tuned
+
+		// option to yay
+		//
+		https://itsfoss.com/install-yay-arch-linux/
+		$ sudo pacman -Syu
+		$ sudo pacman -S --needed base-devel git
+		$ git clone https://aur.archlinux.org/yay.git
+		$ cd ysy
+		$ makepkg -si
+		$ yay --version
+
 // option to tlp
 //
 https://linrunner.de/tlp/installation/index.html
