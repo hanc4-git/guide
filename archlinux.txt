@@ -97,6 +97,13 @@ $ archinstall
 	$ ffmpeg -version
 
 	//
+	// ppd													//power-profiles-daemon
+	//
+	$ sudo pacman -S power-profiles-daemon
+	$ sudo systemctl enable power-profiles-daemon.service
+	$ sudo reboot
+
+	//
 	// fastfetch
 	//
 	https://github.com/fastfetch-cli/fastfetch
