@@ -32,7 +32,7 @@ https://youtu.be/gVcbeLQEHNw								//Geant4 Tutorial-kor
 	// multimedia codecs
 	//
 	https://www.linuxfordevices.com/tutorials/linux/installing-multimedia-codecs-linux
-	choose during installation
+	install\multimedia codecs\install multimedia codecs
 
 	//
 	// fastfetch
