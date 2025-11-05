@@ -43,6 +43,7 @@ https://youtu.be/gVcbeLQEHNw								//Geant4 Tutorial-kor
 	$ sudo apt update
 	$ sudo apt install tlp tlp-rdw							//isntallation
 	open "Software Manager"
+	show installed applications
 		remove "Power Profiles Daemon"
 
 			// option to use terminal
