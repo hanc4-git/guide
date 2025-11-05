@@ -459,4 +459,3 @@ open konsole												//Ctrl+Alt+T
 	$ tlp-stat -s
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
-
