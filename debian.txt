@@ -42,7 +42,6 @@ https://youtu.be/gVcbeLQEHNw								//Geant4 Tutorial-kor
 	https://gitlab.freedesktop.org/upower/power-profiles-daemon#power-profiles-daemon
 	open "Software Manager"
 		install "power-profiles-daemon"
-		remove "gnome-power-manager"
 
 		//option to use terminal
 		//
@@ -50,11 +49,7 @@ https://youtu.be/gVcbeLQEHNw								//Geant4 Tutorial-kor
 			$ sudo apt install power-profiles-daemon
 			$ sudo systemctl enable power-profiles-daemon.service
 			$ powerprofilesctl list
-
-		open "Software Manager"
-			remove "gnome-power-manager"
-
-		$ sudo reboot
+			$ sudo reboot
 
 	//
 	// fastfetch
@@ -96,7 +91,6 @@ https://youtu.be/gVcbeLQEHNw								//Geant4 Tutorial-kor
 	https://gitlab.freedesktop.org/upower/power-profiles-daemon#power-profiles-daemon
 	open "Software Manager"
 		install "power-profiles-daemon"
-		remove "gnome-power-manager"
 
 		//option to use terminal
 		//
@@ -104,11 +98,7 @@ https://youtu.be/gVcbeLQEHNw								//Geant4 Tutorial-kor
 			$ sudo apt install power-profiles-daemon
 			$ sudo systemctl enable power-profiles-daemon.service
 			$ powerprofilesctl list
-
-		open "Software Manager"
-			remove "gnome-power-manager"
-
-		$ sudo reboot
+			$ sudo reboot
 
 	//
 	// fastfetch
@@ -328,8 +318,6 @@ https://linrunner.de/tlp/installation/index.html
 $ sudo add-apt-repository ppa:linrunner/tlp					//add tlp ppa
 $ sudo apt update
 $ sudo apt install tlp tlp-rdw								//isntallation
-open "Software Manager"
-	remove "gnome-power-manager"
 
 	// option to use terminal
 	open terminal											//Ctrl+Alt+T
