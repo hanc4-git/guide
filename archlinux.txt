@@ -100,8 +100,10 @@ $ archinstall
 	// ppd													//power-profiles-daemon
 	//
 	https://linuxconfig.org/how-to-manage-power-profiles-over-d-bus-with-power-profiles-daemon-on-linux
+	https://gitlab.freedesktop.org/upower/power-profiles-daemon#power-profiles-daemon
 	$ sudo pacman -S power-profiles-daemon
 	$ sudo systemctl enable power-profiles-daemon.service
+	$ powerprofilesctl list
 	$ sudo reboot
 
 	//
