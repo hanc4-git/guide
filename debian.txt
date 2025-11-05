@@ -314,26 +314,12 @@ https://asus-linux.org/
 
 //option to tuned
 //
-https://www.youtube.com/watch?v=WTJw21XQjCc
-open konsole												//Ctrl+Alt+T
-	$ yay -S tuned-git
-		n													//cleanBuild
-		n													//diffs
-		y
-
+https://www.funkyspacemonkey.com/tuned-allows-you-to-optimize-linux-system-performance
+open terminal												//Ctrl+Alt+T
+	$ sudo apt install tuned tuned-utils tuned-utils-systemtap
 	$ sudo systemctl enable --now tuned
 	$ tuned-adm active
-	$ sudo systemctl status tuned
-
-		// option to yay
-		//
-		https://itsfoss.com/install-yay-arch-linux/
-		$ sudo pacman -Syu
-		$ sudo pacman -S --needed base-devel git
-		$ git clone https://aur.archlinux.org/yay.git
-		$ cd ysy
-		$ makepkg -si
-		$ yay --version
+	$ tuned-adm profiles
 
 // option to tlp
 //
