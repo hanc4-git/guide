@@ -129,7 +129,7 @@ CachyOS Installer\All done
 restart
 
 //
-// welcome
+// eos
 //
   Select "Start the Installer"
   Select "Online"
