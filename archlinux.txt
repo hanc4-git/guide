@@ -72,6 +72,7 @@ $ archinstall
 	chroot into installation for post-installation configurations
 		Yes
 		$ pacman -Sy										//system update
+		$ pacman -S flatpak									//install flatpak
 		$ exit
 
 	$ shutdown now
