@@ -364,8 +364,7 @@ right-click
 		$ chmod 777 VBoxLinuxAdditions.run
 		$ sudo ./VBoxLinuxAdditions.run
 
-//
-// multimedia codecs
+// option to multimedia codecs
 //
 https://itsfoss.gitlab.io/post/how-to-install-ffmpeg-in-linux/
 open konsole												//Ctrl+Alt+T
@@ -407,17 +406,27 @@ open konsole												//Ctrl+Alt+T
 		$ pacman -Sy linux-g14 linux-g14-headers
 		$ grub-mkconfig -o /boot/grub/grub.cfg
 
+//option to tuned
 //
-// yay
-//
-https://itsfoss.com/install-yay-arch-linux/
 open konsole												//Ctrl+Alt+T
-	$ sudo pacman -Syu
-	$ sudo pacman -S --needed base-devel git				//prerequisites
-	$ git clone https://aur.archlinux.org/yay.git
-	$ cd yay
-	$ makepkg -si											//install
-	$ yay --version
+	$ yay -S tuned-git
+		n													//cleanBuild
+		n													//diffs
+		y
+
+	$ sudo systemctl enable --now tuned
+	$ tuned-adm active
+	$ sudo systemctl status tuned
+
+		// option to yay
+		//
+		https://itsfoss.com/install-yay-arch-linux/
+		$ sudo pacman -Syu
+		$ sudo pacman -S --needed base-devel git
+		$ git clone https://aur.archlinux.org/yay.git
+		$ cd ysy
+		$ makepkg -si
+		$ yay --version
 
 // option to tlp
 //
