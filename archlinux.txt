@@ -509,4 +509,8 @@ open konsole												//Ctrl+Alt+T
 	$ sudo tlp start
 	$ tlp-stat -s
 
+// option to install spotify
+//
+$ flatpak install com.spotify.Client
+
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
