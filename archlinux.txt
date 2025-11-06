@@ -57,8 +57,6 @@ Shut Down
 		open konsole										//Ctrl+Alt+T
 			$ sudo pacman -Syyu
 
-		Restart
-
 	//
 	// steam
 	//
@@ -70,6 +68,8 @@ Shut Down
 		open konsole										//Ctrl+Alt+T
 			$ sudo pacman -S cachyos-gaming-meta			//meta package
 			$ sudo pacman -S cachyos-gaming-applications	//tools and stores package
+
+	Restart
 
 	//
 	// multimedia codecs
