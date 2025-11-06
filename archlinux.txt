@@ -57,9 +57,7 @@ Shut Down
 	// multimedia codecs
 	//
 	https://itsfoss.gitlab.io/post/how-to-install-ffmpeg-in-linux/
-	$ sudo pacman -Syu
-	$ sudo pacman -S ffmpeg
-	$ ffmpeg -version
+	built-in
 		
 	//
 	// ppd													//power-profiles-daemon
