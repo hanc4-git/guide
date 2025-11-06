@@ -55,7 +55,7 @@ Shut Down
 
 		//option to use konsole
 		open konsole										//Ctrl+Alt+T
-			$ sudo pacman -Sy
+			$ sudo pacman -Syyu
 
 	//
 	// flatpak
@@ -173,12 +173,8 @@ $ archinstall
 	//
 	// system update
 	//
-	CachyOS Hello\Apps/Tweaks
-		click "System update"
-
-		//option to use konsole
-		open konsole										//Ctrl+Alt+T
-			$ sudo pacman -Sy
+	open konsole											//Ctrl+Alt+T
+		$ sudo pacman -Syyu
 
 	//
 	// multimedia codecs
