@@ -22,11 +22,6 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
 //
 // fedora													//kde plasma-43.1 - October 28, 2025
 //
-	//
-	// flatpak
-	//
-	https://flatpak.org/setup/
-	built-in
 
 	//
 	// multimedia codecs
