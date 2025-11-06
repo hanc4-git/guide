@@ -24,6 +24,12 @@ https://youtu.be/Lxb4WZyKeCE	//Geant4 Tutorial 1: Installation and Testing of Ge
 //
 
 	//
+	// flatpak
+	//
+	https://flatpak.org/setup/
+	built-in
+
+	//
 	// multimedia codecs
 	//
 	https://www.linuxfordevices.com/tutorials/linux/installing-multimedia-codecs-linux
