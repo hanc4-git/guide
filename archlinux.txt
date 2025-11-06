@@ -436,6 +436,7 @@ right-click
 https://flatpak.org/setup/
 $ sudo pacman -Syu
 $ sudo pacman -S flatpak
+$ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
 // option to multimedia codecs
 //
@@ -530,7 +531,8 @@ open konsole												//Ctrl+Alt+T
 
 // option to install spotify
 //
+https://itsfoss.com/install-spotify-arch/
 open konsole												//Ctrl+Alt+T
-	$ yay -S spotify
+	$ sudo pacman -Syu spotify-launcher
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
