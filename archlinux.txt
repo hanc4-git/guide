@@ -58,6 +58,18 @@ Shut Down
 			$ sudo pacman -Syyu
 
 	//
+	// steam
+	//
+	https://wiki.cachyos.org/configuration/gaming/
+	CachyOS Hello\Apps/Tweaks
+		click "Install Gaming packages"
+
+		//option to use konsole
+		open konsole										//Ctrl+Alt+T
+			$ sudo pacman -S cachyos-gaming-meta			//meta package
+			$ sudo pacman -S cachyos-gaming-applications	//tools and stores package
+
+	//
 	// multimedia codecs
 	//
 	https://itsfoss.gitlab.io/post/how-to-install-ffmpeg-in-linux/
@@ -75,18 +87,6 @@ Shut Down
 	//
 	https://github.com/fastfetch-cli/fastfetch
 	$ fastfetch												//built-in
-
-	//
-	// steam
-	//
-	https://wiki.cachyos.org/configuration/gaming/
-	CachyOS Hello\Apps/Tweaks
-		click "Install Gaming packages"
-
-		//option to use konsole
-		open konsole										//Ctrl+Alt+T
-			$ sudo pacman -S cachyos-gaming-meta			//meta package
-			$ sudo pacman -S cachyos-gaming-applications	//tools and stores package
 
 //
 // archlinux												//archlinux - November 01, 2025
