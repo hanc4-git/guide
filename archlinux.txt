@@ -523,6 +523,8 @@ open konsole												//Ctrl+Alt+T
 
 // option to install spotify
 //
-$ flatpak install com.spotify.Client
+https://flathub.org/en-GB/apps/com.spotify.Client
+$ flatpak install flathub com.spotify.Client
+$ flatpak run com.spotify.Client
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
