@@ -57,6 +57,8 @@ Shut Down
 		open konsole										//Ctrl+Alt+T
 			$ sudo pacman -Syyu
 
+		Restart
+
 	//
 	// steam
 	//
