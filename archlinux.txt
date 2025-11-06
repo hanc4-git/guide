@@ -487,7 +487,7 @@ open konsole												//Ctrl+Alt+T
 		//
 		// custom kernel									//dirvers fixes
 		//
-		$ pacman -Sy linux-g14 linux-g14-headers
+		$ pacman -Syu linux-g14 linux-g14-headers
 
 			//option to grub
 			$ grub-mkconfig -o /boot/grub/grub.cfg
