@@ -133,9 +133,8 @@ $ archinstall
 		// flatpak
 		//
 		https://flatpak.org/setup/
-		$ sudo pacman -Sy
+		$ sudo pacman -Sy									//system update
 		$ sudo pacman -S flatpak
-		$ pacman -Sy										//system update
 		$ exit
 
 	$ shutdown -h now
