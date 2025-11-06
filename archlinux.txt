@@ -57,20 +57,20 @@ Shut Down
 	// multimedia codecs
 	//
 	https://itsfoss.gitlab.io/post/how-to-install-ffmpeg-in-linux/
-	built-in
+	$ ffmpeg -version										//built-in
 		
 	//
 	// ppd													//power-profiles-daemon
 	//
 	https://linuxconfig.org/how-to-manage-power-profiles-over-d-bus-with-power-profiles-daemon-on-linux
 	https://gitlab.freedesktop.org/upower/power-profiles-daemon#power-profiles-daemon
-	built-in
+	$ powerprofilesctl list									//built-in
 
 	//
 	// fastfetch
 	//
 	https://github.com/fastfetch-cli/fastfetch
-	built-in
+	$ fastfetch												//built-in
 
 //
 // archlinux												//archlinux - November 01, 2025
@@ -148,7 +148,7 @@ $ archinstall
 	// multimedia codecs
 	//
 	https://itsfoss.gitlab.io/post/how-to-install-ffmpeg-in-linux/
-	built-in
+	$ ffmpeg -version										//built-in
 		
 	//
 	// ppd													//power-profiles-daemon
