@@ -338,4 +338,8 @@ $ tlp-stat -s
 	// option to version 1.5 only
 	$ sudo systemctl enable tlp.service						//enable the service manually
 
+// option to spotify
+//
+https://www.spotify.com/us/download/linux/
+
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
