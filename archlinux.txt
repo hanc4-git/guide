@@ -51,6 +51,7 @@ Shut Down
 	// flatpak
 	//
 	https://flatpak.org/setup/
+	$ sudo pacman -Sy
 	$ sudo pacman -S flatpak
 
 	//
