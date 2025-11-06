@@ -61,7 +61,7 @@ Shut Down
 	// flatpak
 	//
 	https://flatpak.org/setup/
-	$ sudo pacman -Sy
+	$ sudo pacman -Syu
 	$ sudo pacman -S flatpak
 
 	//
@@ -98,7 +98,7 @@ Shut Down
 //
 // archlinux												//archlinux - November 01, 2025
 //
-$ pacman -Sy												//system update
+$ pacman -Syu												//system update
 $ pacman-key --populate										//update database
 $ sudo pacman -S archlinux-keyring
 	y
@@ -155,7 +155,7 @@ $ archinstall
 		// flatpak
 		//
 		https://flatpak.org/setup/
-		$ sudo pacman -Sy									//system update
+		$ sudo pacman -Syu									//system update
 		$ sudo pacman -S flatpak
 		$ exit
 
@@ -463,7 +463,7 @@ open konsole												//Ctrl+Alt+T
 	$ pacman-key --finger 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35
 	$ pacman-key --lsign-key 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35
 	$ pacman-key --finger 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35
-	$ pacman -Suy											//system update
+	$ pacman -Syu											//system update
 
 		//
 		// asusctl
