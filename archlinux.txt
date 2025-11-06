@@ -48,6 +48,16 @@ Shut Down
 	click "Start"
 
 	//
+	// system update
+	//
+	CachyOS Hello\Apps/Tweaks
+		click "System update"
+
+		//option to use konsole
+		open konsole										//Ctrl+Alt+T
+			$ sudo pacman -Sy
+
+	//
 	// flatpak
 	//
 	https://flatpak.org/setup/
@@ -159,6 +169,16 @@ $ archinstall
 		select "Remove Disk From Virtual Drive"
 
 	click "Start"
+
+	//
+	// system update
+	//
+	CachyOS Hello\Apps/Tweaks
+		click "System update"
+
+		//option to use konsole
+		open konsole										//Ctrl+Alt+T
+			$ sudo pacman -Sy
 
 	//
 	// multimedia codecs
