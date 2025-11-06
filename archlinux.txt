@@ -431,6 +431,16 @@ right-click
 		$ chmod 777 VBoxLinuxAdditions.run
 		$ sudo ./VBoxLinuxAdditions.run
 
+// option to yay
+//
+https://itsfoss.com/install-yay-arch-linux/
+$ sudo pacman -Syu
+$ sudo pacman -S --needed base-devel git
+$ git clone https://aur.archlinux.org/yay.git
+$ cd ysy
+$ makepkg -si
+$ yay --version
+
 // option to flatpak
 //
 https://flatpak.org/setup/
@@ -507,16 +517,6 @@ open konsole												//Ctrl+Alt+T
 	$ tuned-adm active
 	$ sudo systemctl status tuned
 
-		// option to yay
-		//
-		https://itsfoss.com/install-yay-arch-linux/
-		$ sudo pacman -Syu
-		$ sudo pacman -S --needed base-devel git
-		$ git clone https://aur.archlinux.org/yay.git
-		$ cd ysy
-		$ makepkg -si
-		$ yay --version
-
 // option to tlp
 //
 https://wiki.archlinux.org/title/CPU_frequency_scaling
@@ -532,18 +532,23 @@ open konsole												//Ctrl+Alt+T
 // option to spotify
 //
 https://itsfoss.com/install-spotify-arch/
+https://linuxways.net/arch/install-spotify-arch-linux/
 open konsole												//Ctrl+Alt+T
-	$ sudo pacman -Syu spotify-launcher
+	$ sudo pacman -S base-devel git --needed				//prerequisites
+	$ yay -S spotify
+		n													//cleanBuild
+		n													//diffs
+		y
 
-		// option to use yay
+		// option to gpg key
 		//
-		$ sudo pacman -S base-devel git --needed			//prerequisites
-		$ yay -S spotify
+		$ curl -sS https://download.spotify.com/debian/pubkey_0D811D58.gpg | gpg --import -
 
-			// option to gpg key
-			//
-			$ curl -sS https://download.spotify.com/debian/pubkey_0D811D58.gpg | gpg --import -
+	$ spotify
 
-		$ spotify
+		//option to use pacman
+		//
+		$ sudo pacman -Syu spotify-launcher
+		$ spotify-launcher
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
