@@ -64,11 +64,7 @@ Shut Down
 	//
 	https://linuxconfig.org/how-to-manage-power-profiles-over-d-bus-with-power-profiles-daemon-on-linux
 	https://gitlab.freedesktop.org/upower/power-profiles-daemon#power-profiles-daemon
-	open konsole											//Ctrl+Alt+T
-		$ sudo pacman -S power-profiles-daemon
-		$ sudo systemctl enable --now power-profiles-daemon.service
-		$ powerprofilesctl list
-		$ shutdown -r now
+	built-in
 
 	//
 	// fastfetch
