@@ -22,11 +22,6 @@ https://youtu.be/gVcbeLQEHNw								//Geant4 Tutorial-kor
 //
 // linuxmint												//Linux Mint 22.2 - September 04, 2025
 //
-	//
-	// flatpak
-	//
-	https://flatpak.org/setup/
-	built-in
 
 	//
 	// multimedia codecs
@@ -65,15 +60,6 @@ https://youtu.be/gVcbeLQEHNw								//Geant4 Tutorial-kor
 //
 // ubuntu													//Ubuntu 22.04.3 LTS - August 10, 2023
 //
-	//
-	// flatpak
-	//
-	https://flatpak.org/setup/
-	open terminal											//Ctrl+Alt+T
-		$ sudo apt install flatpak
-		$ sudo apt install gnome-software-plugin-flatpak
-		$ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-		$ sudo shutdown -r now
 
 	//
 	// multimedia codecs
@@ -307,6 +293,16 @@ menu bar\Devices\Insert Guest Additions
 			$ VBoxService --version							//check guest additions version
 			$ sudo gpasswd -a user{$username} vboxsf
 			$ sudo shutdown -r now
+
+//
+// flatpak
+//
+https://flatpak.org/setup/
+open terminal												//Ctrl+Alt+T
+	$ sudo apt install flatpak
+	$ sudo apt install gnome-software-plugin-flatpak
+	$ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+	$ sudo shutdown -r now
 
 // option to asus
 //
