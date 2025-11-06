@@ -128,10 +128,14 @@ $ archinstall
 
 	chroot into installation for post-installation configurations
 		Yes
-		$ pacman -Sy										//system update
 
+		//
+		// flatpak
+		//
 		https://flatpak.org/setup/
-		$ sudo pacman -S flatpak							//install flatpak
+		$ sudo pacman -Sy
+		$ sudo pacman -S flatpak
+		$ pacman -Sy										//system update
 		$ exit
 
 	$ shutdown -h now
