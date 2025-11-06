@@ -72,6 +72,19 @@ Shut Down
 	Restart
 
 	//
+	// flatpak
+	//
+	https://flatpak.org/setup/
+	$ sudo pacman -Syu
+	$ sudo pacman -S flatpak
+
+		//option to add flathub
+		//
+		$ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+
+	$ shutdown -r now
+
+	//
 	// multimedia codecs
 	//
 	https://itsfoss.gitlab.io/post/how-to-install-ffmpeg-in-linux/
@@ -139,12 +152,15 @@ $ archinstall
 	Network configuration
 		Use NetworkManager
 
+	Additional Packages
+		firefox flatpak fastfetch
+
 	Timezone
 	Install
 		Yes
 
 	chroot into installation for post-installation configurations
-		Yes
+		No
 
 	$ shutdown -h now
 
@@ -179,13 +195,6 @@ $ archinstall
 		$ sudo systemctl enable --now power-profiles-daemon.service
 		$ powerprofilesctl list
 		$ shutdown -r now
-
-	//
-	// fastfetch
-	//
-	https://github.com/fastfetch-cli/fastfetch
-	open konsole											//Ctrl+Alt+T
-		$ sudo pacman -S fastfetch
 
 //
 // eos														//EndeavourOS
@@ -443,13 +452,6 @@ $ cd ysy
 $ makepkg -si
 $ yay --version
 
-// option to flatpak
-//
-https://flatpak.org/setup/
-$ sudo pacman -Syu
-$ sudo pacman -S flatpak
-$ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-
 // option to multimedia codecs
 //
 https://itsfoss.gitlab.io/post/how-to-install-ffmpeg-in-linux/
@@ -535,22 +537,27 @@ open konsole												//Ctrl+Alt+T
 //
 https://itsfoss.com/install-spotify-arch/
 https://linuxways.net/arch/install-spotify-arch-linux/
-open konsole												//Ctrl+Alt+T
-	$ sudo pacman -S base-devel git --needed				//prerequisites
-	$ yay -S spotify
-		n													//cleanBuild
-		n													//diffs
-		y
+$ flatpak install flathub com.spotify.Client
+$ flatpak run com.spotify.Client
 
-		// option to gpg key
-		//
-		$ curl -sS https://download.spotify.com/debian/pubkey_0D811D58.gpg | gpg --import -
+	//option to use pacman
+	//
+	$ sudo pacman -Syu spotify-launcher
+	$ spotify-launcher
 
-	$ spotify
+	//option to use yay
+	//
+	open konsole											//Ctrl+Alt+T
+		$ sudo pacman -S base-devel git --needed			//prerequisites
+		$ yay -S spotify
+			n												//cleanBuild
+			n												//diffs
+			y
 
-		//option to use pacman
-		//
-		$ sudo pacman -Syu spotify-launcher
-		$ spotify-launcher
+			// option to gpg key
+			//
+			$ curl -sS https://download.spotify.com/debian/pubkey_0D811D58.gpg | gpg --import -
+
+		$ spotify
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
