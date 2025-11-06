@@ -70,8 +70,7 @@ Shut Down
 	// fastfetch
 	//
 	https://github.com/fastfetch-cli/fastfetch
-	open konsole											//Ctrl+Alt+T
-		$ sudo pacman -S fastfetch
+	built-in
 
 //
 // archlinux												//archlinux - November 01, 2025
