@@ -58,13 +58,6 @@ Shut Down
 			$ sudo pacman -Syyu
 
 	//
-	// flatpak
-	//
-	https://flatpak.org/setup/
-	$ sudo pacman -Syu
-	$ sudo pacman -S flatpak
-
-	//
 	// multimedia codecs
 	//
 	https://itsfoss.gitlab.io/post/how-to-install-ffmpeg-in-linux/
@@ -150,14 +143,6 @@ $ archinstall
 
 	chroot into installation for post-installation configurations
 		Yes
-
-		//
-		// flatpak
-		//
-		https://flatpak.org/setup/
-		$ sudo pacman -Syu									//system update
-		$ sudo pacman -S flatpak
-		$ exit
 
 	$ shutdown -h now
 
@@ -445,6 +430,12 @@ right-click
 		$ ls -lh
 		$ chmod 777 VBoxLinuxAdditions.run
 		$ sudo ./VBoxLinuxAdditions.run
+
+// option to flatpak
+//
+https://flatpak.org/setup/
+$ sudo pacman -Syu
+$ sudo pacman -S flatpak
 
 // option to multimedia codecs
 //
