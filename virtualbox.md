@@ -17,7 +17,9 @@ download [VirtualBox](https://www.virtualbox.org	)
 4. select **OS** and **OS Distribution**
 5. deselect **Proceed with Unattended Installation**
 6. `New\Specify virtual hardware`
-7. choose **Base Memory** and **Number of CPUs** in <span style="color:#FF5733;">green</span>
+7. choose **Base Memory** and **Number of CPUs** in <p style="color:green">green</p>
+
+
 8. 
 setting_unattended install->select "Skip Unattended Installation"
 setting_hardware
