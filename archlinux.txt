@@ -36,7 +36,7 @@ CachyOS Installer\All done
 	deselect "Restart now"
 	click "Done"
 
-Application Launcher\Session\Shut Down
+Application Launcher\Shut Down
 
 	//
 	// run
