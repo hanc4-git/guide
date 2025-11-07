@@ -1,14 +1,8 @@
 # guide
-archlinux.txt   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  // geant4 and root installation guide on asahilinux&nbsp;endeavourOS
-                </br>
-debian.txt      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  // geant4 and root installation guide on ubuntu
-                </br>
-dual-boot.txt  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  // dual-boot linux and windows
-                </br>
-fedora.txt      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  // geant4 and root installation guide on fedora
-                </br>
-macOS.txt       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  // asahilinux installation guide on macOS
-                </br>
-virtualbox.txt  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  // virtualbox settings guide
-                </br>
-windows.txt     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  // ubuntu installation guide on windows 10 Subsystem
+archlinux.txt   geant4 and root installation guide on asahilinux&nbsp;endeavourOS\
+debian.txt      geant4 and root installation guide on ubuntu\
+dual-boot.txt   dual-boot linux and windows\
+fedora.txt      geant4 and root installation guide on fedora\
+macOS.txt       asahilinux installation guide on macOS\
+virtualbox.txt  virtualbox settings guide\
+windows.md     ubuntu installation guide on windows 10 Subsystem
