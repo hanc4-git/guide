@@ -58,6 +58,9 @@ https://youtu.be/gVcbeLQEHNw								//Geant4 Tutorial-kor
 				//option to enable without restart
 				//
 				$ sudo systemctl enable power-profiles-daemon.service
+
+	System Settings\General
+		enable "Disable composition for full-screen windows"	//prevent display tearing
 	
 	//
 	// fastfetch
