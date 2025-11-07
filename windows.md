@@ -1,4 +1,4 @@
-# **ubuntu installation guide on windows 10 subsystem**
+# **ubuntu setup guide on windows 10 subsystem**
 UNLV\
 the new version is available on GitHub.
 
