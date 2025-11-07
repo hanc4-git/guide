@@ -62,7 +62,7 @@ Application Launcher\Session
 	// steam
 	//
 	https://wiki.cachyos.org/configuration/gaming/
-	CachyOS Hello\Apps/Tweaks
+	CachyOS Hello\Apps\Tweaks
 		click "Install Gaming packages"
 
 	Restart
@@ -520,13 +520,12 @@ open konsole												//Ctrl+Alt+T
 		// nvidia
 		//
 		$ cat /proc/driver/nvidia/gpus/bus_address/power	//query status
+		$ pacman -S nvidia-utils vulkan-icd-loader
 
 			//option to enable
 			//
 			$ systemctl enable nvidia-suspend.service nvidia-hibernate.service nvidia-resume.service
 			$ systemctl enable --now nvidia-powerd
-
-		$ pacman -S nvidia-utils vulkan-icd-loader
 
 //option to tuned
 //
@@ -574,10 +573,10 @@ $ flatpak run com.spotify.Client
 			n												//diffs
 			y
 
+		$ spotify
+
 			// option to gpg key
 			//
 			$ curl -sS https://download.spotify.com/debian/pubkey_0D811D58.gpg | gpg --import -
-
-		$ spotify
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
