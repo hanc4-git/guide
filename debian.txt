@@ -46,13 +46,13 @@ https://youtu.be/gVcbeLQEHNw								//Geant4 Tutorial-kor
 	built-in
 		$ powerprofilesctl list
 
-	open "Applets"
+	Applications\Preferences\Applets
 	switch to "Download"
 		install "Power Profiles by rcalixte"
 
 	switch to "Manage"
 		click "+"												//add power profiles to panel
-	
+		
 	System Settings\Preferences\General
 		enable "Disable composition for full-screen windows"	//prevent display tearing
 	
