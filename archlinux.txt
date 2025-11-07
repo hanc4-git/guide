@@ -30,7 +30,7 @@ liveuser\Desktop Session: Plasma->Wayland
 	login without password
 
 CachyOS Installer\Partitions\Erase disk
-	select "btrfs"
+	select "ext4"
 
 CachyOS Installer\All done
 	deselect "Restart now"
