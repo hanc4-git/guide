@@ -50,17 +50,9 @@ https://youtu.be/gVcbeLQEHNw								//Geant4 Tutorial-kor
 	switch to "Download"
 		install "Power Profiles by rcalixte"
 
-		//option to use terminal
-		//
-		open terminal										//Ctrl+Alt+T
-			$ sudo apt install power-profiles-daemon
-			$ sudo shutdown -r now
-			$ powerprofilesctl list
-
-				//option to enable without restart
-				//
-				$ sudo systemctl enable power-profiles-daemon.service
-
+	switch to "Manage"
+		click "+"												//add power profiles to panel
+	
 	System Settings\Preferences\General
 		enable "Disable composition for full-screen windows"	//prevent display tearing
 	
@@ -68,12 +60,16 @@ https://youtu.be/gVcbeLQEHNw								//Geant4 Tutorial-kor
 	// fastfetch
 	//
 	https://github.com/fastfetch-cli/fastfetch
-	Download fastfetch-linux-<proper architecture>.deb
-	double-click
+	Download "fastfetch-linux-amd64.deb"
+	run
+		Install Package
 
 		//option to use terminal
 		open terminal										//Ctrl+Alt+T
 			$ sudo apt install fastfetch-linux-amd64.deb
+
+	open terminal										//Ctrl+Alt+T
+		$ fastfetch
 
 //
 // ubuntu													//Ubuntu 22.04.3 LTS - August 10, 2023
