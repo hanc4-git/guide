@@ -1,0 +1,102 @@
+# **virtualbox setup guide**
+UNLV\
+the new version is available on GitHub.
+
+## virtualbox settings
+*VirtualBox 7.2.4 - October 17, 2025*\
+download [VirtualBox](https://www.virtualbox.org	)
+
+  - option
+	[Microsoft Visual C++ Redistributable latest supported downloads](https://learn.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist?view=msvc-170)\
+	[VirtualBox Extension Pack](https://www.virtualbox.org/wiki/Downloads)
+
+## create vitual machine
+1. `New\Virtual machine name and operationg system`
+2. create *VM Name*
+3. select **ISO Image**
+4. select **OS** and **OS Distribution**
+5. deselect **Proceed with Unattended Installation**
+6. `New\Specify virtual hardware`
+7. choose **Base Memory** and **Number of CPUs** in <span style="color:#FF5733;">green</span>
+8. 
+setting_unattended install->select "Skip Unattended Installation"
+setting_hardware
+	setting_hardware_base memory->set half memory of full maximum		//option
+	setting_hardware_processors->set miximum in 
+
+setting_hard disk
+	set hard disk size 80.00 gb
+
+finish
+
+	//
+	// settings
+	//
+	general
+	manager\Settings\General\Advanced
+		set "Bidirectional"									//Shared Clipboard
+  		set "Bidirectional"									//Drag'n'Drop
+
+	display
+	manager\Settings\Display\Screen
+  		set maximum											//Video Memory
+		select "Enable 3D Accerlation"						//GPU
+
+	shared folders
+	manager\Settings\Shared Folders
+		click "Adds Share" icon
+  		set windows folder path
+  		set "Auto-mount"
+
+	//
+	// run
+	//
+	virtualbox manager\Storage\Controller: IDE
+		clike "IDE Secondary Device 0:"
+		select "Remove disk from virtual drive"
+
+	click "Start"
+
+	//
+	// shared folders access
+	//
+	open terminal											//Ctrl+Alt+T
+		$ sudo adduser your_vm_username vboxsf
+
+//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+
+// option to set up virtualbox 6.1
+//
+	manager\Settings\System
+		set "KVM"											//Paravirtualization Interface
+
+	manager\Settings\Display
+		set "Hyper-V"										//windows
+		set "Enable 3D Acceleration"
+
+	manager\Settings\Storage
+		select "Empty"										//Storage Devices
+		"Choose a disk file..."								//Attributes
+  
+// option to set up windows 11								//not recommended
+//
+disable windows hypervisor
+	open "Command Prompt" as administrator
+		$ bcdedit /set hypervisorlaunchtype off				//disable
+											auto			//enable
+						    
+disable memory integrity
+	find "Settings" in search on task bar
+		win\Settings\Privacy & security\Windows Security\Device security\Core isolation details
+		disable "Memory integrity"  
+
+reboot
+
+// option to linux commands
+//
+$ groups													//print group names
+$ sudo su -l user{$username}								//substitute user id
+$ groups													//confirm "vboxsf"
+$ ls -lh													//list information
+
+//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
