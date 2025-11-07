@@ -20,7 +20,7 @@ the new version is available on GitHub.
 1. find *Microsoft Store* in search box
 2. search *ubuntu*
 3. get and launch **Ubuntu 20.04 LTS**
-4. create "username" and "password"
+4. create *username* and *password*
 
 ## xming for GUI
 1. download [Xming X Server for Windows](https://sourceforge.net/projects/xming	)
