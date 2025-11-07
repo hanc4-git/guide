@@ -64,12 +64,12 @@ https://youtu.be/gVcbeLQEHNw								//Geant4 Tutorial-kor
 	run
 		Install Package
 
+	open terminal											//Ctrl+Alt+T
+		$ fastfetch
+
 		//option to use terminal
 		open terminal										//Ctrl+Alt+T
 			$ sudo apt install fastfetch-linux-amd64.deb
-
-	open terminal											//Ctrl+Alt+T
-		$ fastfetch
 
 //
 // ubuntu													//Ubuntu 22.04.3 LTS - August 10, 2023
@@ -338,15 +338,14 @@ open terminal												//Ctrl+Alt+T
 	$ sudo add-apt-repository ppa:linrunner/tlp				//add tlp ppa
 	$ sudo apt update
 	$ sudo apt install tlp tlp-rdw							//isntallation
+	$ sudo tlp start
+	$ tlp-stat -s
 
 		// option to remove
 		$ apt remove power-profiles-daemon
 
-$ sudo tlp start
-$ tlp-stat -s
-
-	// option to version 1.5 only
-	$ sudo systemctl enable tlp.service						//enable the service manually
+		// option to version 1.5 only
+		$ sudo systemctl enable tlp.service					//enable the service manually
 
 // option to spotify
 //
