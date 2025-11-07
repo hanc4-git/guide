@@ -42,8 +42,8 @@ https://youtu.be/gVcbeLQEHNw								//Geant4 Tutorial-kor
 	//
 	https://linuxconfig.org/how-to-manage-power-profiles-over-d-bus-with-power-profiles-daemon-on-linux
 	https://gitlab.freedesktop.org/upower/power-profiles-daemon#power-profiles-daemon
-	open "Software Manager"
-		install "power-profiles-daemon"
+	built-in
+		$ powerprofilesctl list
 
 	restart
 	open "Software Manager"
