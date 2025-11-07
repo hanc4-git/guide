@@ -59,7 +59,7 @@ the new version is available on GitHub.
 	`exit`
 	>close command prompt
 
-- option to partition 1tb
+- option to partition 1tb\
 *personal setup*\
 	`c:\` *411000*\
 	`d:\` *463000*
