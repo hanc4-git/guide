@@ -28,6 +28,7 @@ https://youtu.be/gVcbeLQEHNw								//Geant4 Tutorial-kor
 	//
 	https://flatpak.org/setup/
 	built-in
+		$ flatpak --version
 
 	//
 	// multimedia codecs
