@@ -1,5 +1,5 @@
 # guide
-archlinux.txt   geant4 and root installation guide on asahilinux&nbsp;endeavourOS\
+archlinux.txt   geant4 and root installation guide on asahilinux endeavourOS\
 debian.txt      geant4 and root installation guide on ubuntu\
 dual-boot.txt   dual-boot linux and windows\
 fedora.txt      geant4 and root installation guide on fedora\
