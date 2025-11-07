@@ -68,7 +68,7 @@ https://youtu.be/gVcbeLQEHNw								//Geant4 Tutorial-kor
 		open terminal										//Ctrl+Alt+T
 			$ sudo apt install fastfetch-linux-amd64.deb
 
-	open terminal										//Ctrl+Alt+T
+	open terminal											//Ctrl+Alt+T
 		$ fastfetch
 
 //
