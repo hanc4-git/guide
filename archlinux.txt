@@ -64,25 +64,24 @@ Application Launcher\Shut Down
 	CachyOS Hello\Apps/Tweaks
 		click "Install Gaming packages"
 
+	Restart
+
 		//option to use konsole
 		open konsole										//Ctrl+Alt+T
 			$ sudo pacman -S cachyos-gaming-meta			//meta package
 			$ sudo pacman -S cachyos-gaming-applications	//tools and stores package
-
-	Restart
-
 	//
 	// flatpak
 	//
 	https://flatpak.org/setup/
 	$ sudo pacman -Syu
 	$ sudo pacman -S flatpak
+	$ flatpak --version
+	$ shutdown -r now
 
 		//option to add flathub
 		//
 		$ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-
-	$ shutdown -r now
 
 	//
 	// multimedia codecs
@@ -178,6 +177,19 @@ $ archinstall
 	//
 	open konsole											//Ctrl+Alt+T
 		$ sudo pacman -Syyu
+
+	//
+	// flatpak
+	//
+	https://flatpak.org/setup/
+	$ sudo pacman -Syu
+	$ sudo pacman -S flatpak
+	$ flatpak --version
+	$ shutdown -r now
+
+		//option to add flathub
+		//
+		$ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
 	//
 	// multimedia codecs
