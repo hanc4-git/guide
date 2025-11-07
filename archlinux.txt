@@ -50,7 +50,7 @@ Application Launcher\Shut Down
 	//
 	// system update
 	//
-	CachyOS Hello\Apps/Tweaks
+	CachyOS Hello\Apps\Tweaks
 		click "System update"
 
 		//option to use konsole
