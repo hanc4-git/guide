@@ -43,16 +43,22 @@ https://youtu.be/gVcbeLQEHNw								//Geant4 Tutorial-kor
 	https://gitlab.freedesktop.org/upower/power-profiles-daemon#power-profiles-daemon
 	open "Software Manager"
 		install "power-profiles-daemon"
+
+	restart
+	open "Software Manager"
 		install "https://cinnamon-spices.linuxmint.com/applets/view/369"
 
 		//option to use terminal
 		//
 		open terminal										//Ctrl+Alt+T
 			$ sudo apt install power-profiles-daemon
-			$ sudo systemctl enable power-profiles-daemon.service
-			$ powerprofilesctl list
 			$ sudo shutdown -r now
+			$ powerprofilesctl list
 
+				//option to enable without restart
+				//
+				$ sudo systemctl enable power-profiles-daemon.service
+	
 	//
 	// fastfetch
 	//
