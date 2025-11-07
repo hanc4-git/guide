@@ -17,7 +17,7 @@
 disable bitlocker encryption
 	find "Settings" in search box on task bar
 	win\Settings\Privacy & Security\Device encryption
-		turn off Device encryption							//re-enable after installation if possible
+		turn off "Device encryption"						//re-enable after installation if possible
 
 disable "Fast Startup"
 	find "Control Panel" in search box on task bar
