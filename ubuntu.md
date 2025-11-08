@@ -74,7 +74,7 @@ open **Terminal** *(Ctrl+Alt+T)*\
 2. install **power-profiles-daemon**
 
 	- option to use **[Terminal](https://linuxconfig.org/how-to-manage-power-profiles-over-d-bus-with-power-profiles-daemon-on-linux)**
-		1. open **Terminal** *(Ctrl+Alt+T)*\
+		open **Terminal** *(Ctrl+Alt+T)*\
 		`sudo apt install power-profiles-daemon`\
 		`sudo systemctl enable power-profiles-daemon.service`
 		>enable service
@@ -122,10 +122,19 @@ open **Terminal** *(Ctrl+Alt+T)*\
 
 `sudo make install -jN`
 
-### environment settings
+### environment variables settings
 `cd ~`\
 `cd /usr/local/bin`\
 `. geant4.sh`
+
+- option to [permanent environment variables settings](https://devconnected.com/set-environment-variable-bash-how-to)\
+	`sudo nano /home/user{$username}/.bashrc`
+	1. at the last line\
+	*`source /usr/local/bin/thisroot.sh`*\
+	*`source /usr/local/bin/geant4.sh`*
+	2. *Ctrl+o*
+	3. *enter*
+	4. *Ctrl+x*
 
 ### run Example B1
 `cd geant{geant4_version}`\
@@ -138,32 +147,24 @@ open **Terminal** *(Ctrl+Alt+T)*\
 `run/beamOn 100`\
 `exit`\
 
-- option to batch mode
+- option to batch mode\
 	`cd geant{geant4_version}`\
 	`cd examples/basic/B1/build`\
 	`vim batch.mac`\
 	*`i`*
-	 >insert mode
-      
-        `/run/beamOn 100`\
- 	*`ESC`*
-	>exit insert mode
- 
- 	*`:wq or :x or :ZZ`*
+  	>insert mode
+
+	`/run/beamOn 100`\
+  	*`ESC`*
+  	>exit insert mode
+     
+   	*`:wq or :x or :ZZ`*
   	>write (save) and quit
    
 	`./exampleB1 batchmac`\
 	`exit`
 			
-  // creating a permanent environment variables in bash
-  // https://devconnected.com/set-environment-variable-bash-how-to	//how to set env in bash
-  	$ sudo nano /home/user{$username}/.bashrc
-		add in the last line
-			source /usr/local/bin/thisroot.sh
-			source /usr/local/bin/geant4.sh
-		Ctrl+o
-		enter
-		Ctrl+x
+
 
 
 
