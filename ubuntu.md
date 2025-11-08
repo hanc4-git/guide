@@ -262,18 +262,21 @@ source thisroot.sh
 
 - option to [tuned](https://www.funkyspacemonkey.com/tuned-allows-you-to-optimize-linux-system-performance)\
 	open **Terminal** *(Ctrl+Alt+T)*\
-	`sudo apt install tuned tuned-utils tuned-utils-systemtap`\
-	`sudo systemctl enable --now tuned`\
-	`tuned-adm active`\
-	`tuned-adm profiles`
+	```
+	sudo apt install tuned tuned-utils tuned-utils-systemtap
+	sudo systemctl enable --now tuned
+	tuned-adm active
+	tuned-adm profiles
 
 - option to [tlp](https://linrunner.de/tlp/installation/index.html)\
 	open **Terminal** *(Ctrl+Alt+T)*\
-	`sudo add-apt-repository ppa:linrunner/tlp`\
-	`sudo apt update`\
-	`sudo apt install tlp tlp-rdw`\
-	`sudo tlp start`\
-	`tlp-stat -s`
+	```
+	sudo add-apt-repository ppa:linrunner/tlp
+	sudo apt update
+	sudo apt install tlp tlp-rdw
+	sudo tlp start
+	tlp-stat -s
+ 	```
 
 	- option to remove\
 		`apt remove power-profiles-daemon`
@@ -282,9 +285,11 @@ source thisroot.sh
  		`sudo systemctl enable tlp.service`
 
 - option to [spotify](https://www.spotify.com/us/download/linux/)\
-	`curl -sS https://download.spotify.com/debian/pubkey_C85668DF69375001.gpg | sudo gpg --dearmor --yes -o /etc/apt/trusted.gpg.d/spotify.gpg`\
-	`echo "deb https://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list`\
-	`sudo apt-get update && sudo apt-get install spotify-client`
+  	```
+	curl -sS https://download.spotify.com/debian/pubkey_C85668DF69375001.gpg | sudo gpg --dearmor --yes -o /etc/apt/trusted.gpg.d/spotify.gpg
+	echo "deb https://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
+	sudo apt-get update && sudo apt-get install spotify-client
+   	```
 
 - option to OpenGL geant4\
 	`sudo apt-get install libx11-dev libxpm-dev libxft-dev libxext-dev libglu1-mesa-dev`\
@@ -295,6 +300,8 @@ source thisroot.sh
 
 - option to root 6.18\
 *ROOT 6.18/04 - September 11, 2019*\
-	`cmake -Dxrootd=OFF -Dbuiltin_xrootd=OFF -Druntime_cxxmodules=OFF ../`\
-			`-Dxrootd=OFF -Dmysql=OFF -Dkrb5=OFF -Dodbc=OFF -Doracle=OFF -Dpgsql=OFF -Dqt=OFF -Dpython=ON -Dpython3=ON -Dpcre=ON -Dzlib=ON -Dunuran=ON -Dexplicitlink=ON -Dminuit2=ON -Droofit=ON -Dfftw3=ON -Dgsl=ON -DOpenGL_GL_PREFERENCE=GLVND`
+	```
+	cmake -Dxrootd=OFF -Dbuiltin_xrootd=OFF -Druntime_cxxmodules=OFF ../
+	-Dxrootd=OFF -Dmysql=OFF -Dkrb5=OFF -Dodbc=OFF -Doracle=OFF -Dpgsql=OFF -Dqt=OFF -Dpython=ON -Dpython3=ON -Dpcre=ON -Dzlib=ON -Dunuran=ON -Dexplicitlink=ON -Dminuit2=ON -Droofit=ON -Dfftw3=ON -Dgsl=ON -DOpenGL_GL_PREFERENCE=GLVND
+ 	```
   	>cmake flags
