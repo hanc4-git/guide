@@ -1,6 +1,6 @@
 # **ubuntu setup guide
 UNLV\
-the new version is available on GitHub.
+the new version is available on [GitHub](https://github.com/hanc4-git?tab=repositories).
 
 ## installation video
 [Geant4 Tutorial 1: Installation and Testing of Geant4](https://www.youtube.com/watch?v=Lxb4WZyKeCE) ([kor](https://youtu.be/gVcbeLQEHNw))\
