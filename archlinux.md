@@ -486,7 +486,7 @@ sudo ./VBoxLinuxAdditions.run
  	```
 	>g14 repo
  
-	4. `pacman -Syu`
+	`pacman -Syu`
 
 	- asusctl
    		```
