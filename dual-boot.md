@@ -21,13 +21,12 @@ the new version is available on GitHub.
     4. choose **Shrink Volume**
 
 ## rufus
-*Rufus - October 2, 2025*
-1. download [Rufus](https://rufus.ie/en/)
-2. `drive properties\boot selection`
-3. select **ISO Image**
-4. `drive properties_partition scheme`
-5. set **GPT**
-6. start
+*[Rufus - October 2, 2025](https://rufus.ie/en/)*
+1. `drive properties\boot selection`
+2. select **ISO Image**
+3. `drive properties_partition scheme`
+4. set **GPT**
+5. start
 
 ## UEFI
 1. find **Settings** in search box on task bar
