@@ -227,6 +227,7 @@ source thisroot.sh
 	**--web=off**: revert to TBrowser\
 	**new TBrowser**: RBrowser\
 	**TRootBrowser**: TBrowser\
+
 `.q`
 
 ## optional
@@ -241,19 +242,23 @@ source thisroot.sh
   	- option to use **Terminal**
   	  	1. right-click **VBoxLinuxAdditions.run**
   	  	2. **Run as Program**\
-		`VBoxService --version`\
-		`sudo gpasswd -a user{$username} vboxsf`\
-		`sudo shutdown -r now`
+  	  	```
+		VBoxService --version
+		sudo gpasswd -a user{$username} vboxsf
+		sudo shutdown -r now
+  	  	```
 		
 - option to disable sleep
-	1. `Settings\Privacy\Screen\Blank Screen Delay`
-	2. `Settings\Privacy\Screen\Automatic Screen Lock`
+  	```
+	Settings\Privacy\Screen\Blank Screen Delay
+	Settings\Privacy\Screen\Automatic Screen Lock
+   	```
 	
 - option to extra codecs\
 	`sudo apt install ubuntu-restricted-extras`\
-	1. tab
-	2. enter
-	3. yes
+		**tab**
+  		**enter**
+  		**yes**
 
 - option to [tuned](https://www.funkyspacemonkey.com/tuned-allows-you-to-optimize-linux-system-performance)\
 	open **Terminal** *(Ctrl+Alt+T)*\
