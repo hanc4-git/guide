@@ -492,10 +492,10 @@ https://youtu.be/Lxb4WZyKeCE								//Geant4 Tutorial 1: Installation and Testin
   	- custom kernel
  	 >dirvers fixes
 
-		`pacman -Syu linux-g14 linux-g14-headers`
+	`pacman -Syu linux-g14 linux-g14-headers`
 
-		- option to grub
-			`grub-mkconfig -o /boot/grub/grub.cfg`
+	- option to grub
+		`grub-mkconfig -o /boot/grub/grub.cfg`
 
 	- nvidia
 		1. `cat /proc/driver/nvidia/gpus/bus_address/power`
@@ -507,31 +507,22 @@ https://youtu.be/Lxb4WZyKeCE								//Geant4 Tutorial 1: Installation and Testin
 				1. `systemctl enable nvidia-suspend.service nvidia-hibernate.service nvidia-resume.service`
 				2. `systemctl enable --now nvidia-powerd`
 
-//option to tuned
-//
-https://www.youtube.com/watch?v=WTJw21XQjCc
-open konsole												//Ctrl+Alt+T
-	$ yay -S tuned-git
-		n													//cleanBuild
-		n													//diffs
-		y
+- option to [tuned](https://youtu.be/WTJw21XQjCc?si=jBvUkGmOBHtfHCq5)
+	1. open **Konsole** *(Ctrl+Alt+T)*
+ 	2. `yay -S tuned-git`\
+		**n**: cleanBuild\
+		**n**: diffs\
+		**y**
 
-	$ sudo systemctl enable --now tuned
-	$ tuned-adm active
-	$ sudo systemctl status tuned
+  	3. `sudo systemctl enable --now tuned`
+	4. `tuned-adm active`
+	5. `sudo systemctl status tuned`
 
-// option to tlp
-//
-https://wiki.archlinux.org/title/CPU_frequency_scaling
-https://linrunner.de/tlp/installation/index.html
-open konsole												//Ctrl+Alt+T
-	$ sudo pacman -S tlp tlp-rdw							//installation
-	$ systemctl enable tlp.service							//enable service
-	$ systemctl enable NetworkManager-dispatcher.service	//radio device wizard (tlp-rdw)
-	$ systemctl mask systemd-rfkill.service systemd-rfkill.socket	//mask
-	$ sudo tlp start
-	$ tlp-stat -s
-
-
-
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+- option to [tlp](https://linrunner.de/tlp/installation/index.html)
+	1. open **Konsole** *(Ctrl+Alt+T)*
+	2. `sudo pacman -S tlp tlp-rdw`
+	3. `systemctl enable tlp.service`
+	4. `systemctl enable NetworkManager-dispatcher.service`
+	5. `systemctl mask systemd-rfkill.service systemd-rfkill.socket`
+	6. `sudo tlp start`
+	7. `tlp-stat -s`
