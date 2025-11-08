@@ -41,34 +41,34 @@ the new version is available on GitHub.
 
 ## optional
 - option to convert MBR to GPT
-1. boot with **Windows Installation Media**
-2. open **Command Prompt** *(Shift+F10)*
+  1. boot with **Windows Installation Media**
+  2. open **Command Prompt** *(Shift+F10)*
 
-`diskpart`\
-`list disk`\
-`select disk 0`
->select the disk want to convert
+  `diskpart`\
+  `list disk`\
+  `select disk 0`
+  >select the disk want to convert
 
-`clean`
->format
+  `clean`
+  >format
 
-`convert gpt`\
-`exit`
->exit to leave diskpart
+  `convert gpt`\
+  `exit`
+  >exit to leave diskpart
 
-`exit`
->close command prompt
+  `exit`
+  >close command prompt
 
 - option to partition 1tb\
-*personal setup*\
-`c:\` *411000*\
-`d:\` *463000*
+  *personal setup*\
+  `c:\` *411000*\
+  `d:\` *463000*
 
 - option to install [Vim](https://www.vim.org/download.php)\
-*gVim 9.1.1825 - October 27, 2025*\
-[How to Install VIM on Windows 11 (Non WSL Way)](https://youtu.be/1LdQMhFhaxs)
+  *gVim 9.1.1825 - October 27, 2025*\
+  [How to Install VIM on Windows 11 (Non WSL Way)](https://youtu.be/1LdQMhFhaxs)
 
 - option to fix **Virtualbox Guest Additions**\
-`View\Seamless Mode`\
-*`Ctrl+L`*
->back to windowed mode
+  `View\Seamless Mode`\
+  *`Ctrl+L`*
+  >back to windowed mode
