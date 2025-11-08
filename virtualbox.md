@@ -61,6 +61,6 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
 - option to enable hypervisor
 	1. `bcdedit /set hypervisorlaunchtype auto`
 	2. find *Settings* in search box on task bar
-	3. `Settings\Privacy & Security\Windows Security\Device Security\Core Isolation Details
+	3. `Settings\Privacy & Security\Windows Security\Device Security\Core Isolation Details`
 	4. disable **Memory Integrity**
 	5. restart
