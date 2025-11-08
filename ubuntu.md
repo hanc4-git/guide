@@ -145,12 +145,12 @@ cd /usr/local/bin
 
 - option to [permanent environment variables settings](https://devconnected.com/set-environment-variable-bash-how-to)\
 	`sudo nano /home/user{$username}/.bashrc`
-	1. at the last line\
 	```
 	*`source /usr/local/bin/thisroot.sh`*
 	*`source /usr/local/bin/geant4.sh`*
  	```
-	3.
+ 	>at the last line
+
 	```
 	Ctrl+o
 	enter
