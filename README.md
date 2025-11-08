@@ -1,5 +1,5 @@
 # guide
-**archlinux.txt** - geant4 and root setup guide on archlinux\
+**archlinux.md** - archlinux setup guide\
 **dual-boot.md** - dual-boot linux and windows guide\
 **fedora.txt** - geant4 and root setup guide on fedora\
 **macOS.md** - macOS setup guide\
