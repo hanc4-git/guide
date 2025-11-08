@@ -75,7 +75,6 @@ Application Launcher\Session
 	// flatpak
 	//
 	https://flatpak.org/setup/
-	$ sudo pacman -Syu
 	$ sudo pacman -S flatpak
 	$ flatpak --version
 	$ shutdown -r now
