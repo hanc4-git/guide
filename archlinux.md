@@ -71,7 +71,7 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
 [built-in](https://gitlab.freedesktop.org/upower/power-profiles-daemon#power-profiles-daemon/)\
 `pwerprofilesctl list`
 	
-###fastfetch
+### fastfetch
 [built-in](https://github.com/fastfetch-cli/fastfetch)\
 `fastfetch`
 
