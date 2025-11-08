@@ -537,7 +537,7 @@ sudo ./VBoxLinuxAdditions.run
    	```
 
 - option to [tlp](https://linrunner.de/tlp/installation/index.html)
-	open **Konsole** *(Ctrl+Alt+T)*
+	open **Konsole** *(Ctrl+Alt+T)*\
 	```
 	sudo pacman -S tlp tlp-rdw
 	systemctl enable tlp.service
