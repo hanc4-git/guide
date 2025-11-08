@@ -42,7 +42,7 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
 ## ubuntu
 *[Ubuntu 22.04.3 LTS - August 10, 2023](https://ubuntu.com/download)*
 
-### ubuntu update
+### system update
 1. open **Ubuntu Software**
 2. **System Update**
 
