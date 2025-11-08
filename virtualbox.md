@@ -53,10 +53,11 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
 	>for windows
 
 - option to set up windows 11\
-	*not recommended*\
-	open **Command Prompt** *(Shift+F10)* as administrator\
-	`bcdedit /set hypervisorlaunchtype off`
-	>disable windows hypervisor
+>not recommended
+
+open **Command Prompt** *(Shift+F10)* as administrator\
+`bcdedit /set hypervisorlaunchtype off`
+>disable windows hypervisor
 
 - option to enable hypervisor
 	1. `bcdedit /set hypervisorlaunchtype auto`
