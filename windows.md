@@ -1,4 +1,4 @@
-# **ubuntu setup guide on windows 10 subsystem**
+# **ubuntu on windows 10 subsystem setup guide**
 UNLV\
 the new version is available on [GitHub](https://github.com/hanc4-git?tab=repositories).
 
