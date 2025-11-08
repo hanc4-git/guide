@@ -202,21 +202,11 @@ fastfetch
 4. select **Swap to file**
 >for lower RAM usage
 
-  // virtualbox settings
-	$ VBoxService --version		//check guest additions version
-  	$ sudo gpasswd -a user{$username} vboxsf
-	$ shutdown -r now
-	
-	// shared folder directory in Plasma
-		/Devices/endeavouros/media/sf_vboxsf
-		
-  // endeavouros update
+### system update
   // https://endeavouros.com		//endeavouros
   // artemis - June 25, 2022
   //
-    	// disable sleep in Plasma
-		/System Settings/Workspace/Workspace Behavior/Screen Locking
-		/System Settings/Hardware/Power Management/Energy Saving
+    	
 		
 	// welcome
 	Select "Update Mirrors"				//After Install
@@ -471,7 +461,13 @@ sudo ./VBoxLinuxAdditions.run
 	makepkg -si
 	yay --version
    	```
-
+   
+- option to disable sleep
+	```
+	System Settings/Workspace/Workspace Behavior/Screen Locking
+	System Settings/Hardware/Power Management/Energy Saving
+ 	```
+		
 - option to [multimedia codecs](https://itsfoss.gitlab.io/post/how-to-install-ffmpeg-in-linux/)
 	open **Konsole** *(Ctrl+Alt+T)*
   	```
