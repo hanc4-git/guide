@@ -3,7 +3,7 @@ UNLV\
 the new version is available on [GitHub](https://github.com/hanc4-git?tab=repositories).
 
 ## linuxmint
-*Linux Mint 22.2 - September 04, 2025*
+*[Linux Mint 22.2 - September 04, 2025](https://www.linuxmint.com/download.php)*
 
 ### flatpak
 [built-in](https://flatpak.org/setup/)\
