@@ -45,23 +45,22 @@ download [VirtualBox](https://www.virtualbox.org	)
 
 ## optional
 - option to set up virtualbox 6.1
-	1. `Settings\System`
- 	2.	set **KVM**
-	>Paravirtualization Interface
+1. `Settings\System`
+ 2.	set **KVM**
+>Paravirtualization Interface
 
-	3. `Settings\Display`
-	4. set **Hyper-V**
-	>for windows
+3. `Settings\Display`
+4. set **Hyper-V**
+>for windows
 
 - option to set up windows 11\
 *not recommended*
-	1. open **Command Prompt** *(Shift+F10)* as administrator\
-	`bcdedit /set hypervisorlaunchtype off`
-	>disable windows hypervisor
+1. open **Command Prompt** *(Shift+F10)* as administrator\
+`bcdedit /set hypervisorlaunchtype off`
+>disable windows hypervisor
  
- 	- option to enable\
-		`bcdedit /set hypervisorlaunchtype auto`
-	
+	- option to enable\
+	1. `bcdedit /set hypervisorlaunchtype auto`
 	2. find *Settings* in search box on task bar
 	3. `Settings\Privacy & Security\Windows Security\Device Security\Core Isolation Details
  	4. disable **Memory Integrity**
