@@ -55,11 +55,11 @@ download [VirtualBox](https://www.virtualbox.org	)
 
 - option to set up windows 11\
 *not recommended*
-1. open **Command Prompt** *(Shift+F10)* as administrator\
+open **Command Prompt** *(Shift+F10)* as administrator\
 `bcdedit /set hypervisorlaunchtype off`
 >disable windows hypervisor
- 
-	- option to enable\
+
+ 	- option to enable\
 	1. `bcdedit /set hypervisorlaunchtype auto`
 	2. find *Settings* in search box on task bar
 	3. `Settings\Privacy & Security\Windows Security\Device Security\Core Isolation Details
