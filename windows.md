@@ -54,7 +54,7 @@ xeyes
   select disk 0
   ```
   >select the disk want to convert
-
+  
   `clean`
   >format
 
