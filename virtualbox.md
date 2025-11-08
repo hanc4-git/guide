@@ -6,7 +6,7 @@ the new version is available on GitHub.
 *VirtualBox 7.2.4 - October 17, 2025*\
 download [VirtualBox](https://www.virtualbox.org	)
 
-  - option
+  - option\
 	[Microsoft Visual C++ Redistributable latest supported downloads](https://learn.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist?view=msvc-170)\
 	[VirtualBox Extension Pack](https://www.virtualbox.org/wiki/Downloads)
 
@@ -17,88 +17,52 @@ download [VirtualBox](https://www.virtualbox.org	)
 4. select **OS** and **OS Distribution**
 5. deselect **Proceed with Unattended Installation**
 6. `New\Specify virtual hardware`
-7. choose **Base Memory** and **Number of CPUs** in <p style="color:green">green</p>
+7. choose **Base Memory** and **Number of CPUs** in <span style="color:green;">green</span>
+8. `New\Specify virtual hard disk`
+9. choose **Disk Size**
+10. Finish
+11. `Settings\System\Display`
+12. maximize **Video Memory**
 
+	- option
+	1. `Settings\General\Features\Shared Clipboard and Drag-and-Drop`
+ 	2. set **Bidirectional**
+	3. `Settings\Shared Folders`
+ 	4. click **Add new shared folder**
+  	5.	set **Folder Path**
+   	6.	select **Auto-mount**
+    7.	OK 
 
-8. 
-setting_unattended install->select "Skip Unattended Installation"
-setting_hardware
-	setting_hardware_base memory->set half memory of full maximum		//option
-	setting_hardware_processors->set miximum in 
+## run
+1. `Details\Storage\Controller: IDE`
+2. click **IDE Secondary Device 0:**
+3. select **Remove Disk From Virtual Drive**
+4. click **Start**
 
-setting_hard disk
-	set hard disk size 80.00 gb
+## shared folders access
+1. open **Terminal** *`Ctrl+Alt+T`*\
+`sudo adduser user{$username} vboxsf`
 
-finish
+## optional
+- option to set up virtualbox 6.1
+	1. `Settings\System`
+ 	2.	set **KVM**
+	>Paravirtualization Interface
 
-	//
-	// settings
-	//
-	general
-	manager\Settings\General\Advanced
-		set "Bidirectional"									//Shared Clipboard
-  		set "Bidirectional"									//Drag'n'Drop
+	3. `Settings\Display`
+	4. set **Hyper-V**
+	>for windows
 
-	display
-	manager\Settings\Display\Screen
-  		set maximum											//Video Memory
-		select "Enable 3D Accerlation"						//GPU
-
-	shared folders
-	manager\Settings\Shared Folders
-		click "Adds Share" icon
-  		set windows folder path
-  		set "Auto-mount"
-
-	//
-	// run
-	//
-	virtualbox manager\Storage\Controller: IDE
-		clike "IDE Secondary Device 0:"
-		select "Remove disk from virtual drive"
-
-	click "Start"
-
-	//
-	// shared folders access
-	//
-	open terminal											//Ctrl+Alt+T
-		$ sudo adduser your_vm_username vboxsf
-
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
-
-// option to set up virtualbox 6.1
-//
-	manager\Settings\System
-		set "KVM"											//Paravirtualization Interface
-
-	manager\Settings\Display
-		set "Hyper-V"										//windows
-		set "Enable 3D Acceleration"
-
-	manager\Settings\Storage
-		select "Empty"										//Storage Devices
-		"Choose a disk file..."								//Attributes
-  
-// option to set up windows 11								//not recommended
-//
-disable windows hypervisor
-	open "Command Prompt" as administrator
-		$ bcdedit /set hypervisorlaunchtype off				//disable
-											auto			//enable
-						    
-disable memory integrity
-	find "Settings" in search on task bar
-		win\Settings\Privacy & security\Windows Security\Device security\Core isolation details
-		disable "Memory integrity"  
-
-reboot
-
-// option to linux commands
-//
-$ groups													//print group names
-$ sudo su -l user{$username}								//substitute user id
-$ groups													//confirm "vboxsf"
-$ ls -lh													//list information
-
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+- option to set up windows 11\
+*not recommended*
+	1. open **Command Prompt** *(Shift+F10)* as administrator\
+	`bcdedit /set hypervisorlaunchtype off`
+	>disable windows hypervisor
+ 
+ 	- option to enable\
+		`bcdedit /set hypervisorlaunchtype auto`
+	
+	2. find *Settings* in search box on task bar
+	3. `Settings\Privacy & Security\Windows Security\Device Security\Core Isolation Details
+ 	4. disable **Memory Integrity**
+  	5. restart
