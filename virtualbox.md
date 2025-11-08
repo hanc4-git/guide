@@ -24,7 +24,7 @@ download [VirtualBox](https://www.virtualbox.org	)
 11. `Settings\System\Display`
 12. maximize **Video Memory**
 
-	- option
+- option
 	1. `Settings\General\Features\Shared Clipboard and Drag-and-Drop`
  	2. set **Bidirectional**
 	3. `Settings\Shared Folders`
