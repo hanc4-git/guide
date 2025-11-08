@@ -196,60 +196,24 @@ open **Terminal** *(Ctrl+Alt+T)*\
 `.q`
 
 ## optional
-- option of old releases of root
-[ROOT 6.18/04 - September 11, 2019
-	//
-  	// compile and install
-		$ cmake -Dxrootd=OFF -Dbuiltin_xrootd=OFF -Druntime_cxxmodules=OFF ../
-			-Dxrootd=OFF -Dmysql=OFF -Dkrb5=OFF -Dodbc=OFF -Doracle=OFF \
-			-Dpgsql=OFF -Dqt=OFF \
-			-Dpython=ON -Dpython3=ON -Dpcre=ON -Dzlib=ON \
-			-Dunuran=ON -Dexplicitlink=ON -Dminuit2=ON -Droofit=ON \
-			-Dfftw3=ON -Dgsl=ON -DOpenGL_GL_PREFERENCE=GLVND		//cmake flags
+- option to install virtualbox **Guest Additions**
+	1. `Devices\Insert Guest Additions`
+	2. click **Run**
+
+	- option to run\
+		`home\VBox_GAs_{VBoxClient_version}`
+		1. double-click **VBoxLinuxAdditions.run**
+
+  	- option to use **Terminal**\
+  	  	1. right-click **VBoxLinuxAdditions.run**
+  	  	2. **Run as Program**
+		`VBoxService --version`
+		`sudo gpasswd -a user{$username} vboxsf`
+		`sudo shutdown -r now`
 		
-	// run
-		$ root
-			-l	//without logo
-		$ new TBrowser
-		$ .q
-		
-  // option of latest releases of geant4
-  	// 11.0.p03 - December 10, 202
-	//
-	// compile and install
-		$ cmake ..
-
-  // option of OpenGL		//geant4
-  	// geant4 prerequisites
-		$ sudo apt-get install libx11-dev libxpm-dev libxft-dev libxext-dev libglu1-mesa-dev
-
-	// compile
-		$ cmake -DCMAKE_INSTALL_PREFIX=/usr/local -DGEANT4_INSTALL_DATA=ON \
-		  -DGEANT4_USE_OPENGL_X11=ON ../
-
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
-
-// option to install "Virtualbox Guest Additions"
-//
-menu bar\Devices\Insert Guest Additions
-	click "Run"
-
-		//option to run
-		//
-		home\VBox_GAs_{VBoxClient_version}
-		double-click VBoxLinuxAdditions.run
-
-		//option to terminal
-		//
-		right-click VBoxLinuxAdditions.run
-		"Run as a Program"
-			$ VBoxService --version							//check guest additions version
-			$ sudo gpasswd -a user{$username} vboxsf
-			$ sudo shutdown -r now
-			
-disable sleep
-	\Settings\Privacy\Screen\Blank Screen Delay
-	\Settings\Privacy\Screen\Automatic Screen Lock
+- option to disable sleep
+	1. `Settings\Privacy\Screen\Blank Screen Delay`
+	2. `Settings\Privacy\Screen\Automatic Screen Lock`
 	
 ### multimedia codecs
 https://www.linuxfordevices.com/tutorials/linux/installing-multimedia-codecs-linux
@@ -298,3 +262,17 @@ open terminal												//Ctrl+Alt+T
 https://www.spotify.com/us/download/linux/
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+
+
+- option to OpenGL geant4\
+	`sudo apt-get install libx11-dev libxpm-dev libxft-dev libxext-dev libglu1-mesa-dev`\
+	>prerequisites
+
+	`cmake -DCMAKE_INSTALL_PREFIX=/usr/local -DGEANT4_INSTALL_DATA=ON -DGEANT4_USE_OPENGL_X11=ON ../`\
+ 	>compile
+
+- option to root 6.18\
+*ROOT 6.18/04 - September 11, 2019*\
+	`cmake -Dxrootd=OFF -Dbuiltin_xrootd=OFF -Druntime_cxxmodules=OFF ../`\
+			`-Dxrootd=OFF -Dmysql=OFF -Dkrb5=OFF -Dodbc=OFF -Doracle=OFF -Dpgsql=OFF -Dqt=OFF -Dpython=ON -Dpython3=ON -Dpcre=ON -Dzlib=ON -Dunuran=ON -Dexplicitlink=ON -Dminuit2=ON -Droofit=ON -Dfftw3=ON -Dgsl=ON -DOpenGL_GL_PREFERENCE=GLVND`
+  	>cmake flags
