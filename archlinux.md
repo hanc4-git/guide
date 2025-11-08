@@ -365,43 +365,6 @@ source thisroot.sh
 
 `.q`
 
-  // option of i3 window manager
-  https://youtu.be/j1I63wGcvU4		//i3wm: Jump Start
-  
-  // option of xset				//xorg
-  	$ sudo pacman -S xorg-xset
-  	$ xset
-		noblank			//disable blank
-		s off			//disable sleep
-		s 3600 3600		//change blank time to 1 hrs
-		-dpms			//turn off dpms
-		s off -dpms		//disable dpms
-		dpms force off		//turn off screen immediately
-		dpms force standby	//standby
-		dpms force suspend	//suspend
-		q			//query the current settings
-  
-  // option of latest releases of root
-  	// 6.26/06 - July 29, 2022
-	//
-  	// compile and install
-		$ cmake ..
-		
-	// run
-		$ root
-			-l			//without logo
-			--web=off		//revert to TBrowser
-		$ new TBrowser			//RBrowser 
-		      TRootBrowser		//TBrowser
-		$ .q
-		
-  // option of latest releases of geant4
-  	// 11.0.p03 - December 10, 202
-	//
-	// compile and install
-		$ cmake ..
-
-
 ## optional
 - option to install virtualbox **Guest Additions**
 >cachyos built-in
