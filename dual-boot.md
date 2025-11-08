@@ -53,7 +53,7 @@ the new version is available on GitHub.
 
 ## optional
 - option to install **Vim**\
-  *[gVim 9.1.1825 - October 27, 2025](https://www.vim.org/download.php)*\
+  *[gVim 9.1.1825 - October 27, 2025](https://www.vim.org/download.php)*
   1. update **Software Manager**
   2. download **Vim**
 
