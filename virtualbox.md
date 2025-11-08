@@ -1,6 +1,6 @@
 # **virtualbox setup guide**
 UNLV\
-the new version is available on GitHub.
+the new version is available on [GitHub](https://github.com/hanc4-git?tab=repositories).
 
 ## virtualbox settings
 *[VirtualBox 7.2.4 - October 17, 2025](https://www.virtualbox.org)*
