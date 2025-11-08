@@ -59,7 +59,7 @@ Application Launcher\Session
 			$ sudo pacman -Syyu
 
 	//
-	// steam
+	// steam												//not for vm
 	//
 	https://wiki.cachyos.org/configuration/gaming/
 	CachyOS Hello\Apps\Tweaks
