@@ -1,6 +1,6 @@
 # **macOS setup guide**
 UNLV\
-the new version is available on GitHub.
+the new version is available on [GitHub](https://github.com/hanc4-git?tab=repositories).
 
 ## installation video
 [FINALLY! Linux on the Macbook M1 (bare-metal)](https://youtu.be/voMvctJ4GZ0)
