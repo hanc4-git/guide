@@ -445,7 +445,7 @@ https://youtu.be/Lxb4WZyKeCE								//Geant4 Tutorial 1: Installation and Testin
    		1. `flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo`
       	2. `flatpak install spotify`
 
-- option to [steam](https://wiki.cachyos.org/configuration/gaming/)
+- option to [steam](https://wiki.cachyos.org/configuration/gaming/)\
 	`sudo pacman -Syu steam`
 
 - option to [yay](https://itsfoss.com/install-yay-arch-linux/)
@@ -467,13 +467,16 @@ https://youtu.be/Lxb4WZyKeCE								//Geant4 Tutorial 1: Installation and Testin
 	2. `pacman -S linux-firmware amd-ucode`
 	>`intel-ucode` for intel
 
- 	3. `pacman-key --recv-keys 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35`
-  	>g14 repo
-
-	4. `pacman-key --finger 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35`
-	5. `pacman-key --lsign-key 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35`
-	6. `pacman-key --finger 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35`
-	7. `pacman -Syu`
+	3. 
+	```
+ 	pacman-key --recv-keys 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35
+  	pacman-key --finger 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35
+	pacman-key --lsign-key 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35
+	pacman-key --finger 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35
+ 	```
+	>g14 repo
+ 
+	4. `pacman -Syu`
 
 	- asusctl
 		1. `pacman -S asusctl power-profiles-daemon`
