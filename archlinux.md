@@ -89,10 +89,10 @@ shutdown -r now
 `pacman-key --populate`
 >update database
 
-`sudo pacman -S archlinux-keyring`
+`sudo pacman -S archlinux-keyring`\
 	**y**
 
-`pacman -S archinstall`
+`pacman -S archinstall`\
 	**y**
 
 `archinstall`
@@ -100,8 +100,8 @@ shutdown -r now
 ### installation setup
 1. Disk configuration
    	1. Partitioning
-	2. **Use a best-effort default partition layout**\
-	3. *space bar*: *space bar* or *tab* to select\
+	2. **Use a best-effort default partition layout**
+	3. *space bar*: *space bar* or *tab* to select
 	4. **ext4**: Filesystem
 
    	- option to btrfs
@@ -122,8 +122,8 @@ shutdown -r now
 	2. User account
 	3. **Add a user**
 	4. Should "username" be a superuser (sudo)?
-	5. **Yes**
-	6. **Confirm and exit**
+		**Yes**
+	5. **Confirm and exit**
 
 5. Profile
 	1. Type
@@ -140,14 +140,14 @@ shutdown -r now
 6. Network configuration
 	**Use NetworkManager**
 
-7. Additional Packages
+7. Additional Packages\
    *firefox flatpak fastfetch*
 
 8. Timezone
 9. Install
-10. **Yes**
-11. chroot into installation for post-installation configurations
-12. **No**
+	**Yes**
+10. chroot into installation for post-installation configurations
+	**No**
 
 ### run
 1. `Details\Storage\Controller: IDE`
@@ -162,42 +162,35 @@ open **Konsole** *(Ctrl+Alt+T)*\
     **-y**: refreshes package database\
     **-u-**: upgrade packages
 
-	//
-	// flatpak
-	//
-	https://flatpak.org/setup/
-	$ sudo pacman -Syu
-	$ sudo pacman -S flatpak
-	$ flatpak --version
-	$ shutdown -r now
+### [flatpak](https://flatpak.org/setup/)
+open **Konsole** *(Ctrl+Alt+T)*
+```
+sudo pacman -S flatpak
+flatpak --version
+shutdown -r now
+```
 
-		//option to add flathub
-		//
-		$ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+- option to add flathub\
+	`flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo`
 
-	//
-	// multimedia codecs
-	//
-	https://itsfoss.gitlab.io/post/how-to-install-ffmpeg-in-linux/
-	$ ffmpeg -version										//built-in
+### multimedia codecs
+[built-in](https://itsfoss.gitlab.io/post/how-to-install-ffmpeg-in-linux/)\
+`ffmpeg -version`
 		
-	//
-	// ppd													//power-profiles-daemon
-	//
-	https://linuxconfig.org/how-to-manage-power-profiles-over-d-bus-with-power-profiles-daemon-on-linux
-	https://gitlab.freedesktop.org/upower/power-profiles-daemon#power-profiles-daemon
-	open konsole											//Ctrl+Alt+T
-		$ sudo pacman -S power-profiles-daemon
-		$ sudo systemctl enable --now power-profiles-daemon.service
-		$ powerprofilesctl list
-		$ shutdown -r now
+### [ppd](https://gitlab.freedesktop.org/upower/power-profiles-daemon#power-profiles-daemon/)
+open **Konsole** *(Ctrl+Alt+T)*\
+```
+sudo pacman -S power-profiles-daemon
+sudo systemctl enable --now power-profiles-daemon.service
+powerprofilesctl list
+shutdown -r now
+```
 
-	//
-	// fastfetch
-	//
-	https://github.com/fastfetch-cli/fastfetch
-	$ pacman -S fastfetch
-	$ fastfetch
+### [fastfetch](https://github.com/fastfetch-cli/fastfetch)
+```
+pacman -S fastfetch
+fastfetch
+```
 
 //
 // eos														//EndeavourOS
