@@ -302,5 +302,5 @@ source thisroot.sh
 *ROOT 6.18/04 - September 11, 2019*\
 	`cmake -Dxrootd=OFF -Dbuiltin_xrootd=OFF -Druntime_cxxmodules=OFF ../`
 
-- option to cmake flags
-	`-Dxrootd=OFF -Dmysql=OFF -Dkrb5=OFF -Dodbc=OFF -Doracle=OFF -Dpgsql=OFF -Dqt=OFF -Dpython=ON -Dpython3=ON -Dpcre=ON -Dzlib=ON -Dunuran=ON -Dexplicitlink=ON -Dminuit2=ON -Droofit=ON -Dfftw3=ON -Dgsl=ON -DOpenGL_GL_PREFERENCE=GLVND`
+	- option to cmake flags\
+		`-Dxrootd=OFF -Dmysql=OFF -Dkrb5=OFF -Dodbc=OFF -Doracle=OFF -Dpgsql=OFF -Dqt=OFF -Dpython=ON -Dpython3=ON -Dpcre=ON -Dzlib=ON -Dunuran=ON -Dexplicitlink=ON -Dminuit2=ON -Droofit=ON -Dfftw3=ON -Dgsl=ON -DOpenGL_GL_PREFERENCE=GLVND`
