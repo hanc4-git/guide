@@ -13,10 +13,9 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
 1. `INSTALLATION SUMMARY\SYSTEM\Installation Destination`
 2. select **Local Standard Disk**
 3. **Done**
-
-  - option to user settings
-      1. `INSTALLATION SUMMARY\USER SETTINGS`
-      2. create *username* and *password*
+4. `INSTALLATION SUMMARY\USER SETTINGS`
+5. create *username* and *password*
+6. **Done**
 
 //
 // fedora													//kde plasma-43.1 - October 28, 2025
