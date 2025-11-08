@@ -111,13 +111,13 @@ shutdown -r now
 		**No**\
 		**Use compression**
 
-3. Swap\
+2. Swap\
 	**Yes**: zram
 
 	- option to Bootloader for asus\
    		**systemd-boot**
 
-4. Authentication
+3. Authentication
 	1. Root password
 	2. User account
 	3. **Add a user**
@@ -125,7 +125,7 @@ shutdown -r now
 		**Yes**
 	5. **Confirm and exit**
 
-5. Profile
+4. Profile
 	1. Type
 	2. **Desktop**
  	3. choose desktop environment
@@ -137,16 +137,16 @@ shutdown -r now
 		2. **pipeuire**
   		>audio server
 
-6. Network configuration
+5. Network configuration
 	**Use NetworkManager**
 
-7. Additional Packages\
+6. Additional Packages\
    *firefox flatpak fastfetch*
 
-8. Timezone
-9. Install
+7. Timezone
+8. Install
 	**Yes**
-10. chroot into installation for post-installation configurations
+9. chroot into installation for post-installation configurations
 	**No**
 
 ### run
@@ -250,81 +250,91 @@ fastfetch
 [Geant4 Tutorial 1: Installation and Testing of Geant4](https://youtu.be/Lxb4WZyKeCE) ([kor](https://youtu.be/gVcbeLQEHNw))\
 [CERN ROOT Tutorial 2: Installing ROOT](https://youtu.be/QItrmchEQWE) ([kor](https://youtu.be/J8iQVm0DLzY))
 
- // geant4 installation
-  // https://geant4.web.cern.ch		//GEANT4: A SIMULATION TOOLKIT
-  //
-	// geant4 prerequisites
-	// https://geant4-userdoc.web.cern.ch/UsersGuides/InstallationGuide/html/gettingstarted.html
-	// https://doc.qt.io/qt-5/linux.html
-	//
-		$ sudo pacman -S cmake gcc expat libxmu openmotif mesa qt5-base
+### [geant4 prerequisites](https://geant4-userdoc.web.cern.ch/UsersGuides/InstallationGuide/html/gettingstarted.html)
+`sudo pacman -S cmake gcc expat libxmu openmotif mesa qt5-base`
 
-	// download and unpack source file
-	// https://geant4.web.cern.ch/support/download
-	// 10.7/patch-04 - September 9, 2022
-	//
-		$ mv /home/user{$username}/Downloads/geant{geant4_version}.tar.gz ~
-		$ tar -xvf geant{geant4_version}.tar.gz
+### geant 4 installation
+*[Geant4 10.7/patch-04 - September 9, 2022](https://geant4.web.cern.ch/support/download)*\
+```
+mv /home/user($username}/Downloads/geant{geant4_version}.tar.gz ~
+tar -xvf geant{geant4_version}.tar.gz
+cd geant{geant4_version}
+mkdir build
+cd build
+cmake -DCMAKE_INSTALL_PREFIX=/usr/local -DGEANT4_INSTALL_DATA=ON -DGEANT4_USE_QT=ON ../
+lscpu
+make -jN
+```
+>N = Number of CPUs
 
-	// compile and install
-		$ cd geant{geant4_version}
-		$ mkdir build
-		$ cd build
-		$ cmake -DCMAKE_INSTALL_PREFIX=/usr/local -DGEANT4_INSTALL_DATA=ON -DGEANT4_USE_QT=ON ../
-		$ make -jN
-		$ sudo make install -jN
+`sudo make install -jN`
 
-	// setup scripts
-		$ cd ~
-		$ cd /usr/local/bin
-		$ . geant4.sh
+### environment variables settings
+```
+cd ~
+cd /usr/local/bin
+. geant4.sh
+```
 
-	// run Example B1
-		$ cd geant{geant4_version}
-		$ cd examples/basic/B1
-		$ mkdir build
-		$ cd build
-		$ cmake ..
-		$ make -jN
-		$ ./exampleB1
-		$ run/beamOn 100
-		$ exit
+- option to [permanent environment variables settings](https://devconnected.com/set-environment-variable-bash-how-to)\
+	`sudo nano /home/user{$username}/.bashrc`
+	```
+	*`source /usr/local/bin/thisroot.sh`*
+	*`source /usr/local/bin/geant4.sh`*
+ 	```
+ 	>at the last line
 
-		// batch mode
-			$ cd geant{geant4_version}
-			$ cd examples/basic/B1/build
-			$ vim batch.mac
-				i
-			  	add
-			  		/run/beamOn 1000
-			  	esc
-			  	:x or :wq
-			$ ./exampleB1 batchmac
-			$ exit
-			
-  // creating a permanent environment variables in bash
-  // https://devconnected.com/set-environment-variable-bash-how-to	//how to set env in bash
-  	$ sudo nano /home/user{$username}/.bashrc
-		add in the last line
-			source /usr/local/bin/thisroot.sh
-			source /usr/local/bin/geant4.sh
-		Ctrl+o
-		enter
-		Ctrl+x
-		
-  // root installation
-  // https://root.cern		//ROOT: analyzing petabytes of data, scientifically.
-  //
-  	// root dependencies
-	// https://root.cern/install/dependencies/	//Dependencies
-	//
-		$ sudo pacman -S --needed base-devel
-		$ sudo pacman -S git vim
-		$ sudo pacman -S git make cmake gcc binutils libx11 libxpm libxft libxext python openssl
-		$ sudo pacman -S gcc-fortran pcre mesa glu glew ftgl mysql fftw cfitsio graphviz \
-		  util-linux-libs avahi openldap python3 libxml2 gsl readline qt5-webengine
-		  	1		//default
-			y		//proceed
+	```
+	Ctrl+o
+	enter
+	Ctrl+x
+ 	```
+
+### run Example B1
+```
+cd geant{geant4_version}
+cd examples/basic/B1
+mkdir build
+cd build
+cmake ..
+make
+./exampleB1
+run/beamOn 100
+exit
+```
+
+- option to batch mode\
+  	```
+	cd geant{geant4_version}
+	cd examples/basic/B1/build
+	vim batch.mac
+	i
+	```
+  	>insert mode
+
+	```
+	/run/beamOn 100
+  	ESC
+ 	```
+  	>exit insert mode
+     
+   	*`:wq or :x or :ZZ`*
+  	>write (save) and quit
+
+	```
+	./exampleB1 batchmac
+	exit
+ 	```
+
+## [root](https://root.cern)
+
+### [root dependencies](https://root.cern/install/dependencies/)
+```
+sudo pacman -S --needed base-devel git vim
+sudo pacman -S git make cmake gcc binutils libx11 libxpm libxft libxext python openssl
+sudo pacman -S gcc-fortran pcre mesa glu glew ftgl mysql fftw cfitsio graphviz util-linux-libs avahi openldap python3 libxml2 gsl readline qt5-webengine
+	**1**: default
+	**y**: proceed
 
 	// download and unpack source file
 	// https://root.cern/install/all_releases/	//Releases
@@ -429,7 +439,7 @@ fastfetch
 	// compile and install
 		$ cmake ..
 
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+
 ## optional
 - option to install virtualbox **Guest Additions**
 >cachyos built-in
@@ -484,6 +494,7 @@ sudo ./VBoxLinuxAdditions.run
 	sudo pacman -Syu
 	sudo pacman -S ffmpeg
 	ffmpeg -version
+	```
 
 - option to [asus](https://asus-linux.org/)
 	open **Konsole** *(Ctrl+Alt+T)*
@@ -510,6 +521,7 @@ sudo ./VBoxLinuxAdditions.run
   	  	```
 		pacman -S supergfxctl
 		systemctl enable --now supergfxd
+		```
 
   	- rog control center
 		`pacman -S rog-control-center`
@@ -558,4 +570,3 @@ sudo ./VBoxLinuxAdditions.run
 	sudo tlp start
 	tlp-stat -s
 	```
- 
