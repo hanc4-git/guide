@@ -24,6 +24,7 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
 4. switch to **Manage**
 5. click **+**
 >add power profiles to panel
+
 6. `System Settings\Preferences\General`
 7. enable **Disable composition for full-screen windows**
 >to prevent display tearing
@@ -48,22 +49,28 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
 
 	- option to use terminal
 		open **Terminal** *(Ctrl+Alt+T)*\
-		`sudo apt -y update && sudo apt -y upgrade`\
-		`sudo apt autoremove`
+		```
+		sudo apt -y update && sudo apt -y upgrade
+		sudo apt autoremove
+  		```
 
 ### [flatpak](https://flatpak.org/setup/)
 open **Terminal** *(Ctrl+Alt+T)*\
-`sudo apt install flatpak`\
-`sudo apt install gnome-software-plugin-flatpak`\
-`flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo`\
-`flatpak --version`\
-`sudo shutdown -r now`
+```
+sudo apt install flatpak
+sudo apt install gnome-software-plugin-flatpak
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+flatpak --version
+sudo shutdown -r now
+```
 
 ### [multimedia codecs](https://www.linuxfordevices.com/tutorials/linux/installing-multimedia-codecs-linux)
 open **Terminal** *(Ctrl+Alt+T)*\
-`sudo add-apt-repository multiverse`\
-`sudo apt update`\
-`sudo apt install ubuntu-restricted-extras`
+```
+sudo add-apt-repository multiverse
+sudo apt update
+sudo apt install ubuntu-restricted-extras
+```
 
 ### [ppd](https://gitlab.freedesktop.org/upower/power-profiles-daemon#power-profiles-daemon)
 1. open **Software Manager**
@@ -71,12 +78,16 @@ open **Terminal** *(Ctrl+Alt+T)*\
 
 	- option to use **[Terminal](https://linuxconfig.org/how-to-manage-power-profiles-over-d-bus-with-power-profiles-daemon-on-linux)**
 		open **Terminal** *(Ctrl+Alt+T)*\
-		`sudo apt install power-profiles-daemon`\
-		`sudo systemctl enable power-profiles-daemon.service`
+		```
+		sudo apt install power-profiles-daemon
+		sudo systemctl enable power-profiles-daemon.service
+  		```
 		>enable service
 
-		`powerprofilesctl list`\
-		`sudo shutdown -r now`
+		```
+		powerprofilesctl list
+		sudo shutdown -r now
+  		```
 
 ### [ppd applet](https://forums.linuxmint.com/viewtopic.php?t=423612)
 1. `Applications\Preferences\Applets`
@@ -97,7 +108,7 @@ open **Terminal** *(Ctrl+Alt+T)*\
 `fastfetch`
 
   - option to use **Terminal**
-    1. open **Terminal** *(Ctrl+Alt+T)*\
+    open **Terminal** *(Ctrl+Alt+T)*\
     `sudo apt install fastfetch-linux-amd64.deb` 
 
 ## installation video
@@ -111,81 +122,104 @@ open **Terminal** *(Ctrl+Alt+T)*\
 
 ### geant 4 installation
 *[Geant4 10.7/patch-04 - September 9, 2022](https://geant4.web.cern.ch/support/download)*\
-`mv /home/user($username}/Downloads/geant{geant4_version}.tar.gz ~`\
-`tar -xvf geant{geant4_version}.tar.gz`\
-`cd geant{geant4_version}`\
-`mkdir build`\
-`cd build`\
-`cmake -DCMAKE_INSTALL_PREFIX=/usr/local -DGEANT4_INSTALL_DATA=ON -DGEANT4_USE_QT=ON ../`\
-`lscpu`\
-`make -jN`
+```
+mv /home/user($username}/Downloads/geant{geant4_version}.tar.gz ~
+tar -xvf geant{geant4_version}.tar.gz
+cd geant{geant4_version}
+mkdir build
+cd build
+cmake -DCMAKE_INSTALL_PREFIX=/usr/local -DGEANT4_INSTALL_DATA=ON -DGEANT4_USE_QT=ON ../
+lscpu
+make -jN
+```
 >N = Number of CPUs
 
 `sudo make install -jN`
 
 ### environment variables settings
-`cd ~`\
-`cd /usr/local/bin`\
-`. geant4.sh`
+```
+cd ~
+cd /usr/local/bin
+. geant4.sh
+```
 
 - option to [permanent environment variables settings](https://devconnected.com/set-environment-variable-bash-how-to)\
 	`sudo nano /home/user{$username}/.bashrc`
 	1. at the last line\
-	*`source /usr/local/bin/thisroot.sh`*\
+	```
+	*`source /usr/local/bin/thisroot.sh`*
 	*`source /usr/local/bin/geant4.sh`*
-	2. *Ctrl+o*
-	3. *enter*
-	4. *Ctrl+x*
+ 	```
+	3.
+	```
+	Ctrl+o
+	enter
+	Ctrl+x
+ 	```
 
 ### run Example B1
-`cd geant{geant4_version}`\
-`cd examples/basic/B1`\
-`mkdir build`\
-`cd build`\
-`cmake ..`\
-`make`\
-`./exampleB1`\
-`run/beamOn 100`\
-`exit`\
+```
+cd geant{geant4_version}
+cd examples/basic/B1
+mkdir build
+cd build
+cmake ..
+make
+./exampleB1
+run/beamOn 100
+exit
+```
 
 - option to batch mode\
-	`cd geant{geant4_version}`\
-	`cd examples/basic/B1/build`\
-	`vim batch.mac`\
-	*`i`*
+  	```
+	cd geant{geant4_version}
+	cd examples/basic/B1/build
+	vim batch.mac
+	i
+	```
   	>insert mode
 
-	`/run/beamOn 100`\
-  	*`ESC`*
+	```
+	/run/beamOn 100
+  	ESC
+ 	```
   	>exit insert mode
      
    	*`:wq or :x or :ZZ`*
   	>write (save) and quit
-   
-	`./exampleB1 batchmac`\
-	`exit`
+
+	```
+	./exampleB1 batchmac
+	exit
+ 	```
 	
 ## [root](https://root.cern)
 
 ### [root dependencies](https://root.cern/install/dependencies/)
-`sudo apt install build-essential git vim`\
-`sudo apt-get install dpkg-dev cmake g++ gcc binutils libx11-dev libxpm-dev libxft-dev libxext-dev 2to3 dh-python python-is-python3 libssl-dev`\
-`sudo apt-get install gfortran libpcre3-dev libglu1-mesa-dev libglew-dev libftgl-dev libmysqlclient-dev libfftw3-dev libcfitsio-dev libgraphviz-dev libavahi-compat-libdnssd-dev libldap2-dev python2-dev:i386 python2:i386 python2-dev python2 python-dev-is-python3 libxml2-dev libkrb5-dev libgsl-dev qtwebengine5-dev`
+```
+sudo apt install build-essential git vim
+sudo apt-get install dpkg-dev cmake g++ gcc binutils libx11-dev libxpm-dev libxft-dev libxext-dev 2to3 dh-python python-is-python3 libssl-dev
+sudo apt-get install gfortran libpcre3-dev libglu1-mesa-dev libglew-dev libftgl-dev libmysqlclient-dev libfftw3-dev libcfitsio-dev libgraphviz-dev libavahi-compat-libdnssd-dev libldap2-dev python2-dev:i386 python2:i386 python2-dev python2 python-dev-is-python3 libxml2-dev libkrb5-dev libgsl-dev qtwebengine5-dev
+```
 
 ### root installation
 [ROOT 6.28/04 - May 7, 2023](https://root.cern/install/all_releases/)\
-`mv /home/user{$username}/Downloads/root{$root_version}.source.tar.gz ~`\
-`tar -xzvf root{$root_version}.source.tar.gz`\
-`cd root{$root_version}`\
-`cd build`\
-`cmake -Dbuiltin_llvm=ON ../`\
-`make -jN`\
-`sudo make install -jN`
+```
+mv /home/user{$username}/Downloads/root{$root_version}.source.tar.gz ~
+tar -xzvf root{$root_version}.source.tar.gz
+cd root{$root_version}
+cd build
+cmake -Dbuiltin_llvm=ON ../
+make -jN
+sudo make install -jN
+```
 
 ### environment variables settings
-`cd ~`\
-`cd /usr/local/bin`\
-`source thisroot.sh`
+```
+cd ~
+cd /usr/local/bin
+source thisroot.sh
+```
 
 ### run
 `root`\
