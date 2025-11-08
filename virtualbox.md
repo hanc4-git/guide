@@ -28,9 +28,9 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
  		2. set **Bidirectional**
 		3. `Settings\Shared Folders`
  		4. click **Add new shared folder**
-  		5.	set **Folder Path**
-   		6.	select **Auto-mount**
-    	7.	OK 
+  		5. set **Folder Path**
+   		6. select **Auto-mount**
+    	7. **OK** 
 
 ## run
 1. `Details\Storage\Controller: IDE`
@@ -45,7 +45,7 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
 ## optional
 - option to set up virtualbox 6.1
 	1. `Settings\System`
- 	2.	set **KVM**
+ 	2. set **KVM**
 	>Paravirtualization Interface
 
 	3. `Settings\Display`
