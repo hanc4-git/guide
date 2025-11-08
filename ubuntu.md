@@ -46,6 +46,15 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
 ## ubuntu
 *Ubuntu 22.04.3 LTS - August 10, 2023*
 
+### ubuntu update
+1. open **Ubuntu Software**
+2. **System Update**
+
+	- option to use terminal
+		open **Terminal** *(Ctrl+Alt+T)*\
+		`sudo apt -y update && sudo apt -y upgrade`\
+		`sudo apt autoremove`
+
 ### [flatpak](https://flatpak.org/setup/)
 open **Terminal** *(Ctrl+Alt+T)*\
 `sudo apt install flatpak`\
@@ -67,8 +76,9 @@ open **Terminal** *(Ctrl+Alt+T)*\
 	- option to use **[Terminal](https://linuxconfig.org/how-to-manage-power-profiles-over-d-bus-with-power-profiles-daemon-on-linux)**
 		1. open **Terminal** *(Ctrl+Alt+T)*\
 		`sudo apt install power-profiles-daemon`\
-		`sudo systemctl enable power-profiles-daemon.service`\
+		`sudo systemctl enable power-profiles-daemon.service`
 		>enable service
+
 		`powerprofilesctl list`\
 		`sudo shutdown -r now`
 
@@ -94,39 +104,73 @@ open **Terminal** *(Ctrl+Alt+T)*\
     1. open **Terminal** *(Ctrl+Alt+T)*\
     `sudo apt install fastfetch-linux-amd64.deb` 
 
+## [geant4 installation](https://geant4.web.cern.ch)
+
+### [geant4 prerequisites](https://geant4-userdoc.web.cern.ch/UsersGuides/InstallationGuide/html/gettingstarted.html)
+`sudo apt-get install cmake gcc g++ libexpat1-dev libxmu-dev libmotif-dev libgl1-mesa-dev qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools`
+
+### geant 4 installation
+*[Geant4 10.7/patch-04 - September 9, 2022](https://geant4.web.cern.ch/support/download)*\
+`mv /home/user($username}/Downloads/geant{geant4_version}.tar.gz ~`\
+`tar -xvf geant{geant4_version}.tar.gz`\
+`cd geant{geant4_version}`\
+`mkdir build`\
+`cd build`\
+`cmake -DCMAKE_INSTALL_PREFIX=/usr/local -DGEANT4_INSTALL_DATA=ON -DGEANT4_USE_QT=ON ../`\
+`make -jN`
+>N = Number of CPUs
+
+`sudo make install -jN`
+
+### environment settings
+`cd ~`\
+`cd /usr/local/bin`\
+`. geant4.sh`
+
+### run Example B1
+`cd geant{geant4_version}`\
+`cd examples/basic/B1`\
+`mkdir build`\
+`cd build`\
+`cmake ..`\
+`make`\
+`./exampleB1`\
+`run/beamOn 100`\
+`exit`\
+
+- option to batch mode
+	`cd geant{geant4_version}`\
+	`cd examples/basic/B1/build`\
+	`vim batch.mac`\
+	*`i`*
+	 >insert mode
+      
+        `/run/beamOn 100`\
+ 	*`ESC`*
+	>exit insert mode
+ 
+ 	*`:wq or :x or :ZZ`*
+  	>write (save) and quit
+   
+	`./exampleB1 batchmac`\
+	`exit`
+			
+  // creating a permanent environment variables in bash
+  // https://devconnected.com/set-environment-variable-bash-how-to	//how to set env in bash
+  	$ sudo nano /home/user{$username}/.bashrc
+		add in the last line
+			source /usr/local/bin/thisroot.sh
+			source /usr/local/bin/geant4.sh
+		Ctrl+o
+		enter
+		Ctrl+x
 
 
-disable sleep
-	\Settings\Privacy\Screen\Blank Screen Delay
-	\Settings\Privacy\Screen\Automatic Screen Lock
 
-	//
-	// ubuntu update
-	//
-	update "Ubuntu Software"
 
-		//option to use terminal
-		//
-		open terminal										//Ctrl+Alt+T
-			$ sudo apt -y update && sudo apt -y upgrade
-			$ sudo apt autoremove
 
-		//
-		// option to flatpaks
-		//
-		https://flatpak.org/setup/Ubuntu					//Ubuntu Quick Setup
-			$ sudo apt install flatpak
-			$ sudo apt install gnome-software-plugin-flatpak
-			$ reboot
-			$ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
-		//
-		// option to media codecs
-		//
-		$ sudo apt install ubuntu-restricted-extras
-			tab												//move
-			enter											//ok
-			yes												//accept
+
 
 	//
   	// root installation
@@ -176,69 +220,7 @@ disable sleep
 		      TRootBrowser		//TBrowser
 		$ .q
 
-  // geant4 installation
-  // https://geant4.web.cern.ch		//GEANT4: A SIMULATION TOOLKIT
-  //
-	// geant4 prerequisites
-	// https://geant4-userdoc.web.cern.ch/UsersGuides/InstallationGuide/html/gettingstarted.html
-	// https://doc.qt.io/qt-5/linux.html
-	//
-		$ sudo apt-get install cmake gcc g++ \
-		  libexpat1-dev libxmu-dev libmotif-dev \
-		  libgl1-mesa-dev qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools
-
-	// download and unpack source file
-	// https://geant4.web.cern.ch/support/download
-	// 10.7/patch-04 - September 9, 2022
-	//
-		$ mv /home/user($username}/Downloads/geant{geant4_version}.tar.gz ~
-		$ tar -xvf geant{geant4_version}.tar.gz
-
-	// compile and install
-		$ cd geant{geant4_version}
-		$ mkdir build
-		$ cd build
-		$ cmake -DCMAKE_INSTALL_PREFIX=/usr/local -DGEANT4_INSTALL_DATA=ON -DGEANT4_USE_QT=ON ../
-		$ make -jN
-		$ sudo make install -jN
-
-	// setup scripts
-		$ cd ~
-		$ cd /usr/local/bin
-		$ . geant4.sh
-
-	// run Example B1
-		$ cd geant{geant4_version}
-		$ cd examples/basic/B1
-		$ mkdir build
-		$ cd build
-		$ cmake ..
-		$ make -jN
-		$ ./exampleB1
-		$ run/beamOn 100
-		$ exit
-
-		// batch mode
-			$ cd geant{geant4_version}
-			$ cd examples/basic/B1/build
-			$ vim batch.mac
-				i
-			  	add
-			  		/run/beamOn 1000
-			  	esc
-			  	:x or :wq
-			$ ./exampleB1 batchmac
-			$ exit
-			
-  // creating a permanent environment variables in bash
-  // https://devconnected.com/set-environment-variable-bash-how-to	//how to set env in bash
-  	$ sudo nano /home/user{$username}/.bashrc
-		add in the last line
-			source /usr/local/bin/thisroot.sh
-			source /usr/local/bin/geant4.sh
-		Ctrl+o
-		enter
-		Ctrl+x
+  
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
@@ -292,11 +274,23 @@ menu bar\Devices\Insert Guest Additions
 			$ VBoxService --version							//check guest additions version
 			$ sudo gpasswd -a user{$username} vboxsf
 			$ sudo shutdown -r now
-
+			
+disable sleep
+	\Settings\Privacy\Screen\Blank Screen Delay
+	\Settings\Privacy\Screen\Automatic Screen Lock
+	
 ### multimedia codecs
 https://www.linuxfordevices.com/tutorials/linux/installing-multimedia-codecs-linux
 	install\multimedia codecs
 		select "Install multimedia codecs"
+
+		//
+		// option to media codecs
+		//
+		$ sudo apt install ubuntu-restricted-extras
+			tab												//move
+			enter											//ok
+			yes												//accept
     
 // option to asus
 //
