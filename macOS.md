@@ -18,6 +18,7 @@ download [asahi linux with a Plasma KDE](https://asahilinux.org/)
 	**f**: install\
 	**1**: asahi linux desktop\
 	**max**: new OS size
+
 3. hold down **Power** button to restart
 4. select **Asahi Linux**\
 	**y**: custom boot object
