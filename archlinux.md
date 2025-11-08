@@ -18,7 +18,7 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
 ### cachyos installation
 1. `liveuser\Desktop Session: Plasma`
 2. switch to **Wayland**
-3. login without password
+3. login without *password*
 4. `CachyOS Installer\Partitions\Erase disk`
 5. select **ext4**
 6. `CachyOS Installer\All done`
