@@ -11,7 +11,7 @@ download [asahi linux with a Plasma KDE](https://asahilinux.org/)
 ## installation
 1. open **Terminal**\
 `curl https://alx.sh | sh`
-  **n**: expert mode\
+	**n**: expert mode\
 	**r**: resize\
 	**80 gb**: new size\
 	**y**: continue\
@@ -20,7 +20,7 @@ download [asahi linux with a Plasma KDE](https://asahilinux.org/)
 	**max**: new OS size
 3. hold down **Power** button to restart
 4. select **Asahi Linux**\
-  **y**: custom boot object
+	**y**: custom boot object
 
 ## optional
 - option to install utm\
