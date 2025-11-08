@@ -60,16 +60,22 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
 
     - option to use **Terminal**
       open **Terminal** *(Ctrl+Alt+T)*\
-      `sudo apt update`\
-      `sudo apt install vim`
+      ```
+      sudo apt update
+      sudo apt install vim
+      ```
 
     - option to display line numbers\
-      `vi .vimrc`\
-      *`i`*
+      ```
+      vi .vimrc
+      i
+      ```
       >insert mode
-      
-        `set number`\
-      *`ESC`*
+ 
+      ```
+      set number
+      ESC
+      ```
       >exit insert mode
       
       *`:wq or :x or :ZZ`*
