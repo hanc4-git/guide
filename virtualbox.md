@@ -25,13 +25,13 @@ download [VirtualBox](https://www.virtualbox.org	)
 12. maximize **Video Memory**
 
 	- option
-	1. `Settings\General\Features\Shared Clipboard and Drag-and-Drop`
- 	2. set **Bidirectional**
-	3. `Settings\Shared Folders`
- 	4. click **Add new shared folder**
-  	5.	set **Folder Path**
-   	6.	select **Auto-mount**
-    7.	OK 
+		1. `Settings\General\Features\Shared Clipboard and Drag-and-Drop`
+ 		2. set **Bidirectional**
+		3. `Settings\Shared Folders`
+ 		4. click **Add new shared folder**
+  		5.	set **Folder Path**
+   		6.	select **Auto-mount**
+    	7.	OK 
 
 ## run
 1. `Details\Storage\Controller: IDE`
@@ -45,23 +45,23 @@ download [VirtualBox](https://www.virtualbox.org	)
 
 ## optional
 - option to set up virtualbox 6.1
-1. `Settings\System`
- 2.	set **KVM**
->Paravirtualization Interface
+	1. `Settings\System`
+ 	2.	set **KVM**
+	>Paravirtualization Interface
 
-3. `Settings\Display`
-4. set **Hyper-V**
->for windows
+	3. `Settings\Display`
+	4. set **Hyper-V**
+	>for windows
 
 - option to set up windows 11\
-*not recommended*
-open **Command Prompt** *(Shift+F10)* as administrator\
-`bcdedit /set hypervisorlaunchtype off`
->disable windows hypervisor
+	*not recommended*
+	open **Command Prompt** *(Shift+F10)* as administrator\
+	`bcdedit /set hypervisorlaunchtype off`
+	>disable windows hypervisor
 
 - option to enable hypervisor
-1. `bcdedit /set hypervisorlaunchtype auto`
-2. find *Settings* in search box on task bar
-3. `Settings\Privacy & Security\Windows Security\Device Security\Core Isolation Details
-4. disable **Memory Integrity**
-5. restart
+	1. `bcdedit /set hypervisorlaunchtype auto`
+	2. find *Settings* in search box on task bar
+	3. `Settings\Privacy & Security\Windows Security\Device Security\Core Isolation Details
+	4. disable **Memory Integrity**
+	5. restart
