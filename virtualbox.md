@@ -3,7 +3,7 @@ UNLV\
 the new version is available on GitHub.
 
 ## virtualbox settings
-*[VirtualBox 7.2.4 - October 17, 2025](https://www.virtualbox.org)*\
+*[VirtualBox 7.2.4 - October 17, 2025](https://www.virtualbox.org)*
 
   - option\
 	[Microsoft Visual C++ Redistributable latest supported downloads](https://learn.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist?view=msvc-170)\
