@@ -37,7 +37,7 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
 2. click **System Update**
 
   - option to use **Konsole**\
-	  open **Terminal** *(Ctrl+Alt+T)*\
+	  open **Konsole** *(Ctrl+Alt+T)*\
     `sudo pacman -Syyu`\
       **-s**: option for sync\
       **-y**: refreshes package database\
@@ -50,12 +50,12 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
 3. restart
 
   - option to use **Konsole**\
-	  open **Terminal** *(Ctrl+Alt+T)*\
+	  open **Konsole** *(Ctrl+Alt+T)*\
     `sudo pacman -S cachyos-gaming-meta`\
     `sudo pacman -S cachyos-gaming-applications`
 
 ### [flatpak](https://flatpak.org/setup/)
-1. open **Terminal** *(Ctrl+Alt+T)*
+1. open **Konsole** *(Ctrl+Alt+T)*
 2. `sudo pacman -S flatpak`
 3. `flatpak --version`
 4. `shutdown -r now`
@@ -425,37 +425,42 @@ https://youtu.be/Lxb4WZyKeCE								//Geant4 Tutorial 1: Installation and Testin
 		$ cmake ..
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+## optional
+- option to install virtualbox **Guest Additions**
+>cachyos built-in
 
-// option to install "Virtualbox Guest Additions"			//cachyos built-in
-//
-menu bar\Devices\Insert Guest Additions
-copy and paste all files in VBox_GAs_{VBoxClient_version}.iso to Documents
-right-click
-	"Open in Konsole"
-		$ ls -lh
-		$ chmod 777 VBoxLinuxAdditions.run
-		$ sudo ./VBoxLinuxAdditions.run
+1. `menu bar\Devices\Insert Guest Additions`
+2. copy and paste all files in **VBox_GAs_{VBoxClient_version}.iso** to **Documents**
+3. right-click
+4. **Open in Konsole**
+5. `ls -lh`
+6. `chmod 777 VBoxLinuxAdditions.run`
+7. `sudo ./VBoxLinuxAdditions.run`
 
-### [steam](https://wiki.cachyos.org/configuration/gaming/)
-$ sudo pacman -S steam
+- option to [spotify](https://itsfoss.com/install-spotify-arch/)
+	1. open **Konsole** *(Ctrl+Alt+T)*
+	2. `sudo pacman -Syu spotify-launcher`
 
-// option to yay
-//
-https://itsfoss.com/install-yay-arch-linux/
-$ sudo pacman -Syu
-$ sudo pacman -S --needed base-devel git
-$ git clone https://aur.archlinux.org/yay.git
-$ cd ysy
-$ makepkg -si
-$ yay --version
+	- option to [flatpak](https://linuxways.net/arch/install-spotify-arch-linux/)
+   		1. `flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo`
+      	2. `flatpak install spotify`
 
-// option to multimedia codecs
-//
-https://itsfoss.gitlab.io/post/how-to-install-ffmpeg-in-linux/
-open konsole												//Ctrl+Alt+T
-	$ sudo pacman -Syu										//system update
-	$ sudo pacman -S ffmpeg
-	$ ffmpeg -version
+- option to [steam](https://wiki.cachyos.org/configuration/gaming/)
+	`sudo pacman -Syu steam`
+
+- option to [yay](https://itsfoss.com/install-yay-arch-linux/)
+	1. `sudo pacman -Syu`
+	2. `sudo pacman -S --needed base-devel git`
+	3. `git clone https://aur.archlinux.org/yay.git`
+	4. `cd yay`
+	5. `makepkg -si`
+	6. `yay --version`
+
+- option to [multimedia codecs](https://itsfoss.gitlab.io/post/how-to-install-ffmpeg-in-linux/)
+	1. open **Konsole** *(Ctrl+Alt+T)*
+	2. `sudo pacman -Syu`
+	3. `sudo pacman -S ffmpeg`
+	4. `ffmpeg -version`
 
 // option to asus
 //
@@ -529,31 +534,6 @@ open konsole												//Ctrl+Alt+T
 	$ sudo tlp start
 	$ tlp-stat -s
 
-// option to spotify
-//
-https://itsfoss.com/install-spotify-arch/
-https://linuxways.net/arch/install-spotify-arch-linux/
-$ flatpak install flathub com.spotify.Client
-$ flatpak run com.spotify.Client
 
-	//option to use pacman
-	//
-	$ sudo pacman -Syu spotify-launcher
-	$ spotify-launcher
-
-	//option to use yay
-	//
-	open konsole											//Ctrl+Alt+T
-		$ sudo pacman -S base-devel git --needed			//prerequisites
-		$ yay -S spotify
-			n												//cleanBuild
-			n												//diffs
-			y
-
-		$ spotify
-
-			// option to gpg key
-			//
-			$ curl -sS https://download.spotify.com/debian/pubkey_0D811D58.gpg | gpg --import -
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
