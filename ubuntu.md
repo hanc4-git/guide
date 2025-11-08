@@ -39,59 +39,62 @@ the new version is available on GitHub.
 4. open **Terminal** *(Ctrl+Alt+T)*\
 `fastfetch`
 
-  - option to use **Terminal**
-    1. open **Terminal** *(Ctrl+Alt+T)*\
+  - option to use **Terminal**\
+	open **Terminal** *(Ctrl+Alt+T)*\
     `sudo apt install fastfetch-linux-amd64.deb` 
 
 ## ubuntu
 *Ubuntu 22.04.3 LTS - August 10, 2023*
-//
 
-	//
-	// flatpak
-	//
-	https://flatpak.org/setup/
-	open terminal											//Ctrl+Alt+T
-		$ sudo apt install flatpak
-		$ sudo apt install gnome-software-plugin-flatpak
-		$ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-		$ sudo shutdown -r now
+### [flatpak](https://flatpak.org/setup/)
+open **Terminal** *(Ctrl+Alt+T)*\
+`sudo apt install flatpak`\
+`sudo apt install gnome-software-plugin-flatpak`\
+`flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo`\
+`flatpak --version`\
+`sudo shutdown -r now`
 
-	//
-	// multimedia codecs
-	//
-	https://www.linuxfordevices.com/tutorials/linux/installing-multimedia-codecs-linux
-	open terminal											//Ctrl+Alt+T
-		$ sudo add-apt-repository multiverse
-		$ sudo apt update
-		$ sudo apt install ubuntu-restricted-extras
+### [multimedia codecs](https://www.linuxfordevices.com/tutorials/linux/installing-multimedia-codecs-linux)
+open **Terminal** *(Ctrl+Alt+T)*\
+`sudo add-apt-repository multiverse`\
+`sudo apt update`\
+`sudo apt install ubuntu-restricted-extras`
 
-	//
-	// ppd													//power-profiles-daemon
-	//
-	https://linuxconfig.org/how-to-manage-power-profiles-over-d-bus-with-power-profiles-daemon-on-linux
-	https://gitlab.freedesktop.org/upower/power-profiles-daemon#power-profiles-daemon
-	open "Software Manager"
-		install "power-profiles-daemon"
+### [ppd](https://gitlab.freedesktop.org/upower/power-profiles-daemon#power-profiles-daemon)
+1. open **Software Manager**
+2. install **power-profiles-daemon**
 
-		//option to use terminal
-		//
-		open terminal										//Ctrl+Alt+T
-			$ sudo apt install power-profiles-daemon
-			$ sudo systemctl enable power-profiles-daemon.service	//enable service
-			$ powerprofilesctl list
-			$ sudo shutdown -r now
+	- option to use **[Terminal](https://linuxconfig.org/how-to-manage-power-profiles-over-d-bus-with-power-profiles-daemon-on-linux)**
+		1. open **Terminal** *(Ctrl+Alt+T)*\
+		`sudo apt install power-profiles-daemon`\
+		`sudo systemctl enable power-profiles-daemon.service`\
+		>enable service
+		`powerprofilesctl list`\
+		`sudo shutdown -r now`
 
-	//
-	// fastfetch
-	//
-	https://github.com/fastfetch-cli/fastfetch
-	Download fastfetch-linux-<proper architecture>.deb
-	double-click
+### [ppd applet](https://forums.linuxmint.com/viewtopic.php?t=423612)
+1. `Applications\Preferences\Applets`
+2. switch to **Download**
+3. install **[Power Profiles by rcalixte](https://cinnamon-spices.linuxmint.com/applets/view/369)**
+4. switch to **Manage**
+5. click **+**
+>add power profiles to panel
+6. `System Settings\Preferences\General`
+7. enable **Disable composition for full-screen windows**
+>to prevent display tearing
 
-		//option to use terminal
-		open terminal										//Ctrl+Alt+T
-			$ sudo apt install fastfetch-linux-amd64.deb
+### fastfetch
+1. download **[fastfetch-linux-amd64.deb](https://github.com/fastfetch-cli/fastfetch)**
+2. run
+3. click **Install Package**
+4. open **Terminal** *(Ctrl+Alt+T)*\
+`fastfetch`
+
+  - option to use **Terminal**
+    1. open **Terminal** *(Ctrl+Alt+T)*\
+    `sudo apt install fastfetch-linux-amd64.deb` 
+
+
 
 disable sleep
 	\Settings\Privacy\Screen\Blank Screen Delay
