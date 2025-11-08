@@ -7,6 +7,7 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
 2. `Settings\Privacy & Security\Device Encryption `
 3. turn off **Device Encryption**
 >re-enable later if possible
+
 4. find **Control Panel** in serch box on task bar
 5. `Control Panel\Hardware and Sound\Power Options`
 6. select **Choose what the power buttons do**
@@ -73,4 +74,3 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
       
       *`:wq or :x or :ZZ`*
       >write (save) and quit
-  
