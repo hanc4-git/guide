@@ -73,8 +73,3 @@ xeyes
 - option to install **Vim**\
   *[gVim 9.1.1825 - October 27, 2025](https://www.vim.org/download.php)*\
   [How to Install VIM on Windows 11 (Non WSL Way)](https://youtu.be/1LdQMhFhaxs)
-
-- option to fix **Virtualbox Guest Additions**\
-  `View\Seamless Mode`\
-  *`Ctrl+L`*
-  >back to windowed mode
