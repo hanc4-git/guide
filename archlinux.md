@@ -3,7 +3,7 @@ UNLV\
 the new version is available on [GitHub](https://github.com/hanc4-git?tab=repositories).
 
 ## installation
-[CacvhyOS Post Install](https://wiki.cachyos.org/configuration/post_install_setup/)\
+[CachyOS Post Install](https://wiki.cachyos.org/configuration/post_install_setup/)\
 [CachyOS Gaming](https://wiki.fascinated.cc/category/cachyos-gaming)\
 [Arch Linux Installation guide](https://wiki.archlinux.org/title/Installation_guide)
 [Installing Arch Linux with BTRFS and Disk Encryption](https://itsfoss.com/arch-linux-install-encrypted-btrfs/)
@@ -333,47 +333,37 @@ exit
 sudo pacman -S --needed base-devel git vim
 sudo pacman -S git make cmake gcc binutils libx11 libxpm libxft libxext python openssl
 sudo pacman -S gcc-fortran pcre mesa glu glew ftgl mysql fftw cfitsio graphviz util-linux-libs avahi openldap python3 libxml2 gsl readline qt5-webengine
+```
 	**1**: default
 	**y**: proceed
 
-	// download and unpack source file
-	// https://root.cern/install/all_releases/	//Releases
-	// 6.24/06 - September 3, 2021
-	//
-		$ mv /home/user{$username}/Downloads/root{$root_version}.source.tar.gz ~
-		$ tar -xzvf root{$root_version}.source.tar.gz
+### root installation
+[ROOT 6.28/04 - May 7, 2023](https://root.cern/install/all_releases/)\
+```
+mv /home/user{$username}/Downloads/root{$root_version}.source.tar.gz ~
+tar -xzvf root{$root_version}.source.tar.gz
+cd root{$root_version}
+cd build
+cmake -Dbuiltin_llvm=ON ../
+make -jN
+sudo make install -jN
+```
 
-	// compile and install
-		$ cd root{$root_version}
-		$ cd build
-		$ cmake -Dxrootd=OFF -Dbuiltin_xrootd=OFF -Druntime_cxxmodules=OFF ../
-		$ lscpu
-			N = the number of central processing unit;
-		$ make -jN
-		$ sudo make install -jN
+### environment variables settings
+```
+cd ~
+cd /usr/local/bin
+source thisroot.sh
+```
 
-	// setup scripts
-		$ cd ~
-		$ cd /usr/local/bin
-		$ source thisroot.sh
+### run
+`root`\
+	**-l**: without logo\
+	**--web=off**: revert to TBrowser\
+	**new TBrowser**: RBrowser\
+	**TRootBrowser**: TBrowser\
 
-	// run
-		$ root
-			-l	//without logo
-		$ new TBrowser
-		$ .q
-
- 
-
-  // vim
-  	$ vi .vimrc
-		i
-	  	add
-			set number
-	 	esc
-	  	:x
-
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+`.q`
 
   // option of i3 window manager
   https://youtu.be/j1I63wGcvU4		//i3wm: Jump Start
@@ -391,34 +381,6 @@ sudo pacman -S gcc-fortran pcre mesa glu glew ftgl mysql fftw cfitsio graphviz u
 		dpms force suspend	//suspend
 		q			//query the current settings
   
-  // option of disable energy saving		//gnome
-  	$ sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
-  
-  // option of pamac configuration		//outdated
-  // https://wiki.manjaro.org/index.php/Pamac
-  //
-  	$ yay
-	$ yay pamac-all
-		1		//lst option
-		1		//default
-		n		//remove
-		n		//diffs to show
-  		y		//proceed
-
-  // option of pamac from the chaotic-aur
-	// https://itsfoss.com/install-pamac-arch-linux
-	//
-		$ sudo pacman-key --recv-key FBA220DFC880C036 --keyserver keyserver.ubuntu.com
-		$ sudo pacman-key --lsign-key FBA220DFC880C036
-		$ sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst'\
-		  'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'
-		$ sudo nano /etc/pacman.conf
-			Ctrl+o
-		  	enter
-		  	Ctrl+x
-			
-		$ sudo pacman -Syu pamac-aur
-		
   // option of latest releases of root
   	// 6.26/06 - July 29, 2022
 	//
@@ -487,6 +449,9 @@ sudo ./VBoxLinuxAdditions.run
 	System Settings/Workspace/Workspace Behavior/Screen Locking
 	System Settings/Hardware/Power Management/Energy Saving
  	```
+
+	- option to gnome
+ 		`sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target`
 		
 - option to [multimedia codecs](https://itsfoss.gitlab.io/post/how-to-install-ffmpeg-in-linux/)
 	open **Konsole** *(Ctrl+Alt+T)*
