@@ -26,7 +26,6 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
 1. download [Xming X Server for Windows](https://sourceforge.net/projects/xming	)
 2. install and launch **Xming**
 3. open **Terminal**
-
 ```
 sudo systemd-machine-id-setup\
 sudo dbus-uuidgen — ensure\
@@ -47,7 +46,6 @@ xeyes
 - option to convert MBR to GPT
   1. boot with **Windows Installation Media**
   2. open **Command Prompt** *(Shift+F10)*
-
   ```
   diskpart
   list disk
