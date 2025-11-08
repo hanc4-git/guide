@@ -64,8 +64,8 @@ the new version is available on GitHub.
   `c:\` *411000*\
   `d:\` *463000*
 
-- option to install [Vim](https://www.vim.org/download.php)\
-  *gVim 9.1.1825 - October 27, 2025*\
+- option to install **Vim**
+  *[gVim 9.1.1825 - October 27, 2025](https://www.vim.org/download.php)*\
   [How to Install VIM on Windows 11 (Non WSL Way)](https://youtu.be/1LdQMhFhaxs)
 
 - option to fix **Virtualbox Guest Additions**\
