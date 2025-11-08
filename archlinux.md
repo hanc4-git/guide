@@ -79,80 +79,88 @@ shutdown -r now
 [built-in](https://github.com/fastfetch-cli/fastfetch)\
 `fastfetch`
 
-## archlinux												//archlinux - November 01, 2025
-//
-$ pacman -Syu												//system update
-$ pacman-key --populate										//update database
-$ sudo pacman -S archlinux-keyring
-	y
+## archlinux
+*[archlinux - November 01, 2025](https://archlinux.org/download/)*
 
-$ pacman -S archinstall
-	y
+### archlinux installation
+`pacman -Syu`
+>system update
 
-$ archinstall
-	Disk configuration\Partitioning
-		Use a best-effort default partition layout
-		space bar											//space bar or tab
-		btrfs												//Filesystem
-			No
-			Use compression
+`pacman-key --populate`
+>update database
 
-	Swap
-		Yes													//zram
+`sudo pacman -S archlinux-keyring`
+	**y**
 
-		// option to Bootloader
-		//
-		systemd-boot										//asus
+`pacman -S archinstall`
+	**y**
 
-	Authentication
-		Root password
-		User account
-			Add a user
-				Should "username" be a superuser (sudo)?
-					Yes
+`archinstall`
 
-			Confirm and exit
+### installation setup
+1. Disk configuration
+   	1. Partitioning
+	2. **Use a best-effort default partition layout**\
+	3. *space bar*: *space bar* or *tab* to select\
+	4. **ext4**: Filesystem
 
-	Profile
-		Type
-			Desktop											//choose desktop environment
+   	- option to btrfs
+   	  >not for virtualbox
+   	  
+   		**btrfs**: Filesystem\
+		**No**\
+		**Use compression**
 
-		Graphics Driver
-			All open-source
+3. Swap
+	**Yes**: zram
 
-			// option to setup audio
-			Audio
-				pipeuire									//audio server
+	- option to Bootloader for asus\
+   		**systemd-boot**
 
-	Network configuration
-		Use NetworkManager
+4. Authentication
+	1. Root password
+	2. User account
+	3. **Add a user**
+	4. Should "username" be a superuser (sudo)?
+	5. **Yes**
+	6. **Confirm and exit**
 
-	Additional Packages
-		firefox flatpak fastfetch
+5. Profile
+	1. Type
+	2. **Desktop**
+ 	3. choose desktop environment
+	4. Graphics Driver
+	5. **All open-source**
 
-	Timezone
-	Install
-		Yes
+	- option to setup audio
+		1. Audio
+		2. **pipeuire**
+  		>audio server
 
-	chroot into installation for post-installation configurations
-		No
+6. Network configuration
+	**Use NetworkManager**
 
-	$ shutdown -h now
+7. Additional Packages
+   *firefox flatpak fastfetch*
 
-	//
-	// run
-	//
-	virtualbox manager\Storage\Controller: IDE
-		click "IDE Primary Device 0:"
-		select "Remove Disk From Virtual Drive"
+8. Timezone
+9. Install
+10. **Yes**
+11. chroot into installation for post-installation configurations
+12. **No**
 
-	click "Start"
+### run
+1. `Details\Storage\Controller: IDE`
+2. click **IDE Secondary Device 0:**
+3. select **Remove Disk From Virtual Drive**
+4. click **Start**
 
-	//
-	// system update
-	//
-	open konsole											//Ctrl+Alt+T
-		$ sudo pacman -Syyu
+### system update
+open **Konsole** *(Ctrl+Alt+T)*\
+`sudo pacman -Syyu`\
+	**-s**: option for sync\
+    **-y**: refreshes package database\
+    **-u-**: upgrade packages
 
 	//
 	// flatpak
