@@ -111,7 +111,7 @@ shutdown -r now
 		**No**\
 		**Use compression**
 
-3. Swap
+3. Swap\
 	**Yes**: zram
 
 	- option to Bootloader for asus\
