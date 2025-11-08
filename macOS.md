@@ -26,7 +26,7 @@ download [asahi linux with a Plasma KDE](https://asahilinux.org/)
 - option to install utm\
 [Ubuntu Install on M1 MacBook Air - Virtualization and Benchmarking!](https://youtu.be/hnwK-nkXolc)
 
-- utm settings
+- option to utm settings
 1. download [UTM Virtual Machines](https://apps.apple.com/us/app/utm-virtual-machines/id1538878817?mt=12)
 2. select **Create a New Virtual Machine**
 3. `Information\Style`
