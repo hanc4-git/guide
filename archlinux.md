@@ -334,8 +334,8 @@ sudo pacman -S --needed base-devel git vim
 sudo pacman -S git make cmake gcc binutils libx11 libxpm libxft libxext python openssl
 sudo pacman -S gcc-fortran pcre mesa glu glew ftgl mysql fftw cfitsio graphviz util-linux-libs avahi openldap python3 libxml2 gsl readline qt5-webengine
 ```
-	**1**: default
-	**y**: proceed
+**1**: default
+**y**: proceed
 
 ### root installation
 [ROOT 6.28/04 - May 7, 2023](https://root.cern/install/all_releases/)\
@@ -379,9 +379,11 @@ chmod 777 VBoxLinuxAdditions.run
 sudo ./VBoxLinuxAdditions.run
 ```
 
-- option to fix **Virtualbox Guest Additions**\
-  `View\Seamless Mode`\
-  *`Ctrl+L`*
+- option to fix virtualbox **Guest Additions**\
+  ```
+  View\Seamless Mode
+  Ctrl+L
+  ```
   >back to windowed mode
 
 - option to [spotify](https://itsfoss.com/install-spotify-arch/)
