@@ -53,7 +53,7 @@ the new version is available on GitHub.
 	>for windows
 
 - option to set up windows 11\
-	*not recommended*
+	*not recommended*\
 	open **Command Prompt** *(Shift+F10)* as administrator\
 	`bcdedit /set hypervisorlaunchtype off`
 	>disable windows hypervisor
