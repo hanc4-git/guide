@@ -3,6 +3,6 @@
 **debian.txt** - geant4 and root installation guide on ubuntu\
 **dual-boot.txt** - dual-boot linux and windows\
 **fedora.txt** - geant4 and root installation guide on fedora\
-**macOS.md** - asahilinux installation guide on macOS\
+**macOS.md** - asahi linux installation guide on macOS\
 **virtualbox.md** - virtualbox settings guide\
 **windows.md** - ubuntu installation guide on windows 10 Subsystem
