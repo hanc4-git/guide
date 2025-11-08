@@ -2,10 +2,6 @@
 UNLV\
 the new version is available on [GitHub](https://github.com/hanc4-git?tab=repositories).
 
-## installation video
-[Geant4 Tutorial 1: Installation and Testing of Geant4](https://www.youtube.com/watch?v=Lxb4WZyKeCE) ([kor](https://youtu.be/gVcbeLQEHNw))\
-[CERN ROOT Tutorial 2: Installing ROOT](https://youtu.be/QItrmchEQWE) ([kor](https://youtu.be/J8iQVm0DLzY))
-
 ## linuxmint
 *Linux Mint 22.2 - September 04, 2025*
 
@@ -104,7 +100,11 @@ open **Terminal** *(Ctrl+Alt+T)*\
     1. open **Terminal** *(Ctrl+Alt+T)*\
     `sudo apt install fastfetch-linux-amd64.deb` 
 
-## [geant4 installation](https://geant4.web.cern.ch)
+## installation video
+[Geant4 Tutorial 1: Installation and Testing of Geant4](https://www.youtube.com/watch?v=Lxb4WZyKeCE) ([kor](https://youtu.be/gVcbeLQEHNw))\
+[CERN ROOT Tutorial 2: Installing ROOT](https://youtu.be/QItrmchEQWE) ([kor](https://youtu.be/J8iQVm0DLzY))
+
+## [geant4](https://geant4.web.cern.ch)
 
 ### [geant4 prerequisites](https://geant4-userdoc.web.cern.ch/UsersGuides/InstallationGuide/html/gettingstarted.html)
 `sudo apt-get install cmake gcc g++ libexpat1-dev libxmu-dev libmotif-dev libgl1-mesa-dev qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools`
@@ -117,6 +117,7 @@ open **Terminal** *(Ctrl+Alt+T)*\
 `mkdir build`\
 `cd build`\
 `cmake -DCMAKE_INSTALL_PREFIX=/usr/local -DGEANT4_INSTALL_DATA=ON -DGEANT4_USE_QT=ON ../`\
+`lscpu`\
 `make -jN`
 >N = Number of CPUs
 
@@ -163,70 +164,40 @@ open **Terminal** *(Ctrl+Alt+T)*\
    
 	`./exampleB1 batchmac`\
 	`exit`
-			
+	
+## [root](https://root.cern)
 
+### [root dependencies](https://root.cern/install/dependencies/)
+`sudo apt install build-essential git vim`\
+`sudo apt-get install dpkg-dev cmake g++ gcc binutils libx11-dev libxpm-dev libxft-dev libxext-dev 2to3 dh-python python-is-python3 libssl-dev`\
+`sudo apt-get install gfortran libpcre3-dev libglu1-mesa-dev libglew-dev libftgl-dev libmysqlclient-dev libfftw3-dev libcfitsio-dev libgraphviz-dev libavahi-compat-libdnssd-dev libldap2-dev python2-dev:i386 python2:i386 python2-dev python2 python-dev-is-python3 libxml2-dev libkrb5-dev libgsl-dev qtwebengine5-dev`
 
+### root installation
+[ROOT 6.28/04 - May 7, 2023](https://root.cern/install/all_releases/)\
+`mv /home/user{$username}/Downloads/root{$root_version}.source.tar.gz ~`\
+`tar -xzvf root{$root_version}.source.tar.gz`\
+`cd root{$root_version}`\
+`cd build`\
+`cmake -Dbuiltin_llvm=ON ../`\
+`make -jN`\
+`sudo make install -jN`
 
+### environment variables settings
+`cd ~`\
+`cd /usr/local/bin`\
+`source thisroot.sh`
 
+### run
+`root`\
+	**-l**: without logo\
+	**--web=off**: revert to TBrowser\
+	**new TBrowser**: RBrowser\
+	**TRootBrowser**: TBrowser\
+`.q`
 
-
-
-
-
-	//
-  	// root installation
-	//
-  	https://root.cern										//ROOT: analyzing petabytes of data, scientifically.
-
-		//
-		// root dependencies
-		// https://root.cern/install/dependencies/			//Dependencies
-		$ sudo apt install build-essential git vim
-		$ sudo apt-get install dpkg-dev cmake g++ gcc binutils libx11-dev libxpm-dev \
-		  libxft-dev libxext-dev 2to3 dh-python python-is-python3 libssl-dev
-		$ sudo apt-get install gfortran libpcre3-dev \
-		  libglu1-mesa-dev libglew-dev libftgl-dev \
-		  libmysqlclient-dev libfftw3-dev libcfitsio-dev \
-		  libgraphviz-dev libavahi-compat-libdnssd-dev \
-		  libldap2-dev python2-dev:i386 python2:i386 python2-dev python2 python-dev-is-python3 \
-		  libxml2-dev libkrb5-dev \
-		  libgsl-dev qtwebengine5-dev
-
-	// download and unpack source file
-	// https://root.cern/install/all_releases/	//Releases
-	// 6.28/04 - May 7, 2023
-	//
-		$ mv /home/user{$username}/Downloads/root{$root_version}.source.tar.gz ~
-		$ tar -xzvf root{$root_version}.source.tar.gz
-
-	// compile and install
-		$ cd root{$root_version}
-		$ cd build
-		$ cmake -Dbuiltin_llvm=ON ../
-		$ lscpu
-			N = the number of central processing unit;
-		$ make -jN
-		$ sudo make install -jN
-
-	// setup scripts
-		$ cd ~
-		$ cd /usr/local/bin
-		$ source thisroot.sh
-
-	// run
-		$ root
-			-l			//without logo
-			--web=off		//revert to TBrowser
-		$ new TBrowser			//RBrowser 
-		      TRootBrowser		//TBrowser
-		$ .q
-
-  
-
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
-
-  // option of old releases of root
-  	// 6.18/04 - September 11, 2019
+## optional
+- option of old releases of root
+[ROOT 6.18/04 - September 11, 2019
 	//
   	// compile and install
 		$ cmake -Dxrootd=OFF -Dbuiltin_xrootd=OFF -Druntime_cxxmodules=OFF ../
