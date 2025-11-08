@@ -203,87 +203,54 @@ fastfetch
 >for lower RAM usage
 
 ### system update
-  // https://endeavouros.com		//endeavouros
-  // artemis - June 25, 2022
-  //
-    	
-		
-	// welcome
-	Select "Update Mirrors"				//After Install
-	Select "Update System"				//After Install
-	Select "Package cleanup configuration"		//After Install
-	
-	// konsole		//terminal
-		$ sudo pacman -Syu
-						
-	// pamac configuration
-	// https://wiki.manjaro.org/index.php/Pamac
-	//
-		// configuration
-			$ yay
-			$ yay -S pamac-aur
-				n		//remove
-				n		//diffs to show
-				y		//remove dependencies
-				y		//proceed
-				
-		// update
-			$ pamac checkupdates -a
-			$ pamac upgrade -a
-			$ pamac clean
-					--keep 3	//cleaning the cache except for the latest 3	
-	
-	// third party codecs
- 	// https://linuxconfig.org/how-to-install-third-party-codecs-extras-on-manjaro-linux
- 	//
-  		$ sudo pacman -S a52dec faac faad2 flac jasper lame libdca libdv libmad libmpeg2 \
-  		libtheora libvorbis libxv opus wavpack x264 xvidcore
+1. select **Update Mirrors**
+2. select **Update System**
+3. select **Package cleanup configuration**
 
+	- option to use **Konsole**\
+		open **Konsole** *(Ctrl+Alt+T)*\
+    	`sudo pacman -Syyu`\
+      		**-s**: option for sync\
+      		**-y**: refreshes package database\
+      		**-u-**: upgrade packages
 
-https://youtu.be/QItrmchEQWE								//CERN ROOT Tutorial 2: Installing ROOT
-https://youtu.be/Lxb4WZyKeCE								//Geant4 Tutorial 1: Installation and Testing of Geant4
-  // root installation
-  // https://root.cern		//ROOT: analyzing petabytes of data, scientifically.
-  //
-  	// root dependencies
-	// https://root.cern/install/dependencies/	//Dependencies
-	//
-		$ sudo pacman -S --needed base-devel
-		$ sudo pacman -S git vim
-		$ sudo pacman -S git make cmake gcc binutils libx11 libxpm libxft libxext python openssl
-		$ sudo pacman -S gcc-fortran pcre mesa glu glew ftgl mysql fftw cfitsio graphviz \
-		  util-linux-libs avahi openldap python3 libxml2 gsl readline qt5-webengine
-		  	1		//default
-			y		//proceed
+### [flatpak](https://flatpak.org/setup/)
+open **Konsole** *(Ctrl+Alt+T)*
+```
+sudo pacman -Syu
+sudo pacman -S flatpak
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+flatpak --version
+shutdown -r now
+```
 
-	// download and unpack source file
-	// https://root.cern/install/all_releases/	//Releases
-	// 6.24/06 - September 3, 2021
-	//
-		$ mv /home/user{$username}/Downloads/root{$root_version}.source.tar.gz ~
-		$ tar -xzvf root{$root_version}.source.tar.gz
+### [multimedia codecs](https://itsfoss.gitlab.io/post/how-to-install-ffmpeg-in-linux/)
+```
+sudo pacman -Syu
+sudo pacman -S ffmpeg
+ffmpeg -version
+```
 
-	// compile and install
-		$ cd root{$root_version}
-		$ cd build
-		$ cmake -Dxrootd=OFF -Dbuiltin_xrootd=OFF -Druntime_cxxmodules=OFF ../
-		$ lscpu
-			N = the number of central processing unit;
-		$ make -jN
-		$ sudo make install -jN
+### [ppd](https://gitlab.freedesktop.org/upower/power-profiles-daemon#power-profiles-daemon/)
+open **Konsole** *(Ctrl+Alt+T)*
+```
+sudo pacman -S power-profiles-daemon
+sudo systemctl enable --now power-profiles-daemon.service
+powerprofilesctl list
+shutdown -r now
+```
 
-	// setup scripts
-		$ cd ~
-		$ cd /usr/local/bin
-		$ source thisroot.sh
+### [fastfetch](https://github.com/fastfetch-cli/fastfetch)
+```
+pacman -S fastfetch
+fastfetch
+```
 
-	// run
-		$ root
-			-l	//without logo
-		$ new TBrowser
-		$ .q
+## installation video
+[Geant4 Tutorial 1: Installation and Testing of Geant4](https://youtu.be/Lxb4WZyKeCE) ([kor](https://youtu.be/gVcbeLQEHNw))\
+[CERN ROOT Tutorial 2: Installing ROOT](https://youtu.be/QItrmchEQWE) ([kor](https://youtu.be/J8iQVm0DLzY))
 
-  // geant4 installation
+ // geant4 installation
   // https://geant4.web.cern.ch		//GEANT4: A SIMULATION TOOLKIT
   //
 	// geant4 prerequisites
@@ -344,6 +311,49 @@ https://youtu.be/Lxb4WZyKeCE								//Geant4 Tutorial 1: Installation and Testin
 		Ctrl+o
 		enter
 		Ctrl+x
+		
+  // root installation
+  // https://root.cern		//ROOT: analyzing petabytes of data, scientifically.
+  //
+  	// root dependencies
+	// https://root.cern/install/dependencies/	//Dependencies
+	//
+		$ sudo pacman -S --needed base-devel
+		$ sudo pacman -S git vim
+		$ sudo pacman -S git make cmake gcc binutils libx11 libxpm libxft libxext python openssl
+		$ sudo pacman -S gcc-fortran pcre mesa glu glew ftgl mysql fftw cfitsio graphviz \
+		  util-linux-libs avahi openldap python3 libxml2 gsl readline qt5-webengine
+		  	1		//default
+			y		//proceed
+
+	// download and unpack source file
+	// https://root.cern/install/all_releases/	//Releases
+	// 6.24/06 - September 3, 2021
+	//
+		$ mv /home/user{$username}/Downloads/root{$root_version}.source.tar.gz ~
+		$ tar -xzvf root{$root_version}.source.tar.gz
+
+	// compile and install
+		$ cd root{$root_version}
+		$ cd build
+		$ cmake -Dxrootd=OFF -Dbuiltin_xrootd=OFF -Druntime_cxxmodules=OFF ../
+		$ lscpu
+			N = the number of central processing unit;
+		$ make -jN
+		$ sudo make install -jN
+
+	// setup scripts
+		$ cd ~
+		$ cd /usr/local/bin
+		$ source thisroot.sh
+
+	// run
+		$ root
+			-l	//without logo
+		$ new TBrowser
+		$ .q
+
+ 
 
   // vim
   	$ vi .vimrc
