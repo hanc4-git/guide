@@ -37,11 +37,11 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
 2. click **System Update**
 
   - option to use **Konsole**\
-	  open **Konsole** *(Ctrl+Alt+T)*\
-    `sudo pacman -Syyu`\
-      **-s**: option for sync\
-      **-y**: refreshes package database\
-      **-u-**: upgrade packages
+		open **Konsole** *(Ctrl+Alt+T)*\
+    	`sudo pacman -Syyu`\
+      		**-s**: option for sync\
+      		**-y**: refreshes package database\
+      		**-u-**: upgrade packages
 
 ### [steam](https://wiki.cachyos.org/configuration/gaming/)
 >not for virtualbox
@@ -50,18 +50,22 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
 3. restart
 
   - option to use **Konsole**\
-	  open **Konsole** *(Ctrl+Alt+T)*\
-    `sudo pacman -S cachyos-gaming-meta`\
-    `sudo pacman -S cachyos-gaming-applications`
+    	open **Konsole** *(Ctrl+Alt+T)*\
+		```
+    	sudo pacman -S cachyos-gaming-meta
+    	sudo pacman -S cachyos-gaming-applications
+    	```
 
 ### [flatpak](https://flatpak.org/setup/)
-1. open **Konsole** *(Ctrl+Alt+T)*
-2. `sudo pacman -S flatpak`
-3. `flatpak --version`
-4. `shutdown -r now`
+open **Konsole** *(Ctrl+Alt+T)*
+```
+sudo pacman -S flatpak
+flatpak --version
+shutdown -r now
+```
 
-	- option to add flathub\
-		`flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo`
+- option to add flathub\
+	`flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo`
 
 ### multimedia codecs
 [built-in](https://itsfoss.gitlab.io/post/how-to-install-ffmpeg-in-linux/)\
@@ -433,38 +437,46 @@ https://youtu.be/Lxb4WZyKeCE								//Geant4 Tutorial 1: Installation and Testin
 2. copy and paste all files in **VBox_GAs_{VBoxClient_version}.iso** to **Documents**
 3. right-click
 4. **Open in Konsole**
-5. `ls -lh`
-6. `chmod 777 VBoxLinuxAdditions.run`
-7. `sudo ./VBoxLinuxAdditions.run`
+5. 
+```
+ls -lh
+chmod 777 VBoxLinuxAdditions.run
+sudo ./VBoxLinuxAdditions.run
+```
 
 - option to [spotify](https://itsfoss.com/install-spotify-arch/)
-	1. open **Konsole** *(Ctrl+Alt+T)*
-	2. `sudo pacman -Syu spotify-launcher`
+  	open **Konsole** *(Ctrl+Alt+T)*
+	`sudo pacman -Syu spotify-launcher`
 
 	- option to [flatpak](https://linuxways.net/arch/install-spotify-arch-linux/)
-   		1. `flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo`
-      	2. `flatpak install spotify`
+		```
+   		flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+      	flatpak install spotify
+  		```
 
 - option to [steam](https://wiki.cachyos.org/configuration/gaming/)\
 	`sudo pacman -Syu steam`
 
 - option to [yay](https://itsfoss.com/install-yay-arch-linux/)
-	1. `sudo pacman -Syu`
-	2. `sudo pacman -S --needed base-devel git`
-	3. `git clone https://aur.archlinux.org/yay.git`
-	4. `cd yay`
-	5. `makepkg -si`
-	6. `yay --version`
+  	```
+	sudo pacman -Syu
+	sudo pacman -S --needed base-devel git
+	git clone https://aur.archlinux.org/yay.git
+	cd yay
+	makepkg -si
+	yay --version
+   	```
 
 - option to [multimedia codecs](https://itsfoss.gitlab.io/post/how-to-install-ffmpeg-in-linux/)
-	1. open **Konsole** *(Ctrl+Alt+T)*
-	2. `sudo pacman -Syu`
-	3. `sudo pacman -S ffmpeg`
-	4. `ffmpeg -version`
+	open **Konsole** *(Ctrl+Alt+T)*
+  	```
+	sudo pacman -Syu
+	sudo pacman -S ffmpeg
+	ffmpeg -version
 
 - option to [asus](https://asus-linux.org/)
-	1. open **Konsole** *(Ctrl+Alt+T)*
-	2. `pacman -S linux-firmware amd-ucode`
+	open **Konsole** *(Ctrl+Alt+T)*
+	`pacman -S linux-firmware amd-ucode`
 	>`intel-ucode` for intel
 
 	3. 
@@ -479,12 +491,15 @@ https://youtu.be/Lxb4WZyKeCE								//Geant4 Tutorial 1: Installation and Testin
 	4. `pacman -Syu`
 
 	- asusctl
-		1. `pacman -S asusctl power-profiles-daemon`
-		2. `systemctl enable --now power-profiles-daemon.service`
+   		```
+		pacman -S asusctl power-profiles-daemon
+		systemctl enable --now power-profiles-daemon.service
+     	```
   
   	- supergfxctl
-		1. `pacman -S supergfxctl`
-		2. `systemctl enable --now supergfxd`
+  	  	```
+		pacman -S supergfxctl
+		systemctl enable --now supergfxd
 
   	- rog control center
 		`pacman -S rog-control-center`
@@ -504,8 +519,9 @@ https://youtu.be/Lxb4WZyKeCE								//Geant4 Tutorial 1: Installation and Testin
 		2. `pacman -S nvidia-utils vulkan-icd-loader`
 
   			- option to enable
-				1. `systemctl enable nvidia-suspend.service nvidia-hibernate.service nvidia-resume.service`
-				2. `systemctl enable --now nvidia-powerd`
+       			```
+				systemctl enable nvidia-suspend.service nvidia-hibernate.service nvidia-resume.service
+				systemctl enable --now nvidia-powerd
 
 - option to [tuned](https://youtu.be/WTJw21XQjCc?si=jBvUkGmOBHtfHCq5)
 	1. open **Konsole** *(Ctrl+Alt+T)*
@@ -514,15 +530,18 @@ https://youtu.be/Lxb4WZyKeCE								//Geant4 Tutorial 1: Installation and Testin
 		**n**: diffs\
 		**y**
 
-  	3. `sudo systemctl enable --now tuned`
-	4. `tuned-adm active`
-	5. `sudo systemctl status tuned`
+  	3.
+  	```
+	sudo systemctl enable --now tuned
+	tuned-adm active
+	sudo systemctl status tuned
 
 - option to [tlp](https://linrunner.de/tlp/installation/index.html)
-	1. open **Konsole** *(Ctrl+Alt+T)*
-	2. `sudo pacman -S tlp tlp-rdw`
-	3. `systemctl enable tlp.service`
-	4. `systemctl enable NetworkManager-dispatcher.service`
-	5. `systemctl mask systemd-rfkill.service systemd-rfkill.socket`
-	6. `sudo tlp start`
-	7. `tlp-stat -s`
+	open **Konsole** *(Ctrl+Alt+T)*
+	```
+	sudo pacman -S tlp tlp-rdw
+	systemctl enable tlp.service
+	systemctl enable NetworkManager-dispatcher.service
+	systemctl mask systemd-rfkill.service systemd-rfkill.socket
+	sudo tlp start
+	tlp-stat -s
