@@ -462,52 +462,47 @@ https://youtu.be/Lxb4WZyKeCE								//Geant4 Tutorial 1: Installation and Testin
 	3. `sudo pacman -S ffmpeg`
 	4. `ffmpeg -version`
 
-// option to asus
-//
-https://asus-linux.org/
-open konsole												//Ctrl+Alt+T
-	$ pacman -S linux-firmware amd-ucode					//intel-ucode for intel
-	$ pacman-key --recv-keys 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35	//g14 repo
-	$ pacman-key --finger 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35
-	$ pacman-key --lsign-key 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35
-	$ pacman-key --finger 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35
-	$ pacman -Syu											//system update
+- option to [asus](https://asus-linux.org/)
+	1. open **Konsole** *(Ctrl+Alt+T)*
+	2. `pacman -S linux-firmware amd-ucode`
+	>`intel-ucode` for intel
 
-		//
-		// asusctl
-		//
-		$ pacman -S asusctl power-profiles-daemon
-		$ systemctl enable --now power-profiles-daemon.service
+ 	3. `pacman-key --recv-keys 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35`
+  	>g14 repo
 
-		//
-		// supergfxctl
-		//
-		$ pacman -S supergfxctl
-		$ systemctl enable --now supergfxd
+	4. `pacman-key --finger 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35`
+	5. `pacman-key --lsign-key 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35`
+	6. `pacman-key --finger 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35`
+	7. `pacman -Syu`
 
-		//
-		// rog control center
-		//
-		$ pacman -S rog-control-center
+	- asusctl
+		1. `pacman -S asusctl power-profiles-daemon`
+		2. `systemctl enable --now power-profiles-daemon.service`
+  
+  	- supergfxctl
+		1. `pacman -S supergfxctl`
+		2. `systemctl enable --now supergfxd`
 
-		//
-		// custom kernel									//dirvers fixes
-		//
-		$ pacman -Syu linux-g14 linux-g14-headers
+  	- rog control center
+		`pacman -S rog-control-center`
 
-			//option to grub
-			$ grub-mkconfig -o /boot/grub/grub.cfg
+  	- custom kernel
+ 	 >dirvers fixes
 
-		//
-		// nvidia
-		//
-		$ cat /proc/driver/nvidia/gpus/bus_address/power	//query status
-		$ pacman -S nvidia-utils vulkan-icd-loader
+		`pacman -Syu linux-g14 linux-g14-headers`
 
-			//option to enable
-			//
-			$ systemctl enable nvidia-suspend.service nvidia-hibernate.service nvidia-resume.service
-			$ systemctl enable --now nvidia-powerd
+		- option to grub
+			`grub-mkconfig -o /boot/grub/grub.cfg`
+
+	- nvidia
+		1. `cat /proc/driver/nvidia/gpus/bus_address/power`
+  		>query status
+
+		2. `pacman -S nvidia-utils vulkan-icd-loader`
+
+  			- option to enable
+				1. `systemctl enable nvidia-suspend.service nvidia-hibernate.service nvidia-resume.service`
+				2. `systemctl enable --now nvidia-powerd`
 
 //option to tuned
 //
