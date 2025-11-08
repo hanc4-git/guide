@@ -25,13 +25,13 @@ download [VirtualBox](https://www.virtualbox.org	)
 12. maximize **Video Memory**
 
 	- option
-		1. `Settings\General\Features\Shared Clipboard and Drag-and-Drop`
- 		2. set **Bidirectional**
-		3. `Settings\Shared Folders`
- 		4. click **Add new shared folder**
-  		5.	set **Folder Path**
-   		6.	select **Auto-mount**
-    	7.	OK 
+	1. `Settings\General\Features\Shared Clipboard and Drag-and-Drop`
+ 	2. set **Bidirectional**
+	3. `Settings\Shared Folders`
+ 	4. click **Add new shared folder**
+  	5.	set **Folder Path**
+   	6.	select **Auto-mount**
+    7.	OK 
 
 ## run
 1. `Details\Storage\Controller: IDE`
