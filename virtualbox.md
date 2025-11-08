@@ -59,9 +59,9 @@ open **Command Prompt** *(Shift+F10)* as administrator\
 `bcdedit /set hypervisorlaunchtype off`
 >disable windows hypervisor
 
- - option to enable\
-	1. `bcdedit /set hypervisorlaunchtype auto`
-	2. find *Settings* in search box on task bar
-	3. `Settings\Privacy & Security\Windows Security\Device Security\Core Isolation Details
- 	4. disable **Memory Integrity**
-  	5. restart
+- option to enable hypervisor
+1. `bcdedit /set hypervisorlaunchtype auto`
+2. find *Settings* in search box on task bar
+3. `Settings\Privacy & Security\Windows Security\Device Security\Core Isolation Details
+4. disable **Memory Integrity**
+5. restart
