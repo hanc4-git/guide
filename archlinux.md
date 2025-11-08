@@ -437,7 +437,6 @@ https://youtu.be/Lxb4WZyKeCE								//Geant4 Tutorial 1: Installation and Testin
 2. copy and paste all files in **VBox_GAs_{VBoxClient_version}.iso** to **Documents**
 3. right-click
 4. **Open in Konsole**
-5. 
 ```
 ls -lh
 chmod 777 VBoxLinuxAdditions.run
@@ -479,7 +478,6 @@ sudo ./VBoxLinuxAdditions.run
 	`pacman -S linux-firmware amd-ucode`
 	>`intel-ucode` for intel
 
-	3. 
 	```
  	pacman-key --recv-keys 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35
   	pacman-key --finger 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35
@@ -522,6 +520,7 @@ sudo ./VBoxLinuxAdditions.run
        			```
 				systemctl enable nvidia-suspend.service nvidia-hibernate.service nvidia-resume.service
 				systemctl enable --now nvidia-powerd
+          		```
 
 - option to [tuned](https://youtu.be/WTJw21XQjCc?si=jBvUkGmOBHtfHCq5)
 	1. open **Konsole** *(Ctrl+Alt+T)*
@@ -535,6 +534,7 @@ sudo ./VBoxLinuxAdditions.run
 	sudo systemctl enable --now tuned
 	tuned-adm active
 	sudo systemctl status tuned
+   	```
 
 - option to [tlp](https://linrunner.de/tlp/installation/index.html)
 	open **Konsole** *(Ctrl+Alt+T)*
@@ -545,3 +545,5 @@ sudo ./VBoxLinuxAdditions.run
 	systemctl mask systemd-rfkill.service systemd-rfkill.socket
 	sudo tlp start
 	tlp-stat -s
+	```
+ 
