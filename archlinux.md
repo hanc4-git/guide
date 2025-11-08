@@ -178,7 +178,7 @@ shutdown -r now
 `ffmpeg -version`
 		
 ### [ppd](https://gitlab.freedesktop.org/upower/power-profiles-daemon#power-profiles-daemon/)
-open **Konsole** *(Ctrl+Alt+T)*\
+open **Konsole** *(Ctrl+Alt+T)*
 ```
 sudo pacman -S power-profiles-daemon
 sudo systemctl enable --now power-profiles-daemon.service
@@ -192,15 +192,15 @@ pacman -S fastfetch
 fastfetch
 ```
 
-//
-// eos														//EndeavourOS
-//
-  Select "Start the Installer"
-  Select "Online"
-  
-  	// installer settings with 1) Plasma KDE 2) Xfce4
-  		/Erase disk
-  		Select "Swap to file"		//for lower RAM usage
+## eos
+*[EndeavourOS_artemis - June 25, 2022](https://endeavouros.com)*
+
+### eos installation
+1. select **Start the Installer**
+2. select **Online**
+3. Erase disk
+4. select **Swap to file**
+>for lower RAM usage
 
   // virtualbox settings
 	$ VBoxService --version		//check guest additions version
@@ -443,6 +443,11 @@ ls -lh
 chmod 777 VBoxLinuxAdditions.run
 sudo ./VBoxLinuxAdditions.run
 ```
+
+- option to fix **Virtualbox Guest Additions**\
+  `View\Seamless Mode`\
+  *`Ctrl+L`*
+  >back to windowed mode
 
 - option to [spotify](https://itsfoss.com/install-spotify-arch/)
   	open **Konsole** *(Ctrl+Alt+T)*
