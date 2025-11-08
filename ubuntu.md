@@ -101,7 +101,7 @@ open **Terminal** *(Ctrl+Alt+T)*\
     `sudo apt install fastfetch-linux-amd64.deb` 
 
 ## installation video
-[Geant4 Tutorial 1: Installation and Testing of Geant4](https://www.youtube.com/watch?v=Lxb4WZyKeCE) ([kor](https://youtu.be/gVcbeLQEHNw))\
+[Geant4 Tutorial 1: Installation and Testing of Geant4](https://youtu.be/Lxb4WZyKeCE) ([kor](https://youtu.be/gVcbeLQEHNw))\
 [CERN ROOT Tutorial 2: Installing ROOT](https://youtu.be/QItrmchEQWE) ([kor](https://youtu.be/J8iQVm0DLzY))
 
 ## [geant4](https://geant4.web.cern.ch)
