@@ -1,6 +1,6 @@
 # **dual-boot linux and windows guide
 UNLV\
-the new version is available on GitHub.
+the new version is available on [GitHub](https://github.com/hanc4-git?tab=repositories).
 
 ## prerequisites
 1. find **Settings** in serch box on task bar
