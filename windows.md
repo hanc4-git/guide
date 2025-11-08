@@ -27,33 +27,41 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
 2. install and launch **Xming**
 3. open **Terminal**
 
-`sudo systemd-machine-id-setup`\
-`sudo dbus-uuidgen — ensure`\
-`cat /etc/machine-id`\
-`sudo apt -y install x11-apps xfonts-base xfonts-100dpi xfonts-75dpi xfonts-cyrillic`
+```
+sudo systemd-machine-id-setup\
+sudo dbus-uuidgen — ensure\
+cat /etc/machine-id\
+sudo apt -y install x11-apps xfonts-base xfonts-100dpi xfonts-75dpi xfonts-cyrillic
+```
 
 ## run xeyes
-`nano ~/.bashrc`\
-`add`\
-`export DISPLAY=localhost:0.0`\
-`Ctrl+x`\
-`xeyes`
+```
+nano ~/.bashrc
+add
+export DISPLAY=localhost:0.0
+Ctrl+x
+xeyes
+```
 
 ## optional
 - option to convert MBR to GPT
   1. boot with **Windows Installation Media**
   2. open **Command Prompt** *(Shift+F10)*
 
-  `diskpart`\
-  `list disk`\
-  `select disk 0`
+  ```
+  diskpart
+  list disk
+  select disk 0
+  ```
   >select the disk want to convert
 
   `clean`
   >format
 
-  `convert gpt`\
-  `exit`
+  ```
+  convert gpt
+  exit
+  ```
   >exit to leave diskpart
 
   `exit`
