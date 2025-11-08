@@ -197,49 +197,37 @@ open **Terminal** *(Ctrl+Alt+T)*\
 
 ## optional
 - option to install virtualbox **Guest Additions**
-	1. `Devices\Insert Guest Additions`
+	1. `Menu Bar\Devices\Insert Guest Additions`
 	2. click **Run**
 
 	- option to run\
 		`home\VBox_GAs_{VBoxClient_version}`
 		1. double-click **VBoxLinuxAdditions.run**
 
-  	- option to use **Terminal**\
+  	- option to use **Terminal**
   	  	1. right-click **VBoxLinuxAdditions.run**
-  	  	2. **Run as Program**
-		`VBoxService --version`
-		`sudo gpasswd -a user{$username} vboxsf`
+  	  	2. **Run as Program**\
+		`VBoxService --version`\
+		`sudo gpasswd -a user{$username} vboxsf`\
 		`sudo shutdown -r now`
 		
 - option to disable sleep
 	1. `Settings\Privacy\Screen\Blank Screen Delay`
 	2. `Settings\Privacy\Screen\Automatic Screen Lock`
 	
-### multimedia codecs
-https://www.linuxfordevices.com/tutorials/linux/installing-multimedia-codecs-linux
-	install\multimedia codecs
-		select "Install multimedia codecs"
+- option to extra codecs\
+	`sudo apt install ubuntu-restricted-extras`\
+		1. tab\
+		2. enter\
+		3. yes
 
-		//
-		// option to media codecs
-		//
-		$ sudo apt install ubuntu-restricted-extras
-			tab												//move
-			enter											//ok
-			yes												//accept
-    
-// option to asus
+- option to [tuned](https://www.funkyspacemonkey.com/tuned-allows-you-to-optimize-linux-system-performance)
 //
-https://asus-linux.org/
-
-//option to tuned
-//
-https://www.funkyspacemonkey.com/tuned-allows-you-to-optimize-linux-system-performance
-open terminal												//Ctrl+Alt+T
-	$ sudo apt install tuned tuned-utils tuned-utils-systemtap
-	$ sudo systemctl enable --now tuned
-	$ tuned-adm active
-	$ tuned-adm profiles
+open **Terminal** *(Ctrl+Alt+T)*\
+`sudo apt install tuned tuned-utils tuned-utils-systemtap`\
+`sudo systemctl enable --now tuned`\
+`tuned-adm active`\
+`tuned-adm profiles`
 
 // option to tlp
 //
