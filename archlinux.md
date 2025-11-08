@@ -20,12 +20,11 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
 2. switch to **Wayland**
 3. login without password
 4. `CachyOS Installer\Partitions\Erase disk`
-5. select *ext4*
+5. select **ext4**
 6. `CachyOS Installer\All done`
-7. deselect *Restart now*
-8. click *Done*
-9. `Application Launcher\Session`
-10. *Shut Down*
+7. deselect **Restart now**
+8. click **Done**
+9. restart
 
 ### run
 1. `Details\Storage\Controller: IDE`
@@ -43,6 +42,7 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
       **-s**: option for sync\
       **-y**: refreshes package database\
       **-u-**: upgrade packages
+
 ### [steam](https://wiki.cachyos.org/configuration/gaming/)
 >not for virtualbox
 1. `CachyOS Hello\Apps\Tweaks`
@@ -54,37 +54,28 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
     `sudo pacman -S cachyos-gaming-meta`\
     `sudo pacman -S cachyos-gaming-applications`
 
-### flatpak
-https://flatpak.org/setup/
-	$ sudo pacman -S flatpak
-	$ flatpak --version
-	$ shutdown -r now
+### [flatpak](https://flatpak.org/setup/)
+1. open **Terminal** *(Ctrl+Alt+T)*
+2. `sudo pacman -S flatpak`
+3. `flatpak --version`
+4. `shutdown -r now`
 
-		//option to add flathub
-		//
-		$ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+	- option to add flathub\
+		`flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo`
 
-	//
-	// multimedia codecs
-	//
-	https://itsfoss.gitlab.io/post/how-to-install-ffmpeg-in-linux/
-	$ ffmpeg -version										//built-in
-		
-	//
-	// ppd													//power-profiles-daemon
-	//
-	https://linuxconfig.org/how-to-manage-power-profiles-over-d-bus-with-power-profiles-daemon-on-linux
-	https://gitlab.freedesktop.org/upower/power-profiles-daemon#power-profiles-daemon
-	$ powerprofilesctl list									//built-in
+### multimedia codecs
+[built-in](https://itsfoss.gitlab.io/post/how-to-install-ffmpeg-in-linux/)\
+`ffmpeg -version`
 
-	//
-	// fastfetch
-	//
-	https://github.com/fastfetch-cli/fastfetch
-	$ fastfetch												//built-in
+### ppd
+[built-in](https://gitlab.freedesktop.org/upower/power-profiles-daemon#power-profiles-daemon/)\
+`pwerprofilesctl list`
+	
+###fastfetch
+[built-in](https://github.com/fastfetch-cli/fastfetch)\
+`fastfetch`
 
-//
-// archlinux												//archlinux - November 01, 2025
+## archlinux												//archlinux - November 01, 2025
 //
 $ pacman -Syu												//system update
 $ pacman-key --populate										//update database
@@ -444,6 +435,9 @@ right-click
 		$ ls -lh
 		$ chmod 777 VBoxLinuxAdditions.run
 		$ sudo ./VBoxLinuxAdditions.run
+
+### [steam](https://wiki.cachyos.org/configuration/gaming/)
+$ sudo pacman -S steam
 
 // option to yay
 //
