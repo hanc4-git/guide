@@ -1,6 +1,6 @@
 # **ubuntu setup guide on windows 10 subsystem**
 UNLV\
-the new version is available on GitHub.
+the new version is available on [GitHub](https://github.com/hanc4-git?tab=repositories).
 
 ## installation video
 [How to Install Ubuntu on Windows 10 (WSL)](https://youtu.be/X-DHaQLrBi8)\
