@@ -19,12 +19,13 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
 1. `liveuser\Desktop Session: Plasma (X11)`
 2. switch to **Wayland**
 3. login without *password*
-4. `CachyOS Installer\Partitions\Erase disk`
-5. select **ext4**
-6. `CachyOS Installer\All done`
-7. deselect **Restart now**
-8. click **Done**
-9. restart
+4. **Launch installer**
+5. `CachyOS Installer\Partitions\Erase disk`
+6. select **ext4**
+7. `CachyOS Installer\All done`
+8. deselect **Restart now**
+9. click **Done**
+10. restart
 
 ### run
 1. `Details\Storage\Controller: IDE`
