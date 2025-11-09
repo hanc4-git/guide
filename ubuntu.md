@@ -65,7 +65,7 @@ sudo shutdown -r now
 ```
 
 ### [multimedia codecs](https://www.linuxfordevices.com/tutorials/linux/installing-multimedia-codecs-linux)
-open **Terminal** *(Ctrl+Alt+T)*\
+open **Terminal** *(Ctrl+Alt+T)*
 ```
 sudo add-apt-repository multiverse
 sudo apt update
