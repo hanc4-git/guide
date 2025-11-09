@@ -5,6 +5,17 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
 ## linuxmint
 *[Linux Mint 22.2 - September 04, 2025](https://www.linuxmint.com/download.php)*
 
+### system update
+1. open **Update Manager**
+2. **Install Updates**
+
+	- option to use terminal
+		open **Terminal** *(Ctrl+Alt+T)*
+		```
+		sudo apt -y update && sudo apt -y upgrade
+		sudo apt autoremove
+  		```
+
 ### flatpak
 [built-in](https://flatpak.org/setup/)\
 `flatpak --version`
