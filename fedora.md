@@ -17,6 +17,10 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
 5. create *username* and *password*
 6. **Done**
 
+### system update
+open **System Update**
+	**y**
+
 ## fedora
 *[fedora_kde_plasma-43.1 - October 28, 2025](https://fedoraproject.org/kde/download)*
 
@@ -52,194 +56,137 @@ dnf install fastfetch
 fastfetch
 ```
 
+### systam update
+1. open **Software**
+2. **Update**
 
- 
+	- option to use terminal
+		open **Terminal** *(Ctrl+Alt+T)*\
+		```
+		sudo apt -y update && sudo apt -y upgrade
+		sudo apt autoremove
+  		```
 
-	// fedora
-	update "Software"
-		$ sudo dnf update
-		$ sudo dnf autoremove
+## installation video
+[Geant4 Tutorial 1: Installation and Testing of Geant4](https://youtu.be/Lxb4WZyKeCE) ([kor](https://youtu.be/gVcbeLQEHNw))\
+[CERN ROOT Tutorial 2: Installing ROOT](https://youtu.be/QItrmchEQWE) ([kor](https://youtu.be/J8iQVm0DLzY))
 
-	// rpm fusion
-	// https://rpmfusion.org/Configuration		//Configuration - RPM Fusion
-	//
-		$ sudo dnf install \
-	https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
-	https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
-		$ sudo dnf -y groupupdate core
+## [geant4](https://geant4.web.cern.ch)
 
-	// flatpaks
-	// https://flatpak.org/setup/Fedora	//Fedora Quick Setup
-	//
-		$ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+### [geant4 prerequisites](https://geant4-userdoc.web.cern.ch/UsersGuides/InstallationGuide/html/gettingstarted.html)
+`sudo dnf install cmake gcc g++ expat-devel libXmu-devel motif-devel mesa-libGL-devel qt5-qtbase qt5-qtbase-devel
 
-	// media codecs
-	// https://rpmfusion.org/Configuration		//Configuration - RPM Fusion
-	//
-		$ sudo dnf groupupdate sound-and-video
+### geant 4 installation
+*[Geant4 10.7/patch-04 - September 9, 2022](https://geant4.web.cern.ch/support/download)*\
+```
+mv /home/user($username}/Downloads/geant{geant4_version}.tar.gz ~
+tar -xvf geant{geant4_version}.tar.gz
+cd geant{geant4_version}
+mkdir build
+cd build
+cmake -DCMAKE_INSTALL_PREFIX=/usr/local -DGEANT4_INSTALL_DATA=ON -DGEANT4_USE_QT=ON ../
+lscpu
+make -jN
+```
+>N = Number of CPUs
 
-[Geant4 Tutorial 1: Installation and Testing of Geant4](https://youtu.be/Lxb4WZyKeCE)
-[CERN ROOT Tutorial 2: Installing ROOT](https://youtu.be/QItrmchEQWE)
+`sudo make install -jN`
 
-  // root installation
-  // https://root.cern		//ROOT: analyzing petabytes of data, scientifically.
-  //
-  	// root dependencies
-	// https://root.cern/install/dependencies/	//Dependencies
-	//
-		$ sudo dnf groupinstall "Development Tools" "C Development Tools and Libraries"
-		$ sudo dnf install git vim
-		$ sudo dnf install git make cmake gcc-c++ gcc binutils \
-		  libX11-devel libXpm-devel libXft-devel libXext-devel python openssl-devel
-		$ sudo dnf install redhat-lsb-core gcc-gfortran pcre-devel \
-		  mesa-libGL-devel mesa-libGLU-devel glew-devel ftgl-devel mysql-devel \
-		  fftw-devel cfitsio-devel graphviz-devel libuuid-devel \
-		  avahi-compat-libdns_sd-devel openldap-devel python3-numpy \
-		  libxml2-devel gsl-devel readline-devel qt5-qtwebengine-devel \
-		  R-devel R-Rcpp-devel R-RInside-devel
+### environment variables settings
+```
+cd ~
+cd /usr/local/bin
+. geant4.sh
+```
 
-	// download and unpack source file
-	// https://root.cern/install/all_releases/	//Releases
-	// https://root-forum.cern.ch/t/root-cant-find-python3-libraries-on-centos-8/39766
-	// 6.26/02 - April 13, 2022
-	//
-		$ mv /home/user{$username}/Downloads/root{$root_version}.source.tar.gz ~
-		$ tar -xzvf root{$root_version}.source.tar.gz
+- option to [permanent environment variables settings](https://devconnected.com/set-environment-variable-bash-how-to)\
+	`sudo nano /home/user{$username}/.bashrc`
+	```
+	*`source /usr/local/bin/thisroot.sh`*
+	*`source /usr/local/bin/geant4.sh`*
+ 	```
+ 	>at the last line
 
-	// compile and install
-		$ cd root{$root_version}
-		$ cd build
-		$ cmake ..
-		$ lscpu
-			N = the number of central processing unit;
-		$ make -jN
-		$ sudo make install -jN
+	```
+	Ctrl+o
+	enter
+	Ctrl+x
+ 	```
 
-	// setup scripts
-		$ cd ~
-		$ cd /usr/local/bin
-		$ source thisroot.sh
+### run Example B1
+```
+cd geant{geant4_version}
+cd examples/basic/B1
+mkdir build
+cd build
+cmake ..
+make
+./exampleB1
+run/beamOn 100
+exit
+```
 
-	// run
-		$ root
-			-l	//without logo
-		$ new TBrowser
-		$ .q
+- option to batch mode\
+  	```
+	cd geant{geant4_version}
+	cd examples/basic/B1/build
+	vim batch.mac
+	i
+	```
+  	>insert mode
 
-  // geant4 installation
-  // https://geant4.web.cern.ch		//GEANT4: A SIMULATION TOOLKIT
-  //
-	// geant4 prerequisites
-	// https://geant4-userdoc.web.cern.ch/UsersGuides/InstallationGuide/html/gettingstarted.html
-	// https://doc.qt.io/qt-5/linux.html
-	//
-		$ sudo dnf install cmake gcc g++ \
-		  expat-devel libXmu-devel motif-devel \
-		  mesa-libGL-devel qt5-qtbase qt5-qtbase-devel
+	```
+	/run/beamOn 100
+  	ESC
+ 	```
+  	>exit insert mode
+     
+   	*`:wq or :x or :ZZ`*
+  	>write (save) and quit
 
-	// download and unpack source file
-	// https://geant4.web.cern.ch/support/download
-	// 10.7/patch-04 - September 9, 2022
-	//
-		$ mv /home/user{$username}/Downloads/geant{geant4_version}.tar.gz ~
-		$ tar -xvf geant{geant4_version}.tar.gz
+	```
+	./exampleB1 batchmac
+	exit
+ 	```
+	
+## [root](https://root.cern)
 
-	// compile and install
-		$ cd geant{geant4_version}
-		$ mkdir build
-		$ cd build
-		$ cmake -DCMAKE_INSTALL_PREFIX=/usr/local -DGEANT4_INSTALL_DATA=ON -DGEANT4_USE_QT=ON ../
-		$ make -jN
-		$ sudo make install -jN
+### [root dependencies](https://root.cern/install/dependencies/)
+```
+sudo dnf groupinstall "Development Tools" "C Development Tools and Libraries"
+sudo dnf install git vim
+sudo dnf install make cmake gcc-c++ gcc binutils libX11-devel libXpm-devel libXft-devel libXext-devel python openssl-devel
+sudo dnf install redhat-lsb-core gcc-gfortran pcre-devel mesa-libGL-devel mesa-libGLU-devel glew-devel ftgl-devel mysql-devel fftw-devel cfitsio-devel graphviz-devel libuuid-devel avahi-compat-libdns_sd-devel openldap-devel python3-numpy libxml2-devel gsl-devel readline-devel qt5-qtwebengine-devel R-devel R-Rcpp-devel R-RInside-devel
+```
 
-	// setup scripts
-		$ cd ~
-		$ cd /usr/local/bin
-		$ . geant4.sh
+### root installation
+[ROOT 6.28/04 - May 7, 2023](https://root.cern/install/all_releases/)\
+```
+mv /home/user{$username}/Downloads/root{$root_version}.source.tar.gz ~
+tar -xzvf root{$root_version}.source.tar.gz
+cd root{$root_version}
+cd build
+cmake -Dbuiltin_llvm=ON ../
+make -jN
+sudo make install -jN
+```
 
-	// run Example B1
-		$ cd geant{geant4_version}
-		$ cd examples/basic/B1
-		$ mkdir build
-		$ cd build
-		$ cmake ..
-		$ make -jN
-		$ ./exampleB1
-		$ run/beamOn 100
-		$ exit
+### environment variables settings
+```
+cd ~
+cd /usr/local/bin
+source thisroot.sh
+```	
 
-		// batch mode
-			$ cd geant{geant4_version}
-			$ cd examples/basic/B1/build
-			$ vim batch.mac
-				i
-			  	add 
-					/run/beamOn 1000
-			  	esc
-			  	:x or :wq
-			$ ./exampleB1 batchmac
-			$ exit
-			
-  // creating a permanent environment variables in bash
-  // https://devconnected.com/set-environment-variable-bash-how-to	//how to set env in bash
-  	$ sudo nano /home/user{$username}/.bashrc
-		add in the last line
-			source /usr/local/bin/thisroot.sh
-			source /usr/local/bin/geant4.sh
-		Ctrl+o
-		enter
-		Ctrl+x
+### run
+`root`\
+	**-l**: without logo\
+	**--web=off**: revert to TBrowser\
+	**new TBrowser**: RBrowser\
+	**TRootBrowser**: TBrowser\
 
-  // vim
-  	$ vi .vimrc
-		i
-	  	add
-			set number
-	 	esc
-	  	:x
+`.q`
 
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
-
-// media codecs					//broken
-// https://rpmfusion.org/Configuration		//Configuration - RPM Fusion
-//
-$ sudo dnf groupupdate multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
-
-// option of latest releases of root
-// root dependencies
-// https://root.cern/install/dependencies/	//Dependencies
-//
-$ sudo dnf groupinstall "Development Tools" "C Development Tools and Libraries"
-$ sudo dnf install git vim
-$ sudo dnf install git make cmake gcc-c++ gcc binutils libX11-devel libXpm-devel libXft-devel libXext-devel python openssl-devel
-$ sudo dnf install redhat-lsb-core gcc-gfortran pcre-devel mesa-libGL-devel mesa-libGLU-devel glew-devel ftgl-devel mysql-devel fftw-devel cfitsio-devel graphviz-devel libuuid-devel avahi-compat-libdns_sd-devel openldap-devel python3-numpy python3-devel libxml2-devel gsl-devel readline-devel qt5-qtwebengine-devel R-devel R-Rcpp-devel R-RInside-devel davix-devel
-
-	// 6.18/04 - September 11, 2019
-	// 6.24/06 - September 3, 2021
-	//
-	// compile and install
-		$ cmake -Dxrootd=OFF -Dbuiltin_xrootd=OFF -Druntime_cxxmodules=OFF ../
-
-  	// 6.26/06 - July 29, 2022
-	//
-  	// compile and install
-		$ cmake ..
-		
-	// run
-		$ root
-			-l			//without logo
-			--web=off		//revert to TBrowser
-		$ new TBrowser			//RBrowser 
-		      TRootBrowser		//TBrowser
-		$ .q
-		
-  // option of latest releases of geant4
-  	// 11.0.p03 - December 10, 202
-	//
-	// compile and install
-		$ cmake ..
-
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 ## optional
 - option to adjust the screen size for bazzite
 	1. `Settings\Expert\Display\Screen\Graphics Controller
