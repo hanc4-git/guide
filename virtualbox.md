@@ -52,7 +52,7 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
 	4. set **Hyper-V**
 	>for windows
 
-- option to set up windows 11\
+- option to set up windows 11
 	>not recommended
 
 	open **Command Prompt** *(Shift+F10)* as administrator\
