@@ -7,7 +7,7 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
 [CachyOS Gaming](https://wiki.fascinated.cc/category/cachyos-gaming)\
 [Arch Linux Installation guide](https://wiki.archlinux.org/title/Installation_guide)
 [Installing Arch Linux with BTRFS and Disk Encryption](https://itsfoss.com/arch-linux-install-encrypted-btrfs/)
->not for virtualbox
+> not for virtualbox
 
 [How To Install Arch Linux in VirtualBox (2025) | Arch Linux Installation ](https://youtu.be/DbeL7ehxpZ0?si=sBVLycxjBaTJ-9fB)\
 [7 Things After Installing EndeavourOS (MUST DO!)](https://youtu.be/StHVU-Zvacs)
@@ -84,10 +84,10 @@ shutdown -r now
 
 ### archlinux installation
 `pacman -Syu`
->system update
+> system update
 
 `pacman-key --populate`
->update database
+> update database
 
 `sudo pacman -S archlinux-keyring`\
 	**y**
@@ -105,7 +105,7 @@ shutdown -r now
 	4. **ext4**: Filesystem
 
    	- option to btrfs
-   	  >not for virtualbox
+   	  > not for virtualbox
    	  
    		**btrfs**: Filesystem\
 		**No**\
@@ -135,7 +135,7 @@ shutdown -r now
 	- option to setup audio
 		1. Audio
 		2. **pipeuire**
-  		>audio server
+  		> audio server
 
 5. Network configuration
 	**Use NetworkManager**
@@ -200,7 +200,7 @@ fastfetch
 2. select **Online**
 3. Erase disk
 4. select **Swap to file**
->for lower RAM usage
+> for lower RAM usage
 
 ### system update
 1. select **Update Mirrors**
@@ -265,7 +265,7 @@ cmake -DCMAKE_INSTALL_PREFIX=/usr/local -DGEANT4_INSTALL_DATA=ON -DGEANT4_USE_QT
 lscpu
 make -jN
 ```
->N = Number of CPUs
+> N = Number of CPUs
 
 `sudo make install -jN`
 
@@ -282,7 +282,7 @@ cd /usr/local/bin
 	source /usr/local/bin/thisroot.sh
 	source /usr/local/bin/geant4.sh
  	```
- 	>at the last line
+ 	> at the last line
 
 	```
 	Ctrl+o
@@ -310,16 +310,16 @@ exit
 	vim batch.mac
 	i
 	```
-  	>insert mode
+  	> insert mode
 
 	```
 	/run/beamOn 100
   	ESC
  	```
-  	>exit insert mode
+  	> exit insert mode
      
    	*`:wq or :x or :ZZ`*
-  	>write (save) and quit
+  	> write (save) and quit
 
 	```
 	./exampleB1 batchmac
@@ -367,7 +367,7 @@ source thisroot.sh
 
 ## optional
 - option to install virtualbox **Guest Additions**
->cachyos built-in
+> cachyos has built-in
 
 1. `menu bar\Devices\Insert Guest Additions`
 2. copy and paste all files in **VBox_GAs_{VBoxClient_version}.iso** to **Documents**
@@ -384,7 +384,7 @@ sudo ./VBoxLinuxAdditions.run
   View\Seamless Mode
   Ctrl+L
   ```
-  >back to windowed mode
+  > back to windowed mode
 
 - option to [spotify](https://itsfoss.com/install-spotify-arch/)\
   	open **Konsole** *(Ctrl+Alt+T)*
@@ -429,7 +429,7 @@ sudo ./VBoxLinuxAdditions.run
 - option to [asus](https://asus-linux.org/)\
 	open **Konsole** *(Ctrl+Alt+T)*
 	`pacman -S linux-firmware amd-ucode`
-	>`intel-ucode` for intel
+	> `intel-ucode` for intel
 
 	```
  	pacman-key --recv-keys 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35
@@ -437,7 +437,7 @@ sudo ./VBoxLinuxAdditions.run
 	pacman-key --lsign-key 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35
 	pacman-key --finger 8F654886F17D497FEFE3DB448B15A6B0E9A3FA35
  	```
-	>g14 repo
+	> g14 repo
  
 	`pacman -Syu`
 
@@ -457,7 +457,7 @@ sudo ./VBoxLinuxAdditions.run
 		`pacman -S rog-control-center`
 
   	- custom kernel
- 	 >dirvers fixes
+ 	 > dirvers fixes
 
 	`pacman -Syu linux-g14 linux-g14-headers`
 
@@ -466,7 +466,7 @@ sudo ./VBoxLinuxAdditions.run
 
 	- nvidia
 		1. `cat /proc/driver/nvidia/gpus/bus_address/power`
-  		>query status
+  		> query status
 
 		2. `pacman -S nvidia-utils vulkan-icd-loader`
 
