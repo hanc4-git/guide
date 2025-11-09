@@ -290,7 +290,7 @@ source thisroot.sh
 		sudo shutdown -r now
   		```
 
-  	- option to version 40 below
+  	- option to version 40 below\
    		`sudo dnf remove power-profiles-daemon`
 
 - option to [tlp](https://linrunner.de/tlp/installation/index.html)\
