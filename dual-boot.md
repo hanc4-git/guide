@@ -4,7 +4,7 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
 
 ## prerequisites
 1. find **Settings** in serch box on task bar
-2. `Settings\Privacy & Security\Device Encryption `
+2. `Settings\Privacy & Security\Device Encryption`
 3. turn off **Device Encryption**
 > re-enable later if possible
 
@@ -53,6 +53,12 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
     > Root Filesystem
 
 ## optional
+- option to mouse
+  1. find **Settings** in serch box on task bar
+  2. `Settings\Bluetooth & devices\Mouse\Related settings\Additional mouse settings`
+  3. `Mouse Properties\Pointer Options\Motion`
+  4. deselct **Enhance pointer precision**
+  
 - option to install **Vim**\
   *[gVim 9.1.1825 - October 27, 2025](https://www.vim.org/download.php)*
   1. update **Software Manager**
