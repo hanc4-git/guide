@@ -227,7 +227,7 @@ source thisroot.sh
 	**-l**: without logo\
 	**--web=off**: revert to TBrowser\
 	**new TBrowser**: RBrowser\
-	**TRootBrowser**: TBrowser\
+	**TRootBrowser**: TBrowser
 
 `.q`
 
