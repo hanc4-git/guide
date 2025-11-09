@@ -121,7 +121,7 @@ sudo apt install ubuntu-restricted-extras
 `sudo apt-get install cmake gcc g++ libexpat1-dev libxmu-dev libmotif-dev libgl1-mesa-dev qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools`
 
 ### geant 4 installation
-*[Geant4 10.7/patch-04 - September 9, 2022](https://geant4.web.cern.ch/support/download)*\
+*[Geant4 10.7/patch-04 - September 9, 2022](https://geant4.web.cern.ch/support/download)*
 ```
 mv /home/user($username}/Downloads/geant{geant4_version}.tar.gz ~
 tar -xvf geant{geant4_version}.tar.gz
@@ -146,8 +146,8 @@ cd /usr/local/bin
 - option to [permanent environment variables settings](https://devconnected.com/set-environment-variable-bash-how-to)\
 	`sudo nano /home/user{$username}/.bashrc`
 	```
-	*`source /usr/local/bin/thisroot.sh`*
-	*`source /usr/local/bin/geant4.sh`*
+	source /usr/local/bin/thisroot.sh
+	source /usr/local/bin/geant4.sh
  	```
  	>at the last line
 
@@ -197,8 +197,8 @@ exit
 
 ### [root dependencies](https://root.cern/install/dependencies/)
 ```
-sudo apt install build-essential git vim
-sudo apt-get install dpkg-dev cmake g++ gcc binutils libx11-dev libxpm-dev libxft-dev libxext-dev 2to3 dh-python python-is-python3 libssl-dev
+sudo apt install build-essential
+sudo apt-get install git vim dpkg-dev cmake g++ gcc binutils libx11-dev libxpm-dev libxft-dev libxext-dev 2to3 dh-python python-is-python3 libssl-dev
 sudo apt-get install gfortran libpcre3-dev libglu1-mesa-dev libglew-dev libftgl-dev libmysqlclient-dev libfftw3-dev libcfitsio-dev libgraphviz-dev libavahi-compat-libdnssd-dev libldap2-dev python2-dev:i386 python2:i386 python2-dev python2 python-dev-is-python3 libxml2-dev libkrb5-dev libgsl-dev qtwebengine5-dev
 ```
 
@@ -241,7 +241,7 @@ source thisroot.sh
 
   	- option to use **Terminal**
   	  	1. right-click **VBoxLinuxAdditions.run**
-  	  	2. **Run as Program**\
+  	  	2. **Run as Program**
   	  	```
 		VBoxService --version
 		sudo gpasswd -a user{$username} vboxsf
@@ -261,7 +261,7 @@ source thisroot.sh
   		**yes**
 
 - option to [tuned](https://www.funkyspacemonkey.com/tuned-allows-you-to-optimize-linux-system-performance)\
-	open **Terminal** *(Ctrl+Alt+T)*\
+	open **Terminal** *(Ctrl+Alt+T)*
 	```
 	sudo apt install tuned tuned-utils tuned-utils-systemtap
 	sudo systemctl enable --now tuned
@@ -269,7 +269,7 @@ source thisroot.sh
 	tuned-adm profiles
 
 - option to [tlp](https://linrunner.de/tlp/installation/index.html)\
-	open **Terminal** *(Ctrl+Alt+T)*\
+	open **Terminal** *(Ctrl+Alt+T)*
 	```
 	sudo add-apt-repository ppa:linrunner/tlp
 	sudo apt update
@@ -284,7 +284,7 @@ source thisroot.sh
 	- option to version 1.5 only\
  		`sudo systemctl enable tlp.service`
 
-- option to [spotify](https://www.spotify.com/us/download/linux/)\
+- option to [spotify](https://www.spotify.com/us/download/linux/)
   	```
 	curl -sS https://download.spotify.com/debian/pubkey_C85668DF69375001.gpg | sudo gpg --dearmor --yes -o /etc/apt/trusted.gpg.d/spotify.gpg
 	echo "deb https://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
@@ -292,10 +292,10 @@ source thisroot.sh
    	```
 
 - option to OpenGL geant4\
-	`sudo apt-get install libx11-dev libxpm-dev libxft-dev libxext-dev libglu1-mesa-dev`\
+	`sudo apt-get install libx11-dev libxpm-dev libxft-dev libxext-dev libglu1-mesa-dev`
 	>prerequisites
 
-	`cmake -DCMAKE_INSTALL_PREFIX=/usr/local -DGEANT4_INSTALL_DATA=ON -DGEANT4_USE_OPENGL_X11=ON ../`\
+	`cmake -DCMAKE_INSTALL_PREFIX=/usr/local -DGEANT4_INSTALL_DATA=ON -DGEANT4_USE_OPENGL_X11=ON ../`
  	>compile
 
 - option to root 6.18\
