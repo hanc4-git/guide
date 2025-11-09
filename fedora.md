@@ -7,7 +7,7 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
 [7 Things You MUST DO After Installing Fedora Linux](https://youtu.be/RrRpXs2pkzg)
 
 ## bazzite
-*[bazzite - November 3, 2025](https://bazzite.gg/)*
+*[bazzite 42 - November 3, 2025](https://bazzite.gg/)*
 
 ### bazzite installation
 1. `INSTALLATION SUMMARY\SYSTEM\Installation Destination`
@@ -17,46 +17,44 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
 5. create *username* and *password*
 6. **Done**
 
-//
-// fedora													//kde plasma-43.1 - October 28, 2025
-//
+## fedora
+*[fedora_kde_plasma-43.1 - October 28, 2025](https://fedoraproject.org/kde/download)*
 
-	//
-	// flatpak
-	//
-	https://flatpak.org/setup/
-	built-in
+### flatpak
+[built-in](https://flatpak.org/setup/)\
+install **[Flathub](https://flathub.org/en)**
 
-	//
-	// multimedia codecs
-	//
-	https://www.linuxfordevices.com/tutorials/linux/installing-multimedia-codecs-linux
-	open terminal											//Ctrl+Alt+T
-		$ sudo dnf install \
-  https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
-		$ sudo dnf install \
-  https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
-		$ sudo dnf update 
-		$ sudo dnf install gstreamer1-plugins-{bad-\*,good-\*,base} gstreamer1-plugin-openh264 gstreamer1-libav --exclude=gstreamer1-plugins-bad-free-devel
- 		$ sudo dnf install lame\* --exclude=lame-devel
- 		$ sudo dnf group upgrade --with-optional Multimedia
+- option to add flathub\
+  	open **Konsole** *(Ctrl+Alt+T)*\
+	`flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo`
 
-	//
-	// ppd													//power-profiles-daemon
-	//
-	https://linuxconfig.org/how-to-manage-power-profiles-over-d-bus-with-power-profiles-daemon-on-linux
-	https://gitlab.freedesktop.org/upower/power-profiles-daemon#power-profiles-daemon
-	open terminal											//Ctrl+Alt+T
-		$ sudo dnf install power-profiles-daemon
-		$ sudo dnf remove tuned tuned-ppd
+### [multimedia codecs](https://www.linuxfordevices.com/tutorials/linux/installing-multimedia-codecs-linux)
+`sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm`
+>free
 
-			//option to version 40 below
-			//
-			$ sudo dnf remove power-profiles-daemon
+`sudo dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm`
+>non free
 
-		$ sudo systemctl enable power-profiles-daemon.service
-		$ powerprofilesctl list
-		$ shutdown -r now
+```
+sudo dnf update 
+sudo dnf install gstreamer1-plugins-{bad-\*,good-\*,base} gstreamer1-plugin-openh264 gstreamer1-libav --exclude=gstreamer1-plugins-bad-free-devel
+sudo dnf install lame\* --exclude=lame-devel
+sudo dnf group upgrade --with-optional Multimedia
+```
+
+### tuned
+[built-in](https://github.com/redhat-performance/tuned)\
+`pwerprofilesctl list`
+
+### [fastfetch](https://github.com/fastfetch-cli/fastfetch)
+```
+dnf install fastfetch
+fastfetch
+```
+
+
+
+
 
 	//
 	// fastfetch
@@ -361,6 +359,40 @@ open konsole												//Ctrl+Alt+T
 	$ tuned-adm active
 	$ tuned-adm list
 
+### [ppd](https://gitlab.freedesktop.org/upower/power-profiles-daemon#power-profiles-daemon)
+1. open **Software Manager**
+2. install **power-profiles-daemon**
+
+	- option to use **[Terminal](https://linuxconfig.org/how-to-manage-power-profiles-over-d-bus-with-power-profiles-daemon-on-linux)**
+		open **Terminal** *(Ctrl+Alt+T)*\
+		```
+		sudo dnf install power-profiles-daemon
+		sudo systemctl enable power-profiles-daemon.service
+  		```
+		>enable service
+
+		```
+		powerprofilesctl list
+		sudo shutdown -r now
+  		```
+  
+	//
+	// ppd													//power-profiles-daemon
+	//
+	https://linuxconfig.org/how-to-manage-power-profiles-over-d-bus-with-power-profiles-daemon-on-linux
+	https://gitlab.freedesktop.org/upower/power-profiles-daemon#power-profiles-daemon
+	open terminal											//Ctrl+Alt+T
+		$ sudo dnf install power-profiles-daemon
+		$ sudo dnf remove tuned tuned-ppd
+
+			//option to version 40 below
+			//
+			$ sudo dnf remove power-profiles-daemon
+
+		$ sudo systemctl enable power-profiles-daemon.service
+		$ powerprofilesctl list
+		$ shutdown -r now
+		
 // option to tlp
 //
 https://linrunner.de/tlp/installation/index.html
