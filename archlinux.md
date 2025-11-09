@@ -20,7 +20,7 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
 4. `CachyOS Hello\INSTALLATION`
 5. **Launch installer**
 6. `CachyOS Installer\Partitions\Erase disk`
-7. select **btrfsext4**
+7. select **btrfs**
 8. `CachyOS Installer\All done`
 9. deselect **Restart now**
 10. click **Done**
