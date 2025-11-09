@@ -77,7 +77,7 @@ fastfetch
 ## [geant4](https://geant4.web.cern.ch)
 
 ### [geant4 prerequisites](https://geant4-userdoc.web.cern.ch/UsersGuides/InstallationGuide/html/gettingstarted.html)
-`sudo dnf install cmake gcc g++ expat-devel libXmu-devel motif-devel mesa-libGL-devel qt5-qtbase qt5-qtbase-devel
+`sudo dnf install cmake gcc g++ expat-devel libXmu-devel motif-devel mesa-libGL-devel qt5-qtbase qt5-qtbase-devel`
 
 ### geant 4 installation
 *[Geant4 10.7/patch-04 - September 9, 2022](https://geant4.web.cern.ch/support/download)*
@@ -212,7 +212,7 @@ source thisroot.sh
 		sudo shutdown -r now
   	  	```
 	
-- option to [asus](https://asus-linux.org/)\
+- option to [asus](https://asus-linux.org/)
 1. open **Software**
 2. `Software\Updates`
 3. click **Refresh**
@@ -250,8 +250,6 @@ source thisroot.sh
 	  	- rog control center\
 		`sudo dnf install asusctl-rog-gui`
 
-		$ shutdown -r now
-
 	  	- custom kernel
  	 	>dirvers fixes
 
@@ -262,16 +260,17 @@ source thisroot.sh
 		sudo dnf copr enable bieszczaders/kernel-cachyos
 		sudo dnf install kernel-cachyos kernel-cachyos-devel-matched
 		sudo dnf update
-
-//option to tuned
-//
-https://github.com/redhat-performance/tuned
-open konsole												//Ctrl+Alt+T
-	$ dnf install tuned
-	$ systemctl start tuned
-	$ systemctl enable tuned
-	$ tuned-adm active
-	$ tuned-adm list
+		```
+ 
+- option to [tuned](https://github.com/redhat-performance/tuned)
+	open **Konsole** *(Ctrl+Alt+T)*
+	```
+ 	dnf install tuned
+	systemctl start tuned
+	systemctl enable tuned
+	tuned-adm active
+	tuned-adm list
+ 	```
 
 ### [ppd](https://gitlab.freedesktop.org/upower/power-profiles-daemon#power-profiles-daemon)
 1. open **Software Manager**
@@ -291,8 +290,8 @@ open konsole												//Ctrl+Alt+T
 		sudo shutdown -r now
   		```
 
-  			- option to version 40 below
-   				`sudo dnf remove power-profiles-daemon
+  	- option to version 40 below
+   		`sudo dnf remove power-profiles-daemon`
 
 - option to [tlp](https://linrunner.de/tlp/installation/index.html)\
 	open **Konsole** *(Ctrl+Alt+T)*
@@ -304,8 +303,8 @@ open konsole												//Ctrl+Alt+T
 	sudo tlp start
 	tlp-stat -s
 
- 		- option to get tlp repository
-			`sudo dnf install https://repo.linrunner.de/fedora/tlp/repos/releases/tlp-release.fc$(rpm -E %fedora).noarch.rpm`
+ - option to get tlp repository
+	`sudo dnf install https://repo.linrunner.de/fedora/tlp/repos/releases/tlp-release.fc$(rpm -E %fedora).noarch.rpm`
 
- 		- option to version 40 below
- 			`sudo dnf remove power-profiles-daemon
+- option to version 40 below
+ 	`sudo dnf remove power-profiles-daemon
