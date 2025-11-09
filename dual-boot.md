@@ -65,7 +65,7 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
       sudo apt install vim
       ```
 
-    - option to display line numbers\
+    - option to display line numbers
       ```
       vi .vimrc
       i
