@@ -25,7 +25,7 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
 7. `CachyOS Installer\All done`
 8. deselect **Restart now**
 9. click **Done**
-10. restart
+10. shut down
 
 ### run
 1. `Details\Storage\Controller: IDE`
