@@ -259,7 +259,12 @@ source thisroot.sh
 		sudo gpasswd -a user{$username} vboxsf
 		sudo shutdown -r now
   	  	```
-		
+
+- option to mouse acceleration
+  1. `System Settings\Hardware\Mouse and Touchpad\Mouse\Pointer size and speed\Acceleration`
+  2. `Mouse Properties\Pointer Options\Motion`
+  4. **Constant**
+
 - option to disable sleep
   	```
 	Settings\Privacy\Screen\Blank Screen Delay
