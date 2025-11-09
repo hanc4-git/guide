@@ -48,7 +48,7 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
 2. **System Update**
 
 	- option to use terminal
-		open **Terminal** *(Ctrl+Alt+T)*\
+		open **Terminal** *(Ctrl+Alt+T)*
 		```
 		sudo apt -y update && sudo apt -y upgrade
 		sudo apt autoremove
