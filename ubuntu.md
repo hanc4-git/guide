@@ -15,7 +15,7 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
 
 ### ppd
 [built-in](https://gitlab.freedesktop.org/upower/power-profiles-daemon#power-profiles-daemon/)\
-`pwerprofilesctl list`
+`powerprofilesctl list`
 
 ### [ppd applet](https://forums.linuxmint.com/viewtopic.php?t=423612)
 1. `Applications\Preferences\Applets`
