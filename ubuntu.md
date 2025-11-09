@@ -254,7 +254,7 @@ source thisroot.sh
 	Settings\Privacy\Screen\Automatic Screen Lock
    	```
 	
-- option to extra codecs\
+- option to extra codecs
 	`sudo apt install ubuntu-restricted-extras`\
 		**tab**
   		**enter**
