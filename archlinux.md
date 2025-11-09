@@ -121,7 +121,7 @@ shutdown -r now
 	1. Root password
 	2. User account
 	3. **Add a user**
-	4. Should "username" be a superuser (sudo)?
+	4. Should "username" be a superuser (sudo)?\
 		**Yes**
 	5. **Confirm and exit**
 
@@ -146,7 +146,7 @@ shutdown -r now
 7. Timezone
 8. Install
 	**Yes**
-9. chroot into installation for post-installation configurations
+9. chroot into installation for post-installation configurations\
 	**No**
 
 ### run
@@ -279,8 +279,8 @@ cd /usr/local/bin
 - option to [permanent environment variables settings](https://devconnected.com/set-environment-variable-bash-how-to)\
 	`sudo nano /home/user{$username}/.bashrc`
 	```
-	*`source /usr/local/bin/thisroot.sh`*
-	*`source /usr/local/bin/geant4.sh`*
+	source /usr/local/bin/thisroot.sh
+	source /usr/local/bin/geant4.sh
  	```
  	>at the last line
 
@@ -330,8 +330,8 @@ exit
 
 ### [root dependencies](https://root.cern/install/dependencies/)
 ```
-sudo pacman -S --needed base-devel git vim
-sudo pacman -S make cmake gcc binutils libx11 libxpm libxft libxext python openssl
+sudo pacman -S --needed base-devel
+sudo pacman -S git vim make cmake gcc binutils libx11 libxpm libxft libxext python openssl
 sudo pacman -S gcc-fortran pcre mesa glu glew ftgl mysql fftw cfitsio graphviz util-linux-libs avahi openldap python3 libxml2 gsl readline qt5-webengine
 ```
 **1**: default\
@@ -361,7 +361,7 @@ source thisroot.sh
 	**-l**: without logo\
 	**--web=off**: revert to TBrowser\
 	**new TBrowser**: RBrowser\
-	**TRootBrowser**: TBrowser\
+	**TRootBrowser**: TBrowser
 
 `.q`
 
@@ -379,14 +379,14 @@ chmod 777 VBoxLinuxAdditions.run
 sudo ./VBoxLinuxAdditions.run
 ```
 
-- option to fix virtualbox **Guest Additions**\
+- option to fix virtualbox **Guest Additions**
   ```
   View\Seamless Mode
   Ctrl+L
   ```
   >back to windowed mode
 
-- option to [spotify](https://itsfoss.com/install-spotify-arch/)
+- option to [spotify](https://itsfoss.com/install-spotify-arch/)\
   	open **Konsole** *(Ctrl+Alt+T)*
 	`sudo pacman -Syu spotify-launcher`
 
@@ -415,7 +415,7 @@ sudo ./VBoxLinuxAdditions.run
 	System Settings/Hardware/Power Management/Energy Saving
  	```
 
-	- option to gnome
+	- option to gnome\
  		`sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target`
 		
 - option to [multimedia codecs](https://itsfoss.gitlab.io/post/how-to-install-ffmpeg-in-linux/)
@@ -426,7 +426,7 @@ sudo ./VBoxLinuxAdditions.run
 	ffmpeg -version
 	```
 
-- option to [asus](https://asus-linux.org/)
+- option to [asus](https://asus-linux.org/)\
 	open **Konsole** *(Ctrl+Alt+T)*
 	`pacman -S linux-firmware amd-ucode`
 	>`intel-ucode` for intel
@@ -453,7 +453,7 @@ sudo ./VBoxLinuxAdditions.run
 		systemctl enable --now supergfxd
 		```
 
-  	- rog control center
+  	- rog control center\
 		`pacman -S rog-control-center`
 
   	- custom kernel
@@ -461,7 +461,7 @@ sudo ./VBoxLinuxAdditions.run
 
 	`pacman -Syu linux-g14 linux-g14-headers`
 
-	- option to grub
+	- option to grub\
 		`grub-mkconfig -o /boot/grub/grub.cfg`
 
 	- nvidia
