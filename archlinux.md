@@ -7,8 +7,6 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
 [CachyOS Gaming](https://wiki.fascinated.cc/category/cachyos-gaming)\
 [Arch Linux Installation guide](https://wiki.archlinux.org/title/Installation_guide)
 [Installing Arch Linux with BTRFS and Disk Encryption](https://itsfoss.com/arch-linux-install-encrypted-btrfs/)
-> not for virtualbox
-
 [How To Install Arch Linux in VirtualBox (2025) | Arch Linux Installation ](https://youtu.be/DbeL7ehxpZ0?si=sBVLycxjBaTJ-9fB)\
 [7 Things After Installing EndeavourOS (MUST DO!)](https://youtu.be/StHVU-Zvacs)
 
@@ -19,13 +17,14 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
 1. `liveuser\Desktop Session: Plasma (X11)`
 2. switch to **Wayland**
 3. login without *password*
-4. **Launch installer**
-5. `CachyOS Installer\Partitions\Erase disk`
-6. select **ext4**
-7. `CachyOS Installer\All done`
-8. deselect **Restart now**
-9. click **Done**
-10. shut down
+4. `CachyOS Hello\INSTALLATION`
+5. **Launch installer**
+6. `CachyOS Installer\Partitions\Erase disk`
+7. select **ext4**
+8. `CachyOS Installer\All done`
+9. deselect **Restart now**
+10. click **Done**
+11. shut down
 
 ### run
 1. `Details\Storage\Controller: IDE`
