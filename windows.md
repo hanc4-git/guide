@@ -51,19 +51,19 @@ xeyes
   list disk
   select disk 0
   ```
-  >select the disk want to convert
+  > select the disk want to convert
   
   `clean`
-  >format
+  > format
 
   ```
   convert gpt
   exit
   ```
-  >exit to leave diskpart
+  > exit to leave diskpart
 
   `exit`
-  >close command prompt
+  > close command prompt
 
 - option to partition 1tb\
   *personal setup*\
