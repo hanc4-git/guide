@@ -58,8 +58,8 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
   1. update **Software Manager**
   2. download **Vim**
 
-    - option to use **Terminal**
-      open **Terminal** *(Ctrl+Alt+T)*\
+    - option to use **Terminal**\
+      open **Terminal** *(Ctrl+Alt+T)*
       ```
       sudo apt update
       sudo apt install vim
