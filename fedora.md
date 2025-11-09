@@ -18,7 +18,7 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
 6. **Done**
 
 ### system update
-open **System Update**
+open **System Update**\
 	**y**
 
 ## fedora
@@ -58,10 +58,13 @@ fastfetch
 
 ### systam update
 1. open **Software**
-2. **Update**
+2. `Software\Updates`
+3. click **Refresh**
+4. **Download**
+5. **Restart & Update**
 
 	- option to use terminal
-		open **Terminal** *(Ctrl+Alt+T)*\
+		open **Terminal** *(Ctrl+Alt+T)*
 		```
 		sudo apt -y update && sudo apt -y upgrade
 		sudo apt autoremove
@@ -77,7 +80,7 @@ fastfetch
 `sudo dnf install cmake gcc g++ expat-devel libXmu-devel motif-devel mesa-libGL-devel qt5-qtbase qt5-qtbase-devel
 
 ### geant 4 installation
-*[Geant4 10.7/patch-04 - September 9, 2022](https://geant4.web.cern.ch/support/download)*\
+*[Geant4 10.7/patch-04 - September 9, 2022](https://geant4.web.cern.ch/support/download)*
 ```
 mv /home/user($username}/Downloads/geant{geant4_version}.tar.gz ~
 tar -xvf geant{geant4_version}.tar.gz
@@ -102,8 +105,8 @@ cd /usr/local/bin
 - option to [permanent environment variables settings](https://devconnected.com/set-environment-variable-bash-how-to)\
 	`sudo nano /home/user{$username}/.bashrc`
 	```
-	*`source /usr/local/bin/thisroot.sh`*
-	*`source /usr/local/bin/geant4.sh`*
+	source /usr/local/bin/thisroot.sh
+	source /usr/local/bin/geant4.sh
  	```
  	>at the last line
 
@@ -126,7 +129,7 @@ run/beamOn 100
 exit
 ```
 
-- option to batch mode\
+- option to batch mode
   	```
 	cd geant{geant4_version}
 	cd examples/basic/B1/build
@@ -154,13 +157,12 @@ exit
 ### [root dependencies](https://root.cern/install/dependencies/)
 ```
 sudo dnf groupinstall "Development Tools" "C Development Tools and Libraries"
-sudo dnf install git vim
-sudo dnf install make cmake gcc-c++ gcc binutils libX11-devel libXpm-devel libXft-devel libXext-devel python openssl-devel
+sudo dnf install git vim make cmake gcc-c++ gcc binutils libX11-devel libXpm-devel libXft-devel libXext-devel python openssl-devel
 sudo dnf install redhat-lsb-core gcc-gfortran pcre-devel mesa-libGL-devel mesa-libGLU-devel glew-devel ftgl-devel mysql-devel fftw-devel cfitsio-devel graphviz-devel libuuid-devel avahi-compat-libdns_sd-devel openldap-devel python3-numpy libxml2-devel gsl-devel readline-devel qt5-qtwebengine-devel R-devel R-Rcpp-devel R-RInside-devel
 ```
 
 ### root installation
-[ROOT 6.28/04 - May 7, 2023](https://root.cern/install/all_releases/)\
+[ROOT 6.28/04 - May 7, 2023](https://root.cern/install/all_releases/)
 ```
 mv /home/user{$username}/Downloads/root{$root_version}.source.tar.gz ~
 tar -xzvf root{$root_version}.source.tar.gz
@@ -183,17 +185,16 @@ source thisroot.sh
 	**-l**: without logo\
 	**--web=off**: revert to TBrowser\
 	**new TBrowser**: RBrowser\
-	**TRootBrowser**: TBrowser\
+	**TRootBrowser**: TBrowser
 
 `.q`
 
 ## optional
 - option to adjust the screen size for bazzite
-	1. `Settings\Expert\Display\Screen\Graphics Controller
+	1. `Settings\Expert\Display\Screen\Graphics Controller`
  	2. select **VBoxSVGA**
   	3. **OK**
 
-## optional
 - option to install virtualbox **Guest Additions**
 	1. `Menu Bar\Devices\Insert Guest Additions`
 	2. click **Run**
@@ -204,66 +205,63 @@ source thisroot.sh
 
   	- option to use **Terminal**
   	  	1. right-click **VBoxLinuxAdditions.run**
-  	  	2. **Run as Program**\
+  	  	2. **Run as Program**
   	  	```
 		VBoxService --version
 		sudo gpasswd -a user{$username} vboxsf
 		sudo shutdown -r now
   	  	```
-		
-// option to asus
-//
-https://asus-linux.org/
-open "Software"
-software\updates
-	click "Refresh"
-	download
+	
+- option to [asus](https://asus-linux.org/)\
+1. open **Software**
+2. `Software\Updates`
+3. click **Refresh**
+4. **Download**
+5. **Restart & Update**
 
-	//option to use terminal
-	//
-	open terminal											//Ctrl+Alt+T
-		$ sudo dnf update -y								//system update
-		$ sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm	//enable rpm fusion
-		$ sudo dnf update -y
-		$ sudo dnf install kernel-devel
-		$ sudo dnf install akmod-nvidia xorg-x11-drv-nvidia-cuda
-		$ sudo systemctl enable nvidia-hibernate.service nvidia-suspend.service nvidia-resume.service nvidia-powerd.service	//enable service
-		$ shutdown -r now
+	- option to use **Konsole**
+		open **Konsole** *(Ctrl+Alt+T)*
+		```
+		sudo dnf update -y
+		sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm	//enable rpm fusion
+		sudo dnf update -y
+		sudo dnf install kernel-devel
+		sudo dnf install akmod-nvidia xorg-x11-drv-nvidia-cuda
+		sudo systemctl enable nvidia-hibernate.service nvidia-suspend.service nvidia-resume.service nvidia-powerd.service
+		shutdown -r now
+  		```
 
-		$ sudo cat /sys/module/nvidia_drm/parameters/modeset	//query external displays
+		`sudo cat /sys/module/nvidia_drm/parameters/modeset`
+		>query external displays
 
-		//
-		// asusctl
-		//
-		$ sudo dnf copr enable lukenukem/asus-linux
-		$ sudo dnf update
+		- asusctl
+   		```
+		sudo dnf copr enable lukenukem/asus-linux
+		sudo dnf update
+		```
+     
+  		- supergfxctl
+  	  	```
+		sudo dnf install asusctl supergfxctl
+		sudo dnf update --refresh
+		sudo systemctl enable supergfxd.service
+		```
 
-		//
-		// supergfxctl
-		//
-		$ sudo dnf install asusctl supergfxctl
-		$ sudo dnf update --refresh
-		$ sudo systemctl enable supergfxd.service
-
-
-		$ pacman -S supergfxctl
-		$ systemctl enable --now supergfxd
-
-			// option to rog-gui
-			//
-			$ sudo dnf install asusctl-rog-gui
+	  	- rog control center\
+		`sudo dnf install asusctl-rog-gui`
 
 		$ shutdown -r now
 
-		//
-		// custom kernel									//dirvers fixes
-		//
-		$ sudo dnf config-manager setopt fedora.excludepkgs=kernel,kernel-core,kernel-modules,kernel-uki-virt,kernel-devel,kernel-modules-extra,kernel-modules-core,kernel-devel-matched	//disable stock kernel updates
-		$ sudo dnf config-manager setopt updates.excludepkgs=kernel,kernel-core,kernel-modules,kernel-uki-virt,kernel-devel,kernel-modules-extra,kernel-modules-core,kernel-devel-matched	//disable stock kernel updates
-		$ sudo dnf config-manager setopt updates-testing.excludepkgs=kernel,kernel-core,kernel-modules,kernel-uki-virt,kernel-devel,kernel-modules-extra,kernel-modules-core,kernel-devel-matched	//disable stock kernel updates
-		$ sudo dnf copr enable bieszczaders/kernel-cachyos	//add cachyos kernel
-		$ sudo dnf install kernel-cachyos kernel-cachyos-devel-matched
-		$ sudo dnf update									//system update
+	  	- custom kernel
+ 	 	>dirvers fixes
+
+ 		```
+		sudo dnf config-manager setopt fedora.excludepkgs=kernel,kernel-core,kernel-modules,kernel-uki-virt,kernel-devel,kernel-modules-extra,kernel-modules-core,kernel-devel-matched	//disable stock kernel updates
+		sudo dnf config-manager setopt updates.excludepkgs=kernel,kernel-core,kernel-modules,kernel-uki-virt,kernel-devel,kernel-modules-extra,kernel-modules-core,kernel-devel-matched	//disable stock kernel updates
+		sudo dnf config-manager setopt updates-testing.excludepkgs=kernel,kernel-core,kernel-modules,kernel-uki-virt,kernel-devel,kernel-modules-extra,kernel-modules-core,kernel-devel-matched	//disable stock kernel updates
+		sudo dnf copr enable bieszczaders/kernel-cachyos
+		sudo dnf install kernel-cachyos kernel-cachyos-devel-matched
+		sudo dnf update
 
 //option to tuned
 //
@@ -279,10 +277,11 @@ open konsole												//Ctrl+Alt+T
 1. open **Software Manager**
 2. install **power-profiles-daemon**
 
-	- option to use **[Terminal](https://linuxconfig.org/how-to-manage-power-profiles-over-d-bus-with-power-profiles-daemon-on-linux)**
-		open **Terminal** *(Ctrl+Alt+T)*\
+	- option to use **[Konsole](https://linuxconfig.org/how-to-manage-power-profiles-over-d-bus-with-power-profiles-daemon-on-linux)**
+		open **Konsole** *(Ctrl+Alt+T)*
 		```
 		sudo dnf install power-profiles-daemon
+  		sudo dnf remove tuned tuned-ppd
 		sudo systemctl enable power-profiles-daemon.service
   		```
 		>enable service
@@ -291,42 +290,22 @@ open konsole												//Ctrl+Alt+T
 		powerprofilesctl list
 		sudo shutdown -r now
   		```
-  
-	//
-	// ppd													//power-profiles-daemon
-	//
-	https://linuxconfig.org/how-to-manage-power-profiles-over-d-bus-with-power-profiles-daemon-on-linux
-	https://gitlab.freedesktop.org/upower/power-profiles-daemon#power-profiles-daemon
-	open terminal											//Ctrl+Alt+T
-		$ sudo dnf install power-profiles-daemon
-		$ sudo dnf remove tuned tuned-ppd
 
-			//option to version 40 below
-			//
-			$ sudo dnf remove power-profiles-daemon
+  			- option to version 40 below
+   				`sudo dnf remove power-profiles-daemon
 
-		$ sudo systemctl enable power-profiles-daemon.service
-		$ powerprofilesctl list
-		$ shutdown -r now
-		
-// option to tlp
-//
-https://linrunner.de/tlp/installation/index.html
-open terminal												//Ctrl+Alt+T
-	$ sudo dnf install tlp tlp-rdw							//installation
-	$ sudo dnf remove tuned tuned-ppd						//uninstall power management tool
+- option to [tlp](https://linrunner.de/tlp/installation/index.html)\
+	open **Konsole** *(Ctrl+Alt+T)*
+	```
+	sudo dnf install tlp tlp-rdw
+	sudo dnf remove tuned tuned-ppd
+	sudo systemctl enable tlp.service
+	sudo systemctl mask systemd-rfkill.service systemd-rfkill.socket
+	sudo tlp start
+	tlp-stat -s
 
-		//option to uninstall power management tool below version 40
-		//
-		$ sudo dnf remove power-profiles-daemon
+ 		- option to get tlp repository
+			`sudo dnf install https://repo.linrunner.de/fedora/tlp/repos/releases/tlp-release.fc$(rpm -E %fedora).noarch.rpm`
 
-	$ sudo systemctl enable tlp.service							//enable service
-	$ sudo systemctl mask systemd-rfkill.service systemd-rfkill.socket	//mask
-	$ sudo tlp start
-	$ tlp-stat -s
-
-		//option to get tlp repository
-		//
-		$ sudo dnf install https://repo.linrunner.de/fedora/tlp/repos/releases/tlp-release.fc$(rpm -E %fedora).noarch.rpm
-
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+ 		- option to version 40 below
+ 			`sudo dnf remove power-profiles-daemon
