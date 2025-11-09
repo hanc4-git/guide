@@ -6,7 +6,7 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
 [Fedora 43 Post Install Guide](https://github.com/devangshekhawat)
 [7 Things You MUST DO After Installing Fedora Linux](https://youtu.be/RrRpXs2pkzg)
 
-## bazzite
+## bazzite for gaming
 *[bazzite 42 - November 3, 2025](https://bazzite.gg/)*
 
 ### bazzite installation
@@ -193,47 +193,23 @@ source thisroot.sh
  	2. select **VBoxSVGA**
   	3. **OK**
 
-// option to install "Virtualbox Guest Additions"
-//
-menu bar\Devices\Insert Guest Additions
-	home\VBox_GAs_{VBoxClient_version}
-	double-click VBoxLinuxAdditions.run
+## optional
+- option to install virtualbox **Guest Additions**
+	1. `Menu Bar\Devices\Insert Guest Additions`
+	2. click **Run**
 
-		//option to terminal
-		right-click VBoxLinuxAdditions.run
-		"Run as a Program"
-			$ VBoxService --version							//check guest additions version
-			$ sudo gpasswd -a user{$username} vboxsf
-			$ shutdown -r now
+	- option to run\
+		`home\VBox_GAs_{VBoxClient_version}`
+		1. double-click **VBoxLinuxAdditions.run**
 
- // fedora update
-  // https://getfedora.org	//Fedora
-  // 38 - April 18, 2023
-  //
-	// dnf configuration
-	// https://dnf.readthedocs.io/en/latest/conf_ref.html
-	//
-		$ sudo nano /etc/dnf/dnf.conf
-			add in the last line
-				fastestmirror=True
-				max_parallel_downloads=10
-				keepcache=True
-		  	Ctrl+o
-		  	enter
-		  	Ctrl+x
-		$ sudo dnf -y clean all
-
-	// configuring xorg
-	// https://docs.fedoraproject.org/en-US/quick-docs/configuring-xorg-as-default-gnome-session/
-	//
-		$ sudo nano /etc/gdm/custom.conf
-			uncomment or remove "#" of "WaylandEnable=false"
-		  	add
-				DefaultSession=gnome-xorg.desktop
-		  	Ctrl+o
-		  	enter
-		  	Ctrl+x
-		$ shutdown -r now
+  	- option to use **Terminal**
+  	  	1. right-click **VBoxLinuxAdditions.run**
+  	  	2. **Run as Program**\
+  	  	```
+		VBoxService --version
+		sudo gpasswd -a user{$username} vboxsf
+		sudo shutdown -r now
+  	  	```
 		
 // option to asus
 //
