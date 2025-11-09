@@ -55,7 +55,7 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
   		```
 
 ### [flatpak](https://flatpak.org/setup/)
-open **Terminal** *(Ctrl+Alt+T)*\
+open **Terminal** *(Ctrl+Alt+T)*
 ```
 sudo apt install flatpak
 sudo apt install gnome-software-plugin-flatpak
