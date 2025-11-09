@@ -34,10 +34,10 @@ install **[Flathub](https://flathub.org/en)**
 
 ### [multimedia codecs](https://www.linuxfordevices.com/tutorials/linux/installing-multimedia-codecs-linux)
 `sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm`
->free
+> free
 
 `sudo dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm`
->non free
+> non free
 
 ```
 sudo dnf update 
@@ -108,7 +108,7 @@ cd /usr/local/bin
 	source /usr/local/bin/thisroot.sh
 	source /usr/local/bin/geant4.sh
  	```
- 	>at the last line
+ 	> at the last line
 
 	```
 	Ctrl+o
@@ -136,16 +136,16 @@ exit
 	vim batch.mac
 	i
 	```
-  	>insert mode
+  	> insert mode
 
 	```
 	/run/beamOn 100
   	ESC
  	```
-  	>exit insert mode
+  	> exit insert mode
      
    	*`:wq or :x or :ZZ`*
-  	>write (save) and quit
+  	> write (save) and quit
 
 	```
 	./exampleB1 batchmac
@@ -251,7 +251,7 @@ source thisroot.sh
 		`sudo dnf install asusctl-rog-gui`
 
 	  	- custom kernel
- 	 	>dirvers fixes
+ 	 	> dirvers fixes
 
  		```
 		sudo dnf config-manager setopt fedora.excludepkgs=kernel,kernel-core,kernel-modules,kernel-uki-virt,kernel-devel,kernel-modules-extra,kernel-modules-core,kernel-devel-matched	//disable stock kernel updates
@@ -283,7 +283,7 @@ source thisroot.sh
   		sudo dnf remove tuned tuned-ppd
 		sudo systemctl enable power-profiles-daemon.service
   		```
-		>enable service
+		> enable service
 
 		```
 		powerprofilesctl list
