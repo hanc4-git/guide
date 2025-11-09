@@ -74,7 +74,7 @@ shutdown -r now
 
 ### ppd
 [built-in](https://gitlab.freedesktop.org/upower/power-profiles-daemon#power-profiles-daemon/)\
-`pwerprofilesctl list`
+`powerprofilesctl list`
 	
 ### fastfetch
 [built-in](https://github.com/fastfetch-cli/fastfetch)\
