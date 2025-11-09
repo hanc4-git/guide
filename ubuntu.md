@@ -77,7 +77,7 @@ sudo apt install ubuntu-restricted-extras
 2. install **power-profiles-daemon**
 
 	- option to use **[Terminal](https://linuxconfig.org/how-to-manage-power-profiles-over-d-bus-with-power-profiles-daemon-on-linux)**
-		open **Terminal** *(Ctrl+Alt+T)*\
+		open **Terminal** *(Ctrl+Alt+T)*
 		```
 		sudo apt install power-profiles-daemon
 		sudo systemctl enable power-profiles-daemon.service
