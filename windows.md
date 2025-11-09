@@ -27,9 +27,9 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
 2. install and launch **Xming**
 3. open **Terminal**
 ```
-sudo systemd-machine-id-setup\
-sudo dbus-uuidgen — ensure\
-cat /etc/machine-id\
+sudo systemd-machine-id-setup
+sudo dbus-uuidgen — ensure
+cat /etc/machine-id
 sudo apt -y install x11-apps xfonts-base xfonts-100dpi xfonts-75dpi xfonts-cyrillic
 ```
 
