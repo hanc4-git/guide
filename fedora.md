@@ -24,7 +24,7 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
 [built-in](https://flatpak.org/setup/)\
 install **[Flathub](https://flathub.org/en)**
 
-- option to add flathub\
+- option to add flathub use **Konsole**\
   	open **Konsole** *(Ctrl+Alt+T)*\
 	`flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo`
 
@@ -44,7 +44,7 @@ sudo dnf group upgrade --with-optional Multimedia
 
 ### tuned
 [built-in](https://github.com/redhat-performance/tuned)\
-`pwerprofilesctl list`
+`tuned-adm list`
 
 ### [fastfetch](https://github.com/fastfetch-cli/fastfetch)
 ```
@@ -53,48 +53,7 @@ fastfetch
 ```
 
 
-
-
-
-	//
-	// fastfetch
-	//
-	https://github.com/fastfetch-cli/fastfetch
-	Download fastfetch-linux-<proper architecture>.deb
-	double-click
-
-		//option to use terminal
-		open terminal										//Ctrl+Alt+T
-			$ sudo apt install fastfetch-linux-amd64.deb
-
-  // fedora update
-  // https://getfedora.org	//Fedora
-  // 38 - April 18, 2023
-  //
-	// dnf configuration
-	// https://dnf.readthedocs.io/en/latest/conf_ref.html
-	//
-		$ sudo nano /etc/dnf/dnf.conf
-			add in the last line
-				fastestmirror=True
-				max_parallel_downloads=10
-				keepcache=True
-		  	Ctrl+o
-		  	enter
-		  	Ctrl+x
-		$ sudo dnf -y clean all
-
-	// configuring xorg
-	// https://docs.fedoraproject.org/en-US/quick-docs/configuring-xorg-as-default-gnome-session/
-	//
-		$ sudo nano /etc/gdm/custom.conf
-			uncomment or remove "#" of "WaylandEnable=false"
-		  	add
-				DefaultSession=gnome-xorg.desktop
-		  	Ctrl+o
-		  	enter
-		  	Ctrl+x
-		$ shutdown -r now
+ 
 
 	// fedora
 	update "Software"
@@ -281,6 +240,11 @@ $ sudo dnf install redhat-lsb-core gcc-gfortran pcre-devel mesa-libGL-devel mesa
 		$ cmake ..
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+## optional
+- option to adjust the screen size for bazzite
+	1. `Settings\Expert\Display\Screen\Graphics Controller
+ 	2. select **VBoxSVGA**
+  	3. **OK**
 
 // option to install "Virtualbox Guest Additions"
 //
@@ -295,6 +259,35 @@ menu bar\Devices\Insert Guest Additions
 			$ sudo gpasswd -a user{$username} vboxsf
 			$ shutdown -r now
 
+ // fedora update
+  // https://getfedora.org	//Fedora
+  // 38 - April 18, 2023
+  //
+	// dnf configuration
+	// https://dnf.readthedocs.io/en/latest/conf_ref.html
+	//
+		$ sudo nano /etc/dnf/dnf.conf
+			add in the last line
+				fastestmirror=True
+				max_parallel_downloads=10
+				keepcache=True
+		  	Ctrl+o
+		  	enter
+		  	Ctrl+x
+		$ sudo dnf -y clean all
+
+	// configuring xorg
+	// https://docs.fedoraproject.org/en-US/quick-docs/configuring-xorg-as-default-gnome-session/
+	//
+		$ sudo nano /etc/gdm/custom.conf
+			uncomment or remove "#" of "WaylandEnable=false"
+		  	add
+				DefaultSession=gnome-xorg.desktop
+		  	Ctrl+o
+		  	enter
+		  	Ctrl+x
+		$ shutdown -r now
+		
 // option to asus
 //
 https://asus-linux.org/
