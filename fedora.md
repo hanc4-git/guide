@@ -213,11 +213,11 @@ source thisroot.sh
   	  	```
 	
 - option to [asus](https://asus-linux.org/)
-1. open **Software**
-2. `Software\Updates`
-3. click **Refresh**
-4. **Download**
-5. **Restart & Update**
+	1. open **Software**
+	2. `Software\Updates`
+	3. click **Refresh**
+	4. **Download**
+	5. **Restart & Update**
 
 	- option to use **Konsole**
 		open **Konsole** *(Ctrl+Alt+T)*
@@ -262,7 +262,7 @@ source thisroot.sh
 		sudo dnf update
 		```
  
-- option to [tuned](https://github.com/redhat-performance/tuned)
+- option to [tuned](https://github.com/redhat-performance/tuned)\
 	open **Konsole** *(Ctrl+Alt+T)*
 	```
  	dnf install tuned
@@ -272,11 +272,11 @@ source thisroot.sh
 	tuned-adm list
  	```
 
-### [ppd](https://gitlab.freedesktop.org/upower/power-profiles-daemon#power-profiles-daemon)
-1. open **Software Manager**
-2. install **power-profiles-daemon**
+- option to [ppd](https://gitlab.freedesktop.org/upower/power-profiles-daemon#power-profiles-daemon)
+	1. open **Software Manager**
+	2. install **power-profiles-daemon**
 
-	- option to use **[Konsole](https://linuxconfig.org/how-to-manage-power-profiles-over-d-bus-with-power-profiles-daemon-on-linux)**
+	- option to use **[Konsole](https://linuxconfig.org/how-to-manage-power-profiles-over-d-bus-with-power-profiles-daemon-on-linux)**\
 		open **Konsole** *(Ctrl+Alt+T)*
 		```
 		sudo dnf install power-profiles-daemon
@@ -303,8 +303,8 @@ source thisroot.sh
 	sudo tlp start
 	tlp-stat -s
 
- - option to get tlp repository
+ - option to get tlp repository\
 	`sudo dnf install https://repo.linrunner.de/fedora/tlp/repos/releases/tlp-release.fc$(rpm -E %fedora).noarch.rpm`
 
-- option to version 40 below
- 	`sudo dnf remove power-profiles-daemon
+- option to version 40 below\
+ 	`sudo dnf remove power-profiles-daemon`
