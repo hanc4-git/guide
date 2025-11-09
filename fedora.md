@@ -24,6 +24,20 @@ open **System Update**\
 ## fedora
 *[fedora_kde_plasma-43.1 - October 28, 2025](https://fedoraproject.org/kde/download)*
 
+### systam update
+1. open **Software**
+2. `Software\Updates`
+3. click **Refresh**
+4. **Download**
+5. **Restart & Update**
+
+	- option to use terminal
+		open **Terminal** *(Ctrl+Alt+T)*
+		```
+		sudo apt -y update && sudo apt -y upgrade
+		sudo apt autoremove
+  		```
+
 ### flatpak
 [built-in](https://flatpak.org/setup/)\
 install **[Flathub](https://flathub.org/en)**
@@ -55,20 +69,6 @@ sudo dnf group upgrade --with-optional Multimedia
 dnf install fastfetch
 fastfetch
 ```
-
-### systam update
-1. open **Software**
-2. `Software\Updates`
-3. click **Refresh**
-4. **Download**
-5. **Restart & Update**
-
-	- option to use terminal
-		open **Terminal** *(Ctrl+Alt+T)*
-		```
-		sudo apt -y update && sudo apt -y upgrade
-		sudo apt autoremove
-  		```
 
 ## installation video
 [Geant4 Tutorial 1: Installation and Testing of Geant4](https://youtu.be/Lxb4WZyKeCE) ([kor](https://youtu.be/gVcbeLQEHNw))\
