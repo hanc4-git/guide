@@ -3,7 +3,7 @@ UNLV\
 the new version is available on [GitHub](https://github.com/hanc4-git?tab=repositories).
 
 ## installation
-[Fedora 43 Post Install Guide](https://github.com/devangshekhawat)
+[Fedora 43 Post Install Guide](https://github.com/devangshekhawat)\
 [7 Things You MUST DO After Installing Fedora Linux](https://youtu.be/RrRpXs2pkzg)
 
 ## bazzite for gaming
