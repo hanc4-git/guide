@@ -102,8 +102,8 @@ shutdown -r now
    	1. Partitioning
 	2. **Use a best-effort default partition layout**
 	3. *space bar*: *space bar* or *tab* to select
-	4. **btrfs**: Filesystem
- 		**No**
+	4. **btrfs**: Filesystem\
+ 		**No**\
     	**Use compression**
 
 2. Swap\
