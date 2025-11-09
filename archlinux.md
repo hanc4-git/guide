@@ -35,7 +35,7 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
 
 ### system update
 1. `CachyOS Hello\Apps\Tweaks`
-2. click **System Update**
+2. **System Update**
 
   - option to use **Konsole**\
 		open **Konsole** *(Ctrl+Alt+T)*\
