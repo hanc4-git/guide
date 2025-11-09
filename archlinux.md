@@ -254,7 +254,7 @@ fastfetch
 `sudo pacman -S cmake gcc expat libxmu openmotif mesa qt5-base`
 
 ### geant 4 installation
-*[Geant4 10.7/patch-04 - September 9, 2022](https://geant4.web.cern.ch/support/download)*\
+*[Geant4 10.7/patch-04 - September 9, 2022](https://geant4.web.cern.ch/support/download)*
 ```
 mv /home/user($username}/Downloads/geant{geant4_version}.tar.gz ~
 tar -xvf geant{geant4_version}.tar.gz
@@ -303,7 +303,7 @@ run/beamOn 100
 exit
 ```
 
-- option to batch mode\
+- option to batch mode
   	```
 	cd geant{geant4_version}
 	cd examples/basic/B1/build
@@ -338,7 +338,7 @@ sudo pacman -S gcc-fortran pcre mesa glu glew ftgl mysql fftw cfitsio graphviz u
 **y**: proceed
 
 ### root installation
-[ROOT 6.28/04 - May 7, 2023](https://root.cern/install/all_releases/)\
+[ROOT 6.28/04 - May 7, 2023](https://root.cern/install/all_releases/)
 ```
 mv /home/user{$username}/Downloads/root{$root_version}.source.tar.gz ~
 tar -xzvf root{$root_version}.source.tar.gz
@@ -387,7 +387,7 @@ sudo ./VBoxLinuxAdditions.run
   > back to windowed mode
 
 - option to [spotify](https://itsfoss.com/install-spotify-arch/)\
-  	open **Konsole** *(Ctrl+Alt+T)*
+  	open **Konsole** *(Ctrl+Alt+T)*\
 	`sudo pacman -Syu spotify-launcher`
 
 	- option to [flatpak](https://linuxways.net/arch/install-spotify-arch-linux/)
@@ -427,7 +427,7 @@ sudo ./VBoxLinuxAdditions.run
 	```
 
 - option to [asus](https://asus-linux.org/)\
-	open **Konsole** *(Ctrl+Alt+T)*
+	open **Konsole** *(Ctrl+Alt+T)*\
 	`pacman -S linux-firmware amd-ucode`
 	> `intel-ucode` for intel
 
