@@ -204,7 +204,7 @@ sudo apt-get install gfortran libpcre3-dev libglu1-mesa-dev libglew-dev libftgl-
 ```
 
 ### root installation
-[ROOT 6.28/04 - May 7, 2023](https://root.cern/install/all_releases/)\
+[ROOT 6.28/04 - May 7, 2023](https://root.cern/install/all_releases/)
 ```
 mv /home/user{$username}/Downloads/root{$root_version}.source.tar.gz ~
 tar -xzvf root{$root_version}.source.tar.gz
@@ -237,7 +237,7 @@ source thisroot.sh
 	2. click **Run**
 
 	- option to run\
-		`home\VBox_GAs_{VBoxClient_version}`
+		`home\VBox_GAs_{VBoxClient_version}`\
 		double-click **VBoxLinuxAdditions.run**
 
   	- option to use **Terminal**
@@ -255,10 +255,10 @@ source thisroot.sh
 	Settings\Privacy\Screen\Automatic Screen Lock
    	```
 	
-- option to extra codecs
+- option to extra codecs\
 	`sudo apt install ubuntu-restricted-extras`\
-		**tab**
-  		**enter**
+		**tab**\
+  		**enter**\
   		**yes**
 
 - option to [tuned](https://www.funkyspacemonkey.com/tuned-allows-you-to-optimize-linux-system-performance)\
@@ -268,7 +268,8 @@ source thisroot.sh
 	sudo systemctl enable --now tuned
 	tuned-adm active
 	tuned-adm profiles
-
+	```
+ 
 - option to [tlp](https://linrunner.de/tlp/installation/index.html)\
 	open **Terminal** *(Ctrl+Alt+T)*
 	```
