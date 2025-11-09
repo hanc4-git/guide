@@ -6,7 +6,7 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
 1. find **Settings** in serch box on task bar
 2. `Settings\Privacy & Security\Device Encryption `
 3. turn off **Device Encryption**
->re-enable later if possible
+> re-enable later if possible
 
 4. find **Control Panel** in serch box on task bar
 5. `Control Panel\Hardware and Sound\Power Options`
@@ -50,7 +50,7 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
     1. select **Something Else to Manually Set Up
     2. select **Unallocated Space**
     3. **ext4**
-    >Root Filesystem
+    > Root Filesystem
 
 ## optional
 - option to install **Vim**\
@@ -70,13 +70,13 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
       vi .vimrc
       i
       ```
-      >insert mode
+      > insert mode
  
       ```
       set number
       ESC
       ```
-      >exit insert mode
+      > exit insert mode
       
       *`:wq or :x or :ZZ`*
-      >write (save) and quit
+      > write (save) and quit
