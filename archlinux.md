@@ -483,7 +483,6 @@ sudo ./VBoxLinuxAdditions.run
 		**n**: diffs\
 		**y**
 
-  	3.
   	```
 	sudo systemctl enable --now tuned
 	tuned-adm active
