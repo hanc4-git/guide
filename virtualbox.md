@@ -46,18 +46,18 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
 - option to set up virtualbox 6.1
 	1. `Settings\System`
  	2. set **KVM**
-	>Paravirtualization Interface
+	> Paravirtualization Interface
 
 	3. `Settings\Display`
 	4. set **Hyper-V**
-	>for windows
+	> for windows
 
 - option to set up windows 11
-	>not recommended
+	> not recommended
 
 	open **Command Prompt** *(Shift+F10)* as administrator\
 	`bcdedit /set hypervisorlaunchtype off`
-	>disable windows hypervisor
+	> disable windows hypervisor
 
 - option to enable hypervisor
 	1. `bcdedit /set hypervisorlaunchtype auto`
