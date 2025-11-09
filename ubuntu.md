@@ -171,7 +171,7 @@ run/beamOn 100
 exit
 ```
 
-- option to batch mode\
+- option to batch mode
   	```
 	cd geant{geant4_version}
 	cd examples/basic/B1/build
