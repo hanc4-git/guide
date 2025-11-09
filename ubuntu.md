@@ -23,11 +23,11 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
 3. install **[Power Profiles by rcalixte](https://cinnamon-spices.linuxmint.com/applets/view/369)**
 4. switch to **Manage**
 5. click **+**
->add power profiles to panel
+> add power profiles to panel
 
 6. `System Settings\Preferences\General`
 7. enable **Disable composition for full-screen windows**
->to prevent display tearing
+> to prevent display tearing
 
 ### fastfetch
 1. download **[fastfetch-linux-amd64.deb](https://github.com/fastfetch-cli/fastfetch)**
@@ -82,7 +82,7 @@ sudo apt install ubuntu-restricted-extras
 		sudo apt install power-profiles-daemon
 		sudo systemctl enable power-profiles-daemon.service
   		```
-		>enable service
+		> enable service
 
 		```
 		powerprofilesctl list
@@ -95,10 +95,11 @@ sudo apt install ubuntu-restricted-extras
 3. install **[Power Profiles by rcalixte](https://cinnamon-spices.linuxmint.com/applets/view/369)**
 4. switch to **Manage**
 5. click **+**
->add power profiles to panel
+> add power profiles to panel
+
 6. `System Settings\Preferences\General`
 7. enable **Disable composition for full-screen windows**
->to prevent display tearing
+> to prevent display tearing
 
 ### fastfetch
 1. download **[fastfetch-linux-amd64.deb](https://github.com/fastfetch-cli/fastfetch)**
@@ -237,7 +238,7 @@ source thisroot.sh
 
 	- option to run\
 		`home\VBox_GAs_{VBoxClient_version}`
-		1. double-click **VBoxLinuxAdditions.run**
+		double-click **VBoxLinuxAdditions.run**
 
   	- option to use **Terminal**
   	  	1. right-click **VBoxLinuxAdditions.run**
@@ -293,10 +294,10 @@ source thisroot.sh
 
 - option to OpenGL geant4\
 	`sudo apt-get install libx11-dev libxpm-dev libxft-dev libxext-dev libglu1-mesa-dev`
-	>prerequisites
+	> prerequisites
 
 	`cmake -DCMAKE_INSTALL_PREFIX=/usr/local -DGEANT4_INSTALL_DATA=ON -DGEANT4_USE_OPENGL_X11=ON ../`
- 	>compile
+ 	> compile
 
 - option to root 6.18\
 *ROOT 6.18/04 - September 11, 2019*\
