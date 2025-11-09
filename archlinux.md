@@ -331,7 +331,7 @@ exit
 ### [root dependencies](https://root.cern/install/dependencies/)
 ```
 sudo pacman -S --needed base-devel git vim
-sudo pacman -S git make cmake gcc binutils libx11 libxpm libxft libxext python openssl
+sudo pacman -S make cmake gcc binutils libx11 libxpm libxft libxext python openssl
 sudo pacman -S gcc-fortran pcre mesa glu glew ftgl mysql fftw cfitsio graphviz util-linux-libs avahi openldap python3 libxml2 gsl readline qt5-webengine
 ```
 **1**: default\
