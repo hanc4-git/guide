@@ -37,4 +37,4 @@ download [asahi linux with a Plasma KDE](https://asahilinux.org/)
 7. `Drivers\Interface\New Drive`
 8. select **NVMe**
 9. select **USB**
->Removable
+> Removable
