@@ -288,8 +288,8 @@ source thisroot.sh
 	1. open **Software Manager**
 	2. install **power-profiles-daemon**
 
-	- option to use **Terminal**\
-		open [**Terminal** *(Ctrl+Alt+T)*](https://linuxconfig.org/how-to-manage-power-profiles-over-d-bus-with-power-profiles-daemon-on-linux)
+	- option to use [**Terminal**\](https://linuxconfig.org/how-to-manage-power-profiles-over-d-bus-with-power-profiles-daemon-on-linux)
+		open **Terminal** *(Ctrl+Alt+T)*
 		```
 		sudo dnf install power-profiles-daemon
   		sudo dnf remove tuned tuned-ppd
