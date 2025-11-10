@@ -30,7 +30,7 @@ open **System Update**\
 `tuned-adm list`
 
 ### fastfetch
-[built-in](https://github.com/fastfetch-cli/fastfetch)
+[built-in](https://github.com/fastfetch-cli/fastfetch)\
 `fastfetch`
 
 ## fedora
