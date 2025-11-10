@@ -52,7 +52,7 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
 2. select **Alongside Windows Boot Manager**
 
   - option to manually
-    1. select **Something Else to Manually Set Up
+    1. select **Something Else to Manually Set Up**
     2. select **Unallocated Space**
     3. **ext4**
     > Root Filesystem
