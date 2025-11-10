@@ -29,7 +29,7 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
 4. set **GPT**
 5. start
 
-   - option to *[Ventoy 1.1.07 - August 18, 2025](https://www.ventoy.net/en/index.html)
+   - option to *[Ventoy 1.1.07 - August 18, 2025](https://www.ventoy.net/en/index.html)*
        1. `Option\Partition Style`
        2. set **GPT**
        3. **Install**
