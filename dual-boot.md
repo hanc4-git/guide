@@ -11,7 +11,7 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
 4. find **Control Panel** in serch box on task bar
 5. `Control Panel\Hardware and Sound\Power Options`
 6. select **Choose what the power buttons do**
-7. click **Change settings that are currently unavailable
+7. click **Change settings that are currently unavailable**
 8. deselect **Turn on fast startup**
 9. Save changes
 
