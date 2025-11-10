@@ -43,7 +43,7 @@ open **System Update**\
 4. **Download**
 5. **Restart & Update**
 
-	- option to use terminal
+	- option to use **Terminal**
 		open **Terminal** *(Ctrl+Alt+T)*
 		```
 		sudo apt -y update && sudo apt -y upgrade
@@ -54,8 +54,8 @@ open **System Update**\
 [built-in](https://flatpak.org/setup/)\
 install **[Flathub](https://flathub.org/en)**
 
-- option to add flathub use **Konsole**\
-  	open **Konsole** *(Ctrl+Alt+T)*\
+- option to add flathub use **Terminal**\
+  	open **Terminal** *(Ctrl+Alt+T)*
 	`flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo`
 
 ### [multimedia codecs](https://www.linuxfordevices.com/tutorials/linux/installing-multimedia-codecs-linux)
@@ -231,8 +231,8 @@ source thisroot.sh
 	4. **Download**
 	5. **Restart & Update**
 
-	- option to use **Konsole**
-		open **Konsole** *(Ctrl+Alt+T)*
+	- option to use **Terminal**
+		oopen **Terminal** *(Ctrl+Alt+T)*
 		```
 		sudo dnf update -y
 		sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm	//enable rpm fusion
@@ -275,7 +275,7 @@ source thisroot.sh
 		```
  
 - option to [tuned](https://github.com/redhat-performance/tuned)\
-	open **Konsole** *(Ctrl+Alt+T)*
+	open **Terminal** *(Ctrl+Alt+T)*
 	```
  	dnf install tuned
 	systemctl start tuned
@@ -288,8 +288,8 @@ source thisroot.sh
 	1. open **Software Manager**
 	2. install **power-profiles-daemon**
 
-	- option to use **[Konsole](https://linuxconfig.org/how-to-manage-power-profiles-over-d-bus-with-power-profiles-daemon-on-linux)**\
-		open **Konsole** *(Ctrl+Alt+T)*
+	- option to use **Terminal**\
+		open [**Terminal** *(Ctrl+Alt+T)*](https://linuxconfig.org/how-to-manage-power-profiles-over-d-bus-with-power-profiles-daemon-on-linux)
 		```
 		sudo dnf install power-profiles-daemon
   		sudo dnf remove tuned tuned-ppd
@@ -306,7 +306,7 @@ source thisroot.sh
    		`sudo dnf remove power-profiles-daemon`
 
 - option to [tlp](https://linrunner.de/tlp/installation/index.html)\
-	open **Konsole** *(Ctrl+Alt+T)*
+	open **Terminal** *(Ctrl+Alt+T)*
 	```
 	sudo dnf install tlp tlp-rdw
 	sudo dnf remove tuned tuned-ppd
