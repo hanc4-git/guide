@@ -21,6 +21,18 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
 open **System Update**\
 	**y**
 
+### flatpak
+[built-in](https://flatpak.org/setup/)\
+`flatpak --version`
+
+### tuned
+[built-in](https://github.com/redhat-performance/tuned)\
+`tuned-adm list`
+
+### fastfetch
+[built-in](https://github.com/fastfetch-cli/fastfetch)
+`fastfetch`
+
 ## fedora
 *[fedora_kde_plasma-43.1 - October 28, 2025](https://fedoraproject.org/kde/download)*
 
