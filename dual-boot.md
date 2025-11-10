@@ -22,12 +22,17 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
     4. choose **Shrink Volume**
 
 ## rufus
-*[Rufus - October 2, 2025](https://rufus.ie/en/)*
+*[Rufus 4.11 - October 2, 2025](https://rufus.ie/en/)*
 1. `drive properties\boot selection`
 2. select **ISO Image**
 3. `drive properties_partition scheme`
 4. set **GPT**
 5. start
+
+   - option to *[Ventoy 1.1.07 - August 18, 2025](https://www.ventoy.net/en/index.html)
+       1. `Option\Partition Style`
+       2. set **GPT**
+       3. **Install**
 
 ## UEFI
 1. find **Settings** in search box on task bar
