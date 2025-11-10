@@ -36,8 +36,8 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
 1. `CachyOS Hello\Apps\Tweaks`
 2. **System Update**
 
-  - option to use **Konsole**\
-		open **Konsole** *(Ctrl+Alt+T)*\
+  - option to use **Terminal**\
+		open **Terminal** *(Ctrl+Alt+T)*\
     	`sudo pacman -Syyu`\
       		**-s**: option for sync\
       		**-y**: refreshes package database\
@@ -49,15 +49,15 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
 2. click **Install Gaming packages**
 3. restart
 
-  - option to use **Konsole**\
-    	open **Konsole** *(Ctrl+Alt+T)*\
+  - option to use **Terminal**\
+    	open **Terminal** *(Ctrl+Alt+T)*\
 		```
     	sudo pacman -S cachyos-gaming-meta
     	sudo pacman -S cachyos-gaming-applications
     	```
 
 ### [flatpak](https://flatpak.org/setup/)
-open **Konsole** *(Ctrl+Alt+T)*
+open **Terminal** *(Ctrl+Alt+T)*
 ```
 sudo pacman -S flatpak
 flatpak --version
@@ -151,14 +151,14 @@ shutdown -r now
 4. click **Start**
 
 ### system update
-open **Konsole** *(Ctrl+Alt+T)*\
+open **Terminal** *(Ctrl+Alt+T)*\
 `sudo pacman -Syyu`\
 	**-s**: option for sync\
     **-y**: refreshes package database\
     **-u-**: upgrade packages
 
 ### [flatpak](https://flatpak.org/setup/)
-open **Konsole** *(Ctrl+Alt+T)*
+open **Terminal** *(Ctrl+Alt+T)*
 ```
 sudo pacman -S flatpak
 flatpak --version
@@ -173,7 +173,7 @@ shutdown -r now
 `ffmpeg -version`
 		
 ### [ppd](https://gitlab.freedesktop.org/upower/power-profiles-daemon#power-profiles-daemon/)
-open **Konsole** *(Ctrl+Alt+T)*
+open **Terminal** *(Ctrl+Alt+T)*
 ```
 sudo pacman -S power-profiles-daemon
 sudo systemctl enable --now power-profiles-daemon.service
@@ -202,15 +202,15 @@ fastfetch
 2. select **Update System**
 3. select **Package cleanup configuration**
 
-	- option to use **Konsole**\
-		open **Konsole** *(Ctrl+Alt+T)*\
+	- option to use **Terminal**\
+		open **Terminal** *(Ctrl+Alt+T)*\
     	`sudo pacman -Syyu`\
       		**-s**: option for sync\
       		**-y**: refreshes package database\
       		**-u-**: upgrade packages
 
 ### [flatpak](https://flatpak.org/setup/)
-open **Konsole** *(Ctrl+Alt+T)*
+open **Terminal** *(Ctrl+Alt+T)*
 ```
 sudo pacman -Syu
 sudo pacman -S flatpak
@@ -227,7 +227,7 @@ ffmpeg -version
 ```
 
 ### [ppd](https://gitlab.freedesktop.org/upower/power-profiles-daemon#power-profiles-daemon/)
-open **Konsole** *(Ctrl+Alt+T)*
+open **Terminal** *(Ctrl+Alt+T)*
 ```
 sudo pacman -S power-profiles-daemon
 sudo systemctl enable --now power-profiles-daemon.service
@@ -367,7 +367,7 @@ source thisroot.sh
 1. `menu bar\Devices\Insert Guest Additions`
 2. copy and paste all files in **VBox_GAs_{VBoxClient_version}.iso** to **Documents**
 3. right-click
-4. **Open in Konsole**
+4. **Open in Terminal**
 ```
 ls -lh
 chmod 777 VBoxLinuxAdditions.run
@@ -382,7 +382,7 @@ sudo ./VBoxLinuxAdditions.run
   > back to windowed mode
 
 - option to [spotify](https://itsfoss.com/install-spotify-arch/)\
-  	open **Konsole** *(Ctrl+Alt+T)*\
+  	open **Terminal** *(Ctrl+Alt+T)*
 	`sudo pacman -Syu spotify-launcher`
 
 	- option to [flatpak](https://linuxways.net/arch/install-spotify-arch-linux/)
@@ -414,7 +414,7 @@ sudo ./VBoxLinuxAdditions.run
  		`sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target`
 		
 - option to [multimedia codecs](https://itsfoss.gitlab.io/post/how-to-install-ffmpeg-in-linux/)
-	open **Konsole** *(Ctrl+Alt+T)*
+	open **Terminal** *(Ctrl+Alt+T)*
   	```
 	sudo pacman -Syu
 	sudo pacman -S ffmpeg
@@ -422,7 +422,7 @@ sudo ./VBoxLinuxAdditions.run
 	```
 
 - option to [asus](https://asus-linux.org/)\
-	open **Konsole** *(Ctrl+Alt+T)*\
+  	open **Terminal** *(Ctrl+Alt+T)*
 	`pacman -S linux-firmware amd-ucode`
 	> `intel-ucode` for intel
 
@@ -472,7 +472,7 @@ sudo ./VBoxLinuxAdditions.run
           		```
 
 - option to [tuned](https://youtu.be/WTJw21XQjCc?si=jBvUkGmOBHtfHCq5)
-	1. open **Konsole** *(Ctrl+Alt+T)*
+	1. open **Terminal** *(Ctrl+Alt+T)*
  	2. `yay -S tuned-git`\
 		**n**: cleanBuild\
 		**n**: diffs\
@@ -485,7 +485,7 @@ sudo ./VBoxLinuxAdditions.run
    	```
 
 - option to [tlp](https://linrunner.de/tlp/installation/index.html)\
-	open **Konsole** *(Ctrl+Alt+T)*
+	open **Terminal** *(Ctrl+Alt+T)*
 	```
 	sudo pacman -S tlp tlp-rdw
 	systemctl enable tlp.service
