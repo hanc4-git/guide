@@ -43,6 +43,13 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
       		**-y**: refreshes package database\
       		**-u-**: upgrade packages
 
+	- option to set shortcut
+    	`Settings\Keyboard\Keyboard Shortcuts\View and Customize Shortcuts\Custom Shortcuts\Add Shortcut...`
+    	create *name*
+    	command *gnome-terminal*
+    	**Set Shortcut...**
+    	**Add**
+
 ### [steam](https://wiki.cachyos.org/configuration/gaming/)
 1. `CachyOS Hello\Apps\Tweaks`
 2. click **Install Gaming packages**
