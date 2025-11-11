@@ -63,7 +63,7 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
     	```
 
 ### flatpak
-[built-in](https://flatpak.org/setup/) with gaming packages\
+[built-in](https://flatpak.org/setup/)
 `flatpak --version`
 
 ### multimedia codecs
