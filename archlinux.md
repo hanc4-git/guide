@@ -66,9 +66,6 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
 [built-in](https://flatpak.org/setup/) with gaming packages\
 `flatpak --version`
 
-- option to add flathub\
-	`flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo`
-
 ### multimedia codecs
 [built-in](https://itsfoss.gitlab.io/post/how-to-install-ffmpeg-in-linux/)\
 `ffmpeg -version`
