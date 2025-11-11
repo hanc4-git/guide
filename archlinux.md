@@ -46,7 +46,7 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
 - option to set shortcut
 	1. `Settings\Keyboard\Keyboard Shortcuts\View and Customize Shortcuts\Custom Shortcuts\Add Shortcut...`
     2. create *name*
-    3. command *kgx* or *gnome-terminal*
+    3. command *alacritty* or *kgx* or *gnome-terminal*
     4. **Set Shortcut...**
     5. **Add**
 
