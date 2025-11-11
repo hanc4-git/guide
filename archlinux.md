@@ -44,7 +44,6 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
       		**-u-**: upgrade packages
 
 ### [steam](https://wiki.cachyos.org/configuration/gaming/)
->not for virtualbox
 1. `CachyOS Hello\Apps\Tweaks`
 2. click **Install Gaming packages**
 3. restart
