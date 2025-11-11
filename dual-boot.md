@@ -63,31 +63,3 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
   2. `Settings\Bluetooth & devices\Mouse\Related settings\Additional mouse settings`
   3. `Mouse Properties\Pointer Options\Motion`
   4. deselct **Enhance pointer precision**
-  
-- option to install **Vim**\
-  *[gVim 9.1.1825 - October 27, 2025](https://www.vim.org/download.php)*
-  1. update **Software Manager**
-  2. download **Vim**
-
-    - option to use **Terminal**\
-      open **Terminal** *(Ctrl+Alt+T)*
-      ```
-      sudo apt update
-      sudo apt install vim
-      ```
-
-    - option to display line numbers
-      ```
-      vi .vimrc
-      i
-      ```
-      > insert mode
- 
-      ```
-      set number
-      ESC
-      ```
-      > exit insert mode
-      
-      *`:wq or :x or :ZZ`*
-      > write (save) and quit
