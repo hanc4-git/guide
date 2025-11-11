@@ -23,6 +23,10 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
 11. `Settings\System\Display`
 12. maximize **Video Memory**
 
+	- option to bazzite
+		1. `Settings\System\Display\Graphics Controller`
+  		2. select **VBoxSVGA**
+
 	- option
 		1. `Settings\General\Features\Shared Clipboard and Drag-and-Drop`
  		2. set **Bidirectional**
