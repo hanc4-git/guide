@@ -44,11 +44,11 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
       		**-u-**: upgrade packages
 
 - option to set shortcut\
-	`Settings\Keyboard\Keyboard Shortcuts\View and Customize Shortcuts\Custom Shortcuts\Add Shortcut...`\
-    create *name*\
-    command *gnome-terminal*\
-    **Set Shortcut...**\
-    **Add**
+	1. `Settings\Keyboard\Keyboard Shortcuts\View and Customize Shortcuts\Custom Shortcuts\Add Shortcut...`\
+    2. create *name*\
+    3. command *gnome-terminal*\
+    4. **Set Shortcut...**\
+    5. **Add**
 
 ### [steam](https://wiki.cachyos.org/configuration/gaming/)
 1. `CachyOS Hello\Apps\Tweaks`
