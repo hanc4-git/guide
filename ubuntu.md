@@ -309,6 +309,35 @@ source thisroot.sh
 	sudo apt-get update && sudo apt-get install spotify-client
    	```
 
+- option to install **Vim**\
+  *[gVim 9.1.1825 - October 27, 2025](https://www.vim.org/download.php)*
+  1. open **Update Manager**
+  2. **Install Updates**
+  3. download **Vim**
+
+    - option to use **Terminal**\
+      	open **Terminal** *(Ctrl+Alt+T)*
+     	 ```
+      	sudo apt update
+      	sudo apt install vim
+      	```
+
+    - option to display line numbers
+      	```
+     	 vi .vimrc
+      	i
+     	 ```
+	 	> insert mode
+ 
+      	```
+      	set number
+     	 ESC
+     	 ```
+      	> exit insert mode
+      
+      	*`:wq or :x or :ZZ`*
+      	> write (save) and quit
+
 - option to OpenGL geant4\
 	`sudo apt-get install libx11-dev libxpm-dev libxft-dev libxext-dev libglu1-mesa-dev`
 	> prerequisites
