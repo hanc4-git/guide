@@ -380,18 +380,19 @@ sudo ./VBoxLinuxAdditions.run
   ```
   > back to windowed mode
 
-- option to [spotify](https://itsfoss.com/install-spotify-arch/)\
+- option to [spotify](https://itsfoss.com/install-spotify-arch/)
 	1. open **Software**
 	2. **Install**
 
-  		- open **Terminal** *(Ctrl+Alt+T)*
-			`sudo pacman -Syu spotify-launcher`
+	- option to use **Terminal**\
+  		open **Terminal** *(Ctrl+Alt+T)*\
+		`sudo pacman -Syu spotify-launcher`
 
-		- option to [flatpak](https://linuxways.net/arch/install-spotify-arch-linux/)
-			```
-   			flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-      		flatpak install spotify
-  			```
+	- option to [flatpak](https://linuxways.net/arch/install-spotify-arch-linux/)
+		```
+   		flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+      	flatpak install spotify
+  		```
 
 - option to [steam](https://wiki.cachyos.org/configuration/gaming/)\
 	`sudo pacman -Syu steam`
