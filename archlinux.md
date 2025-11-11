@@ -62,13 +62,9 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
     	sudo pacman -S cachyos-gaming-applications
     	```
 
-### [flatpak](https://flatpak.org/setup/)
-open **Terminal** *(Ctrl+Alt+T)*
-```
-sudo pacman -S flatpak
-flatpak --version
-shutdown -r now
-```
+### flatpak
+[built-in](https://flatpak.org/setup/) with gaming packages\
+`flatpak --version`
 
 - option to add flathub\
 	`flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo`
