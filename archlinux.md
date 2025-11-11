@@ -43,11 +43,11 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
       		**-y**: refreshes package database\
       		**-u-**: upgrade packages
 
-- option to set shortcut\
-	1. `Settings\Keyboard\Keyboard Shortcuts\View and Customize Shortcuts\Custom Shortcuts\Add Shortcut...`\
-    2. create *name*\
-    3. command *gnome-terminal*\
-    4. **Set Shortcut...**\
+- option to set shortcut
+	1. `Settings\Keyboard\Keyboard Shortcuts\View and Customize Shortcuts\Custom Shortcuts\Add Shortcut...`
+    2. create *name*
+    3. command *gnome-terminal*
+    4. **Set Shortcut...**
     5. **Add**
 
 ### [steam](https://wiki.cachyos.org/configuration/gaming/)
