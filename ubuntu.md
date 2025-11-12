@@ -275,7 +275,7 @@ source thisroot.sh
   	1. install **[GNOME Shell integration](https://extensions.gnome.org/)**
   	2. `sudo apt install chrome-gnome-shell`
 
-	- option to yay
+  	- option to yay\
    		`yay -S gnome-browser-connector`
 	
 - option to extra codecs\
