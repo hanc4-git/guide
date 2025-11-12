@@ -270,6 +270,13 @@ source thisroot.sh
 	Settings\Privacy\Screen\Blank Screen Delay
 	Settings\Privacy\Screen\Automatic Screen Lock
    	```
+
+- option to [gnome shell extensions](https://gnome.pages.gitlab.gnome.org/gnome-browser-integration/pages/installation-guide.html)
+  	1. install **[GNOME Shell integration](https://extensions.gnome.org/)**
+  	2. `sudo apt install chrome-gnome-shell`
+
+	- option to yay
+   		`yay -S gnome-browser-connector`
 	
 - option to extra codecs\
 	`sudo apt install ubuntu-restricted-extras`\
@@ -337,13 +344,6 @@ source thisroot.sh
       
       	*`:wq or :x or :ZZ`*
       	> write (save) and quit
-
-- option to [gnome shell extensions](https://gnome.pages.gitlab.gnome.org/gnome-browser-integration/pages/installation-guide.html)
-  	1. install **[GNOME Shell integration](https://extensions.gnome.org/)**
-  	2. `sudo apt install chrome-gnome-shell`
-
-	- option to yay
-   		`yay -S gnome-browser-connector`
 
 - option to OpenGL geant4\
 	`sudo apt-get install libx11-dev libxpm-dev libxft-dev libxext-dev libglu1-mesa-dev`
