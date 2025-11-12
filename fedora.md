@@ -223,7 +223,22 @@ source thisroot.sh
 		sudo gpasswd -a user{$username} vboxsf
 		sudo shutdown -r now
   	  	```
-	
+
+- option to battery percent
+  	1.  `Panel\Power Manager`
+  	2.  right-click
+  	3.  **Configure...**
+  	4.  `Power Manager\Settings for power@cinnamon.org\Display`
+  	5.  **Show percentage**
+
+- option to mouse acceleration
+  	1. `System Settings\Hardware\Mouse and Touchpad\Mouse\Pointer size and speed\Acceleration`
+  	2. **Constant**
+
+- option to [gnome shell extensions](https://gnome.pages.gitlab.gnome.org/gnome-browser-integration/pages/installation-guide.html)
+  	1. install **[GNOME Shell integration](https://extensions.gnome.org/)**
+  	2. `sudo dnf install gnome-browser-connector`
+
 - option to [asus](https://asus-linux.org/)
 	1. open **Software**
 	2. `Software\Updates`
