@@ -259,11 +259,16 @@ source thisroot.sh
 		sudo gpasswd -a user{$username} vboxsf
 		sudo shutdown -r now
   	  	```
+- option to battery percent
+  	1.  `Panel\Power Manager`
+  	2.  right-click
+  	3.  **Configure...**
+  	4.  `Power Manager\Settings for power@cinnamon.org\Display`
+  	5.  **Show percentage**
 
 - option to mouse acceleration
-  1. `System Settings\Hardware\Mouse and Touchpad\Mouse\Pointer size and speed\Acceleration`
-  2. `Mouse Properties\Pointer Options\Motion`
-  4. **Constant**
+  	1. `System Settings\Hardware\Mouse and Touchpad\Mouse\Pointer size and speed\Acceleration`
+  	2. **Constant**
 
 - option to disable sleep
   	```
