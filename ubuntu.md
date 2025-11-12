@@ -281,31 +281,6 @@ source thisroot.sh
   		**enter**\
   		**yes**
 
-- option to [tuned](https://www.funkyspacemonkey.com/tuned-allows-you-to-optimize-linux-system-performance)\
-	open **Terminal** *(Ctrl+Alt+T)*
-	```
-	sudo apt install tuned tuned-utils tuned-utils-systemtap
-	sudo systemctl enable --now tuned
-	tuned-adm active
-	tuned-adm profiles
-	```
- 
-- option to [tlp](https://linrunner.de/tlp/installation/index.html)\
-	open **Terminal** *(Ctrl+Alt+T)*
-	```
-	sudo add-apt-repository ppa:linrunner/tlp
-	sudo apt update
-	sudo apt install tlp tlp-rdw
-	sudo tlp start
-	tlp-stat -s
- 	```
-
-	- option to remove\
-		`apt remove power-profiles-daemon`
-
-	- option to version 1.5 only\
- 		`sudo systemctl enable tlp.service`
-
 - option to [spotify](https://www.spotify.com/us/download/linux/)
   	```
 	curl -sS https://download.spotify.com/debian/pubkey_C85668DF69375001.gpg | sudo gpg --dearmor --yes -o /etc/apt/trusted.gpg.d/spotify.gpg
@@ -341,6 +316,31 @@ source thisroot.sh
       
       	*`:wq or :x or :ZZ`*
       	> write (save) and quit
+
+- option to [tuned](https://www.funkyspacemonkey.com/tuned-allows-you-to-optimize-linux-system-performance)\
+	open **Terminal** *(Ctrl+Alt+T)*
+	```
+	sudo apt install tuned tuned-utils tuned-utils-systemtap
+	sudo systemctl enable --now tuned
+	tuned-adm active
+	tuned-adm profiles
+	```
+ 
+- option to [tlp](https://linrunner.de/tlp/installation/index.html)\
+	open **Terminal** *(Ctrl+Alt+T)*
+	```
+	sudo add-apt-repository ppa:linrunner/tlp
+	sudo apt update
+	sudo apt install tlp tlp-rdw
+	sudo tlp start
+	tlp-stat -s
+ 	```
+
+	- option to remove\
+		`apt remove power-profiles-daemon`
+
+	- option to version 1.5 only\
+ 		`sudo systemctl enable tlp.service`
 
 - option to OpenGL geant4\
 	`sudo apt-get install libx11-dev libxpm-dev libxft-dev libxext-dev libglu1-mesa-dev`
