@@ -63,3 +63,7 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
     2. `Settings\Bluetooth & devices\Mouse\Related settings\Additional mouse settings`
     3. `Mouse Properties\Pointer Options\Motion`
     4. deselct **Enhance pointer precision**
+
+  - option to battery percent
+  	1.  open **Microsoft Store**
+  	2.  install **Battery Percentage Icon**
