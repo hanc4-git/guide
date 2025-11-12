@@ -388,6 +388,10 @@ sudo ./VBoxLinuxAdditions.run
     1. `Settings\Mouse & Touchpad\Mouse\Mouse Acceleration`
     2. toggle
 
+- option to [gnome shell extensions](https://gnome.pages.gitlab.gnome.org/gnome-browser-integration/pages/installation-guide.html)
+  	1. install **[GNOME Shell integration](https://extensions.gnome.org/)**
+  	2. `sudo pacman -S gnome-browser-connector`
+
 - option to [yay](https://itsfoss.com/install-yay-arch-linux/)
   	```
 	sudo pacman -Syu
