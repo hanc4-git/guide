@@ -381,7 +381,7 @@ sudo ./VBoxLinuxAdditions.run
   > back to windowed mode
 
 - option to battery percent
-  	1.  `Settings\Power\General\Show Battery Percentage
+  	1.  `Settings\Power\General\Show Battery Percentage`
   	2.  toggle
 
 - option to mouse acceleration
