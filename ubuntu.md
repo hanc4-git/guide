@@ -339,7 +339,7 @@ source thisroot.sh
       	> write (save) and quit
 
 - option to gnome shell extensions
-  	1. install **GNOME Shell integration browser extension](https://extensions.gnome.org/)**
+  	1. install **[GNOME Shell integration](https://extensions.gnome.org/)**
   	2. `sudo apt install chrome-gnome-shell`
 
 	- option to yay
