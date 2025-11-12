@@ -338,6 +338,13 @@ source thisroot.sh
       	*`:wq or :x or :ZZ`*
       	> write (save) and quit
 
+- option to gnome shell extensions
+  	1. install **GNOME Shell integration browser extension](https://extensions.gnome.org/)**
+  	2. `sudo apt install chrome-gnome-shell`
+
+	- option to yay
+   		`yay -S gnome-browser-connector`
+
 - option to OpenGL geant4\
 	`sudo apt-get install libx11-dev libxpm-dev libxft-dev libxext-dev libglu1-mesa-dev`
 	> prerequisites
