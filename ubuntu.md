@@ -275,7 +275,7 @@ source thisroot.sh
   	1. install **[GNOME Shell integration](https://extensions.gnome.org/)**
   	2. `sudo apt-get install gnome-browser-connector`
 
-	- option to below 23.04
+	- option to below 23.04\
    		`sudo apt-get install chrome-gnome-shell`
 	
 - option to extra codecs\
