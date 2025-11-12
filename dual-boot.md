@@ -59,7 +59,7 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
 
 ## optional
 - option to mouse acceleration
-  1. find **Settings** in serch box on task bar
-  2. `Settings\Bluetooth & devices\Mouse\Related settings\Additional mouse settings`
-  3. `Mouse Properties\Pointer Options\Motion`
-  4. deselct **Enhance pointer precision**
+    1. find **Settings** in serch box on task bar
+    2. `Settings\Bluetooth & devices\Mouse\Related settings\Additional mouse settings`
+    3. `Mouse Properties\Pointer Options\Motion`
+    4. deselct **Enhance pointer precision**
