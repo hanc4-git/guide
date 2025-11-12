@@ -380,6 +380,10 @@ sudo ./VBoxLinuxAdditions.run
   ```
   > back to windowed mode
 
+- option to mouse acceleration
+    1. `Settings\Mouse & Touchpad\Mouse\Mouse Acceleration`
+    2. toggle
+
 - option to [spotify](https://itsfoss.com/install-spotify-arch/)
 	1. open **Software**
 	2. **Install**
