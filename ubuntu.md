@@ -260,12 +260,6 @@ source thisroot.sh
 		sudo shutdown -r now
   	  	```
 
-- option to disable sleep
-  	```
-	Settings\Privacy\Screen\Blank Screen Delay
-	Settings\Privacy\Screen\Automatic Screen Lock
-   	```
-
 - option to battery percent
   	1.  `Panel\Power Manager`
   	2.  right-click
