@@ -314,9 +314,10 @@ source thisroot.sh
 	sudo systemctl mask systemd-rfkill.service systemd-rfkill.socket
 	sudo tlp start
 	tlp-stat -s
+	```
 
- - option to get tlp repository\
-	`sudo dnf install https://repo.linrunner.de/fedora/tlp/repos/releases/tlp-release.fc$(rpm -E %fedora).noarch.rpm`
+	- option to get tlp repository\
+		`sudo dnf install https://repo.linrunner.de/fedora/tlp/repos/releases/tlp-release.fc$(rpm -E %fedora).noarch.rpm`
 
-- option to version 40 below\
- 	`sudo dnf remove power-profiles-daemon`
+	- option to version 40 below\
+ 		`sudo dnf remove power-profiles-daemon`
