@@ -388,6 +388,24 @@ sudo ./VBoxLinuxAdditions.run
     1. `Settings\Mouse & Touchpad\Mouse\Mouse Acceleration`
     2. toggle
 
+- option to [yay](https://itsfoss.com/install-yay-arch-linux/)
+  	```
+	sudo pacman -Syu
+	sudo pacman -S --needed base-devel git
+	git clone https://aur.archlinux.org/yay.git
+	cd yay
+	makepkg -si
+	yay --version
+   	```
+	
+- option to [multimedia codecs](https://itsfoss.gitlab.io/post/how-to-install-ffmpeg-in-linux/)
+	open **Terminal** *(Ctrl+Alt+T)*
+  	```
+	sudo pacman -Syu
+	sudo pacman -S ffmpeg
+	ffmpeg -version
+	```
+
 - option to [spotify](https://itsfoss.com/install-spotify-arch/)
 	1. open **Software**
 	2. **Install**
@@ -404,33 +422,6 @@ sudo ./VBoxLinuxAdditions.run
 
 - option to [steam](https://wiki.cachyos.org/configuration/gaming/)\
 	`sudo pacman -Syu steam`
-
-- option to [yay](https://itsfoss.com/install-yay-arch-linux/)
-  	```
-	sudo pacman -Syu
-	sudo pacman -S --needed base-devel git
-	git clone https://aur.archlinux.org/yay.git
-	cd yay
-	makepkg -si
-	yay --version
-   	```
-   
-- option to disable sleep
-	```
-	System Settings/Workspace/Workspace Behavior/Screen Locking
-	System Settings/Hardware/Power Management/Energy Saving
- 	```
-
-	- option to gnome\
- 		`sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target`
-		
-- option to [multimedia codecs](https://itsfoss.gitlab.io/post/how-to-install-ffmpeg-in-linux/)
-	open **Terminal** *(Ctrl+Alt+T)*
-  	```
-	sudo pacman -Syu
-	sudo pacman -S ffmpeg
-	ffmpeg -version
-	```
 
 - option to [asus](https://asus-linux.org/)\
   	open **Terminal** *(Ctrl+Alt+T)*
