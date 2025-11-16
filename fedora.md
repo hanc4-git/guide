@@ -225,11 +225,8 @@ source thisroot.sh
   	  	```
 
 - option to battery percent
-  	1.  `Panel\Power Manager`
-  	2.  right-click
-  	3.  **Configure...**
-  	4.  `Power Manager\Settings for power@cinnamon.org\Display`
-  	5.  **Show percentage**
+  	1.  `Settings\Power\General\General\Show Battery Percentage`
+  	2.  toggle
 
 - option to mouse acceleration
   	1. `System Settings\Hardware\Mouse and Touchpad\Mouse\Pointer size and speed\Acceleration`
