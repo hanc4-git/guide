@@ -229,8 +229,8 @@ source thisroot.sh
   	2.  toggle
 
 - option to mouse acceleration
-  	1. `System Settings\Hardware\Mouse and Touchpad\Mouse\Pointer size and speed\Acceleration`
-  	2. **Constant**
+  	1. `Settings\Mouse & Touchpad\General\Mouse\Mouse Acceleration`
+  	2. toggle
 
 - option to [gnome shell extensions](https://gnome.pages.gitlab.gnome.org/gnome-browser-integration/pages/installation-guide.html)
   	1. install **[GNOME Shell integration](https://extensions.gnome.org/)**
