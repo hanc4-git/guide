@@ -10,10 +10,10 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
 *[bazzite 42 - November 3, 2025](https://bazzite.gg/)*
 
 ### bazzite installation
-1. `INSTALLATION SUMMARY\SYSTEM\Installation Destination`
+1. `INSTALLATION SUMMARY > SYSTEM > Installation Destination`
 2. select **Local Standard Disk**
 3. **Done**
-4. `INSTALLATION SUMMARY\USER SETTINGS`
+4. `INSTALLATION SUMMARY > USER SETTINGS`
 5. create *username* and *password*
 6. **Done**
 
@@ -38,7 +38,7 @@ open **System Update**\
 
 ### systam update
 1. open **Software**
-2. `Software\Updates`
+2. `Software > Updates`
 3. click **Refresh**
 4. **Download**
 5. **Restart & Update**
@@ -203,12 +203,12 @@ source thisroot.sh
 
 ## optional
 - option to adjust the screen size for bazzite
-	1. `Settings\Expert\Display\Screen\Graphics Controller`
+	1. `Settings > Expert > Display > Screen > Graphics Controller`
  	2. select **VBoxSVGA**
   	3. **OK**
 
 - option to install virtualbox **Guest Additions**
-	1. `Menu Bar\Devices\Insert Guest Additions`
+	1. `Menu Bar > Devices > Insert Guest Additions`
 	2. click **Run**
 
 	- option to run\
@@ -225,11 +225,11 @@ source thisroot.sh
   	  	```
 
 - option to battery percent
-  	1.  `Settings\Power\General\General\Show Battery Percentage`
+  	1.  `Settings > Power > General > General > Show Battery Percentage`
   	2.  toggle
 
 - option to mouse acceleration
-  	1. `Settings\Mouse & Touchpad\General\Mouse\Mouse Acceleration`
+  	1. `Settings > Mouse & Touchpad > General > Mouse > Mouse Acceleration`
   	2. toggle
 
 - option to [gnome shell extensions](https://gnome.pages.gitlab.gnome.org/gnome-browser-integration/pages/installation-guide.html)
@@ -238,7 +238,7 @@ source thisroot.sh
 
 - option to [asus](https://asus-linux.org/)
 	1. open **Software**
-	2. `Software\Updates`
+	2. `Software > Updates`
 	3. click **Refresh**
 	4. **Download**
 	5. **Restart & Update**
