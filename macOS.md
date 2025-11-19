@@ -29,12 +29,12 @@ download [asahi linux with a Plasma KDE](https://asahilinux.org/)
 
 - option to [UTM Virtual Machines](https://apps.apple.com/us/app/utm-virtual-machines/id1538878817?mt=12) setup
 	1. select **Create a New Virtual Machine** settings
-	2. `Information\Style`
+	2. `Information > Style`
 	3. set **Operating System**
-	4. `System\Architecture`
+	4. `System > Architecture`
 	5. set **ARM64 (aarch64)**
 	6. set **Base Memory**
-	7. `Drivers\Interface\New Drive`
+	7. `Drivers > Interface > New Drive`
 	8. select **NVMe**
 	9. select **USB**
 	> Removable
