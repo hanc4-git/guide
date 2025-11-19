@@ -68,7 +68,10 @@ xeyes
 - option to partition 1tb\
   *personal setup*\
   `c:\` *411000*\
+  > 411,1000 &divide; 1,024 = 401.3672 MB
+  
   `d:\` *463000*
+  > 463,000 &divide; 1,024 = 452.1484 MB 
 
 - option to install **Vim**\
   *[gVim 9.1.1825 - October 27, 2025](https://www.vim.org/download.php)*\
