@@ -95,6 +95,5 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
     dir
     rd os{$osname} /s
       y
-    
     exit
     ```
