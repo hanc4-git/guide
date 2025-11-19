@@ -70,3 +70,31 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
 - option to battery percent
   	1.  open **Microsoft Store**
   	2.  install **Battery Percentage Icon**
+
+- option to
+    1. find **Command Prompt** in search box on task bar
+    2. **Run as adminstrator**
+    ```
+    diskpart
+    list disk
+    select disk 0
+    list partition
+    ```
+    
+    `select partition 1`
+    > EFI partition
+
+    `assign letter=r`
+    > assign temporary drive
+
+    ```
+    exit
+    r:
+    dir
+    cd EFI
+    dir
+    rd os{$osname} /s
+      y
+    
+    exit
+    ```
