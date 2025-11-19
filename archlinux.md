@@ -14,26 +14,26 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
 *[CachyOS - August 24, 2025](https://cachyos.org/download/)*
 
 ### cachyos installation
-1. `liveuser\Desktop Session: Plasma (X11)`
+1. `liveuser > Desktop Session: Plasma (X11)`
 2. switch to **Wayland**
 3. login without *password*
-4. `CachyOS Hello\INSTALLATION`
+4. `CachyOS Hello > INSTALLATION`
 5. **Launch installer**
-6. `CachyOS Installer\Partitions\Erase disk`
+6. `CachyOS Installer > Partitions > Erase disk`
 7. select **btrfs**
-8. `CachyOS Installer\All done`
+8. `CachyOS Installer > All done`
 9. deselect **Restart now**
 10. click **Done**
 11. shut down
 
 ### run
-1. `Details\Storage\Controller: IDE`
+1. `Details > Storage > Controller: IDE`
 2. click **IDE Secondary Device 0:**
 3. select **Remove Disk From Virtual Drive**
 4. click **Start**
 
 ### system update
-1. `CachyOS Hello\Apps\Tweaks`
+1. `CachyOS Hello > Apps > Tweaks`
 2. **System Update**
 
   - option to use **Terminal**\
@@ -44,14 +44,14 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
       		**-u-**: upgrade packages
 
 - option to set shortcut
-	1. `Settings\Keyboard\Keyboard Shortcuts\View and Customize Shortcuts\Custom Shortcuts\Add Shortcut...`
+	1. `Settings > Keyboard > Keyboard Shortcuts > View and Customize Shortcuts > Custom Shortcuts > Add Shortcut...`
     2. create *name*
     3. command *kgx* or *gnome-terminal*
     4. **Set Shortcut...**
     5. **Add**
 
 ### [steam](https://wiki.cachyos.org/configuration/gaming/)
-1. `CachyOS Hello\Apps\Tweaks`
+1. `CachyOS Hello > Apps > Tweaks`
 2. click **Install Gaming packages**
 3. restart
 
@@ -144,7 +144,7 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
 	**No**
 
 ### run
-1. `Details\Storage\Controller: IDE`
+1. `Details > Storage > Controller: IDE`
 2. click **IDE Secondary Device 0:**
 3. select **Remove Disk From Virtual Drive**
 4. click **Start**
@@ -363,7 +363,7 @@ source thisroot.sh
 - option to install virtualbox **Guest Additions**
 > cachyos has built-in
 
-1. `menu bar\Devices\Insert Guest Additions`
+1. `menu bar > Devices > Insert Guest Additions`
 2. copy and paste all files in **VBox_GAs_{VBoxClient_version}.iso** to **Documents**
 3. right-click
 4. **Open in Terminal**
@@ -375,17 +375,17 @@ sudo ./VBoxLinuxAdditions.run
 
 - option to fix virtualbox **Guest Additions**
   ```
-  View\Seamless Mode
+  View > Seamless Mode
   Ctrl+L
   ```
   > back to windowed mode
 
 - option to battery percent
-  	1.  `Settings\Power\General\Show Battery Percentage`
+  	1.  `Settings > Power > General > Show Battery Percentage`
   	2.  toggle
 
 - option to mouse acceleration
-    1. `Settings\Mouse & Touchpad\Mouse\Mouse Acceleration`
+    1. `Settings > Mouse & Touchpad > Mouse > Mouse Acceleration`
     2. toggle
 
 - option to [gnome shell extensions](https://gnome.pages.gitlab.gnome.org/gnome-browser-integration/pages/installation-guide.html)
