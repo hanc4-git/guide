@@ -21,7 +21,7 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
 `flatpak --version`
 
 ### multimedia codecs
-1. `Install\Multimedia codecs`
+1. `Install > Multimedia codecs`
 2. select **Install multimedia codecs**
 
 ### ppd
@@ -29,14 +29,14 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
 `powerprofilesctl list`
 
 ### [ppd applet](https://forums.linuxmint.com/viewtopic.php?t=423612)
-1. `Applications\Preferences\Applets`
+1. `Applications > Preferences > Applets`
 2. switch to **Download**
 3. install **[Power Profiles by rcalixte](https://cinnamon-spices.linuxmint.com/applets/view/369)**
 4. switch to **Manage**
 5. click **+**
 > add power profiles to panel
 
-6. `System Settings\Preferences\General`
+6. `System Settings > Preferences > General`
 7. enable **Disable composition for full-screen windows**
 > to prevent display tearing
 
@@ -101,14 +101,14 @@ sudo apt install ubuntu-restricted-extras
   		```
 
 ### [ppd applet](https://forums.linuxmint.com/viewtopic.php?t=423612)
-1. `Applications\Preferences\Applets`
+1. `Applications > Preferences > Applets`
 2. switch to **Download**
 3. install **[Power Profiles by rcalixte](https://cinnamon-spices.linuxmint.com/applets/view/369)**
 4. switch to **Manage**
 5. click **+**
 > add power profiles to panel
 
-6. `System Settings\Preferences\General`
+6. `System Settings > Preferences > General`
 7. enable **Disable composition for full-screen windows**
 > to prevent display tearing
 
@@ -244,7 +244,7 @@ source thisroot.sh
 
 ## optional
 - option to install virtualbox **Guest Additions**
-	1. `Menu Bar\Devices\Insert Guest Additions`
+	1. `Menu Bar > Devices > Insert Guest Additions`
 	2. click **Run**
 
 	- option to run\
@@ -261,14 +261,14 @@ source thisroot.sh
   	  	```
 
 - option to battery percent
-  	1.  `Panel\Power Manager`
+  	1.  `Panel > Power Manager`
   	2.  right-click
   	3.  **Configure...**
-  	4.  `Power Manager\Settings for power@cinnamon.org\Display`
+  	4.  `Power Manager > Settings for power@cinnamon.org > Display`
   	5.  **Show percentage**
 
 - option to mouse acceleration
-  	1. `System Settings\Hardware\Mouse and Touchpad\Mouse\Pointer size and speed\Acceleration`
+  	1. `System Settings > Hardware > Mouse and Touchpad > Mouse > Pointer size and speed > Acceleration`
   	2. **Constant**
 
 - option to [gnome shell extensions](https://gnome.pages.gitlab.gnome.org/gnome-browser-integration/pages/installation-guide.html)
