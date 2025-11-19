@@ -2,6 +2,9 @@
 UNLV\
 the new version is available on [GitHub](https://github.com/hanc4-git?tab=repositories).
 
+## guide
+[How to Dual Boot CachyOS and Windows 11 (EASY WAY) // Install CachyOS](https://youtu.be/LC3ByQYz5Jw)
+
 ## prerequisites
 1. find **Settings** in serch box on task bar
 2. `Settings > Privacy & Security > Device Encryption`
