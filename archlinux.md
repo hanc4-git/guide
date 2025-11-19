@@ -6,7 +6,7 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
 [CachyOS Post Install](https://wiki.cachyos.org/configuration/post_install_setup/)\
 [CachyOS Gaming](https://wiki.fascinated.cc/category/cachyos-gaming)\
 [Arch Linux Installation guide](https://wiki.archlinux.org/title/Installation_guide)\
-[Installing Arch Linux with BTRFS and Disk Encryption](https://itsfoss.com/arch-linux-install-encrypted-btrfs/)
+[Installing Arch Linux with BTRFS and Disk Encryption](https://itsfoss.com/arch-linux-install-encrypted-btrfs/)\
 [How To Install Arch Linux in VirtualBox (2025) | Arch Linux Installation ](https://youtu.be/DbeL7ehxpZ0?si=sBVLycxjBaTJ-9fB)\
 [7 Things After Installing EndeavourOS (MUST DO!)](https://youtu.be/StHVU-Zvacs)
 
