@@ -8,10 +8,10 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
 
 ## windows 10 settings
 1. find *Settings* in search box on task bar
-2. `Settings>Update & Security>For developers`
+2. `Settings > Update & Security > For developers`
 3. turn on **Developer Mode**
 4. find *Control Panel* in search box
-5. `Control Panel>Programs>Turn Windows features on or off`
+5. `Control Panel > Programs > Turn Windows features on or off`
 6. select **Windows Subsystem for Linux**
 7. restart
 
