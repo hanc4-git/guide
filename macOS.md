@@ -39,5 +39,5 @@ download [asahi linux with a Plasma KDE](https://asahilinux.org/)
 	9. select **USB**
 	> Removable
 
-- option to installation media
+- option to installation media\
 *[balenaEtcher 2.1.4 - November 11, 2025](https://etcher.balena.io/)*
