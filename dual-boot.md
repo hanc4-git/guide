@@ -3,7 +3,8 @@ UNLV\
 the new version is available on [GitHub](https://github.com/hanc4-git?tab=repositories).
 
 ## guide
-[How to Dual Boot CachyOS and Windows 11 (EASY WAY) // Install CachyOS](https://youtu.be/LC3ByQYz5Jw)
+[How to Dual Boot CachyOS and Windows 11 (EASY WAY) // Install CachyOS](https://youtu.be/LC3ByQYz5Jw)\
+[Dual Boot Preliminary and Post-Installation Setup Guide](https://docs.bazzite.gg/General/Installation_Guide/dual_boot_setup_guide/)
 
 ## prerequisites
 1. find **Settings** in serch box on task bar
