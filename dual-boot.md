@@ -18,7 +18,8 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
 6. select **Choose what the power buttons do**
 7. click **Change settings that are currently unavailable**
 8. deselect **Turn on fast startup**
-9. Save changes
+9. deselect **Hibernate**
+10. Save changes
 
   - option to disk partitioning
     1. *Win+X*
