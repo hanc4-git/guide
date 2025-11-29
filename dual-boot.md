@@ -55,10 +55,12 @@ the new version is available on [GitHub](https://github.com/hanc4-git?tab=reposi
   
 ## installation
 *install windows first*
-1. start linux installation
-2. select **Alongside Windows Boot Manager**
+1. start **INSTALLATION SUMMARY**
+2. `INSTALLATION SUMMARY > SYSTEM > Installation Destination > Device Selection > Local Standard Disks`
+3. select disk
+4. **Done**
 
-  - option to manually
+  - option to [Manual Partitioning](https://docs.bazzite.gg/General/Installation_Guide/manual_partitioning/)
     1. select **Something Else to Manually Set Up**
     2. select **Unallocated Space**
     3. **ext4**
